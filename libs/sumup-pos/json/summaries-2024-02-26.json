@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "b8f3b6cb-d281-425e-a01f-7b12ab241668",
+    "register": "Members Bar",
+    "staff": "Dave Gillett",
+    "time": "2024-02-26 16:09:55",
+    "total_before_discount": 15,
+    "discount": 2.26,
+    "total": 12.74,
+    "vat": 2.12,
+    "net": 10.62,
+    "fees": 0.13,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "3ef6bee0-1d6d-41c9-a8ed-2c45a855e5d8",
+        "method": "SUMUP",
+        "time": "2024-02-26 16:09:55",
+        "amount": 12.74,
+        "fees": 0.13,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TFRFKHQFHX"
+      }
+    ]
+  },
+  {
+    "id": "0ed1d57d-3952-49ee-8105-a457937a2b60",
+    "register": "Members Bar",
+    "staff": "Jack Savage",
+    "time": "2024-02-26 16:38:24",
+    "total_before_discount": 15.19,
+    "discount": 2.28,
+    "total": 12.91,
+    "vat": 2.15,
+    "net": 10.76,
+    "fees": 0.13,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "774c0c68-8988-449b-8ad4-7e25174d436d",
+        "method": "SUMUP",
+        "time": "2024-02-26 16:38:24",
+        "amount": 12.91,
+        "fees": 0.13,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "THUQEQ3UMH"
+      }
+    ]
+  },
+  {
+    "id": "ef4f0573-986f-447e-be72-000c9dc747e2",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 17:10:36",
+    "total_before_discount": 9.9,
+    "discount": 1.48,
+    "total": 8.42,
+    "vat": 1.4,
+    "net": 7.02,
+    "fees": 0.08,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "83bfb6fa-3a61-4965-9a32-fd19d8157fe2",
+        "method": "SUMUP",
+        "time": "2024-02-26 17:10:36",
+        "amount": 8.42,
+        "fees": 0.08,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TFQPPZGZEG"
+      }
+    ]
+  },
+  {
+    "id": "8fb0af8e-170d-48a6-abe8-906fdcdefa2f",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 17:14:49",
+    "total_before_discount": 7.54,
+    "discount": 0.8,
+    "total": 6.74,
+    "vat": 1.12,
+    "net": 5.62,
+    "fees": 0.07,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "20bdbe1b-d115-4538-98b7-b9253f7bf499",
+        "method": "SUMUP",
+        "time": "2024-02-26 17:14:49",
+        "amount": 6.74,
+        "fees": 0.07,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TXMX7CXF6H"
+      }
+    ]
+  },
+  {
+    "id": "8311c872-4925-41ff-b5a7-6df47b4813e9",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 17:19:45",
+    "total_before_discount": 4.95,
+    "discount": 0.74,
+    "total": 4.21,
+    "vat": 0.7,
+    "net": 3.51,
+    "fees": 0.04,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "c3fbe25f-3881-4d0d-a496-8edaaea8af84",
+        "method": "SUMUP",
+        "time": "2024-02-26 17:19:45",
+        "amount": 4.21,
+        "fees": 0.04,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TD4ENMT9DE"
+      }
+    ]
+  },
+  {
+    "id": "0909c210-f72b-4a6f-82d0-bf1de783636d",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 17:38:11",
+    "total_before_discount": 15.3,
+    "discount": 2.3,
+    "total": 13,
+    "vat": 2.16,
+    "net": 10.84,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "6a37efdb-f461-42ab-969f-63f9c9dba1f9",
+        "method": "CASH",
+        "time": "2024-02-26 17:38:08",
+        "amount": 13,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "7e59555a-b93e-43c1-a353-7e8928ff7783",
+    "register": "Members Bar",
+    "staff": "Jack Savage",
+    "time": "2024-02-26 17:43:47",
+    "total_before_discount": 3.7,
+    "discount": 0,
+    "total": 3.7,
+    "vat": 0.62,
+    "net": 3.08,
+    "fees": 0.04,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "1fb5ccf2-d2c1-49ac-8d87-0583e5ddb007",
+        "method": "SUMUP",
+        "time": "2024-02-26 17:43:47",
+        "amount": 3.7,
+        "fees": 0.04,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEUZY6C6G9"
+      }
+    ]
+  },
+  {
+    "id": "9e8fd3ee-0dd7-4805-a874-48a44da93bfb",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 17:52:18",
+    "total_before_discount": 4.95,
+    "discount": 0.74,
+    "total": 4.21,
+    "vat": 0.7,
+    "net": 3.51,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "18d469c0-1ebb-4237-a37a-255237fd1af2",
+        "method": "CASH",
+        "time": "2024-02-26 17:47:09",
+        "amount": 4.21,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "d43e7bf5-287d-4cfe-a14f-4b19652993dd",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 17:55:20",
+    "total_before_discount": 5,
+    "discount": 0,
+    "total": 5,
+    "vat": 0.83,
+    "net": 4.17,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "829ac9cd-73dd-41d9-aaea-b796f98e894e",
+        "method": "SUMUP",
+        "time": "2024-02-26 17:55:20",
+        "amount": 5,
+        "fees": 0.05,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TCUPD2MSRE"
+      }
+    ]
+  },
+  {
+    "id": "8d909980-18c6-497a-8ac1-ef8f2d4822ae",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 18:06:41",
+    "total_before_discount": 6.15,
+    "discount": 0.74,
+    "total": 5.41,
+    "vat": 0.9,
+    "net": 4.51,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "7bcc6ffb-6efc-466e-922a-50d1be3d6ec3",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:06:41",
+        "amount": 5.41,
+        "fees": 0.05,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCZKCYGVDZ"
+      }
+    ]
+  },
+  {
+    "id": "3ae325e0-d997-4e49-ae03-25681a1393eb",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 18:11:17",
+    "total_before_discount": 3,
+    "discount": 0,
+    "total": 3,
+    "vat": 0.5,
+    "net": 2.5,
+    "fees": 0.03,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "f5532446-409d-44ab-a728-95b96cbc2247",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:11:17",
+        "amount": 3,
+        "fees": 0.03,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TD93UYN474"
+      }
+    ]
+  },
+  {
+    "id": "70e29ed2-c621-4771-a946-70622654e9eb",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 18:18:01",
+    "total_before_discount": 14.43,
+    "discount": 0,
+    "total": 14.43,
+    "vat": 2.41,
+    "net": 12.02,
+    "fees": 0.14,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "f3581ad5-c20f-4b16-b034-8850b2f5b2a5",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:18:01",
+        "amount": 14.43,
+        "fees": 0.14,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCNSH6VPKR"
+      }
+    ]
+  },
+  {
+    "id": "b73b5e4b-dbe8-435a-a06e-249145041c78",
+    "register": "Westview Bar",
+    "staff": "Jack Savage",
+    "time": "2024-02-26 18:19:43",
+    "total_before_discount": 12.15,
+    "discount": 0,
+    "total": 12.15,
+    "vat": 2.02,
+    "net": 10.13,
+    "fees": 0.12,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "ed379a09-82bc-47b1-8bb4-8ce8d0fbd836",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:19:43",
+        "amount": 12.15,
+        "fees": 0.12,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TC39PV339A"
+      }
+    ]
+  },
+  {
+    "id": "93d2f21a-1a71-495f-a933-6c67e33cb0e1",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 18:20:26",
+    "total_before_discount": 14.19,
+    "discount": 0,
+    "total": 14.19,
+    "vat": 2.35,
+    "net": 11.84,
+    "fees": 0.14,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "05c62a4c-7cdf-40a3-b00e-da138afdfd72",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:20:26",
+        "amount": 14.19,
+        "fees": 0.14,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDN6ZNHFR3"
+      }
+    ]
+  },
+  {
+    "id": "993896c3-09f2-4e85-bda5-ea8d26e5c9ec",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 18:23:14",
+    "total_before_discount": 20.7,
+    "discount": 3.1,
+    "total": 17.6,
+    "vat": 2.92,
+    "net": 14.68,
+    "fees": 0.17,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "66314148-55c5-46d8-b042-722f17fb8640",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:23:14",
+        "amount": 17.6,
+        "fees": 0.17,
+        "card": "VISA",
+        "entry": "chip",
+        "transaction_code": "TD7ZETLHHL"
+      }
+    ]
+  },
+  {
+    "id": "eca01bae-69c1-453e-9505-059ec4c63130",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 18:27:29",
+    "total_before_discount": 4.95,
+    "discount": 0.74,
+    "total": 4.21,
+    "vat": 0.7,
+    "net": 3.51,
+    "fees": 0.04,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "6bbb97cf-8ca0-4905-8b78-f3c676602f69",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:27:29",
+        "amount": 4.21,
+        "fees": 0.04,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TF4UAQPZD9"
+      }
+    ]
+  },
+  {
+    "id": "151ba1fb-7e31-408e-8512-c73487718d34",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 18:28:35",
+    "total_before_discount": 6.37,
+    "discount": 0,
+    "total": 6.37,
+    "vat": 1.06,
+    "net": 5.31,
+    "fees": 0.06,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "d7453426-5970-4f50-93d9-9ff4a3baf230",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:28:35",
+        "amount": 6.37,
+        "fees": 0.06,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TENZKPZ7X7"
+      }
+    ]
+  },
+  {
+    "id": "37845d47-1bd5-4ea6-977d-592395f5def0",
+    "register": "Westview Bar",
+    "staff": "Jack Savage",
+    "time": "2024-02-26 18:41:10",
+    "total_before_discount": 5.29,
+    "discount": 0,
+    "total": 5.29,
+    "vat": 0.88,
+    "net": 4.41,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "c726c4ce-5305-4b4f-b9d4-ad108adc8faa",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:41:10",
+        "amount": 5.29,
+        "fees": 0.05,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TFCRHVGCPD"
+      }
+    ]
+  },
+  {
+    "id": "1e9535ad-78ea-4398-837f-27b76424400d",
+    "register": "Westview Bar",
+    "staff": "Jack Savage",
+    "time": "2024-02-26 18:43:11",
+    "total_before_discount": 5.29,
+    "discount": 0,
+    "total": 5.29,
+    "vat": 0.88,
+    "net": 4.41,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "0f7d8e75-7f8f-4a68-820c-d7f89b17190b",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:43:11",
+        "amount": 5.29,
+        "fees": 0.05,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDENGFZGFH"
+      }
+    ]
+  },
+  {
+    "id": "5f49a32e-bbd3-4262-bb7f-3d1cc7352999",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 18:48:28",
+    "total_before_discount": 5.35,
+    "discount": 0.43,
+    "total": 4.92,
+    "vat": 0.82,
+    "net": 4.1,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "914a2fd4-5964-49c0-af10-813a3d93086b",
+        "method": "CASH",
+        "time": "2024-02-26 18:36:18",
+        "amount": 4.92,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "d013e55d-5225-4c45-84ba-9c55515c6543",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 18:49:33",
+    "total_before_discount": 16.5,
+    "discount": 0,
+    "total": 16.5,
+    "vat": 2.74,
+    "net": 13.76,
+    "fees": 0.16,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "97d354e3-507c-4ffb-96f2-5d4c1bef3659",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:49:33",
+        "amount": 16.5,
+        "fees": 0.16,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCRYN972XM"
+      }
+    ]
+  },
+  {
+    "id": "4d056f1f-116b-4b27-a49b-7f91f8859949",
+    "register": "Westview Bar",
+    "staff": "Jack Savage",
+    "time": "2024-02-26 18:49:35",
+    "total_before_discount": 7.87,
+    "discount": 0,
+    "total": 7.87,
+    "vat": 1.31,
+    "net": 6.56,
+    "fees": 0.08,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "af0a5ca6-284e-450f-b454-31e727cf4d30",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:49:35",
+        "amount": 7.87,
+        "fees": 0.08,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TE7Q6EAMKZ"
+      }
+    ]
+  },
+  {
+    "id": "31135805-7bd6-4e94-b25e-9bd679a56b16",
+    "register": "Westview Bar",
+    "staff": "Jack Savage",
+    "time": "2024-02-26 18:51:05",
+    "total_before_discount": 1,
+    "discount": 0,
+    "total": 1,
+    "vat": 0.17,
+    "net": 0.83,
+    "fees": 0.01,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "15cea310-bb07-45ae-a3ef-51a2bf131c68",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:51:05",
+        "amount": 1,
+        "fees": 0.01,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDZ9V4G3FR"
+      }
+    ]
+  },
+  {
+    "id": "e3179f03-7ecd-46ef-a30e-7b583a889a86",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 18:52:58",
+    "total_before_discount": 5.59,
+    "discount": 0,
+    "total": 5.59,
+    "vat": 0.93,
+    "net": 4.66,
+    "fees": 0.06,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "2d0ae376-2c4d-4c42-aafc-f470b64e3a89",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:52:58",
+        "amount": 5.59,
+        "fees": 0.06,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDLTDZ2YMA"
+      }
+    ]
+  },
+  {
+    "id": "219b33b2-281e-43fd-a304-4137c8dcd212",
+    "register": "Westview Bar",
+    "staff": "Jack Savage",
+    "time": "2024-02-26 18:54:02",
+    "total_before_discount": 12.38,
+    "discount": 0,
+    "total": 12.38,
+    "vat": 2.06,
+    "net": 10.32,
+    "fees": 0.12,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "d4a79a99-adea-4adc-8236-6e40ac33871f",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:54:02",
+        "amount": 12.38,
+        "fees": 0.12,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TFKCMKHTER"
+      }
+    ]
+  },
+  {
+    "id": "4248391b-0f43-4317-bd3d-89e6a31627eb",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 18:55:02",
+    "total_before_discount": 11.74,
+    "discount": 1.76,
+    "total": 9.98,
+    "vat": 1.66,
+    "net": 8.32,
+    "fees": 0.1,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "eef68c1c-0173-474f-9583-912fd1dcab09",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:55:02",
+        "amount": 9.98,
+        "fees": 0.1,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TGVK9XKCRX"
+      }
+    ]
+  },
+  {
+    "id": "76079a33-2829-4dc7-9207-5f1f13883709",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 18:58:28",
+    "total_before_discount": 4.95,
+    "discount": 0,
+    "total": 4.95,
+    "vat": 0.82,
+    "net": 4.13,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "33af1987-acb4-47a2-a276-8eeb02bed6f6",
+        "method": "CASH",
+        "time": "2024-02-26 18:58:18",
+        "amount": 4.95,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "cf6ce9a3-b6a2-4789-97ee-4530f7e09a27",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 18:58:48",
+    "total_before_discount": 10.35,
+    "discount": 1.55,
+    "total": 8.8,
+    "vat": 1.46,
+    "net": 7.34,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "7fa1cc43-54db-4a65-8757-a9bba6b9c4b9",
+        "method": "SUMUP",
+        "time": "2024-02-26 18:58:48",
+        "amount": 8.8,
+        "fees": 0.09,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDTNHGZ7TK"
+      }
+    ]
+  },
+  {
+    "id": "689dee34-c285-461e-863b-32ad19faff49",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:01:27",
+    "total_before_discount": 5.29,
+    "discount": 0,
+    "total": 5.29,
+    "vat": 0.88,
+    "net": 4.41,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "d7c45296-3869-4d55-ab1e-485a4a8f7995",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:01:27",
+        "amount": 5.29,
+        "fees": 0.05,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TEQHRT6QUL"
+      }
+    ]
+  },
+  {
+    "id": "05723eca-59c1-4715-b934-b67753f23b21",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:03:43",
+    "total_before_discount": 16.22,
+    "discount": 0,
+    "total": 16.22,
+    "vat": 2.71,
+    "net": 13.51,
+    "fees": 0.16,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "4bfd8bef-fd27-4898-9da2-e25a299cbdbe",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:03:43",
+        "amount": 16.22,
+        "fees": 0.16,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TFPXTMXLGS"
+      }
+    ]
+  },
+  {
+    "id": "60c5182f-1d78-4b90-b08e-92eb9a6f4666",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:05:14",
+    "total_before_discount": 10.57,
+    "discount": 0,
+    "total": 10.57,
+    "vat": 1.76,
+    "net": 8.81,
+    "fees": 0.1,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "e1c7cb79-940b-4bdb-a357-c42cfcd3c11b",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:05:14",
+        "amount": 10.57,
+        "fees": 0.1,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCU2M3UFSA"
+      }
+    ]
+  },
+  {
+    "id": "212ad1fc-5d2a-49de-8e50-6687c925fb74",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:07:33",
+    "total_before_discount": 17.07,
+    "discount": 0,
+    "total": 17.07,
+    "vat": 2.84,
+    "net": 14.23,
+    "fees": 0.17,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "1d4ee333-3f9f-444c-916c-8117f3e89e07",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:07:33",
+        "amount": 17.07,
+        "fees": 0.17,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TD7UK4MTS9"
+      }
+    ]
+  },
+  {
+    "id": "d53bee45-6a57-4b47-ada4-0babcc98a5aa",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:08:57",
+    "total_before_discount": 8.56,
+    "discount": 1.29,
+    "total": 7.27,
+    "vat": 1.21,
+    "net": 6.06,
+    "fees": 0.07,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "3db45f2e-5a90-4bc2-9d25-d2bbe2a82d56",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:08:57",
+        "amount": 7.27,
+        "fees": 0.07,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TFAM3ALFUL"
+      }
+    ]
+  },
+  {
+    "id": "324ecd8b-ab96-4f0a-81be-7a4af527d285",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:09:20",
+    "total_before_discount": 9.02,
+    "discount": 0,
+    "total": 9.02,
+    "vat": 1.5,
+    "net": 7.52,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "bd3da90f-ec96-4641-b32c-433e37a946ae",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:09:20",
+        "amount": 9.02,
+        "fees": 0.09,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TDGNRQ4FQP"
+      }
+    ]
+  },
+  {
+    "id": "e5917541-b391-4ade-8072-a424f8f4f45e",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:09:42",
+    "total_before_discount": 5.4,
+    "discount": 0,
+    "total": 5.4,
+    "vat": 0.9,
+    "net": 4.5,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "8f1e9092-1be6-4a6c-af11-e47cee9ed607",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:09:42",
+        "amount": 5.4,
+        "fees": 0.05,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TD39UXTUM2"
+      }
+    ]
+  },
+  {
+    "id": "47421759-3c92-4ae5-a52c-84367fea5da2",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:10:01",
+    "total_before_discount": 5.35,
+    "discount": 0,
+    "total": 5.35,
+    "vat": 0.89,
+    "net": 4.46,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "47242172-c23a-4969-a82b-45cfcc052d84",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:10:01",
+        "amount": 5.35,
+        "fees": 0.05,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TFSAGTG79A"
+      }
+    ]
+  },
+  {
+    "id": "f7e6ac0e-39e3-4599-9527-a99604829249",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:11:16",
+    "total_before_discount": 6.17,
+    "discount": 0,
+    "total": 6.17,
+    "vat": 1.03,
+    "net": 5.14,
+    "fees": 0.06,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "88b51b24-a11f-4c5c-a94d-abb4151ea459",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:11:16",
+        "amount": 6.17,
+        "fees": 0.06,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TDED4Q2QQU"
+      }
+    ]
+  },
+  {
+    "id": "4eb12ee0-ab7f-4d95-8159-95a5b056716e",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:12:47",
+    "total_before_discount": 19.15,
+    "discount": 0,
+    "total": 19.15,
+    "vat": 3.19,
+    "net": 15.96,
+    "fees": 0.19,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "63ecdf4e-bcf4-4003-bd02-fb7e818df398",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:12:47",
+        "amount": 19.15,
+        "fees": 0.19,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TEQRTNKRAF"
+      }
+    ]
+  },
+  {
+    "id": "3590f9ab-c063-441f-a4d0-acc5d1d68000",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:14:36",
+    "total_before_discount": 16.62,
+    "discount": 0,
+    "total": 16.62,
+    "vat": 2.77,
+    "net": 13.85,
+    "fees": 0.16,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "9d87bcb4-cb34-4aa6-a914-0b9ae65a31ab",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:14:36",
+        "amount": 16.62,
+        "fees": 0.16,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TEUVVM3EYV"
+      }
+    ]
+  },
+  {
+    "id": "ca22bc0e-c12b-45cf-9592-c98533572485",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:15:04",
+    "total_before_discount": 9.36,
+    "discount": 0,
+    "total": 9.36,
+    "vat": 1.56,
+    "net": 7.8,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "0ecdd172-c936-41e0-bbd2-68be133edaba",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:15:04",
+        "amount": 9.36,
+        "fees": 0.09,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TD4YYQ37QD"
+      }
+    ]
+  },
+  {
+    "id": "b7609572-0178-48ab-a3cd-810f725f66f2",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:17:34",
+    "total_before_discount": 14.19,
+    "discount": 0,
+    "total": 14.19,
+    "vat": 2.36,
+    "net": 11.83,
+    "fees": 0.14,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "feb1a734-a7df-4d73-9b73-17d85c9b2488",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:17:34",
+        "amount": 14.19,
+        "fees": 0.14,
+        "card": "VISA",
+        "entry": "chip",
+        "transaction_code": "TQFEVXAS6K"
+      }
+    ]
+  },
+  {
+    "id": "0dfc9245-c7ff-44dc-a8fb-452349d9843b",
+    "register": "Westview Bar",
+    "staff": "Dave Gillett",
+    "time": "2024-02-26 19:18:36",
+    "total_before_discount": 2.53,
+    "discount": 0,
+    "total": 2.53,
+    "vat": 0.42,
+    "net": 2.11,
+    "fees": 0.03,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "9b9a6d46-488d-4f6d-b5e1-5823b2814f77",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:18:36",
+        "amount": 2.53,
+        "fees": 0.03,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TC49H2PNZ6"
+      }
+    ]
+  },
+  {
+    "id": "5d011172-fed5-4176-b544-35893e56ff48",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:19:07",
+    "total_before_discount": 22.5,
+    "discount": 0,
+    "total": 22.5,
+    "vat": 3.75,
+    "net": 18.75,
+    "fees": 0.22,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "a242ab62-4902-4dde-b55e-f3e5d3724382",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:19:07",
+        "amount": 22.5,
+        "fees": 0.22,
+        "card": "MASTERCARD",
+        "entry": "chip",
+        "transaction_code": "TDXUQG6FEY"
+      }
+    ]
+  },
+  {
+    "id": "ae44a231-123b-4986-a3a3-b969aebec2e6",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:19:27",
+    "total_before_discount": 12.65,
+    "discount": 0,
+    "total": 12.65,
+    "vat": 2.1,
+    "net": 10.55,
+    "fees": 0.13,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "d33106f7-0d1e-4b29-a686-4504a3455e9a",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:19:27",
+        "amount": 12.65,
+        "fees": 0.13,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TE2P6X6DQL"
+      }
+    ]
+  },
+  {
+    "id": "bd86cca6-4045-4f54-8bc6-f07829b7ec6c",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:22:38",
+    "total_before_discount": 38.22,
+    "discount": 0,
+    "total": 38.22,
+    "vat": 6.36,
+    "net": 31.86,
+    "fees": 0.38,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "3e5b3943-5817-496f-b2e1-506cc69d8fe4",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:22:38",
+        "amount": 38.22,
+        "fees": 0.38,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCHLGET9LT"
+      }
+    ]
+  },
+  {
+    "id": "6c229637-a6b6-45cd-b525-379ab0c0b946",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:23:46",
+    "total_before_discount": 21.88,
+    "discount": 0,
+    "total": 21.88,
+    "vat": 3.63,
+    "net": 18.25,
+    "fees": 0.22,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "865d43a9-f267-456f-95db-673e09a4e000",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:23:46",
+        "amount": 21.88,
+        "fees": 0.22,
+        "card": "MASTERCARD",
+        "entry": "chip",
+        "transaction_code": "TE2TCCDS6Y"
+      }
+    ]
+  },
+  {
+    "id": "37006d27-78a3-4d9b-9127-734faf4d2750",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:25:35",
+    "total_before_discount": 14.61,
+    "discount": 0,
+    "total": 14.61,
+    "vat": 2.43,
+    "net": 12.18,
+    "fees": 0.14,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "3f3f03a1-fc62-44e0-888d-6e8d2cb0206a",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:25:35",
+        "amount": 14.61,
+        "fees": 0.14,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "THHZYTCK3X"
+      }
+    ]
+  },
+  {
+    "id": "8fd48416-a174-4b16-b481-d292f061c6d4",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:25:52",
+    "total_before_discount": 6.12,
+    "discount": 0,
+    "total": 6.12,
+    "vat": 1.02,
+    "net": 5.1,
+    "fees": 0.06,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "e5f18eee-c4e6-45a2-b4d2-39e518014c4c",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:25:52",
+        "amount": 6.12,
+        "fees": 0.06,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCGSN7XGRM"
+      }
+    ]
+  },
+  {
+    "id": "7264e9de-baca-4cef-a9e7-acf24204f86a",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:27:15",
+    "total_before_discount": 7,
+    "discount": 0,
+    "total": 7,
+    "vat": 1.17,
+    "net": 5.83,
+    "fees": 0.07,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "7249f9ee-26ef-4e4f-9bce-e3f1be81e034",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:27:15",
+        "amount": 7,
+        "fees": 0.07,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCZ3KK4YPZ"
+      }
+    ]
+  },
+  {
+    "id": "59cd9fc8-1c4b-4dee-bbc3-11fa31ecd181",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:27:37",
+    "total_before_discount": 11.4,
+    "discount": 0,
+    "total": 11.4,
+    "vat": 1.9,
+    "net": 9.5,
+    "fees": 0.11,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "4862529a-56fa-4162-af18-09604b3774a3",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:27:37",
+        "amount": 11.4,
+        "fees": 0.11,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TD9U6V9T4Y"
+      }
+    ]
+  },
+  {
+    "id": "22aed115-df66-4503-951a-66239b5f06c1",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:30:11",
+    "total_before_discount": 13,
+    "discount": 0,
+    "total": 13,
+    "vat": 2.17,
+    "net": 10.83,
+    "fees": 0.13,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "b916081d-935c-4e91-ad7e-2b3b6b25caf5",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:30:11",
+        "amount": 13,
+        "fees": 0.13,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TNMLADXQPC"
+      }
+    ]
+  },
+  {
+    "id": "63f5fe98-88aa-468e-8379-90bffdf9bc10",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:32:18",
+    "total_before_discount": 9.12,
+    "discount": 0,
+    "total": 9.12,
+    "vat": 1.52,
+    "net": 7.6,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "7457f373-e78d-4734-9d89-d8e31f4300e4",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:32:18",
+        "amount": 9.12,
+        "fees": 0.09,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDUPSKGZ7V"
+      }
+    ]
+  },
+  {
+    "id": "24855746-5e2e-4119-812b-ca1e31ec3cc5",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:33:12",
+    "total_before_discount": 10.46,
+    "discount": 0,
+    "total": 10.46,
+    "vat": 1.74,
+    "net": 8.72,
+    "fees": 0.1,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "1788278b-f2e2-4d0e-b283-a977a8fa8dee",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:33:12",
+        "amount": 10.46,
+        "fees": 0.1,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TD6PFHTU3V"
+      }
+    ]
+  },
+  {
+    "id": "42bb8f56-6f02-4045-b7f2-12bd49fd6dd1",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 19:34:54",
+    "total_before_discount": 5.4,
+    "discount": 0.81,
+    "total": 4.59,
+    "vat": 0.76,
+    "net": 3.83,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "c33be18f-b5f8-4d0e-9ddc-8ebee25d214c",
+        "method": "CASH",
+        "time": "2024-02-26 19:34:53",
+        "amount": 4.59,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "065e5d24-ee90-40f0-bfbe-1f72bfe493c7",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:35:17",
+    "total_before_discount": 11.37,
+    "discount": 0,
+    "total": 11.37,
+    "vat": 1.9,
+    "net": 9.47,
+    "fees": 0.11,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "6044564d-927e-41c8-bd69-1ca24ced1e8c",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:35:17",
+        "amount": 11.37,
+        "fees": 0.11,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCUVSUK7LL"
+      }
+    ]
+  },
+  {
+    "id": "9b5f45a3-70c2-4160-b04f-3a1623c59bdf",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:40:22",
+    "total_before_discount": 9.55,
+    "discount": 0,
+    "total": 9.55,
+    "vat": 1.58,
+    "net": 7.97,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "a5e17fdf-96a3-4dc3-9d8f-d6fa6e80c1fd",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:40:22",
+        "amount": 9.55,
+        "fees": 0.09,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDAQDTFNZ3"
+      }
+    ]
+  },
+  {
+    "id": "33dc8015-1662-461a-a6ee-894057807ffa",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:41:02",
+    "total_before_discount": 3.5,
+    "discount": 0,
+    "total": 3.5,
+    "vat": 0.58,
+    "net": 2.92,
+    "fees": 0.03,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "75605a7d-db2a-4bb3-8a5e-5586af8bbc27",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:41:02",
+        "amount": 3.5,
+        "fees": 0.03,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TDRHNVRZ4G"
+      }
+    ]
+  },
+  {
+    "id": "500c693c-da7e-4f66-80c8-8921c256a3cb",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:43:01",
+    "total_before_discount": 6.5,
+    "discount": 0,
+    "total": 6.5,
+    "vat": 1.08,
+    "net": 5.42,
+    "fees": 0.06,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "b47ba13d-be34-4147-ba73-6fa819fc42dc",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:43:01",
+        "amount": 6.5,
+        "fees": 0.06,
+        "card": "MASTERCARD",
+        "entry": "chip",
+        "transaction_code": "TD2C969NHN"
+      }
+    ]
+  },
+  {
+    "id": "aad3baf8-f0c3-414e-bb97-f029bd53b593",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:43:29",
+    "total_before_discount": 13,
+    "discount": 0,
+    "total": 13,
+    "vat": 2.16,
+    "net": 10.84,
+    "fees": 0.13,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "9012d9cb-e45b-4614-a9be-2448a5d08f94",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:43:29",
+        "amount": 13,
+        "fees": 0.13,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TE2FM7ZR4Z"
+      }
+    ]
+  },
+  {
+    "id": "072d0494-4c6d-4c51-bd1f-270e1e2ac294",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:44:44",
+    "total_before_discount": 10.57,
+    "discount": 0,
+    "total": 10.57,
+    "vat": 1.76,
+    "net": 8.81,
+    "fees": 0.1,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "0fdd1549-e778-4b2c-8de8-d24497b533fd",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:44:44",
+        "amount": 10.57,
+        "fees": 0.1,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TE2FRHKYT3"
+      }
+    ]
+  },
+  {
+    "id": "fb81ba35-8aaa-443f-ab53-da6534474c5c",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:45:31",
+    "total_before_discount": 5.4,
+    "discount": 0,
+    "total": 5.4,
+    "vat": 0.9,
+    "net": 4.5,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "1ac8193b-f2bb-4ae3-94a4-1dcd92e1cbe6",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:45:31",
+        "amount": 5.4,
+        "fees": 0.05,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TFQNAQZT6P"
+      }
+    ]
+  },
+  {
+    "id": "a02b2828-3587-473e-aea6-d697a3f0681e",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:45:44",
+    "total_before_discount": 3.5,
+    "discount": 0,
+    "total": 3.5,
+    "vat": 0.58,
+    "net": 2.92,
+    "fees": 0.03,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "0938b452-dba9-4769-84b6-b982ce846585",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:45:44",
+        "amount": 3.5,
+        "fees": 0.03,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDN33M4QM2"
+      }
+    ]
+  },
+  {
+    "id": "678dcb56-16b8-439d-9f06-ded504d6d863",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:46:10",
+    "total_before_discount": 3.5,
+    "discount": 0,
+    "total": 3.5,
+    "vat": 0.58,
+    "net": 2.92,
+    "fees": 0.03,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "55aedc88-cd5b-4add-8814-2bea986eb76a",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:46:10",
+        "amount": 3.5,
+        "fees": 0.03,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCKZAZAC4K"
+      }
+    ]
+  },
+  {
+    "id": "6a0a1776-0e3c-44b3-ae0c-70e5de6324e7",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:48:14",
+    "total_before_discount": 7,
+    "discount": 0,
+    "total": 7,
+    "vat": 1.16,
+    "net": 5.84,
+    "fees": 0.07,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "c52f4331-5cdf-4f6e-97f7-ebd48a8ab966",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:48:14",
+        "amount": 7,
+        "fees": 0.07,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TC9A9UL6U4"
+      }
+    ]
+  },
+  {
+    "id": "a0411cdf-764e-44b0-87b1-44ebc694367a",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:49:07",
+    "total_before_discount": 4.11,
+    "discount": 0,
+    "total": 4.11,
+    "vat": 0.68,
+    "net": 3.43,
+    "fees": 0.04,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "8f955697-3112-41ad-8040-69f26a6900f1",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:49:07",
+        "amount": 4.11,
+        "fees": 0.04,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TDMXNUPAC6"
+      }
+    ]
+  },
+  {
+    "id": "68f8f7db-7e4d-4e95-89d6-759a239c4af7",
+    "register": "Westview Bar",
+    "staff": "Jack Savage",
+    "time": "2024-02-26 19:50:04",
+    "total_before_discount": 1,
+    "discount": 0,
+    "total": 1,
+    "vat": 0.17,
+    "net": 0.83,
+    "fees": 0.01,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "da0e7933-e3bf-4606-8124-32e0cad3ff3b",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:50:04",
+        "amount": 1,
+        "fees": 0.01,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEPHZMREDU"
+      }
+    ]
+  },
+  {
+    "id": "88488d3f-385b-44b9-a349-23e7aa800468",
+    "register": "Westview Bar",
+    "staff": "Jack Savage",
+    "time": "2024-02-26 19:51:13",
+    "total_before_discount": 7,
+    "discount": 0,
+    "total": 7,
+    "vat": 1.16,
+    "net": 5.84,
+    "fees": 0.07,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "1622357f-5a09-4be3-8aa6-7b179046d487",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:51:13",
+        "amount": 7,
+        "fees": 0.07,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCLMUPGRSD"
+      }
+    ]
+  },
+  {
+    "id": "cc8e5a5c-594d-4a3d-a4f0-a266946fc9f8",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 19:53:45",
+    "total_before_discount": 23.92,
+    "discount": 0,
+    "total": 23.92,
+    "vat": 3.98,
+    "net": 19.94,
+    "fees": 0.24,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "b04c0820-32e5-41f7-ac21-6eacdeb5c121",
+        "method": "SUMUP",
+        "time": "2024-02-26 19:53:45",
+        "amount": 23.92,
+        "fees": 0.24,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDV2LRUM6H"
+      }
+    ]
+  },
+  {
+    "id": "b47eaab0-6866-4290-a5d1-0b8c10e6ef63",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 20:07:11",
+    "total_before_discount": 3.5,
+    "discount": 0,
+    "total": 3.5,
+    "vat": 0.58,
+    "net": 2.92,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "8c259b51-c7ab-45eb-b493-aa9b7be78135",
+        "method": "CASH",
+        "time": "2024-02-26 20:07:11",
+        "amount": 3.5,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "9825176f-5516-4227-8804-a223bcd11182",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 20:11:08",
+    "total_before_discount": 1.05,
+    "discount": 0,
+    "total": 1.05,
+    "vat": 0.17,
+    "net": 0.88,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "aa45e826-d4f8-4909-a791-c8b92458183d",
+        "method": "CASH",
+        "time": "2024-02-26 20:11:08",
+        "amount": 1.05,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "156d4727-e949-412a-9f54-57c8bca12547",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 20:12:03",
+    "total_before_discount": 5.4,
+    "discount": 0.81,
+    "total": 4.59,
+    "vat": 0.76,
+    "net": 3.83,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "aabb33e1-3728-4ad3-925e-5e3ad2d48a77",
+        "method": "CASH",
+        "time": "2024-02-26 20:12:02",
+        "amount": 4.59,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "8a8b3107-ddff-425a-b318-91b855513af9",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 20:15:21",
+    "total_before_discount": 1.75,
+    "discount": 0,
+    "total": 1.75,
+    "vat": 0.29,
+    "net": 1.46,
+    "fees": 0.02,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "3204f109-f44c-4f6e-beb6-c1c949755495",
+        "method": "SUMUP",
+        "time": "2024-02-26 20:15:21",
+        "amount": 1.75,
+        "fees": 0.02,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TC36XEUPMQ"
+      }
+    ]
+  },
+  {
+    "id": "d40bc2ff-70d1-452e-948b-5b30bd9ed8fe",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 20:15:42",
+    "total_before_discount": 1.5,
+    "discount": 0.23,
+    "total": 1.27,
+    "vat": 0.21,
+    "net": 1.06,
+    "fees": 0.01,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "05641a99-bbb9-4e69-b864-7c9e337ab895",
+        "method": "SUMUP",
+        "time": "2024-02-26 20:15:42",
+        "amount": 1.27,
+        "fees": 0.01,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TSQVFMEVMG"
+      }
+    ]
+  },
+  {
+    "id": "436c9cff-2a1b-42ef-a413-cfd263959777",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 20:16:58",
+    "total_before_discount": 12.24,
+    "discount": 0,
+    "total": 12.24,
+    "vat": 2.04,
+    "net": 10.2,
+    "fees": 0.12,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "72236f28-4c60-49c0-bbe9-55977b20d9e4",
+        "method": "SUMUP",
+        "time": "2024-02-26 20:16:58",
+        "amount": 12.24,
+        "fees": 0.12,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TDCSXVA2GU"
+      }
+    ]
+  },
+  {
+    "id": "1376acf8-098e-438a-83df-d154abd73d2d",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 20:18:34",
+    "total_before_discount": 11.9,
+    "discount": 1.78,
+    "total": 10.12,
+    "vat": 1.68,
+    "net": 8.44,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "e87c1550-dc2b-4dfa-a851-b4e3caad31f5",
+        "method": "CASH",
+        "time": "2024-02-26 20:18:32",
+        "amount": 10.12,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "b15e34b0-7c07-46c1-9d3b-870c86a2a0bf",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 20:20:01",
+    "total_before_discount": 5.67,
+    "discount": 0,
+    "total": 5.67,
+    "vat": 0.94,
+    "net": 4.73,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "acd268aa-370f-4372-88a6-c33d99cecc16",
+        "method": "CASH",
+        "time": "2024-02-26 20:19:17",
+        "amount": 5.67,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "8ee583db-065f-460f-9a7c-7053700e97ab",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 20:20:21",
+    "total_before_discount": 13.97,
+    "discount": 0,
+    "total": 13.97,
+    "vat": 2.33,
+    "net": 11.64,
+    "fees": 0.14,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "2e5344a6-55ad-47b0-9387-191e8f1be627",
+        "method": "SUMUP",
+        "time": "2024-02-26 20:20:20",
+        "amount": 13.97,
+        "fees": 0.14,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TC2AQZQ63Y"
+      }
+    ]
+  },
+  {
+    "id": "56d305c1-89ba-463d-a31a-b993f9ba1c42",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 20:20:51",
+    "total_before_discount": 4.55,
+    "discount": 0,
+    "total": 4.55,
+    "vat": 0.75,
+    "net": 3.8,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "431a2798-0f02-46ce-90f1-6d9eb23ca5f7",
+        "method": "SUMUP",
+        "time": "2024-02-26 20:20:51",
+        "amount": 4.55,
+        "fees": 0.05,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TET2R64RSH"
+      }
+    ]
+  },
+  {
+    "id": "384c5e77-ab6f-412b-baea-c87399b78aaf",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 20:43:10",
+    "total_before_discount": 4.95,
+    "discount": 0.74,
+    "total": 4.21,
+    "vat": 0.7,
+    "net": 3.51,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "9da74a8e-75df-4c02-b677-a3a4685620bd",
+        "method": "CASH",
+        "time": "2024-02-26 20:42:48",
+        "amount": 4.21,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "b081e6d9-c024-4ef0-aaf8-21c2e953eb20",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 20:44:32",
+    "total_before_discount": 28.08,
+    "discount": 0,
+    "total": 28.08,
+    "vat": 4.67,
+    "net": 23.41,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "54372c94-c6a2-44e1-96dd-16e19b49a266",
+        "method": "CASH",
+        "time": "2024-02-26 20:42:17",
+        "amount": 28.08,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "7deb1c59-c8d2-464e-8031-6386900ec9b0",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 20:44:51",
+    "total_before_discount": 8.67,
+    "discount": 0,
+    "total": 8.67,
+    "vat": 1.44,
+    "net": 7.23,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "e9b20064-4fc9-4aba-b934-1216987f1e46",
+        "method": "SUMUP",
+        "time": "2024-02-26 20:44:51",
+        "amount": 8.67,
+        "fees": 0.09,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TEDSMHAKH6"
+      }
+    ]
+  },
+  {
+    "id": "8734b7c2-fd48-498f-a6e0-7bfc4ceded72",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 20:46:17",
+    "total_before_discount": 3.5,
+    "discount": 0,
+    "total": 3.5,
+    "vat": 0.58,
+    "net": 2.92,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "74faa228-30ff-4e52-b48a-63433203b46a",
+        "method": "CASH",
+        "time": "2024-02-26 20:46:17",
+        "amount": 3.5,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "d037ae51-abb3-41e7-92f8-5f3169922510",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 20:49:00",
+    "total_before_discount": 11.9,
+    "discount": 1.79,
+    "total": 10.11,
+    "vat": 1.68,
+    "net": 8.43,
+    "fees": 0.1,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "0f13f1b5-3271-4fd4-8ecc-9290b3619d23",
+        "method": "SUMUP",
+        "time": "2024-02-26 20:49:00",
+        "amount": 10.11,
+        "fees": 0.1,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDSYVU92H3"
+      }
+    ]
+  },
+  {
+    "id": "d217d724-01ec-44e4-b27f-f6c307cb4617",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 20:55:02",
+    "total_before_discount": 13.65,
+    "discount": 0,
+    "total": 13.65,
+    "vat": 2.27,
+    "net": 11.38,
+    "fees": 0.14,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "97010b8b-2903-4de6-8b2d-4652a3a57a98",
+        "method": "SUMUP",
+        "time": "2024-02-26 20:55:02",
+        "amount": 13.65,
+        "fees": 0.14,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TCTQAD64MG"
+      }
+    ]
+  },
+  {
+    "id": "fd175481-18dd-4538-b619-6e6842992f48",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 20:56:21",
+    "total_before_discount": 14.19,
+    "discount": 0,
+    "total": 14.19,
+    "vat": 2.36,
+    "net": 11.83,
+    "fees": 0.14,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "3b9a1861-5645-43fe-a764-b98ffecaab55",
+        "method": "SUMUP",
+        "time": "2024-02-26 20:56:21",
+        "amount": 14.19,
+        "fees": 0.14,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TENCPYDFTU"
+      }
+    ]
+  },
+  {
+    "id": "19f20b31-ef18-4958-997c-5ab25c292645",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 20:59:21",
+    "total_before_discount": 4.56,
+    "discount": 0,
+    "total": 4.56,
+    "vat": 0.76,
+    "net": 3.8,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "cb5011bc-ebf8-481b-93f3-2fa841a9557f",
+        "method": "SUMUP",
+        "time": "2024-02-26 20:59:21",
+        "amount": 4.56,
+        "fees": 0.05,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDMD2NMXY2"
+      }
+    ]
+  },
+  {
+    "id": "f34bf2d0-3831-498c-bdd9-82193fd7c59a",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 21:03:35",
+    "total_before_discount": 8.05,
+    "discount": 1.05,
+    "total": 7,
+    "vat": 1.16,
+    "net": 5.84,
+    "fees": 0.07,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "9d77fa3f-641f-47b4-8866-b5e2b67c6220",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:03:35",
+        "amount": 7,
+        "fees": 0.07,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TFR3R4GCEZ"
+      }
+    ]
+  },
+  {
+    "id": "f0c554f9-d4f7-49fe-9952-31e7c2e0bbcf",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 21:22:07",
+    "total_before_discount": 5.92,
+    "discount": 0,
+    "total": 5.92,
+    "vat": 0.99,
+    "net": 4.93,
+    "fees": 0.06,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "c585ef81-28aa-49bf-b43c-34a70ef01b14",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:22:07",
+        "amount": 5.92,
+        "fees": 0.06,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDGR32LZ9C"
+      }
+    ]
+  },
+  {
+    "id": "a28bb977-d8b8-47b7-843d-f54ba74558c5",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 21:24:13",
+    "total_before_discount": 10.8,
+    "discount": 1.62,
+    "total": 9.18,
+    "vat": 1.52,
+    "net": 7.66,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "e2844b80-0732-450c-ae51-d5dfcef949db",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:24:13",
+        "amount": 9.18,
+        "fees": 0.09,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TD9EGYZMUS"
+      }
+    ]
+  },
+  {
+    "id": "feb83996-a5b3-4d2b-a38b-ec4b9b7f8fc2",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 21:25:47",
+    "total_before_discount": 3.5,
+    "discount": 0,
+    "total": 3.5,
+    "vat": 0.58,
+    "net": 2.92,
+    "fees": 0.03,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "99f2751a-849c-4649-b108-6073c95e4f30",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:25:47",
+        "amount": 3.5,
+        "fees": 0.03,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEAQ6PFAPE"
+      }
+    ]
+  },
+  {
+    "id": "4c09d6c2-9de6-442d-ac80-7c7acb00b29a",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 21:27:36",
+    "total_before_discount": 12.05,
+    "discount": 1.45,
+    "total": 10.6,
+    "vat": 1.76,
+    "net": 8.84,
+    "fees": 0.1,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "868c04be-4d78-468a-bc85-e0a059fc5c68",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:27:36",
+        "amount": 10.6,
+        "fees": 0.1,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TFDXMQVKY9"
+      }
+    ]
+  },
+  {
+    "id": "c1aa1810-b3ff-45d1-9f6f-7d30ea65bfc7",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 21:27:44",
+    "total_before_discount": 7.15,
+    "discount": 0,
+    "total": 7.15,
+    "vat": 1.19,
+    "net": 5.96,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "2eb1eedb-0ed1-4288-a560-9275fd2fd360",
+        "method": "CASH",
+        "time": "2024-02-26 21:27:33",
+        "amount": 7.15,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "eb253dcf-b090-4161-b635-9a102cd3d886",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 21:29:14",
+    "total_before_discount": 10.34,
+    "discount": 1.56,
+    "total": 8.78,
+    "vat": 1.46,
+    "net": 7.32,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "4cde156c-7f4b-48fb-a512-82a3a26f84da",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:29:14",
+        "amount": 8.78,
+        "fees": 0.09,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TCPDQ3E479"
+      }
+    ]
+  },
+  {
+    "id": "44f47352-4457-4f5b-8124-e5e738260642",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 21:29:58",
+    "total_before_discount": 3.85,
+    "discount": 0,
+    "total": 3.85,
+    "vat": 0.64,
+    "net": 3.21,
+    "fees": 0.04,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "bf37af34-6078-44ef-89af-3275013e64e6",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:29:58",
+        "amount": 3.85,
+        "fees": 0.04,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TNFHQ3ZAKE"
+      }
+    ]
+  },
+  {
+    "id": "6c9b0371-1b7f-4633-80da-388452e502b7",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 21:30:56",
+    "total_before_discount": 7.37,
+    "discount": 0,
+    "total": 7.37,
+    "vat": 1.23,
+    "net": 6.14,
+    "fees": 0.07,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "cc9b7549-29e9-4033-a12b-b401b3b7344b",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:30:56",
+        "amount": 7.37,
+        "fees": 0.07,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TCSD93PFKN"
+      }
+    ]
+  },
+  {
+    "id": "77987837-d36c-4162-9daa-e21f2a9fa38d",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 21:33:43",
+    "total_before_discount": 11.9,
+    "discount": 1.78,
+    "total": 10.12,
+    "vat": 1.68,
+    "net": 8.44,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "f64c8ece-959e-4275-abc1-0b9fba77d154",
+        "method": "CASH",
+        "time": "2024-02-26 21:33:43",
+        "amount": 10.12,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "b0a6ed5d-3ce4-40fa-ad84-ccd1c36a70b0",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 21:34:11",
+    "total_before_discount": 9.67,
+    "discount": 1.46,
+    "total": 8.21,
+    "vat": 1.37,
+    "net": 6.84,
+    "fees": 0.08,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "757fa523-11df-4ee7-9624-dac1369f72bc",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:34:11",
+        "amount": 8.21,
+        "fees": 0.08,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TDA47PKVHR"
+      }
+    ]
+  },
+  {
+    "id": "1fdf7e37-7486-4da2-805a-3203a4b12e52",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 21:34:54",
+    "total_before_discount": 11.56,
+    "discount": 1.29,
+    "total": 10.27,
+    "vat": 1.7,
+    "net": 8.57,
+    "fees": 0.1,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "f7b3445f-7028-4383-a1d1-bcc5c9ac9e93",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:34:54",
+        "amount": 10.27,
+        "fees": 0.1,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TMTFKTAMF4"
+      }
+    ]
+  },
+  {
+    "id": "6d09f772-c8d0-4162-a669-4029c9894bdd",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 21:35:29",
+    "total_before_discount": 18.39,
+    "discount": 0,
+    "total": 18.39,
+    "vat": 3.06,
+    "net": 15.33,
+    "fees": 0.18,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "8d1cddca-ef97-4f68-bd11-77de249f1154",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:35:29",
+        "amount": 18.39,
+        "fees": 0.18,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDLH3UNFS6"
+      }
+    ]
+  },
+  {
+    "id": "c4050ef8-e7a9-4217-9200-4fcfdfbf7c0f",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 21:36:30",
+    "total_before_discount": 17.02,
+    "discount": 0,
+    "total": 17.02,
+    "vat": 2.84,
+    "net": 14.18,
+    "fees": 0.17,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "07fda51a-5d2a-4cee-b333-8abeb192f1a4",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:36:30",
+        "amount": 17.02,
+        "fees": 0.17,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TUEFYRP4LC"
+      }
+    ]
+  },
+  {
+    "id": "a5d84aac-3870-484a-8359-fd952eb06eb6",
+    "register": "Westview Bar",
+    "staff": "Ellie Clarke",
+    "time": "2024-02-26 21:37:52",
+    "total_before_discount": 17.35,
+    "discount": 0,
+    "total": 17.35,
+    "vat": 2.89,
+    "net": 14.46,
+    "fees": 0.17,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "630da4c6-b324-4186-a0d2-dc80309dde89",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:37:52",
+        "amount": 17.35,
+        "fees": 0.17,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDUSF93RNX"
+      }
+    ]
+  },
+  {
+    "id": "f0ce0c48-de02-4bdc-8df3-e6b48c749497",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 21:41:57",
+    "total_before_discount": 5.06,
+    "discount": 0.42,
+    "total": 4.64,
+    "vat": 0.77,
+    "net": 3.87,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "2a14c897-ed14-443d-abae-b89df8962e4b",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:41:56",
+        "amount": 4.64,
+        "fees": 0.05,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEDEZD229U"
+      }
+    ]
+  },
+  {
+    "id": "9a2dec22-c441-44c1-bd1a-fa21759b96d9",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 21:44:51",
+    "total_before_discount": 10.12,
+    "discount": 1.52,
+    "total": 8.6,
+    "vat": 1.43,
+    "net": 7.17,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "4c69a4ef-08f9-427b-82f9-6e4cd4fe50f9",
+        "method": "CASH",
+        "time": "2024-02-26 21:44:50",
+        "amount": 8.6,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "bcc2e578-a168-4e85-aa26-38103c077476",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 21:46:55",
+    "total_before_discount": 10.34,
+    "discount": 1.56,
+    "total": 8.78,
+    "vat": 1.46,
+    "net": 7.32,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "b82adc10-0791-42bc-9dc9-94827d901875",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:46:55",
+        "amount": 8.78,
+        "fees": 0.09,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEK2KZXH2N"
+      }
+    ]
+  },
+  {
+    "id": "26c66ca2-d3fb-40fd-982c-786872aab87a",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 21:47:52",
+    "total_before_discount": 5.29,
+    "discount": 0.79,
+    "total": 4.5,
+    "vat": 0.75,
+    "net": 3.75,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "959befb5-c353-44c5-a39a-ef0646813b3d",
+        "method": "CASH",
+        "time": "2024-02-26 21:47:51",
+        "amount": 4.5,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "637c6ed0-1d0f-4c57-9838-0451984fb084",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 21:52:34",
+    "total_before_discount": 5.7,
+    "discount": 0.68,
+    "total": 5.02,
+    "vat": 0.84,
+    "net": 4.18,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "591238ca-4e98-4aa3-b75f-bd5008aab36f",
+        "method": "SUMUP",
+        "time": "2024-02-26 21:52:34",
+        "amount": 5.02,
+        "fees": 0.05,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TVPAUYATVX"
+      }
+    ]
+  },
+  {
+    "id": "9d76ce38-7950-48e6-9e6f-7f9f853cc6f2",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 22:00:20",
+    "total_before_discount": 10.8,
+    "discount": 1.62,
+    "total": 9.18,
+    "vat": 1.52,
+    "net": 7.66,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "b1c47dd0-4ddf-4fe4-aefd-fa58fd46e5cf",
+        "method": "SUMUP",
+        "time": "2024-02-26 22:00:20",
+        "amount": 9.18,
+        "fees": 0.09,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "T4XFKTFPM7"
+      }
+    ]
+  },
+  {
+    "id": "32d46b38-56e7-45ed-90d5-eaabfee32974",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 22:05:26",
+    "total_before_discount": 1.2,
+    "discount": 0,
+    "total": 1.2,
+    "vat": 0.2,
+    "net": 1,
+    "fees": 0.01,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "ca0c037d-0c51-4c5e-b6b4-51e3939a8307",
+        "method": "SUMUP",
+        "time": "2024-02-26 22:05:26",
+        "amount": 1.2,
+        "fees": 0.01,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TEENPYZNCF"
+      }
+    ]
+  },
+  {
+    "id": "0f47e831-b97c-47e1-9b3f-b2879c310f5f",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 22:12:34",
+    "total_before_discount": 3.9,
+    "discount": 0.41,
+    "total": 3.49,
+    "vat": 0.58,
+    "net": 2.91,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "235162d6-0114-4307-88dd-65ec0fcda36c",
+        "method": "CASH",
+        "time": "2024-02-26 22:09:36",
+        "amount": 3.49,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "89c9bba5-ceaa-43e9-96d9-fd25b149e392",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-26 22:13:07",
+    "total_before_discount": 9.41,
+    "discount": 1.23,
+    "total": 8.18,
+    "vat": 1.36,
+    "net": 6.82,
+    "fees": 0.08,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "adbf904f-4bd4-4f13-86c2-0131f135d0d9",
+        "method": "SUMUP",
+        "time": "2024-02-26 22:13:07",
+        "amount": 8.18,
+        "fees": 0.08,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TFG4FT9UCM"
+      }
+    ]
+  },
+  {
+    "id": "f2d165bf-83b3-4464-8a26-97c6c7aadb17",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 22:27:13",
+    "total_before_discount": 7.91,
+    "discount": 1.19,
+    "total": 6.72,
+    "vat": 1.12,
+    "net": 5.6,
+    "fees": 0.07,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "a565c9ec-72db-46ec-b22a-39a535ff05a2",
+        "method": "SUMUP",
+        "time": "2024-02-26 22:27:13",
+        "amount": 6.72,
+        "fees": 0.07,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDSPYSZRRT"
+      }
+    ]
+  },
+  {
+    "id": "5511c21d-1f77-402c-8089-066f36b6625b",
+    "register": "Members Bar",
+    "staff": "Juliette Clarke",
+    "time": "2024-02-26 22:30:26",
+    "total_before_discount": 19.74,
+    "discount": 0,
+    "total": 19.74,
+    "vat": 3.28,
+    "net": 16.46,
+    "fees": 0.2,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "5330114c-e10a-4eef-b754-52ab4e47f2ad",
+        "method": "SUMUP",
+        "time": "2024-02-26 22:30:26",
+        "amount": 19.74,
+        "fees": 0.2,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TELPV6P64M"
+      }
+    ]
+  }
+]

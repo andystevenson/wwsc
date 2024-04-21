@@ -1,0 +1,1662 @@
+[
+  {
+    "id": "b11c6fcf-05da-401d-8c55-89950847d661",
+    "register": "Westview Bar",
+    "staff": "Lillian Little",
+    "time": "2024-02-22 13:44:52",
+    "total_before_discount": 30.62,
+    "discount": 0,
+    "total": 30.62,
+    "vat": 5.1,
+    "net": 25.52,
+    "fees": 0.3,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "ad0e3b49-1a21-4cb7-9d4f-4533b0a56b76",
+        "method": "SUMUP",
+        "time": "2024-02-22 13:44:52",
+        "amount": 30.62,
+        "fees": 0.3,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDTHG7HL3D"
+      }
+    ]
+  },
+  {
+    "id": "412c20ca-cf54-457e-94f6-5ae63f222087",
+    "register": "Members Bar",
+    "staff": "Dave Gillett",
+    "time": "2024-02-22 16:57:31",
+    "total_before_discount": 4.95,
+    "discount": 0.74,
+    "total": 4.21,
+    "vat": 0.7,
+    "net": 3.51,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "acfc1016-dfc1-4606-9712-3296cc634921",
+        "method": "CASH",
+        "time": "2024-02-22 16:35:30",
+        "amount": 4.21,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "9e6fb2dd-6cab-4ab6-b8c8-aa03293fe5ae",
+    "register": "Westview Bar",
+    "staff": "Lillian Little",
+    "time": "2024-02-22 17:15:13",
+    "total_before_discount": 334.21,
+    "discount": 0,
+    "total": 334.21,
+    "vat": 55.65,
+    "net": 278.56,
+    "fees": 3.31,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "267fca87-efea-491a-9b67-5c78625ac573",
+        "method": "SUMUP",
+        "time": "2024-02-22 17:15:13",
+        "amount": 334.21,
+        "fees": 3.31,
+        "card": "VISA",
+        "entry": "chip",
+        "transaction_code": "TDUTNSZTSS"
+      }
+    ]
+  },
+  {
+    "id": "2cbefcb8-b437-48d5-ab03-3ae9820b5424",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 17:29:44",
+    "total_before_discount": 4.95,
+    "discount": 0.74,
+    "total": 4.21,
+    "vat": 0.7,
+    "net": 3.51,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "cd36a5b5-eba8-4b8a-b898-d048878509fe",
+        "method": "CASH",
+        "time": "2024-02-22 17:29:44",
+        "amount": 4.21,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "a3756499-b71e-422f-b004-5bf530065a94",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 17:32:35",
+    "total_before_discount": 1.75,
+    "discount": 0.26,
+    "total": 1.49,
+    "vat": 0.25,
+    "net": 1.24,
+    "fees": 0.01,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "f78568f1-61aa-4839-83bf-f588d85c2d41",
+        "method": "SUMUP",
+        "time": "2024-02-22 17:32:35",
+        "amount": 1.49,
+        "fees": 0.01,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TS3ZK3DS9R"
+      }
+    ]
+  },
+  {
+    "id": "43f88e39-59c5-4da9-9554-9d76e1b2a5d3",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 17:35:41",
+    "total_before_discount": 11.8,
+    "discount": 1.62,
+    "total": 10.18,
+    "vat": 1.69,
+    "net": 8.49,
+    "fees": 0.1,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "2fb3d569-ecdf-4383-9f88-4a7d944704c0",
+        "method": "SUMUP",
+        "time": "2024-02-22 17:35:41",
+        "amount": 10.18,
+        "fees": 0.1,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TEY9FGFKGH"
+      }
+    ]
+  },
+  {
+    "id": "15b3da61-9dac-4eee-ae14-5745ddd76051",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 17:36:54",
+    "total_before_discount": 4.25,
+    "discount": 0.64,
+    "total": 3.61,
+    "vat": 0.6,
+    "net": 3.01,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "884a9bcc-da25-4dff-87a9-b2e40ee9a5ac",
+        "method": "CASH",
+        "time": "2024-02-22 17:36:53",
+        "amount": 3.61,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "70f718ce-f1c6-4224-b5f1-c0c1d6307360",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 17:47:14",
+    "total_before_discount": 9.9,
+    "discount": 1.48,
+    "total": 8.42,
+    "vat": 1.4,
+    "net": 7.02,
+    "fees": 0.08,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "e6e7ce05-fac0-4b14-bfb6-0915334a941d",
+        "method": "SUMUP",
+        "time": "2024-02-22 17:47:14",
+        "amount": 8.42,
+        "fees": 0.08,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCVSL4ANHQ"
+      }
+    ]
+  },
+  {
+    "id": "1befd78c-9a09-425f-b813-d3b5318cef43",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 17:53:20",
+    "total_before_discount": 2.5,
+    "discount": 0,
+    "total": 2.5,
+    "vat": 0.42,
+    "net": 2.08,
+    "fees": 0.02,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "6b4c20aa-0bfd-4f16-bd46-94720e1e1574",
+        "method": "SUMUP",
+        "time": "2024-02-22 17:53:20",
+        "amount": 2.5,
+        "fees": 0.02,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCE6CCTT2N"
+      }
+    ]
+  },
+  {
+    "id": "7bb2b436-46ec-4795-9a6a-ef9f07f71c2e",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 17:59:26",
+    "total_before_discount": 26.9,
+    "discount": 0,
+    "total": 26.9,
+    "vat": 4.48,
+    "net": 22.42,
+    "fees": 0.27,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "a917fd2d-6754-4f9b-86c4-8448253cda89",
+        "method": "SUMUP",
+        "time": "2024-02-22 17:59:26",
+        "amount": 26.9,
+        "fees": 0.27,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TC6N3XG9L6"
+      }
+    ]
+  },
+  {
+    "id": "2e054590-abc2-4b24-94b5-91445d3b11b8",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:05:37",
+    "total_before_discount": 31.45,
+    "discount": 0.23,
+    "total": 31.22,
+    "vat": 5.21,
+    "net": 26.01,
+    "fees": 0.31,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "a5bc8052-561a-4f70-b82c-d5cc175473f1",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:05:37",
+        "amount": 31.22,
+        "fees": 0.31,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TE3PFQFL69"
+      }
+    ]
+  },
+  {
+    "id": "bb9de4f2-134a-42b8-acbb-7c109061e8d4",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:09:02",
+    "total_before_discount": 2.5,
+    "discount": 0,
+    "total": 2.5,
+    "vat": 0.42,
+    "net": 2.08,
+    "fees": 0.02,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "1efe009a-aeb6-4c79-93d9-908f6041a1d4",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:09:02",
+        "amount": 2.5,
+        "fees": 0.02,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TFP4S7M37S"
+      }
+    ]
+  },
+  {
+    "id": "83762155-b208-41b9-a764-f6e062ccd616",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:09:55",
+    "total_before_discount": 4.95,
+    "discount": 0.74,
+    "total": 4.21,
+    "vat": 0.7,
+    "net": 3.51,
+    "fees": 0.04,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "3702f596-a421-4c30-802b-d4c62228529d",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:09:55",
+        "amount": 4.21,
+        "fees": 0.04,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCSV2X7VT7"
+      }
+    ]
+  },
+  {
+    "id": "ddc5ef28-0bdf-47b0-901a-79dbf90665a3",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:13:30",
+    "total_before_discount": 9.9,
+    "discount": 1.48,
+    "total": 8.42,
+    "vat": 1.4,
+    "net": 7.02,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "1bd5aa61-b853-4101-8ef1-e2f285fde28b",
+        "method": "CASH",
+        "time": "2024-02-22 18:12:39",
+        "amount": 8.42,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "10ea49af-ac8b-4bfb-9da8-c0460f3a84f7",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:14:21",
+    "total_before_discount": 4.25,
+    "discount": 0.64,
+    "total": 3.61,
+    "vat": 0.6,
+    "net": 3.01,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "c5498bd0-7801-4627-9d86-69a368a5566f",
+        "method": "CASH",
+        "time": "2024-02-22 18:14:21",
+        "amount": 3.61,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "46923467-b4dc-43a2-a468-a67848a39268",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 18:19:55",
+    "total_before_discount": 10.5,
+    "discount": 0,
+    "total": 10.5,
+    "vat": 1.74,
+    "net": 8.76,
+    "fees": 0.1,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "ed920cac-c752-41dd-861d-ee93d0a3aadd",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:19:55",
+        "amount": 10.5,
+        "fees": 0.1,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "T2GUAZNNKX"
+      }
+    ]
+  },
+  {
+    "id": "dfcf47f9-89aa-42cc-9a3c-762eec8b05e9",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:20:47",
+    "total_before_discount": 20.52,
+    "discount": 1.59,
+    "total": 18.93,
+    "vat": 3.15,
+    "net": 15.78,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "aaa89959-f6d6-4944-b605-fcf84fa37dac",
+        "method": "CASH",
+        "time": "2024-02-22 18:20:46",
+        "amount": 18.93,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "736c25d0-4e28-437e-9cb8-48503c2b44b3",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:24:03",
+    "total_before_discount": 9.9,
+    "discount": 1.48,
+    "total": 8.42,
+    "vat": 1.4,
+    "net": 7.02,
+    "fees": 0.08,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "c632d4df-6730-42d1-9d3d-a661e3e760cc",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:24:03",
+        "amount": 8.42,
+        "fees": 0.08,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEDSEPZPLP"
+      }
+    ]
+  },
+  {
+    "id": "e267372e-67ba-4217-b2bd-539cf29b4d08",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:25:37",
+    "total_before_discount": 10.34,
+    "discount": 1.56,
+    "total": 8.78,
+    "vat": 1.46,
+    "net": 7.32,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "38340fbf-77f7-4f4e-856d-6759cb2b8e47",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:25:37",
+        "amount": 8.78,
+        "fees": 0.09,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TXUEPFC437"
+      }
+    ]
+  },
+  {
+    "id": "92ef9244-5b80-444a-82ca-543ae5adc71a",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:31:43",
+    "total_before_discount": 23.2,
+    "discount": 2.51,
+    "total": 20.69,
+    "vat": 3.44,
+    "net": 17.25,
+    "fees": 0.2,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "d3b5ecf6-7ef4-4045-8189-1c77d4c18957",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:31:43",
+        "amount": 20.69,
+        "fees": 0.2,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TDVEFD2ZU6"
+      }
+    ]
+  },
+  {
+    "id": "8af2c3e1-7871-49c6-a04a-69576e37dc4d",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:35:22",
+    "total_before_discount": 5.95,
+    "discount": 0,
+    "total": 5.95,
+    "vat": 0.99,
+    "net": 4.96,
+    "fees": 0.06,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "7275654c-93d5-4204-9d4c-c58a9415f292",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:35:22",
+        "amount": 5.95,
+        "fees": 0.06,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TCHGKCCGYD"
+      }
+    ]
+  },
+  {
+    "id": "c70d956c-26a6-4666-8d4a-05a02519f21c",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:37:07",
+    "total_before_discount": 9.9,
+    "discount": 1.48,
+    "total": 8.42,
+    "vat": 1.4,
+    "net": 7.02,
+    "fees": 0.14,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "8a86797b-d146-42c0-897f-b9b670e73bc1",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:37:07",
+        "amount": 8.42,
+        "fees": 0.14,
+        "card": "AMEX",
+        "entry": "chip",
+        "transaction_code": "TD7NEG7LTL"
+      }
+    ]
+  },
+  {
+    "id": "7086a872-2a7a-4c47-a373-996d11de8ac4",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:38:53",
+    "total_before_discount": 9.9,
+    "discount": 1.48,
+    "total": 8.42,
+    "vat": 1.4,
+    "net": 7.02,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "498cd19b-c00d-478b-b158-67043a1263f6",
+        "method": "CASH",
+        "time": "2024-02-22 18:38:52",
+        "amount": 8.42,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "01720594-8847-468d-9e3f-8dc1b8ba6125",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:40:14",
+    "total_before_discount": 2.5,
+    "discount": 0,
+    "total": 2.5,
+    "vat": 0.42,
+    "net": 2.08,
+    "fees": 0.02,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "d3b1d8b7-e344-435f-8bbb-08a607ed6303",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:40:14",
+        "amount": 2.5,
+        "fees": 0.02,
+        "card": "VISA",
+        "entry": "chip",
+        "transaction_code": "TCCM7X26Z7"
+      }
+    ]
+  },
+  {
+    "id": "275643cb-bc1d-44f2-8aaf-0ffe4ae5923a",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:44:34",
+    "total_before_discount": 2.5,
+    "discount": 0,
+    "total": 2.5,
+    "vat": 0.42,
+    "net": 2.08,
+    "fees": 0.02,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "aee00cf1-81f0-442a-a92d-c35442d42ec8",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:44:34",
+        "amount": 2.5,
+        "fees": 0.02,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TDXAYAQLVF"
+      }
+    ]
+  },
+  {
+    "id": "46991a6f-df2b-4bf5-9643-698eb4a6f0e6",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:47:17",
+    "total_before_discount": 7.98,
+    "discount": 1.2,
+    "total": 6.78,
+    "vat": 1.13,
+    "net": 5.65,
+    "fees": 0.07,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "9c39733a-a458-4f34-b7f3-2ffe1f89dbe3",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:47:17",
+        "amount": 6.78,
+        "fees": 0.07,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDSY6Q26XQ"
+      }
+    ]
+  },
+  {
+    "id": "634715f2-879a-42dc-90ba-fe17c758aec4",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:49:48",
+    "total_before_discount": 8.95,
+    "discount": 0,
+    "total": 8.95,
+    "vat": 1.49,
+    "net": 7.46,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "f2ede20d-2376-47c6-9096-acdaed1dca9f",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:49:48",
+        "amount": 8.95,
+        "fees": 0.09,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDGQGGY39C"
+      }
+    ]
+  },
+  {
+    "id": "b9ddce9a-1bb9-4d6c-92c4-3f9b895056df",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:52:22",
+    "total_before_discount": 11.9,
+    "discount": 1.78,
+    "total": 10.12,
+    "vat": 1.68,
+    "net": 8.44,
+    "fees": 0.1,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "088231da-1053-48a9-882a-c1e1b7dd3646",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:52:22",
+        "amount": 10.12,
+        "fees": 0.1,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TD36UPSVD7"
+      }
+    ]
+  },
+  {
+    "id": "b1f23e0a-759f-4fed-8ccb-fe46c50f00bb",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:55:11",
+    "total_before_discount": 20.9,
+    "discount": 0,
+    "total": 20.9,
+    "vat": 3.48,
+    "net": 17.42,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "34552c2f-5c9f-4daf-b7e3-faf8b093aeeb",
+        "method": "VOUCHER",
+        "time": "2024-02-22 18:55:11",
+        "amount": 20.9,
+        "fees": 0,
+        "card": "VOUCHER",
+        "entry": "",
+        "transaction_code": "Gartenfeld004151"
+      }
+    ]
+  },
+  {
+    "id": "fb7fc453-8a75-4d1e-9e9b-56d2812421fc",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 18:57:47",
+    "total_before_discount": 3.5,
+    "discount": 0,
+    "total": 3.5,
+    "vat": 0.58,
+    "net": 2.92,
+    "fees": 0.03,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "88e16645-0a9a-4e52-aeef-29518708766b",
+        "method": "SUMUP",
+        "time": "2024-02-22 18:57:47",
+        "amount": 3.5,
+        "fees": 0.03,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TD9C9SXVXK"
+      }
+    ]
+  },
+  {
+    "id": "59cd31fc-0286-4625-b410-63e96d2979eb",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 19:00:43",
+    "total_before_discount": 9.9,
+    "discount": 1.48,
+    "total": 8.42,
+    "vat": 1.4,
+    "net": 7.02,
+    "fees": 0.08,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "bf71a1bb-818d-4d8c-a4b3-aa5b2e030639",
+        "method": "SUMUP",
+        "time": "2024-02-22 19:00:43",
+        "amount": 8.42,
+        "fees": 0.08,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "T4F2VSXSPZ"
+      }
+    ]
+  },
+  {
+    "id": "fedd119b-e624-4d19-8de7-b6d0d31d0e14",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 19:05:34",
+    "total_before_discount": 10.84,
+    "discount": 0,
+    "total": 10.84,
+    "vat": 1.8,
+    "net": 9.04,
+    "fees": 0.11,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "a3d83946-7231-4000-b14c-8bed715577b5",
+        "method": "SUMUP",
+        "time": "2024-02-22 19:05:34",
+        "amount": 10.84,
+        "fees": 0.11,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCMUHXTTG3"
+      }
+    ]
+  },
+  {
+    "id": "4b909931-2337-44ae-ab97-e3b9d72f0ded",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 19:06:35",
+    "total_before_discount": 1.5,
+    "discount": 0,
+    "total": 1.5,
+    "vat": 0.25,
+    "net": 1.25,
+    "fees": 0.01,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "c7cb3e45-0d11-438f-b234-9c4ff5b763af",
+        "method": "SUMUP",
+        "time": "2024-02-22 19:06:35",
+        "amount": 1.5,
+        "fees": 0.01,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TC97XFR4F7"
+      }
+    ]
+  },
+  {
+    "id": "2f202114-f063-4e6b-bc0f-159f77f5247b",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 19:17:44",
+    "total_before_discount": 20.2,
+    "discount": 3.04,
+    "total": 17.16,
+    "vat": 2.85,
+    "net": 14.31,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "3e158c66-622d-4759-b8c2-d1683b7401be",
+        "method": "VOUCHER",
+        "time": "2024-02-22 19:17:44",
+        "amount": 17.16,
+        "fees": 0,
+        "card": "VOUCHER",
+        "entry": "",
+        "transaction_code": "Gartenfeld004151"
+      }
+    ]
+  },
+  {
+    "id": "caa4cf81-a6a6-4285-8318-a25a4eb43e27",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 19:18:14",
+    "total_before_discount": 15.51,
+    "discount": 2.34,
+    "total": 13.17,
+    "vat": 2.19,
+    "net": 10.98,
+    "fees": 0.13,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "f1281c2a-3e08-4902-b205-ff995df9706e",
+        "method": "SUMUP",
+        "time": "2024-02-22 19:18:14",
+        "amount": 13.17,
+        "fees": 0.13,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEDHVRNEH9"
+      }
+    ]
+  },
+  {
+    "id": "3e898e36-2992-4d80-ba99-f442e7f64fa9",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 19:20:47",
+    "total_before_discount": 9.9,
+    "discount": 0,
+    "total": 9.9,
+    "vat": 1.64,
+    "net": 8.26,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "e39805b7-0ed2-422e-835f-7a15b59b19b9",
+        "method": "CASH",
+        "time": "2024-02-22 19:19:28",
+        "amount": 9.9,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "1f2aa395-9af1-4225-b0b3-2eae7cc4b8f3",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 19:21:57",
+    "total_before_discount": 1.75,
+    "discount": 0.26,
+    "total": 1.49,
+    "vat": 0.25,
+    "net": 1.24,
+    "fees": 0.01,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "b92dc953-1966-4d9c-b4f9-ec41f6fe5eb0",
+        "method": "SUMUP",
+        "time": "2024-02-22 19:21:57",
+        "amount": 1.49,
+        "fees": 0.01,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEYCF42D92"
+      }
+    ]
+  },
+  {
+    "id": "143e651b-8970-4dad-88c8-84dcaf1f1f92",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 19:27:09",
+    "total_before_discount": 16.9,
+    "discount": 0,
+    "total": 16.9,
+    "vat": 2.81,
+    "net": 14.09,
+    "fees": 0.17,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "9d49a80a-39cf-4514-9214-143312334364",
+        "method": "SUMUP",
+        "time": "2024-02-22 19:27:09",
+        "amount": 16.9,
+        "fees": 0.17,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCUL4ZRSC2"
+      }
+    ]
+  },
+  {
+    "id": "a99e25d7-1738-48c1-ba3b-b5515fac8b5d",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 19:45:49",
+    "total_before_discount": 0,
+    "discount": 0,
+    "total": 0,
+    "vat": 0,
+    "net": 0,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "6bf9e683-20b0-4eac-8c0d-09a40aa0bf4e",
+        "method": "CASH",
+        "time": "2024-02-22 19:45:49",
+        "amount": 0,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "dff5bdfe-2606-45bf-b387-8a62f247662b",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 20:01:55",
+    "total_before_discount": 10.9,
+    "discount": 1.63,
+    "total": 9.27,
+    "vat": 1.54,
+    "net": 7.73,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "96136e9c-52b7-492c-8055-aa1dc8e6a6b0",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:01:55",
+        "amount": 9.27,
+        "fees": 0.09,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TFGTRUFMVM"
+      }
+    ]
+  },
+  {
+    "id": "5a28c1d7-db04-4fa3-a54c-9fe7a6272b7a",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:10:48",
+    "total_before_discount": 25.86,
+    "discount": 3.89,
+    "total": 21.97,
+    "vat": 3.65,
+    "net": 18.32,
+    "fees": 0.22,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "10c0f7ad-56d0-452b-8435-17612fe1029a",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:10:48",
+        "amount": 21.97,
+        "fees": 0.22,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TCZUU3GCLL"
+      }
+    ]
+  },
+  {
+    "id": "61f53433-65aa-4f92-8a3a-fb8eb5375523",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:12:40",
+    "total_before_discount": 13.85,
+    "discount": 2.08,
+    "total": 11.77,
+    "vat": 1.95,
+    "net": 9.82,
+    "fees": 0.12,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "0b6b2cb1-e50a-4a5b-a25f-05fbb125e056",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:12:40",
+        "amount": 11.77,
+        "fees": 0.12,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TCALKV2NDY"
+      }
+    ]
+  },
+  {
+    "id": "243f1486-490b-4485-b6e0-6671b34114aa",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:13:27",
+    "total_before_discount": 4.95,
+    "discount": 0.74,
+    "total": 4.21,
+    "vat": 0.7,
+    "net": 3.51,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "e02529fb-a566-4aaa-8bc9-fc2c7dc55142",
+        "method": "CASH",
+        "time": "2024-02-22 20:13:26",
+        "amount": 4.21,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "d024cf05-9c6a-424f-a664-11abe7ba3c35",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:15:45",
+    "total_before_discount": 14.07,
+    "discount": 2.12,
+    "total": 11.95,
+    "vat": 1.98,
+    "net": 9.97,
+    "fees": 0.12,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "c96a749d-ee3f-4ff8-bfe1-b666bd78619a",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:15:45",
+        "amount": 11.95,
+        "fees": 0.12,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TCTE6P7NES"
+      }
+    ]
+  },
+  {
+    "id": "87a728f6-5199-4f21-8441-531f56ba3a35",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:17:11",
+    "total_before_discount": 8.67,
+    "discount": 1.31,
+    "total": 7.36,
+    "vat": 1.22,
+    "net": 6.14,
+    "fees": 0.07,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "7753303f-bc59-4261-a6e9-f1a59ba73783",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:17:11",
+        "amount": 7.36,
+        "fees": 0.07,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TEMGL3ACKK"
+      }
+    ]
+  },
+  {
+    "id": "3b64a7b7-bebd-48c9-88b8-d627a283aace",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:21:23",
+    "total_before_discount": 4.95,
+    "discount": 0.74,
+    "total": 4.21,
+    "vat": 0.7,
+    "net": 3.51,
+    "fees": 0.04,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "570c837f-59c3-44f3-b578-ab4b6866d76d",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:21:23",
+        "amount": 4.21,
+        "fees": 0.04,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TD7TC46XDZ"
+      }
+    ]
+  },
+  {
+    "id": "d5f06bb4-a6af-40ae-adfe-a8a4ba322e16",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:22:33",
+    "total_before_discount": 14.9,
+    "discount": 0.74,
+    "total": 14.16,
+    "vat": 2.36,
+    "net": 11.8,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "cb6e6448-f36f-4ad4-9a51-073ef96b21ef",
+        "method": "CASH",
+        "time": "2024-02-22 20:22:32",
+        "amount": 14.16,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "3165f8ce-8d77-4749-a988-0ce8ec9f997a",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:24:57",
+    "total_before_discount": 2.85,
+    "discount": 0,
+    "total": 2.85,
+    "vat": 0.47,
+    "net": 2.38,
+    "fees": 0.03,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "b91e3362-deaa-4c14-a177-3d0909f55fa5",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:24:57",
+        "amount": 2.85,
+        "fees": 0.03,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TDRZ6MSN39"
+      }
+    ]
+  },
+  {
+    "id": "e8bcc1c6-6959-4fc7-a133-8babe5116eb8",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:25:58",
+    "total_before_discount": 5.25,
+    "discount": 0,
+    "total": 5.25,
+    "vat": 0.87,
+    "net": 4.38,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "8c8968ea-a447-4d8e-b23a-958d599d3cd3",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:25:58",
+        "amount": 5.25,
+        "fees": 0.05,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TFM2YZG2KU"
+      }
+    ]
+  },
+  {
+    "id": "6440d8d0-8840-4c0b-b049-d48f13b61242",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:30:30",
+    "total_before_discount": 5.5,
+    "discount": 0,
+    "total": 5.5,
+    "vat": 0.92,
+    "net": 4.58,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "0c9bfa5b-491b-468c-9ef4-e33a8c303ee5",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:30:30",
+        "amount": 5.5,
+        "fees": 0.05,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEKM3Z3967"
+      }
+    ]
+  },
+  {
+    "id": "73a11ff5-cfcd-4fb6-b4bc-5d31b54ecf8b",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:32:03",
+    "total_before_discount": 10.9,
+    "discount": 1.63,
+    "total": 9.27,
+    "vat": 1.54,
+    "net": 7.73,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "c27b43cb-6f42-446f-91cc-c76f5e2d42cd",
+        "method": "CASH",
+        "time": "2024-02-22 20:32:02",
+        "amount": 9.27,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "e1618f5a-6ba5-467c-aa6d-0d354b008c00",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:33:22",
+    "total_before_discount": 10.35,
+    "discount": 1.55,
+    "total": 8.8,
+    "vat": 1.46,
+    "net": 7.34,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "9f693e1c-efcc-42fb-b64f-c65095c2cce5",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:33:22",
+        "amount": 8.8,
+        "fees": 0.09,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TD2RAN7GGG"
+      }
+    ]
+  },
+  {
+    "id": "5942ac62-997c-45f2-9c19-160597c1cf5f",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 20:42:30",
+    "total_before_discount": 26.08,
+    "discount": 3.93,
+    "total": 22.15,
+    "vat": 3.68,
+    "net": 18.47,
+    "fees": 0.22,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "afe89449-745c-4f74-876c-c556f6be45a4",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:42:30",
+        "amount": 22.15,
+        "fees": 0.22,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TR3GYL2X3G"
+      }
+    ]
+  },
+  {
+    "id": "e4ffc983-8df8-461f-9228-aedd71b4fba5",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:44:16",
+    "total_before_discount": 7.75,
+    "discount": 1,
+    "total": 6.75,
+    "vat": 1.12,
+    "net": 5.63,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "5325b794-5340-4d47-95a2-35089cd9a505",
+        "method": "CASH",
+        "time": "2024-02-22 20:44:15",
+        "amount": 6.75,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "fa2812f7-2c6d-4d71-9dca-c73b0e2b5c01",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 20:49:12",
+    "total_before_discount": 10.57,
+    "discount": 1.59,
+    "total": 8.98,
+    "vat": 1.49,
+    "net": 7.49,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "6aec35fc-ba04-4cef-ae0f-5a0b645910ac",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:49:12",
+        "amount": 8.98,
+        "fees": 0.09,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDFKAENCR4"
+      }
+    ]
+  },
+  {
+    "id": "a42aab26-7da7-4683-b192-ae10184fb5a4",
+    "register": "Members Bar",
+    "staff": "Clare French",
+    "time": "2024-02-22 20:57:56",
+    "total_before_discount": 1,
+    "discount": 0,
+    "total": 1,
+    "vat": 0.17,
+    "net": 0.83,
+    "fees": 0.01,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "fcb0a564-4fbe-49cd-8a7d-bc0eb04e0fd4",
+        "method": "SUMUP",
+        "time": "2024-02-22 20:57:56",
+        "amount": 1,
+        "fees": 0.01,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TCQLHFXTAH"
+      }
+    ]
+  },
+  {
+    "id": "efa95da4-9503-499f-b205-8f698b816b2d",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 21:10:24",
+    "total_before_discount": 30.36,
+    "discount": 4.56,
+    "total": 25.8,
+    "vat": 4.29,
+    "net": 21.51,
+    "fees": 0.26,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "ad2762b3-e5e6-4934-9dab-21552721d6d0",
+        "method": "SUMUP",
+        "time": "2024-02-22 21:10:24",
+        "amount": 25.8,
+        "fees": 0.26,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEGYCL77PP"
+      }
+    ]
+  },
+  {
+    "id": "31ad7ec3-46f3-4dd7-b10c-df398d8d0a8f",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 21:11:38",
+    "total_before_discount": 10.9,
+    "discount": 1.63,
+    "total": 9.27,
+    "vat": 1.54,
+    "net": 7.73,
+    "fees": 0.09,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "b82cea75-5ea7-4c3d-b462-634713ef8dbb",
+        "method": "SUMUP",
+        "time": "2024-02-22 21:11:38",
+        "amount": 9.27,
+        "fees": 0.09,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDNUNH7ZUE"
+      }
+    ]
+  },
+  {
+    "id": "47aec16c-65f2-4b9a-88df-3ce96a5bde81",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 21:12:39",
+    "total_before_discount": 5.17,
+    "discount": 0.78,
+    "total": 4.39,
+    "vat": 0.73,
+    "net": 3.66,
+    "fees": 0.04,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "a6237042-449f-4c77-8f38-9017782c2ead",
+        "method": "SUMUP",
+        "time": "2024-02-22 21:12:39",
+        "amount": 4.39,
+        "fees": 0.04,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TCESCEK9L4"
+      }
+    ]
+  },
+  {
+    "id": "5074d248-45d0-442c-9f01-4486db8ddc88",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 21:22:30",
+    "total_before_discount": 5.17,
+    "discount": 0.78,
+    "total": 4.39,
+    "vat": 0.73,
+    "net": 3.66,
+    "fees": 0.04,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "d721bc05-5dc3-43a9-9999-adb4943999d5",
+        "method": "SUMUP",
+        "time": "2024-02-22 21:22:30",
+        "amount": 4.39,
+        "fees": 0.04,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEZHHTNTKG"
+      }
+    ]
+  },
+  {
+    "id": "19874315-6303-4b33-b951-dab90c05f77b",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 21:36:25",
+    "total_before_discount": 8.06,
+    "discount": 1.21,
+    "total": 6.85,
+    "vat": 1.14,
+    "net": 5.71,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "267ffb25-f5a2-40ab-ac38-00b388becff2",
+        "method": "CASH",
+        "time": "2024-02-22 21:36:24",
+        "amount": 6.85,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "a6958a54-ae01-49a7-91b9-686691fdffb6",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 21:47:31",
+    "total_before_discount": 10.9,
+    "discount": 1.63,
+    "total": 9.27,
+    "vat": 1.54,
+    "net": 7.73,
+    "fees": 0,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "09cd721e-969b-4a1a-b6b4-41754fccfacd",
+        "method": "CASH",
+        "time": "2024-02-22 21:47:30",
+        "amount": 9.27,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "e75d9548-eb9e-4c84-ac15-007cda0e0274",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 21:50:45",
+    "total_before_discount": 20.46,
+    "discount": 3.08,
+    "total": 17.38,
+    "vat": 2.89,
+    "net": 14.49,
+    "fees": 0.17,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "61c4da8b-568e-49f5-b57c-4c1951e19fba",
+        "method": "SUMUP",
+        "time": "2024-02-22 21:50:45",
+        "amount": 17.38,
+        "fees": 0.17,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TD2GG4NHLZ"
+      }
+    ]
+  },
+  {
+    "id": "5d78a53b-108c-4a81-b4af-99ac85bde1b3",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 21:56:33",
+    "total_before_discount": 8.06,
+    "discount": 1.21,
+    "total": 6.85,
+    "vat": 1.14,
+    "net": 5.71,
+    "fees": 0.07,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "7ebb40ad-37d5-4330-8eaf-b7ebed842319",
+        "method": "SUMUP",
+        "time": "2024-02-22 21:56:33",
+        "amount": 6.85,
+        "fees": 0.07,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TD6HVVGNS6"
+      }
+    ]
+  },
+  {
+    "id": "30a1c415-c9ed-449d-adb4-3e83b93c7bba",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 22:14:13",
+    "total_before_discount": 20.46,
+    "discount": 3.08,
+    "total": 17.38,
+    "vat": 2.89,
+    "net": 14.49,
+    "fees": 0.17,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "4ec67b72-46ed-440d-898b-7207b4ccc347",
+        "method": "SUMUP",
+        "time": "2024-02-22 22:14:13",
+        "amount": 17.38,
+        "fees": 0.17,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TELFA7PHXG"
+      }
+    ]
+  },
+  {
+    "id": "48042a97-6a34-41ce-99ba-67e60240b082",
+    "register": "Members Bar",
+    "staff": "Peter Finlan",
+    "time": "2024-02-22 22:54:46",
+    "total_before_discount": 35.8,
+    "discount": 2.08,
+    "total": 33.72,
+    "vat": 5.6,
+    "net": 28.12,
+    "fees": 0.34,
+    "refunds": 0,
+    "payments": [
+      {
+        "id": "449941e4-2def-4514-825b-a1249c43ad36",
+        "method": "SUMUP",
+        "time": "2024-02-22 22:54:31",
+        "amount": 16.86,
+        "fees": 0.17,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TDR4FMHHT4"
+      },
+      {
+        "id": "0f0cf565-5b6b-46d0-92e6-16e34810fd52",
+        "method": "SUMUP",
+        "time": "2024-02-22 22:54:46",
+        "amount": 16.86,
+        "fees": 0.17,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TDLHT63ESR"
+      }
+    ]
+  }
+]

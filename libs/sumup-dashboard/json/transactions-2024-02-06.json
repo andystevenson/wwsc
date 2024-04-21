@@ -1,0 +1,2020 @@
+{
+  "transactions": [
+    {
+      "amount": 2.97,
+      "auth_code": "Lv214R",
+      "card": {
+        "last_4_digits": "0176",
+        "type": "MASTERCARD"
+      },
+      "client_transaction_id": "AF697A91-EC66-429D-B7E0-D2C651D147DC-248-00000265B9403FC4",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 2.94,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.03,
+          "id": 5569665044,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec504d-4915-6025-9f82-4703a158d3af",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-7971bb1a-30e2-4a03-88d1-ca6d32902e3d1707233499",
+      "horizontal_accuracy": 35,
+      "id": "1eec504d-4915-6025-9f82-4703a158d3af",
+      "installments_count": 1,
+      "internal_id": 5872273955,
+      "lat": 52.4291950243912,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec504d-4915-6025-9f82-4703a158d3af?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec504d-4915-6025-9f82-4703a158d3af?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec504d-4915-6025-9f82-4703a158d3af?merchant_code=MEZ296TE",
+          "max_amount": 2.97,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T15:31:43.235+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291950243912,
+        "lon": -1.80688361597229
+      },
+      "lon": -1.80688361597229,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 2.97,
+          "quantity": 1,
+          "total_price": 2.97
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T15:31:43.235Z",
+      "tip_amount": 0,
+      "transaction_code": "TDKA47FZAL",
+      "transaction_events": [
+        {
+          "amount": 2.94,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5569665044,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T15:32:02.332Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec504d-4915-6025-9f82-4703a158d3af",
+        "transaction_code": "TDKA47FZAL",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T15:31:43.235Z",
+        "type": "PAYMENT",
+        "amount": 2.97,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 5,
+      "auth_code": "QYC8IP",
+      "card": {
+        "last_4_digits": "5505",
+        "type": "MASTERCARD"
+      },
+      "client_transaction_id": "49E68B5D-2BFA-4D93-8F57-1010E3A5BD5A-248-00000275B6C7F22A",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 4.95,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.05,
+          "id": 5569888190,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec50b7-e122-610b-b2df-1a68a12e5c29",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-46e4c3b7-80f7-4a0b-aed1-116785cc0e661707236358",
+      "horizontal_accuracy": 35,
+      "id": "1eec50b7-e122-610b-b2df-1a68a12e5c29",
+      "installments_count": 1,
+      "internal_id": 5872524637,
+      "lat": 52.4291381835938,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec50b7-e122-610b-b2df-1a68a12e5c29?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec50b7-e122-610b-b2df-1a68a12e5c29?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec50b7-e122-610b-b2df-1a68a12e5c29?merchant_code=MEZ296TE",
+          "max_amount": 5,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T16:19:24.582+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291381835938,
+        "lon": -1.80681665454909
+      },
+      "lon": -1.80681665454909,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 5,
+          "quantity": 1,
+          "total_price": 5
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T16:19:24.582Z",
+      "tip_amount": 0,
+      "transaction_code": "T7FF3H2KXT",
+      "transaction_events": [
+        {
+          "amount": 4.95,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5569888190,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T16:19:52.408Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec50b7-e122-610b-b2df-1a68a12e5c29",
+        "transaction_code": "T7FF3H2KXT",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T16:19:24.582Z",
+        "type": "PAYMENT",
+        "amount": 5,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 10.11,
+      "auth_code": "006101",
+      "card": {
+        "last_4_digits": "6972",
+        "type": "VISA"
+      },
+      "client_transaction_id": "3110C5CC-9452-4A37-AF90-EAD47AFD82AC-248-000002805CB64305",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 10.01,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.1,
+          "id": 5570031590,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec50fe-dd14-6ce0-83d9-116976709e54",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-b7252f90-c893-4a4a-a9b7-55f8181299551707238265",
+      "horizontal_accuracy": 35,
+      "id": "1eec50fe-dd14-6ce0-83d9-116976709e54",
+      "installments_count": 1,
+      "internal_id": 5872686695,
+      "lat": 52.4291381835938,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec50fe-dd14-6ce0-83d9-116976709e54?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec50fe-dd14-6ce0-83d9-116976709e54?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec50fe-dd14-6ce0-83d9-116976709e54?merchant_code=MEZ296TE",
+          "max_amount": 10.11,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T16:51:10.046+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291381835938,
+        "lon": -1.80682291114411
+      },
+      "lon": -1.80682291114411,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 10.11,
+          "quantity": 1,
+          "total_price": 10.11
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T16:51:10.046Z",
+      "tip_amount": 0,
+      "transaction_code": "TCT99L3M73",
+      "transaction_events": [
+        {
+          "amount": 10.01,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570031590,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T16:51:32.317Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec50fe-dd14-6ce0-83d9-116976709e54",
+        "transaction_code": "TCT99L3M73",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T16:51:10.046Z",
+        "type": "PAYMENT",
+        "amount": 10.11,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 2.25,
+      "auth_code": "003011",
+      "card": {
+        "last_4_digits": "2184",
+        "type": "VISA"
+      },
+      "client_transaction_id": "548413E2-B8D8-41DE-8473-B0992A4A08C3-248-000002870836D65F",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 2.23,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.02,
+          "id": 5570119912,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec512b-5400-600d-bce8-a3983e2d95a3",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-3612bb2f-7ceb-4b4c-bb7d-d740310682211707239462",
+      "horizontal_accuracy": 35,
+      "id": "1eec512b-5400-600d-bce8-a3983e2d95a3",
+      "installments_count": 1,
+      "internal_id": 5872787138,
+      "lat": 52.4292032101995,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec512b-5400-600d-bce8-a3983e2d95a3?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec512b-5400-600d-bce8-a3983e2d95a3?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec512b-5400-600d-bce8-a3983e2d95a3?merchant_code=MEZ296TE",
+          "max_amount": 2.25,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T17:11:03.644+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4292032101995,
+        "lon": -1.80689707480739
+      },
+      "lon": -1.80689707480739,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 2.25,
+          "quantity": 1,
+          "total_price": 2.25
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T17:11:03.644Z",
+      "tip_amount": 0,
+      "transaction_code": "TFAQ7HCEMU",
+      "transaction_events": [
+        {
+          "amount": 2.23,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570119912,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T17:11:12.291Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec512b-5400-600d-bce8-a3983e2d95a3",
+        "transaction_code": "TFAQ7HCEMU",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T17:11:03.644Z",
+        "type": "PAYMENT",
+        "amount": 2.25,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 2.5,
+      "auth_code": "006590",
+      "card": {
+        "last_4_digits": "2521",
+        "type": "VISA"
+      },
+      "client_transaction_id": "6A807F50-260C-423F-AC8C-9622036517A0-248-00000289910F3C83",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 2.48,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.02,
+          "id": 5570153019,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec513c-3987-6caf-ae22-f4483e89c0a2",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-96997c6f-9417-4299-b2e7-a6ceb6f607361707239912",
+      "horizontal_accuracy": 35,
+      "id": "1eec513c-3987-6caf-ae22-f4483e89c0a2",
+      "installments_count": 1,
+      "internal_id": 5872823776,
+      "lat": 52.4291967553641,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec513c-3987-6caf-ae22-f4483e89c0a2?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec513c-3987-6caf-ae22-f4483e89c0a2?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec513c-3987-6caf-ae22-f4483e89c0a2?merchant_code=MEZ296TE",
+          "max_amount": 2.5,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T17:18:37.219+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291967553641,
+        "lon": -1.80688715936076
+      },
+      "lon": -1.80688715936076,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 2.5,
+          "quantity": 1,
+          "total_price": 2.5
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T17:18:37.219Z",
+      "tip_amount": 0,
+      "transaction_code": "TDKN7Z47PV",
+      "transaction_events": [
+        {
+          "amount": 2.48,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570153019,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T17:18:52.309Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec513c-3987-6caf-ae22-f4483e89c0a2",
+        "transaction_code": "TDKN7Z47PV",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T17:18:37.219Z",
+        "type": "PAYMENT",
+        "amount": 2.5,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 5.4,
+      "client_transaction_id": "20FBBBED-E242-4E9F-AB37-ADFD31DD1F04-248-0000028D098FA8FA",
+      "currency": "GBP",
+      "entry_mode": "na",
+      "foreign_transaction_id": "gtc-da57ec81-c2e4-4350-841c-4ce80482d5561707240533",
+      "horizontal_accuracy": 35,
+      "id": "1eec5153-5c52-6cf6-b89d-5c852d6aae02",
+      "installments_count": 1,
+      "internal_id": 5872873684,
+      "lat": 52.4291917861011,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5153-5c52-6cf6-b89d-5c852d6aae02?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5153-5c52-6cf6-b89d-5c852d6aae02?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        }
+      ],
+      "local_time": "2024-02-06T17:28:58.250+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291917861011,
+        "lon": -1.80687916007342
+      },
+      "lon": -1.80687916007342,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 0,
+      "payouts_total": 0,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 5.4,
+          "quantity": 1,
+          "total_price": 5.4
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "FAILED",
+      "status": "FAILED",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T17:28:58.250Z",
+      "tip_amount": 0,
+      "transaction_code": "TEYQZXXH6G",
+      "transaction_events": [],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec5153-5c52-6cf6-b89d-5c852d6aae02",
+        "transaction_code": "TEYQZXXH6G",
+        "status": "FAILED",
+        "timestamp": "2024-02-06T17:28:58.250Z",
+        "type": "PAYMENT",
+        "amount": 5.4,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 14.32,
+      "auth_code": "AXCMG0",
+      "card": {
+        "last_4_digits": "8584",
+        "type": "MASTERCARD"
+      },
+      "client_transaction_id": "63F78C45-E3E7-4EE4-AA83-6F46F947EA5F-248-0000028E6514F0EC",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 14.18,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.14,
+          "id": 5570215652,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec515c-6971-6252-a126-062254f7bc01",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-7dbe8c90-8641-485a-9fb4-879915dd44fe1707240779",
+      "horizontal_accuracy": 35,
+      "id": "1eec515c-6971-6252-a126-062254f7bc01",
+      "installments_count": 1,
+      "internal_id": 5872893579,
+      "lat": 52.4292054248936,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec515c-6971-6252-a126-062254f7bc01?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec515c-6971-6252-a126-062254f7bc01?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec515c-6971-6252-a126-062254f7bc01?merchant_code=MEZ296TE",
+          "max_amount": 14.32,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T17:33:01.229+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4292054248936,
+        "lon": -1.80690208644819
+      },
+      "lon": -1.80690208644819,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 14.32,
+          "quantity": 1,
+          "total_price": 14.32
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T17:33:01.229Z",
+      "tip_amount": 0,
+      "transaction_code": "TEN72P62UR",
+      "transaction_events": [
+        {
+          "amount": 14.18,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570215652,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T17:33:22.306Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec515c-6971-6252-a126-062254f7bc01",
+        "transaction_code": "TEN72P62UR",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T17:33:01.229Z",
+        "type": "PAYMENT",
+        "amount": 14.32,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 2.5,
+      "auth_code": "403039",
+      "card": {
+        "last_4_digits": "9713",
+        "type": "VISA"
+      },
+      "client_transaction_id": "AFD62973-B881-4004-AF88-DEDB07A5D7DA-248-0000028F0CE1D8F0",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 2.48,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.02,
+          "id": 5570223812,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec5160-c7a6-65fc-8988-79aa4f6a7944",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-62867f30-1777-4039-ab67-cb8f236d1df21707240897",
+      "horizontal_accuracy": 35,
+      "id": "1eec5160-c7a6-65fc-8988-79aa4f6a7944",
+      "installments_count": 1,
+      "internal_id": 5872903375,
+      "lat": 52.4291381835938,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5160-c7a6-65fc-8988-79aa4f6a7944?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5160-c7a6-65fc-8988-79aa4f6a7944?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec5160-c7a6-65fc-8988-79aa4f6a7944?merchant_code=MEZ296TE",
+          "max_amount": 2.5,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T17:34:58.479+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291381835938,
+        "lon": -1.80680596621078
+      },
+      "lon": -1.80680596621078,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 2.5,
+          "quantity": 1,
+          "total_price": 2.5
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T17:34:58.479Z",
+      "tip_amount": 0,
+      "transaction_code": "TFFG3PGMF7",
+      "transaction_events": [
+        {
+          "amount": 2.48,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570223812,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T17:35:12.331Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "na",
+      "summary": {
+        "id": "1eec5160-c7a6-65fc-8988-79aa4f6a7944",
+        "transaction_code": "TFFG3PGMF7",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T17:34:58.479Z",
+        "type": "PAYMENT",
+        "amount": 2.5,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 1.75,
+      "auth_code": "961282",
+      "card": {
+        "last_4_digits": "4876",
+        "type": "MASTERCARD"
+      },
+      "client_transaction_id": "D468E7EF-ADC4-46B4-BBA4-D2CDB0219C30-248-00000293B8D5CFEE",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 1.73,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.02,
+          "id": 5570283530,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec517f-ec5f-634c-ae12-5c5717eed9ff",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-a9fa7781-7849-43db-aa07-be3e7e30ad7d1707241729",
+      "horizontal_accuracy": 35,
+      "id": "1eec517f-ec5f-634c-ae12-5c5717eed9ff",
+      "installments_count": 1,
+      "internal_id": 5872971290,
+      "lat": 52.4291381835938,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec517f-ec5f-634c-ae12-5c5717eed9ff?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec517f-ec5f-634c-ae12-5c5717eed9ff?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec517f-ec5f-634c-ae12-5c5717eed9ff?merchant_code=MEZ296TE",
+          "max_amount": 1.75,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T17:48:54.482+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291381835938,
+        "lon": -1.80681182377339
+      },
+      "lon": -1.80681182377339,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 1.75,
+          "quantity": 1,
+          "total_price": 1.75
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T17:48:54.482Z",
+      "tip_amount": 0,
+      "transaction_code": "TCEPYCN49Y",
+      "transaction_events": [
+        {
+          "amount": 1.73,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570283530,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T17:49:12.369Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec517f-ec5f-634c-ae12-5c5717eed9ff",
+        "transaction_code": "TCEPYCN49Y",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T17:48:54.482Z",
+        "type": "PAYMENT",
+        "amount": 1.75,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 6.5,
+      "auth_code": "006748",
+      "card": {
+        "last_4_digits": "0508",
+        "type": "VISA"
+      },
+      "client_transaction_id": "E5CA3A32-9D3B-4187-A7A0-A1CE56983E3D-248-000002974A276504",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 6.44,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.06,
+          "id": 5570328651,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec5197-b4bd-67b2-a7dc-731aff29c5db",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-b6840555-4cb1-4710-aafe-76a8be4d7da21707242365",
+      "horizontal_accuracy": 35,
+      "id": "1eec5197-b4bd-67b2-a7dc-731aff29c5db",
+      "installments_count": 1,
+      "internal_id": 5873024853,
+      "lat": 52.4291381835938,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5197-b4bd-67b2-a7dc-731aff29c5db?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5197-b4bd-67b2-a7dc-731aff29c5db?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec5197-b4bd-67b2-a7dc-731aff29c5db?merchant_code=MEZ296TE",
+          "max_amount": 6.5,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T17:59:32.892+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291381835938,
+        "lon": -1.80681126345633
+      },
+      "lon": -1.80681126345633,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 6.5,
+          "quantity": 1,
+          "total_price": 6.5
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T17:59:32.892Z",
+      "tip_amount": 0,
+      "transaction_code": "TCL4VCEEFE",
+      "transaction_events": [
+        {
+          "amount": 6.44,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570328651,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T17:59:42.337Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "na",
+      "summary": {
+        "id": "1eec5197-b4bd-67b2-a7dc-731aff29c5db",
+        "transaction_code": "TCL4VCEEFE",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T17:59:32.892Z",
+        "type": "PAYMENT",
+        "amount": 6.5,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 5,
+      "auth_code": "577426",
+      "card": {
+        "last_4_digits": "2116",
+        "type": "MASTERCARD"
+      },
+      "client_transaction_id": "5FDECD5E-AEBF-4937-867B-0E5C046D81A2-248-0000029847D47B28",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 4.95,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.05,
+          "id": 5570342236,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec519e-5003-6333-abbc-8449f4c063a4",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-d114a4b5-4f24-4fff-b880-28bd054617661707242549",
+      "horizontal_accuracy": 35,
+      "id": "1eec519e-5003-6333-abbc-8449f4c063a4",
+      "installments_count": 1,
+      "internal_id": 5873039107,
+      "lat": 52.4291381835938,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec519e-5003-6333-abbc-8449f4c063a4?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec519e-5003-6333-abbc-8449f4c063a4?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec519e-5003-6333-abbc-8449f4c063a4?merchant_code=MEZ296TE",
+          "max_amount": 5,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T18:02:30.230+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291381835938,
+        "lon": -1.80679721865531
+      },
+      "lon": -1.80679721865531,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 5,
+          "quantity": 1,
+          "total_price": 5
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T18:02:30.230Z",
+      "tip_amount": 0,
+      "transaction_code": "TC4N2D4LDN",
+      "transaction_events": [
+        {
+          "amount": 4.95,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570342236,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T18:02:52.449Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec519e-5003-6333-abbc-8449f4c063a4",
+        "transaction_code": "TC4N2D4LDN",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T18:02:30.230Z",
+        "type": "PAYMENT",
+        "amount": 5,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 4.21,
+      "client_transaction_id": "66B187BA-5A45-4A01-AA09-46FA3F8E39A6-248-0000029E4AB3F315",
+      "currency": "GBP",
+      "entry_mode": "na",
+      "foreign_transaction_id": "gtc-4e2f814d-aa70-4bfb-bef6-1a4d5a377b081707243619",
+      "horizontal_accuracy": 35,
+      "id": "1eec51c6-6284-6bff-b696-1084813bacd4",
+      "installments_count": 1,
+      "internal_id": 5873121521,
+      "lat": 52.4291381835938,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec51c6-6284-6bff-b696-1084813bacd4?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec51c6-6284-6bff-b696-1084813bacd4?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        }
+      ],
+      "local_time": "2024-02-06T18:20:25.913+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291381835938,
+        "lon": -1.80678013353454
+      },
+      "lon": -1.80678013353454,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 0,
+      "payouts_total": 0,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 4.21,
+          "quantity": 1,
+          "total_price": 4.21
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "FAILED",
+      "status": "FAILED",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T18:20:25.913Z",
+      "tip_amount": 0,
+      "transaction_code": "TDUUY64UA9",
+      "transaction_events": [],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec51c6-6284-6bff-b696-1084813bacd4",
+        "transaction_code": "TDUUY64UA9",
+        "status": "FAILED",
+        "timestamp": "2024-02-06T18:20:25.913Z",
+        "type": "PAYMENT",
+        "amount": 4.21,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 9.87,
+      "auth_code": "006102",
+      "card": {
+        "last_4_digits": "6972",
+        "type": "VISA"
+      },
+      "client_transaction_id": "F0E6921B-C041-4690-831D-FFF0AE0AF2CF-248-0000029EE67A11E3",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 9.77,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.1,
+          "id": 5570424109,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec51ca-70fe-6808-ad08-6db36061d33c",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-4e2f814d-aa70-4bfb-bef6-1a4d5a377b081707243733",
+      "horizontal_accuracy": 35,
+      "id": "1eec51ca-70fe-6808-ad08-6db36061d33c",
+      "installments_count": 1,
+      "internal_id": 5873129668,
+      "lat": 52.4292042050523,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec51ca-70fe-6808-ad08-6db36061d33c?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec51ca-70fe-6808-ad08-6db36061d33c?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec51ca-70fe-6808-ad08-6db36061d33c?merchant_code=MEZ296TE",
+          "max_amount": 9.87,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T18:22:14.807+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4292042050523,
+        "lon": -1.80689802606467
+      },
+      "lon": -1.80689802606467,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 9.87,
+          "quantity": 1,
+          "total_price": 9.87
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T18:22:14.807Z",
+      "tip_amount": 0,
+      "transaction_code": "TDYL27Z9L4",
+      "transaction_events": [
+        {
+          "amount": 9.77,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570424109,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T18:22:52.328Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec51ca-70fe-6808-ad08-6db36061d33c",
+        "transaction_code": "TDYL27Z9L4",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T18:22:14.807Z",
+        "type": "PAYMENT",
+        "amount": 9.87,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 2.5,
+      "auth_code": "Bg097R",
+      "card": {
+        "last_4_digits": "7507",
+        "type": "MASTERCARD"
+      },
+      "client_transaction_id": "0258A4CA-8E9C-41E4-A967-D921EEE66052-248-000002A34CD84E05",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 2.48,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.02,
+          "id": 5570475861,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec51e7-c729-6f11-a32b-6a43a80e770a",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-0d1b7741-8e16-46a9-85b9-b03970f0c1501707244515",
+      "horizontal_accuracy": 35,
+      "id": "1eec51e7-c729-6f11-a32b-6a43a80e770a",
+      "installments_count": 1,
+      "internal_id": 5873188106,
+      "lat": 52.4291775533251,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec51e7-c729-6f11-a32b-6a43a80e770a?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec51e7-c729-6f11-a32b-6a43a80e770a?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec51e7-c729-6f11-a32b-6a43a80e770a?merchant_code=MEZ296TE",
+          "max_amount": 2.5,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T18:35:22.303+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291775533251,
+        "lon": -1.80685609039372
+      },
+      "lon": -1.80685609039372,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 2.5,
+          "quantity": 1,
+          "total_price": 2.5
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T18:35:22.303Z",
+      "tip_amount": 0,
+      "transaction_code": "TYAF4VGZG6",
+      "transaction_events": [
+        {
+          "amount": 2.48,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570475861,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T18:36:02.350Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec51e7-c729-6f11-a32b-6a43a80e770a",
+        "transaction_code": "TYAF4VGZG6",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T18:35:22.303Z",
+        "type": "PAYMENT",
+        "amount": 2.5,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 5,
+      "auth_code": "006221",
+      "card": {
+        "last_4_digits": "2918",
+        "type": "VISA"
+      },
+      "client_transaction_id": "B8AB4AE0-8C8E-4C77-931F-B5E114F82FB4-248-000002AF7B34508B",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 4.95,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.05,
+          "id": 5570614429,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec5238-f994-6d11-84b5-688d7a2d37b5",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-87ef052b-859d-49fb-865e-f1ceee7b9ac91707246697",
+      "horizontal_accuracy": 35,
+      "id": "1eec5238-f994-6d11-84b5-688d7a2d37b5",
+      "installments_count": 1,
+      "internal_id": 5873346217,
+      "lat": 52.4291839390916,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5238-f994-6d11-84b5-688d7a2d37b5?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5238-f994-6d11-84b5-688d7a2d37b5?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec5238-f994-6d11-84b5-688d7a2d37b5?merchant_code=MEZ296TE",
+          "max_amount": 5,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T19:11:41.909+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291839390916,
+        "lon": -1.8068643539986
+      },
+      "lon": -1.8068643539986,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 5,
+          "quantity": 1,
+          "total_price": 5
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T19:11:41.909Z",
+      "tip_amount": 0,
+      "transaction_code": "T32CFYRR2U",
+      "transaction_events": [
+        {
+          "amount": 4.95,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570614429,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T19:11:52.313Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec5238-f994-6d11-84b5-688d7a2d37b5",
+        "transaction_code": "T32CFYRR2U",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T19:11:41.909Z",
+        "type": "PAYMENT",
+        "amount": 5,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 2.5,
+      "auth_code": "F67556",
+      "card": {
+        "last_4_digits": "3315",
+        "type": "MASTERCARD"
+      },
+      "client_transaction_id": "FF17DFCC-4247-4596-B4DF-6EC2F04751E7-248-000002CAD2055132",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 2.48,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.02,
+          "id": 5570893895,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec52ef-3a71-69fc-817a-3c12d91dd327",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-b8efe5f2-af7f-4cca-a6cc-eccfd2081be31707251587",
+      "horizontal_accuracy": 35,
+      "id": "1eec52ef-3a71-69fc-817a-3c12d91dd327",
+      "installments_count": 1,
+      "internal_id": 5873663100,
+      "lat": 52.4291381835938,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec52ef-3a71-69fc-817a-3c12d91dd327?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec52ef-3a71-69fc-817a-3c12d91dd327?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec52ef-3a71-69fc-817a-3c12d91dd327?merchant_code=MEZ296TE",
+          "max_amount": 2.5,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T20:33:14.243+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291381835938,
+        "lon": -1.80682573019414
+      },
+      "lon": -1.80682573019414,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 2.5,
+          "quantity": 1,
+          "total_price": 2.5
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T20:33:14.243Z",
+      "tip_amount": 0,
+      "transaction_code": "TEMXNCDV4Y",
+      "transaction_events": [
+        {
+          "amount": 2.48,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570893895,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T20:33:22.262Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec52ef-3a71-69fc-817a-3c12d91dd327",
+        "transaction_code": "TEMXNCDV4Y",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T20:33:14.243Z",
+        "type": "PAYMENT",
+        "amount": 2.5,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 4.21,
+      "client_transaction_id": "02CEFE78-5DAB-452E-B72C-048C8264EC4B-248-000002D01B45770F",
+      "currency": "GBP",
+      "entry_mode": "na",
+      "foreign_transaction_id": "gtc-bb6cdbad-93ea-4d37-a394-95e4815448561707252534",
+      "horizontal_accuracy": 35,
+      "id": "1eec5312-7765-6c99-aa93-a50e1a381c72",
+      "installments_count": 1,
+      "internal_id": 5873722128,
+      "lat": 52.4291779032095,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5312-7765-6c99-aa93-a50e1a381c72?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5312-7765-6c99-aa93-a50e1a381c72?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        }
+      ],
+      "local_time": "2024-02-06T20:49:00.158+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291779032095,
+        "lon": -1.80685668738019
+      },
+      "lon": -1.80685668738019,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 0,
+      "payouts_total": 0,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 4.21,
+          "quantity": 1,
+          "total_price": 4.21
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "FAILED",
+      "status": "FAILED",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T20:49:00.158Z",
+      "tip_amount": 0,
+      "transaction_code": "TEX9HKEATS",
+      "transaction_events": [],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec5312-7765-6c99-aa93-a50e1a381c72",
+        "transaction_code": "TEX9HKEATS",
+        "status": "FAILED",
+        "timestamp": "2024-02-06T20:49:00.158Z",
+        "type": "PAYMENT",
+        "amount": 4.21,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 6.93,
+      "auth_code": "523695",
+      "card": {
+        "last_4_digits": "8147",
+        "type": "VISA"
+      },
+      "client_transaction_id": "BC49F834-753F-44A4-B0F8-14619664D2AD-248-000002D4F7BA2FD6",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 6.86,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.07,
+          "id": 5570991204,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec5332-df47-6e79-b10c-0015100ccbc5",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-6260c171-9e3a-4bcb-aa3d-082e9a7992ac1707253403",
+      "horizontal_accuracy": 35,
+      "id": "1eec5332-df47-6e79-b10c-0015100ccbc5",
+      "installments_count": 1,
+      "internal_id": 5873773939,
+      "lat": 52.4291381835938,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5332-df47-6e79-b10c-0015100ccbc5?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5332-df47-6e79-b10c-0015100ccbc5?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec5332-df47-6e79-b10c-0015100ccbc5?merchant_code=MEZ296TE",
+          "max_amount": 6.93,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T21:03:30.039+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291381835938,
+        "lon": -1.80684645187658
+      },
+      "lon": -1.80684645187658,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 6.93,
+          "quantity": 1,
+          "total_price": 6.93
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T21:03:30.039Z",
+      "tip_amount": 0,
+      "transaction_code": "TFKGKSHYGH",
+      "transaction_events": [
+        {
+          "amount": 6.86,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570991204,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T21:03:42.346Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "na",
+      "summary": {
+        "id": "1eec5332-df47-6e79-b10c-0015100ccbc5",
+        "transaction_code": "TFKGKSHYGH",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T21:03:30.039Z",
+        "type": "PAYMENT",
+        "amount": 6.93,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 3.5,
+      "auth_code": "OR778R",
+      "card": {
+        "last_4_digits": "7507",
+        "type": "MASTERCARD"
+      },
+      "client_transaction_id": "899FEE30-385C-4FDC-BBCA-59AB8532FE01-248-000002D58DDA5FA3",
+      "currency": "GBP",
+      "entry_mode": "contactless",
+      "events": [
+        {
+          "amount": 3.47,
+          "deducted_amount": 0,
+          "deducted_fee_amount": 0,
+          "fee_amount": 0.03,
+          "id": 5570996739,
+          "installment_number": 1,
+          "payout_id": 428262,
+          "payout_reference": "MEZ PID428262",
+          "payout_type": "BANK_ACCOUNT",
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-07T06:20:19.298Z",
+          "transaction_id": "1eec5336-c7ea-6b21-951b-9b989fcbc4f3",
+          "type": "PAYOUT"
+        }
+      ],
+      "foreign_transaction_id": "gtc-4c719053-8d35-4e7b-aa92-88225f415df31707253513",
+      "horizontal_accuracy": 35,
+      "id": "1eec5336-c7ea-6b21-951b-9b989fcbc4f3",
+      "installments_count": 1,
+      "internal_id": 5873780038,
+      "lat": 52.4291862896304,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5336-c7ea-6b21-951b-9b989fcbc4f3?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5336-c7ea-6b21-951b-9b989fcbc4f3?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        },
+        {
+          "disclaimer": "settled_deduction",
+          "href": "https://api.sumup.com/v0.2/refund/1eec5336-c7ea-6b21-951b-9b989fcbc4f3?merchant_code=MEZ296TE",
+          "max_amount": 3.5,
+          "min_amount": 0.1,
+          "rel": "refund",
+          "type": "application/json"
+        }
+      ],
+      "local_time": "2024-02-06T21:05:14.972+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291862896304,
+        "lon": -1.80687860125703
+      },
+      "lon": -1.80687860125703,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_date": "2024-02-07",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 1,
+      "payouts_total": 1,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 3.5,
+          "quantity": 1,
+          "total_price": 3.5
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "PAID_OUT",
+      "status": "SUCCESSFUL",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T21:05:14.972Z",
+      "tip_amount": 0,
+      "transaction_code": "TDDMKYKFAQ",
+      "transaction_events": [
+        {
+          "amount": 3.47,
+          "date": "2024-02-07",
+          "due_date": "2024-02-07",
+          "event_type": "PAYOUT",
+          "id": 5570996739,
+          "installment_number": 1,
+          "status": "PAID_OUT",
+          "timestamp": "2024-02-06T21:05:32.296Z"
+        }
+      ],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec5336-c7ea-6b21-951b-9b989fcbc4f3",
+        "transaction_code": "TDDMKYKFAQ",
+        "status": "SUCCESSFUL",
+        "timestamp": "2024-02-06T21:05:14.972Z",
+        "type": "PAYMENT",
+        "amount": 3.5,
+        "refunded_amount": 0
+      }
+    },
+    {
+      "amount": 4.21,
+      "client_transaction_id": "954CA231-6E3D-419A-80D8-6F5E3EF3AC81-248-000002D5D5BE0AA2",
+      "currency": "GBP",
+      "entry_mode": "na",
+      "foreign_transaction_id": "gtc-2c59b637-11db-4af2-b3be-79b00b01697f1707253564",
+      "horizontal_accuracy": 35,
+      "id": "1eec5338-a6ff-65b2-ae8a-76ad8a386c75",
+      "installments_count": 1,
+      "internal_id": 5873782885,
+      "lat": 52.4291862896304,
+      "links": [
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5338-a6ff-65b2-ae8a-76ad8a386c75?mid=MEZ296TE&format=svg",
+          "rel": "receipt",
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "https://receipts-ng.sumup.com/v0.1/receipts/1eec5338-a6ff-65b2-ae8a-76ad8a386c75?mid=MEZ296TE&format=png",
+          "rel": "receipt",
+          "type": "image/png"
+        }
+      ],
+      "local_time": "2024-02-06T21:06:05.202+00:00",
+      "location": {
+        "horizontal_accuracy": 35,
+        "lat": 52.4291862896304,
+        "lon": -1.80687860125703
+      },
+      "lon": -1.80687860125703,
+      "merchant_code": "MEZ296TE",
+      "payment_type": "POS",
+      "payout_plan": "SINGLE_PAYMENT",
+      "payout_type": "BANK_ACCOUNT",
+      "payouts_received": 0,
+      "payouts_total": 0,
+      "product_summary": "SumUp POS payment ",
+      "products": [
+        {
+          "name": "SumUp POS payment",
+          "price": 4.21,
+          "quantity": 1,
+          "total_price": 4.21
+        }
+      ],
+      "simple_payment_type": "EMV",
+      "simple_status": "FAILED",
+      "status": "FAILED",
+      "tax_enabled": true,
+      "timestamp": "2024-02-06T21:06:05.202Z",
+      "tip_amount": 0,
+      "transaction_code": "TVPV4CKXC2",
+      "transaction_events": [],
+      "username": "club@westwarwicks.co.uk",
+      "vat_amount": 0,
+      "vat_rates": [],
+      "verification_method": "none",
+      "summary": {
+        "id": "1eec5338-a6ff-65b2-ae8a-76ad8a386c75",
+        "transaction_code": "TVPV4CKXC2",
+        "status": "FAILED",
+        "timestamp": "2024-02-06T21:06:05.202Z",
+        "type": "PAYMENT",
+        "amount": 4.21,
+        "refunded_amount": 0
+      }
+    }
+  ],
+  "count": 16,
+  "total": 83.2,
+  "fees": 0.8,
+  "refunds": 0
+}

@@ -1,0 +1,29 @@
+{
+  "name": "wwsc",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "workspaces": [
+    "apps/*",
+    "examples/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "hello-world": "pnpm --filter @wwsc/hello-world run dev",
+    "quickstart": "pnpm --filter @wwsc/quickstart run start",
+    "dashboard": "pnpm --filter @wwsc/sumup-dashboard run start",
+    "pos": "pnpm --filter @wwsc/sumup-pos run start",
+    "items": "pnpm --filter @wwsc/sumup-pos run items"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

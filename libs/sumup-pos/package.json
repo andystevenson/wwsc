@@ -1,0 +1,19 @@
+{
+  "name": "@wwsc/sumup-pos",
+  "module": "index.ts",
+  "dependencies": {
+    "@wwsc/dates": "workspace:^",
+    "@wwsc/sumup-dashboard": "workspace:^",
+    "lodash.memoize": "^4.1.2",
+    "uuid": "^9.0.1"
+  },
+  "scripts": {
+    "start": "tsx index.ts",
+    "items": "tsx src/sales-items.ts"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/lodash.memoize": "^4.1.9",
+    "@types/uuid": "^9.0.8"
+  }
+}

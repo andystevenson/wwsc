@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+  "extends": ["@tsconfig/node-lts/tsconfig.json"],
+  "include": ["src/**/*.ts"]
+}
