@@ -1,19 +1,29 @@
 {
   "name": "@wwsc/sumup-pos",
-  "module": "index.ts",
-  "dependencies": {
-    "@wwsc/dates": "workspace:^",
-    "@wwsc/sumup-dashboard": "workspace:^",
-    "lodash.memoize": "^4.1.2",
-    "uuid": "^9.0.1"
-  },
-  "scripts": {
-    "start": "tsx index.ts",
-    "items": "tsx src/sales-items.ts"
-  },
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm --out-dir dist",
+    "lint": "tsc"
+  },
   "devDependencies": {
     "@types/lodash.memoize": "^4.1.9",
-    "@types/uuid": "^9.0.8"
+    "@types/uuid": "^9.0.8",
+    "tsup": "^8.0.2"
+  },
+  "dependencies": {
+    "@tsconfig/node-lts": "^20.1.3",
+    "@types/chalk": "^2.2.0",
+    "@types/cli-progress": "^3.11.5",
+    "@wwsc/dates": "workspace:^",
+    "@wwsc/sumup-dashboard": "workspace:^",
+    "chalk": "^5.3.0",
+    "cli-progress": "^3.12.0",
+    "lodash.memoize": "^4.1.2",
+    "ora": "^8.0.1",
+    "uuid": "^9.0.1"
   }
 }

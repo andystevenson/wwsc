@@ -135,6 +135,8 @@ export type SummarySalesItem = {
   item_notes: string
   created_at: Date
   updated_at: Date
+  gross: number
+  discount: number
   total: number
   vat: number
   net: number
@@ -225,3 +227,51 @@ export type Staff = {
 }
 
 export type StaffName = string
+
+export type PayoutSummary = {
+  count: number
+  total_before_discount: number
+  discount: number
+  total: number
+  vat: number
+  net: number
+  fees: number
+  refunds: number
+  transactions: Set<string>
+}
+
+export type DailySummary = {
+  date: Date
+  SUMUP: PayoutSummary
+  CASH: PayoutSummary
+  CARD: PayoutSummary
+  VOUCHER: PayoutSummary
+}
+
+export type PaymentHistory = {
+  id: string
+  sale_id: string
+  method: PaymentMethod
+  time: Date
+  amount: number
+  fees: number
+  card: CardBrand
+  entry: EntryMode
+  transaction_code: string
+}
+
+export type SaleSummary = {
+  id: string
+  register: string
+  staff: string
+  time: Date
+  total_before_discount: number
+  discount: number
+  total: number
+  vat: number
+  net: number
+  fees: number // filled in later
+  refunds: number
+  payments_mismatch: number
+  payments: Array<PaymentHistory>
+}

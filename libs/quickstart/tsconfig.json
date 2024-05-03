@@ -1,8 +1,0 @@
-{
-  "compilerOptions": {
-    "outDir": "./dist",
-    "noUncheckedIndexedAccess": true
-  },
-  "extends": ["@tsconfig/node-lts/tsconfig.json"],
-  "include": ["src/**/*.ts"]
-}

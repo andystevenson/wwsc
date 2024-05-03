@@ -101,7 +101,7 @@ export const getTransactionByCode = async (
 
   const params = new URLSearchParams({ transaction_code })
   const URL = `${API}?${params}`
-  console.log(`getTransaction: ${transaction_code}`)
+  // console.log(`getTransaction: ${transaction_code}`)
   const response = await fetch(URL, { headers })
   if (!response.ok) {
     throw new Error(`getTransaction failed`, {

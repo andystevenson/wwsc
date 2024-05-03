@@ -1,0 +1,47 @@
+{
+  "date": "2024-04-01 15:23:14",
+  "SUMUP": {
+    "count": 16,
+    "total_before_discount": 126.92,
+    "discount": 11.22,
+    "total": 115.7,
+    "vat": 19.26,
+    "net": 96.44,
+    "fees": 1.17,
+    "refunds": 0,
+    "transactions": {}
+  },
+  "CASH": {
+    "count": 7,
+    "total_before_discount": 55.84,
+    "discount": 7.46,
+    "total": 48.38,
+    "vat": 8.05,
+    "net": 40.33,
+    "fees": 0,
+    "refunds": 0,
+    "transactions": {}
+  },
+  "CARD": {
+    "count": 0,
+    "total_before_discount": 0,
+    "discount": 0,
+    "total": 0,
+    "vat": 0,
+    "net": 0,
+    "fees": 0,
+    "refunds": 0,
+    "transactions": {}
+  },
+  "VOUCHER": {
+    "count": 0,
+    "total_before_discount": 0,
+    "discount": 0,
+    "total": 0,
+    "vat": 0,
+    "net": 0,
+    "fees": 0,
+    "refunds": 0,
+    "transactions": {}
+  }
+}

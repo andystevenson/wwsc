@@ -1,0 +1,623 @@
+[
+  {
+    "id": "ccbf3b7e-b998-4e9c-93cc-1a165c66e1ce",
+    "register": "Members Bar",
+    "staff": "Alina Popovici",
+    "time": "2024-04-01 15:23:14",
+    "total_before_discount": 2.5,
+    "discount": 0,
+    "total": 2.5,
+    "vat": 0.42,
+    "net": 2.08,
+    "fees": 0.02,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "a6ba16fa-a82f-4d90-a4da-4628af4a0d7a",
+        "sale_id": "ccbf3b7e-b998-4e9c-93cc-1a165c66e1ce",
+        "method": "SUMUP",
+        "time": "2024-04-01 15:23:14",
+        "amount": 2.5,
+        "fees": 0.02,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEFNP3MNDV"
+      }
+    ]
+  },
+  {
+    "id": "e96abca2-4a42-4582-a811-5d31fa8e39ee",
+    "register": "Members Bar",
+    "staff": "Alina Popovici",
+    "time": "2024-04-01 16:17:05",
+    "total_before_discount": 12.69,
+    "discount": 0,
+    "total": 12.69,
+    "vat": 2.11,
+    "net": 10.58,
+    "fees": 0.13,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "f1512a4a-6ea4-4421-84af-582cd9bf9f54",
+        "sale_id": "e96abca2-4a42-4582-a811-5d31fa8e39ee",
+        "method": "SUMUP",
+        "time": "2024-04-01 16:17:05",
+        "amount": 12.69,
+        "fees": 0.13,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "T43QQD9YSZ"
+      }
+    ]
+  },
+  {
+    "id": "5d4b59e7-ac37-4f61-add2-91420d520f6a",
+    "register": "Members Bar",
+    "staff": "Alina Popovici",
+    "time": "2024-04-01 16:23:24",
+    "total_before_discount": 4.55,
+    "discount": 0.53,
+    "total": 4.02,
+    "vat": 0.66,
+    "net": 3.36,
+    "fees": 0.04,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "b48355e7-6252-4549-813a-a7d6c12f4fe8",
+        "sale_id": "5d4b59e7-ac37-4f61-add2-91420d520f6a",
+        "method": "SUMUP",
+        "time": "2024-04-01 16:23:24",
+        "amount": 4.02,
+        "fees": 0.04,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TELVSAK2G2"
+      }
+    ]
+  },
+  {
+    "id": "b587cb27-c752-442a-be93-542c29c862c1",
+    "register": "Members Bar",
+    "staff": "Alina Popovici",
+    "time": "2024-04-01 16:24:55",
+    "total_before_discount": 8.05,
+    "discount": 1.06,
+    "total": 6.99,
+    "vat": 1.15,
+    "net": 5.84,
+    "fees": 0,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "3be1003e-11e2-4bc0-a1a8-f7fb3fe669d0",
+        "sale_id": "b587cb27-c752-442a-be93-542c29c862c1",
+        "method": "CASH",
+        "time": "2024-04-01 16:24:55",
+        "amount": 6.99,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "16ef63d7-4408-4a01-b7ae-3b8e54e7c602",
+    "register": "Members Bar",
+    "staff": "Alina Popovici",
+    "time": "2024-04-01 16:44:10",
+    "total_before_discount": 12.69,
+    "discount": 0,
+    "total": 12.69,
+    "vat": 2.11,
+    "net": 10.58,
+    "fees": 0.13,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "9a86f6ef-49a3-4042-a91d-69ca065f0930",
+        "sale_id": "16ef63d7-4408-4a01-b7ae-3b8e54e7c602",
+        "method": "SUMUP",
+        "time": "2024-04-01 16:44:10",
+        "amount": 12.69,
+        "fees": 0.13,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEQCEK7T6R"
+      }
+    ]
+  },
+  {
+    "id": "c22fde31-ed96-4f10-ad73-da95b65aa64f",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 16:49:03",
+    "total_before_discount": 3.5,
+    "discount": 0.53,
+    "total": 2.97,
+    "vat": 0.49,
+    "net": 2.48,
+    "fees": 0.03,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "9a953a85-da78-479b-85d4-b8678580d424",
+        "sale_id": "c22fde31-ed96-4f10-ad73-da95b65aa64f",
+        "method": "SUMUP",
+        "time": "2024-04-01 16:49:03",
+        "amount": 2.97,
+        "fees": 0.03,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TD6Z7DSEZL"
+      }
+    ]
+  },
+  {
+    "id": "3205be91-011c-4fe6-a01e-f1a17f461387",
+    "register": "Members Bar",
+    "staff": "Alina Popovici",
+    "time": "2024-04-01 17:07:32",
+    "total_before_discount": 7,
+    "discount": 1.06,
+    "total": 5.94,
+    "vat": 0.98,
+    "net": 4.96,
+    "fees": 0.06,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "ff845055-f37c-4a62-8bb0-1055504fdcaa",
+        "sale_id": "3205be91-011c-4fe6-a01e-f1a17f461387",
+        "method": "SUMUP",
+        "time": "2024-04-01 17:07:32",
+        "amount": 5.94,
+        "fees": 0.06,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TELA9GCYSA"
+      }
+    ]
+  },
+  {
+    "id": "d8567e70-b8e2-4a60-9cc6-9394e08436c5",
+    "register": "Members Bar",
+    "staff": "Alina Popovici",
+    "time": "2024-04-01 17:28:13",
+    "total_before_discount": 10.4,
+    "discount": 1.56,
+    "total": 8.84,
+    "vat": 1.48,
+    "net": 7.36,
+    "fees": 0,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "4a61d73d-e9dc-4dbe-a0db-f6564f477932",
+        "sale_id": "d8567e70-b8e2-4a60-9cc6-9394e08436c5",
+        "method": "CASH",
+        "time": "2024-04-01 17:22:43",
+        "amount": 8.84,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "e17bce5f-343b-48b3-a855-bc0be7561af3",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 17:34:03",
+    "total_before_discount": 10.4,
+    "discount": 1.56,
+    "total": 8.84,
+    "vat": 1.48,
+    "net": 7.36,
+    "fees": 0,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "8ba031af-494a-4e95-a4e3-898046bd9e4e",
+        "sale_id": "e17bce5f-343b-48b3-a855-bc0be7561af3",
+        "method": "CASH",
+        "time": "2024-04-01 17:34:03",
+        "amount": 8.84,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "7fcbc88c-06d5-4240-bde1-e4ab9c489639",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 17:47:56",
+    "total_before_discount": 5.35,
+    "discount": 0,
+    "total": 5.35,
+    "vat": 0.89,
+    "net": 4.46,
+    "fees": 0.05,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "5d6a9b2c-dde5-4f39-ab95-ba583a2b2a9d",
+        "sale_id": "7fcbc88c-06d5-4240-bde1-e4ab9c489639",
+        "method": "SUMUP",
+        "time": "2024-04-01 17:47:56",
+        "amount": 5.35,
+        "fees": 0.05,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TD26ZHZG9X"
+      }
+    ]
+  },
+  {
+    "id": "9d12f38d-d4f2-47fe-be13-4ea13a970173",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 17:55:31",
+    "total_before_discount": 3.5,
+    "discount": 0.53,
+    "total": 2.97,
+    "vat": 0.49,
+    "net": 2.48,
+    "fees": 0.03,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "9f6e5dad-88df-47c8-87b1-82d3aef6fd19",
+        "sale_id": "9d12f38d-d4f2-47fe-be13-4ea13a970173",
+        "method": "SUMUP",
+        "time": "2024-04-01 17:55:31",
+        "amount": 2.97,
+        "fees": 0.03,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TSMAU6ZPVN"
+      }
+    ]
+  },
+  {
+    "id": "6c967c33-b7c5-4bb0-ba96-607e7aaad299",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 18:04:17",
+    "total_before_discount": 26.49,
+    "discount": 3.61,
+    "total": 22.88,
+    "vat": 3.82,
+    "net": 19.06,
+    "fees": 0.23,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "3dcde053-a77f-4bf7-a19f-a20bb6985d49",
+        "sale_id": "6c967c33-b7c5-4bb0-ba96-607e7aaad299",
+        "method": "SUMUP",
+        "time": "2024-04-01 18:04:17",
+        "amount": 22.88,
+        "fees": 0.23,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TECLS4NTKL"
+      }
+    ]
+  },
+  {
+    "id": "fa273460-3d5f-4567-acc5-f33efe0263a8",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 18:13:59",
+    "total_before_discount": 10.4,
+    "discount": 1.56,
+    "total": 8.84,
+    "vat": 1.48,
+    "net": 7.36,
+    "fees": 0,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "c5b204e6-14dd-4ae9-8a88-0a64ffa092cc",
+        "sale_id": "fa273460-3d5f-4567-acc5-f33efe0263a8",
+        "method": "CASH",
+        "time": "2024-04-01 18:13:59",
+        "amount": 8.84,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "1287c16d-ea24-4e5e-b2b2-a8aaad2c0423",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 18:17:11",
+    "total_before_discount": 1.05,
+    "discount": 0,
+    "total": 1.05,
+    "vat": 0.17,
+    "net": 0.88,
+    "fees": 0,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "c43545d3-7843-4e00-ba85-26e88d470e95",
+        "sale_id": "1287c16d-ea24-4e5e-b2b2-a8aaad2c0423",
+        "method": "CASH",
+        "time": "2024-04-01 18:17:11",
+        "amount": 1.05,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "8b6ddf26-e1e0-4a80-85a2-ff4c95920891",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 18:23:18",
+    "total_before_discount": 4.05,
+    "discount": 0,
+    "total": 4.05,
+    "vat": 0.66,
+    "net": 3.39,
+    "fees": 0,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "fc991efd-7deb-40c8-9365-de07ce1d66c4",
+        "sale_id": "8b6ddf26-e1e0-4a80-85a2-ff4c95920891",
+        "method": "CASH",
+        "time": "2024-04-01 18:23:18",
+        "amount": 4.05,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "5780bbf4-a983-454a-9da3-c7e931f3a945",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 18:37:39",
+    "total_before_discount": 17.4,
+    "discount": 2.62,
+    "total": 14.78,
+    "vat": 2.46,
+    "net": 12.32,
+    "fees": 0.15,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "10641631-7474-4506-afc5-fde5f1312d24",
+        "sale_id": "5780bbf4-a983-454a-9da3-c7e931f3a945",
+        "method": "SUMUP",
+        "time": "2024-04-01 18:37:39",
+        "amount": 14.78,
+        "fees": 0.15,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TEVST3YFK3"
+      }
+    ]
+  },
+  {
+    "id": "f4d45f4d-cf49-4789-bcee-7380d0203106",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 18:42:31",
+    "total_before_discount": 11.49,
+    "discount": 1.72,
+    "total": 9.77,
+    "vat": 1.63,
+    "net": 8.14,
+    "fees": 0,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "699e1939-6a18-468a-ad75-6be37264675f",
+        "sale_id": "f4d45f4d-cf49-4789-bcee-7380d0203106",
+        "method": "CASH",
+        "time": "2024-04-01 18:40:52",
+        "amount": 9.77,
+        "fees": 0,
+        "card": null,
+        "entry": "",
+        "transaction_code": ""
+      }
+    ]
+  },
+  {
+    "id": "2b8bbb30-cd0d-4cd9-9157-c9f3f8d96173",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 18:42:56",
+    "total_before_discount": 8.51,
+    "discount": 0,
+    "total": 8.51,
+    "vat": 1.42,
+    "net": 7.09,
+    "fees": 0.08,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "da09d4ac-ec9e-446c-a2ce-9b7b786e92f8",
+        "sale_id": "2b8bbb30-cd0d-4cd9-9157-c9f3f8d96173",
+        "method": "SUMUP",
+        "time": "2024-04-01 18:42:56",
+        "amount": 8.51,
+        "fees": 0.08,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TDC4YZYG6N"
+      }
+    ]
+  },
+  {
+    "id": "07f93d90-5ae3-4d6e-b775-1d2d706f04cd",
+    "register": "Members Bar",
+    "staff": "Alina Popovici",
+    "time": "2024-04-01 18:53:23",
+    "total_before_discount": 5.2,
+    "discount": 0.78,
+    "total": 4.42,
+    "vat": 0.74,
+    "net": 3.68,
+    "fees": 0.07,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "e58deefe-eb46-4174-801a-ed725389ee94",
+        "sale_id": "07f93d90-5ae3-4d6e-b775-1d2d706f04cd",
+        "method": "SUMUP",
+        "time": "2024-04-01 18:53:22",
+        "amount": 4.42,
+        "fees": 0.07,
+        "card": "AMEX",
+        "entry": "contactless",
+        "transaction_code": "TDTV3VGZVT"
+      }
+    ]
+  },
+  {
+    "id": "bbaafadd-ae11-40c1-b981-513b1119d006",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 19:03:06",
+    "total_before_discount": 5.2,
+    "discount": 0.78,
+    "total": 4.42,
+    "vat": 0.74,
+    "net": 3.68,
+    "fees": 0.04,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "5910fc32-5ebf-49ee-a5b2-9ed587e66194",
+        "sale_id": "bbaafadd-ae11-40c1-b981-513b1119d006",
+        "method": "SUMUP",
+        "time": "2024-04-01 19:03:06",
+        "amount": 4.42,
+        "fees": 0.04,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TFQCL3HGCQ"
+      }
+    ]
+  },
+  {
+    "id": "1187b70f-7067-4fe4-bd06-3928abdc867b",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 19:05:49",
+    "total_before_discount": 5.94,
+    "discount": 0,
+    "total": 5.94,
+    "vat": 0.99,
+    "net": 4.95,
+    "fees": 0.06,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "6452bfab-b9da-49b5-9217-a31fb729f360",
+        "sale_id": "1187b70f-7067-4fe4-bd06-3928abdc867b",
+        "method": "SUMUP",
+        "time": "2024-04-01 19:05:49",
+        "amount": 5.94,
+        "fees": 0.06,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "TESAU9E4SK"
+      }
+    ]
+  },
+  {
+    "id": "f76859cf-895c-448d-971c-f4e3c55079ab",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 19:27:25",
+    "total_before_discount": 5.2,
+    "discount": 0.78,
+    "total": 4.42,
+    "vat": 0.74,
+    "net": 3.68,
+    "fees": 0.04,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "dd6801fd-7622-4257-a780-aba91adc2c5b",
+        "sale_id": "f76859cf-895c-448d-971c-f4e3c55079ab",
+        "method": "SUMUP",
+        "time": "2024-04-01 19:27:25",
+        "amount": 4.42,
+        "fees": 0.04,
+        "card": "VISA",
+        "entry": "contactless",
+        "transaction_code": "TET26HSFTZ"
+      }
+    ]
+  },
+  {
+    "id": "d77ba4f5-4660-4677-b4f8-95cb6b13bfc0",
+    "register": "Members Bar",
+    "staff": "Lillian Little",
+    "time": "2024-04-01 19:42:56",
+    "total_before_discount": 1.2,
+    "discount": 0,
+    "total": 1.2,
+    "vat": 0.2,
+    "net": 1,
+    "fees": 0.01,
+    "refunds": 0,
+    "payments_mismatch": 0,
+    "payments": [
+      {
+        "id": "8d5d0fe1-33fe-4a7e-b7d7-dc04f725ded8",
+        "sale_id": "d77ba4f5-4660-4677-b4f8-95cb6b13bfc0",
+        "method": "SUMUP",
+        "time": "2024-04-01 19:42:56",
+        "amount": 1.2,
+        "fees": 0.01,
+        "card": "MASTERCARD",
+        "entry": "contactless",
+        "transaction_code": "THVF99A6Y9"
+      }
+    ]
+  }
+]

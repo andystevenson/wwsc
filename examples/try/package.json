@@ -1,0 +1,27 @@
+{
+  "name": "@wwsc/try",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "ora": "tsx ora.ts",
+    "drizzle": "tsx drizzle.ts",
+    "migrate-ts": "tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@libsql/client": "^0.6.0",
+    "@types/uuid": "^9.0.8",
+    "drizzle-orm": "^0.30.9",
+    "ora": "^8.0.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.17",
+    "typescript": "^5.4.5"
+  }
+}

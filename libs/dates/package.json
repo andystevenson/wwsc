@@ -4,8 +4,9 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
-    "build": "tsup index.ts --minify --dts --format esm,cjs --out-dir dist",
+    "build": "tsup src/index.ts --minify --dts --format esm,cjs --out-dir dist",
     "lint": "tsc"
   },
   "devDependencies": {
@@ -13,6 +14,7 @@
     "typescript": "^5.4.4"
   },
   "dependencies": {
+    "@tsconfig/node-lts": "^20.1.3",
     "dayjs": "^1.11.10"
   }
 }

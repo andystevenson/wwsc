@@ -3,17 +3,16 @@ import {
   type SummarySalesItem,
   type SalesPaymentsHistory,
   type ProductId,
-} from './Sale'
+} from './Sale.js'
 import memoize from 'lodash.memoize'
-import { login, logout, authorization } from './sumup-auth.js'
-import { date } from '@wwsc/dates'
-import { readFileSync } from 'fs'
+import { authorization } from './sumup-auth.js'
 import { v4 as uuid } from 'uuid'
 
 // ratiosFromPaymentHistory
 // provides the ratio of cash, sumup, card, and voucher payments towards the total
 // if the total is zero it returns the payment amounts
 const ratiosFromPaymentHistory = (
+  sale_total: number,
   sales_payments_history: SalesPaymentsHistory[],
 ) => {
   const cash = sales_payments_history
@@ -34,13 +33,20 @@ const ratiosFromPaymentHistory = (
 
   const total = +(cash + sumup + card + voucher).toFixed(2)
 
+  const total_ratio = total / sale_total
+
   return {
-    zero_total: total === 0 ? { cash, sumup, card, voucher, total } : null,
-    cash: total === 0 ? 0 : cash / total,
-    sumup: total === 0 ? 0 : sumup / total,
-    card: total === 0 ? 0 : card / total,
-    voucher: total === 0 ? 0 : voucher / total,
+    zero_total:
+      total === 0
+        ? { cash, sumup, card, voucher, total, sale_total, total_ratio }
+        : null,
+    cash: total === 0 ? 0 : (cash / total) * total_ratio,
+    sumup: total === 0 ? 0 : (sumup / total) * total_ratio,
+    card: total === 0 ? 0 : (card / total) * total_ratio,
+    voucher: total === 0 ? 0 : (voucher / total) * total_ratio,
     total,
+    sale_total,
+    total_ratio,
   }
 }
 
@@ -71,6 +77,8 @@ export const zeroTotalSalesItems = (
     item_notes: 'auto generated',
     created_at: new Date(),
     updated_at: new Date(),
+    gross: 0,
+    discount: 0,
     total: 0,
     vat: 0,
     net: 0,
@@ -116,20 +124,19 @@ export const dailySalesItems = async (sales: Sale[]) => {
 
   for (const sale of sales) {
     const { id, sales_details, sales_payments_history, register, staff } = sale
-    let { sales_items } = sales_details
+    let { sales_items, total: sale_total } = sales_details
 
-    const ratios = ratiosFromPaymentHistory(sales_payments_history)
+    const ratios = ratiosFromPaymentHistory(+sale_total, sales_payments_history)
 
     const { zero_total } = ratios
     if (zero_total) {
-      console.log('zero total', zero_total)
       zeroTotalSalesItems(sale, zero_total, items)
       continue
     }
 
-    if (sales_payments_history.length > 1 && sales_items.length > 1) {
-      console.log('multiple payments', id, sales_payments_history.length)
-    }
+    // if (sales_payments_history.length > 1 && sales_items.length > 1) {
+    //   console.log('multiple payments', id, sales_payments_history.length)
+    // }
 
     let parts: SummarySalesItem[] = []
 
@@ -148,8 +155,15 @@ export const dailySalesItems = async (sales: Sale[]) => {
         item_type,
       } = item
 
-      let category = await categoryFromProductId(product_id)
-      let parent_category = await parentCategoryFromProductId(product_id)
+      let product = await productFromId(product_id)
+      let category = { category_name: 'DELETED' }
+      let parent_category = { category_name: 'DELETED' }
+
+      if (product) {
+        category = await categoryFromProductId(product_id)
+        parent_category = await parentCategoryFromProductId(product_id)
+        parent_category = parent_category ? parent_category : category
+      }
 
       const salesItem: SummarySalesItem = {
         id,
@@ -165,6 +179,11 @@ export const dailySalesItems = async (sales: Sale[]) => {
         item_notes,
         created_at,
         updated_at,
+        gross: +(quantity * +price_inc_vat_per_item).toFixed(2),
+        discount: +(
+          +(quantity * +price_inc_vat_per_item).toFixed(2) -
+          +line_total_after_discount
+        ).toFixed(2),
         total: +line_total_after_discount,
         vat: +line_vat_after_discount,
         net: +line_subtotal_after_discount,
@@ -206,7 +225,7 @@ export const dailySalesItems = async (sales: Sale[]) => {
   return items
 }
 
-const productFromId = async (id: ProductId) => {
+export const productFromId = async (id: ProductId) => {
   if (!id) return null
   const url = `https://api.thegoodtill.com/api/products/${id}`
   const response = await fetch(url, {
@@ -219,10 +238,10 @@ const productFromId = async (id: ProductId) => {
     return json.data
   }
 
-  throw Error(`productFromId failed [${response.statusText},${id}]`)
+  return null
 }
 
-const categoryFromId = async (id: ProductId) => {
+export const categoryFromId = async (id: ProductId) => {
   if (!id) return null
   const url = `https://api.thegoodtill.com/api/categories/${id}`
   const response = await fetch(url, {
@@ -235,39 +254,42 @@ const categoryFromId = async (id: ProductId) => {
     return json.data
   }
 
-  throw Error(`categoryFromId failed [${response.statusText}]`)
+  return null
 }
 
 const mProductFromId = memoize(productFromId)
 const mCategoryFromId = memoize(categoryFromId)
 
-const categoryFromProductId = async (id: ProductId) => {
+export const categoryFromProductId = async (id: ProductId) => {
   if (!id) return null
+
   const product = await mProductFromId(id)
+  if (!product) return null
+
   const category = await mCategoryFromId(product.category_id)
   return category
 }
 
 const mCategoryFromProductId = memoize(categoryFromProductId)
 
-const parentCategoryFromProductId = async (id: ProductId) => {
+export const parentCategoryFromProductId = async (id: ProductId) => {
   if (!id) return null
   const category = await mCategoryFromProductId(id)
-  return category.parent_category ? category.parent_category : null
+  return category ? category.parent_category : null
 }
 
-// trial
+// // trial
 
-await login()
+// await login()
 
-let from = date('2024-02-01')
-while (from.month() === 1) {
-  console.log(from.format('YYYY-MM-DD'))
-  const sales = JSON.parse(
-    readFileSync(`./json/sales-${from.format('YYYY-MM-DD')}.json`, 'utf8'),
-  )
-  await dailySalesItems(sales)
-  from = from.add(1, 'day')
-}
+// let from = date('2024-02-01')
+// while (from.month() === 1) {
+//   console.log(from.format('YYYY-MM-DD'))
+//   const sales = JSON.parse(
+//     readFileSync(`./json/sales-${from.format('YYYY-MM-DD')}.json`, 'utf8'),
+//   )
+//   await dailySalesItems(sales)
+//   from = from.add(1, 'day')
+// }
 
-await logout()
+// await logout()

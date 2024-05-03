@@ -16,6 +16,7 @@
     "quickstart": "pnpm --filter @wwsc/quickstart run start",
     "dashboard": "pnpm --filter @wwsc/sumup-dashboard run start",
     "pos": "pnpm --filter @wwsc/sumup-pos run start",
+    "sync": "pnpm --filter @wwsc/sync-sales run start",
     "items": "pnpm --filter @wwsc/sumup-pos run items"
   },
   "author": "",
