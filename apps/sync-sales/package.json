@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@wwsc/dates": "workspace:^",
+    "@wwsc/db": "workspace:^",
     "@wwsc/sumup-pos": "workspace:^",
     "ora": "^8.0.1"
   }

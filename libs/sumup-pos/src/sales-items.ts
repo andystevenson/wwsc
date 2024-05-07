@@ -5,7 +5,7 @@ import {
   type ProductId,
 } from './Sale.js'
 import memoize from 'lodash.memoize'
-import { authorization } from './sumup-auth.js'
+import { authorization } from './sumup-auth'
 import { v4 as uuid } from 'uuid'
 
 // ratiosFromPaymentHistory

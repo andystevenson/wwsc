@@ -1,3 +1,5 @@
+import { DayOfWeek } from '@wwsc/dates'
+
 export type Sale = {
   id: string
   outlet_id: string
@@ -48,7 +50,12 @@ export type Register = {
   register_name: RegisterName
 }
 
-export type RegisterName = 'Members Bar' | 'Westview Bar' | 'Warwick Bar'
+export type RegisterName =
+  | 'Members Bar'
+  | 'Westview Bar'
+  | 'Warwick Bar'
+  | 'Reception'
+  | string
 
 export type SalesDetails = {
   quantity: string
@@ -125,7 +132,7 @@ export type SalesItem = {
 export type SummarySalesItem = {
   id: string
   sales_id: string
-  register: string
+  register: RegisterName
   staff: string
   product: string
   category: string
@@ -250,7 +257,7 @@ export type DailySummary = {
 
 export type PaymentHistory = {
   id: string
-  sale_id: string
+  sales_id: string
   method: PaymentMethod
   time: Date
   amount: number
@@ -274,4 +281,63 @@ export type SaleSummary = {
   refunds: number
   payments_mismatch: number
   payments: Array<PaymentHistory>
+}
+
+export const Scopes = [
+  'ALL',
+  'REGISTER',
+  'STAFF',
+  'PRODUCT',
+  'CATEGORY',
+  'PARENT_CATEGORY',
+  'SUMUP',
+  'CASH',
+  'CARD',
+  'VOUCHER',
+] as const
+
+export type Scope = (typeof Scopes)[number]
+
+export type DailySummarySales = {
+  id: string
+  day: DayOfWeek
+  date: Date
+  scope: Scope
+  name: string
+  quantity: number
+  gross: number
+  discount: number
+  total: number
+  vat: number
+  net: number
+  cash: number
+  sumup: number
+  card: number
+  voucher: number
+  fees: number
+}
+
+export type SageLedger =
+  | 'Bar Wet'
+  | 'Bar Dry'
+  | 'Venue Wet'
+  | 'Venue Dry'
+  | 'TEA_COFFEE'
+  | 'VOUCHERS'
+  | 'BANK_CHARGES'
+
+export type DailySagePosting = {
+  id: string
+  date: Date
+  register: RegisterName
+  staff: StaffName
+  ledger: SageLedger
+  total: number
+  vat: number
+  net: number
+  cash: number
+  sumup: number
+  card: number
+  voucher: number
+  transaction: string | null
 }

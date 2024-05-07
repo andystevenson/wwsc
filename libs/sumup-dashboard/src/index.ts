@@ -4,7 +4,7 @@ import type {
   TransactionHistory,
   Transaction,
   SimplifiedTransaction,
-} from './Transaction.js'
+} from './Transaction'
 import { writeFileSync } from 'node:fs'
 import dotenv from 'dotenv'
 

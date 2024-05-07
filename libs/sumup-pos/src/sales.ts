@@ -1,16 +1,16 @@
 /// <reference lib="dom" />
 import { SingleBar, Presets, type Options, type Params } from 'cli-progress'
 import chalk from 'chalk'
-import { authorization } from './sumup-auth.js'
+import { authorization } from './sumup-auth'
 import { getTransactionByCode } from '@wwsc/sumup-dashboard'
 import { dayjs } from '@wwsc/dates'
-import {
-  type Sale,
-  type DailySummary,
-  type PayoutSummary,
-  type PaymentHistory,
-  type SaleSummary,
-} from './Sale.js'
+import type {
+  Sale,
+  DailySummary,
+  PayoutSummary,
+  PaymentHistory,
+  SaleSummary,
+} from './Sale'
 
 // sales details between the from - to dates
 // note: must be call login() to run this.
@@ -69,7 +69,7 @@ export const summarizeSales = async (sales: Sale[]) => {
       staff,
     } = sale
 
-    const sale_id = id
+    const sales_id = id
 
     const { total_before_line_discount, total, total_vat, total_ex_vat } =
       sales_details
@@ -84,7 +84,7 @@ export const summarizeSales = async (sales: Sale[]) => {
 
       const summary: PaymentHistory = {
         id,
-        sale_id,
+        sales_id,
         method,
         time,
         amount: +payment_amount,

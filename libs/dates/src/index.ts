@@ -64,6 +64,15 @@ export const DaysOfWeek = [
   'saturday',
 ]
 
+export type DayOfWeek =
+  | 'Monday'
+  | 'Tuesday'
+  | 'Wednesday'
+  | 'Thursday'
+  | 'Friday'
+  | 'Saturday'
+  | 'Sunday'
+
 export const nextDayOfWeek = (day: string, start = today) =>
   nextDay(
     DaysOfWeek.findIndex((weekday) => day.toLowerCase() === weekday),

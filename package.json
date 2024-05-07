@@ -12,12 +12,16 @@
     "libs/*"
   ],
   "scripts": {
+    "dates:build": "pnpm --filter @wwsc/dates build",
     "hello-world": "pnpm --filter @wwsc/hello-world run dev",
     "quickstart": "pnpm --filter @wwsc/quickstart run start",
     "dashboard": "pnpm --filter @wwsc/sumup-dashboard run start",
     "pos": "pnpm --filter @wwsc/sumup-pos run start",
+    "pos:build": "pnpm --filter @wwsc/sumup-pos run build",
     "sync": "pnpm --filter @wwsc/sync-sales run start",
-    "items": "pnpm --filter @wwsc/sumup-pos run items"
+    "items": "pnpm --filter @wwsc/sumup-pos run items",
+    "db:build": "pnpm --filter @wwsc/db run build",
+    "db:generate": "pnpm --filter @wwsc/db run db:generate"
   },
   "author": "",
   "license": "ISC",
