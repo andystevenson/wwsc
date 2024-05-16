@@ -244,6 +244,15 @@ importers:
         specifier: ^5.2.0
         version: 5.2.10(@types/node@20.12.8)
 
+  www/sage-v2:
+    devDependencies:
+      typescript:
+        specifier: ^5.2.2
+        version: 5.4.5
+      vite:
+        specifier: ^5.2.0
+        version: 5.2.10(@types/node@20.12.8)
+
   www/sports:
     devDependencies:
       typescript:

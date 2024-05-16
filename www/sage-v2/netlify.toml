@@ -1,8 +1,8 @@
 # example netlify.toml
 [build]
   command = "pnpm --filter @wwsc/club build"
-  functions = "www/club/netlify/functions"
-  publish = "www/club/dist"
+  functions = "www/sage-v2/netlify/functions"
+  publish = "www/sage-v2/dist"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.

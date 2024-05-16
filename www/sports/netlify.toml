@@ -1,7 +1,7 @@
 # example netlify.toml
 [build]
   command = "pnpm --filter @wwsc/sports build"
-  functions = "netlify/functions"
+  functions = "www/sports/netlify/functions"
   publish = "www/sports/dist"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
