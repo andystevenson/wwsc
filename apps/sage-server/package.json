@@ -1,0 +1,16 @@
+{
+  "name": "@wwsc/sage-server",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx index.ts",
+    "dev": "tsx watch index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@wwsc/dates": "workspace:^",
+    "@wwsc/db": "workspace:^"
+  }
+}

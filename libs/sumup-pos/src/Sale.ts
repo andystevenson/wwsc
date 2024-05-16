@@ -317,6 +317,16 @@ export type DailySummarySales = {
   fees: number
 }
 
+export const SageLedgers = [
+  'Bar Wet',
+  'Bar Dry',
+  'Venue Wet',
+  'Venue Dry',
+  'TEA_COFFEE',
+  'VOUCHERS',
+  'BANK_CHARGES',
+] as const
+
 export type SageLedger =
   | 'Bar Wet'
   | 'Bar Dry'

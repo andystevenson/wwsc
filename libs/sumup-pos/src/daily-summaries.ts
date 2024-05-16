@@ -72,7 +72,7 @@ const ALL = (sales: SaleSummary[], items: SummarySalesItem[]) => {
 
   for (const item of items) {
     const { sales_id } = item
-    let sale = null
+    let sale: SaleSummary | undefined
     if (!salesSeen.has(sales_id)) {
       sale = sales.find((s) => s.id === sales_id)
       salesSeen.add(sales_id)
