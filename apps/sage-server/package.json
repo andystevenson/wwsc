@@ -3,13 +3,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "tsx index.ts",
-    "dev": "tsx watch index.ts"
+    "dev": "PORT=7891 bun --watch src/index.ts"
   },
   "devDependencies": {
-    "typescript": "^5.2.2"
+    "@types/bun": "latest"
   },
   "dependencies": {
+    "hono": "^4.3.7",
+    "valibot": "^0.30.0",
     "@wwsc/dates": "workspace:^",
     "@wwsc/db": "workspace:^"
   }
