@@ -1,5 +1,5 @@
 {
-  "name": "@wwsc/sage",
+  "name": "@wwsc/lib-sage",
   "version": "0.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@types/bcrypt": "^5.0.2",
-    "@wwsc/dates": "workspace:^",
+    "@wwsc/lib-dates": "workspace:*",
     "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5"
   }

@@ -2,33 +2,25 @@
   "name": "wwsc",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
-  "directories": {
-    "example": "examples"
-  },
   "workspaces": [
     "apps/*",
     "examples/*",
     "libs/*"
   ],
-  "scripts": {
-    "dates:build": "pnpm --filter @wwsc/dates build",
-    "hello-world": "pnpm --filter @wwsc/hello-world run dev",
-    "quickstart": "pnpm --filter @wwsc/quickstart run start",
-    "dashboard": "pnpm --filter @wwsc/sumup-dashboard run start",
-    "pos": "pnpm --filter @wwsc/sumup-pos run start",
-    "pos:build": "pnpm --filter @wwsc/sumup-pos run build",
-    "sync": "pnpm --filter @wwsc/sync-sales run start",
-    "items": "pnpm --filter @wwsc/sumup-pos run items",
-    "db:build": "pnpm --filter @wwsc/db run build",
-    "db:generate": "pnpm --filter @wwsc/db run db:generate"
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "drizzle-kit": "^0.21.4",
     "typescript": "^5.4.4"
   },
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "@types/big.js": "^6.2.2",
+    "@types/minimist": "^1.2.5",
+    "big.js": "^6.2.1",
+    "dotenv": "^16.4.5",
+    "hono-sessions": "^0.5.8",
+    "minimist": "^1.2.8",
+    "nanoid": "^5.0.7"
   }
 }

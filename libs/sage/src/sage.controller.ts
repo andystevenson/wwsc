@@ -1,4 +1,3 @@
-import { getSessionUser, saveSessionUser } from './auth'
 import { GET } from './GET'
 import { POST } from './POST'
 import { DELETE } from './DELETE'
@@ -20,7 +19,7 @@ import type {
   OtherPaymentResponse,
   OtherPaymentRequest,
 } from './Types'
-import { dayjs } from '@wwsc/dates'
+import { dayjs } from '@wwsc/lib-dates'
 
 export const getBankAccount = async (code: string) => {
   if (!code) return null

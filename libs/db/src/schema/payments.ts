@@ -1,6 +1,6 @@
 import { sqliteTable, real, text } from 'drizzle-orm/sqlite-core'
 import { sales } from './sales'
-import type { PaymentMethod, CardBrand, EntryMode } from '@wwsc/sumup-pos'
+import type { PaymentMethod, CardBrand, EntryMode } from '@wwsc/lib-sumup-pos'
 
 export const payments = sqliteTable('payments', {
   id: text('id').primaryKey().notNull(),

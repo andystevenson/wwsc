@@ -1,5 +1,5 @@
 {
-  "name": "@wwsc/sumup-dashboard",
+  "name": "@wwsc/lib-sumup-dashboard",
   "version": "0.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -21,7 +21,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@wwsc/dates": "workspace:^",
+    "@wwsc/lib-dates": "workspace:*",
     "tsup": "^8.0.2"
   }
 }

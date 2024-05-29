@@ -1,5 +1,5 @@
 {
-  "name": "@wwsc/dates",
+  "name": "@wwsc/lib-dates",
   "version": "0.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

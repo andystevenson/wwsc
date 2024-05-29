@@ -25,15 +25,10 @@ export type Link = {
 }
 
 export type BankAccountDetails = {
-  /** @description The account name */
   account_name: string
-  /** @description The account number */
   account_number: string
-  /** @description The sort code */
   sort_code: string
-  /** @description The bic */
   bic: string
-  /** @description The iban */
   iban: string
 }
 

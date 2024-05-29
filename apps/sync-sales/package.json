@@ -1,18 +1,18 @@
 {
   "name": "@wwsc/sync-sales",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start": "tsx index.ts",
-    "dev": "tsx watch index.ts"
+    "start": "bun index.ts",
+    "dev": "bun --hot index.ts"
   },
   "devDependencies": {
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@wwsc/dates": "workspace:^",
-    "@wwsc/db": "workspace:^",
-    "@wwsc/sumup-pos": "workspace:^",
-    "ora": "^8.0.1"
+    "@wwsc/lib-dates": "workspace:*",
+    "@wwsc/lib-db": "workspace:*",
+    "@wwsc/lib-sumup-pos": "workspace:*",
+    "@wwsc/lib-cli": "workspace:*"
   }
 }

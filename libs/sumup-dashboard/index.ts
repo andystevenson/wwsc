@@ -1,4 +1,4 @@
-import { date } from '@wwsc/dates'
+import { date } from '@wwsc/lib-dates'
 import {
   dailyTransactionHistory,
   transactionsFromSummaries,

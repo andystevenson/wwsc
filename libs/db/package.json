@@ -1,5 +1,5 @@
 {
-  "name": "@wwsc/db",
+  "name": "@wwsc/lib-db",
   "version": "0.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -14,14 +14,13 @@
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
     "@tsconfig/node-lts": "^20.1.3",
-    "drizzle-kit": "^0.20.17",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
   "dependencies": {
     "@libsql/client": "^0.6.0",
-    "@wwsc/dates": "workspace:^",
-    "@wwsc/sumup-pos": "workspace:^",
+    "@wwsc/lib-dates": "workspace:*",
+    "@wwsc/lib-sumup-pos": "workspace:*",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.9"
   }

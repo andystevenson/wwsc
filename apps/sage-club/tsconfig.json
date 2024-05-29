@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "preserve",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx"
+  },
+  "extends": ["@tsconfig/node-lts/tsconfig.json"],
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}

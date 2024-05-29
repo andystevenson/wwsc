@@ -1,5 +1,5 @@
 import { sqliteTable, text, real } from 'drizzle-orm/sqlite-core'
-import type { RegisterName } from '@wwsc/sumup-pos'
+import type { RegisterName } from '@wwsc/lib-sumup-pos'
 
 export const sales = sqliteTable('sales', {
   id: text('id').primaryKey().notNull(),

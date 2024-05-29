@@ -1,10 +1,16 @@
 import { login, logout } from './sumup-auth'
-import { sales, summarizeSales, dailySalesByMethod } from './sales'
-import { dailySalesItems } from './sales-items'
-import { dailySalesSummaries } from './daily-summaries'
+import { sales } from './sales'
+import { dailySalesByPaymentMethod } from './dailySalesByPaymentMethod'
+import { dailySalesSummaries } from './dailySalesSummaries'
+import { dailySalesItems } from './dailySalesItems'
+import { dailySalesCategories } from './dailySalesCategories'
 import type {
+  DayOfWeek,
+  Sale,
+  SaleSummary,
+  SummarySalesItem,
   DailySummary,
-  DailySummarySales,
+  DailySalesCategory,
   RegisterName,
   CardBrand,
   PaymentMethod,
@@ -13,8 +19,12 @@ import type {
 } from './Sale'
 
 export type {
+  DayOfWeek,
+  Sale,
+  SaleSummary,
+  SummarySalesItem,
   DailySummary,
-  DailySummarySales,
+  DailySalesCategory,
   RegisterName,
   CardBrand,
   PaymentMethod,
@@ -26,8 +36,8 @@ export {
   login,
   logout,
   sales,
-  summarizeSales,
-  dailySalesByMethod,
-  dailySalesItems,
   dailySalesSummaries,
+  dailySalesByPaymentMethod,
+  dailySalesItems,
+  dailySalesCategories,
 }

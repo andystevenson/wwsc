@@ -1,18 +1,15 @@
 import { db } from './client'
+
+// tables
 import { posts, type InsertPost, type SelectPost } from './schema/posts'
 import { users, type InsertUser, type SelectUser } from './schema/users'
 import { sales, type InsertSale, type SelectSale } from './schema/sales'
-import {
-  dailySalesSummaries,
-  type SelectDailySalesSummary,
-  type InsertDailySalesSummary,
-} from './schema/daily-sales-summaries'
 
 import {
-  saleItems,
-  type InsertSaleItem,
-  type SelectSaleItem,
-} from './schema/sale-items'
+  salesItems,
+  type InsertSalesItem,
+  type SelectSalesItem,
+} from './schema/sales-items'
 
 import {
   payments,
@@ -20,6 +17,19 @@ import {
   type SelectPayment,
 } from './schema/payments'
 
+import {
+  paymentSummaries,
+  type InsertPaymentSummary,
+  type SelectPaymentSummary,
+} from './schema/payment-summaries'
+
+import {
+  salesCategories,
+  type InsertSalesCategory,
+  type SelectSalesCategory,
+} from './schema/sales-categories'
+
+// functions
 import { insertPost, updatePost, deletePost } from './functions/post'
 import {
   insertUser,
@@ -31,10 +41,10 @@ import {
 import { insertSale, updateSale, deleteSale } from './functions/sale'
 
 import {
-  insertSaleItem,
-  updateSaleItem,
-  deleteSaleItem,
-} from './functions/sale-item'
+  insertSalesItem,
+  updateSalesItem,
+  deleteSalesItem,
+} from './functions/sales-item'
 
 import {
   insertPayment,
@@ -43,12 +53,18 @@ import {
 } from './functions/payment'
 
 import {
-  insertDailySalesSummary,
-  updateDailySalesSummary,
-  deleteDailySalesSummary,
-} from './functions/daily-sales-summary'
+  insertPaymentSummary,
+  updatePaymentSummary,
+  deletePaymentSummary,
+} from './functions/payment-summary'
 
-export { db, posts, users, sales, saleItems, payments, dailySalesSummaries }
+import {
+  insertSalesCategory,
+  updateSalesCategory,
+  deleteSalesCategory,
+} from './functions/sales-category'
+
+export { db, posts, users, sales, salesItems, payments, paymentSummaries }
 export type {
   InsertPost,
   SelectPost,
@@ -56,34 +72,39 @@ export type {
   SelectUser,
   InsertSale,
   SelectSale,
-  InsertSaleItem,
-  SelectSaleItem,
+  InsertSalesItem,
+  SelectSalesItem,
   InsertPayment,
   SelectPayment,
-  InsertDailySalesSummary,
-  SelectDailySalesSummary,
+  InsertPaymentSummary,
+  SelectPaymentSummary,
+  InsertSalesCategory,
+  SelectSalesCategory,
 }
 export {
   insertUser,
   insertPost,
   insertSale,
   insertPayment,
-  insertSaleItem,
-  insertDailySalesSummary,
+  insertSalesItem,
+  insertPaymentSummary,
+  insertSalesCategory,
 }
 export {
   updateUser,
   updatePost,
   updateSale,
   updatePayment,
-  updateSaleItem,
-  updateDailySalesSummary,
+  updateSalesItem,
+  updatePaymentSummary,
+  updateSalesCategory,
 }
 export {
   deleteUser,
   deletePost,
   deleteSale,
   deletePayment,
-  deleteSaleItem,
-  deleteDailySalesSummary,
+  deleteSalesItem,
+  deletePaymentSummary,
+  deleteSalesCategory,
 }

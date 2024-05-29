@@ -1,4 +1,4 @@
-import { date, dayjs, type Dayjs } from '@wwsc/dates'
+import { date, dayjs, type Dayjs } from '@wwsc/lib-dates'
 import type {
   Summary,
   TransactionHistory,
