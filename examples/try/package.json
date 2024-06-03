@@ -7,7 +7,8 @@
   "scripts": {
     "ora": "tsx ora.ts",
     "drizzle": "tsx drizzle.ts",
-    "migrate-ts": "tsx src/index.ts"
+    "migrate-ts": "tsx src/index.ts",
+    "fetch": "tsx fetch-retry.ts"
   },
   "keywords": [],
   "author": "",

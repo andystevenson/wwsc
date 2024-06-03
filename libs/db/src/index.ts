@@ -29,6 +29,12 @@ import {
   type SelectSalesCategory,
 } from './schema/sales-categories'
 
+import {
+  sageTransactions,
+  type InsertSageTransaction,
+  type SelectSageTransaction,
+} from './schema/sage-transactions'
+
 // functions
 import { insertPost, updatePost, deletePost } from './functions/post'
 import {
@@ -64,7 +70,24 @@ import {
   deleteSalesCategory,
 } from './functions/sales-category'
 
-export { db, posts, users, sales, salesItems, payments, paymentSummaries }
+import {
+  insertSageTransaction,
+  updateSageTransaction,
+  deleteSageTransaction,
+} from './functions/sage-transaction'
+
+export {
+  db,
+  posts,
+  users,
+  sales,
+  salesItems,
+  payments,
+  paymentSummaries,
+  salesCategories,
+  sageTransactions,
+}
+
 export type {
   InsertPost,
   SelectPost,
@@ -80,6 +103,8 @@ export type {
   SelectPaymentSummary,
   InsertSalesCategory,
   SelectSalesCategory,
+  InsertSageTransaction,
+  SelectSageTransaction,
 }
 export {
   insertUser,
@@ -89,6 +114,7 @@ export {
   insertSalesItem,
   insertPaymentSummary,
   insertSalesCategory,
+  insertSageTransaction,
 }
 export {
   updateUser,
@@ -98,6 +124,7 @@ export {
   updateSalesItem,
   updatePaymentSummary,
   updateSalesCategory,
+  updateSageTransaction,
 }
 export {
   deleteUser,
@@ -107,4 +134,5 @@ export {
   deleteSalesItem,
   deletePaymentSummary,
   deleteSalesCategory,
+  deleteSageTransaction,
 }

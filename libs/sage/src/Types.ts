@@ -494,7 +494,7 @@ export type Contact = Reference & {
   /** @description Unique reference for the contact */
   reference: string
   default_sales_ledger_account: LedgerAccount
-  default_sales_tax_rate: CSSVariableReferenceValue
+  default_sales_tax_rate: Reference
   default_purchase_ledger_account: LedgerAccount
   /** @description The VAT registration number of the contact. The format will be validated. */
   tax_number: string
@@ -542,10 +542,10 @@ export type Contact = Reference & {
    * <br><i>Customers only</i>
    */
   credit_terms_and_conditions: string
-  product_sales_price_type: CSSVariableReferenceValue
+  product_sales_price_type: Reference
   /** @description Used when importing contacts from external sources */
   source_guid: string
-  currency: CSSVariableReferenceValue
+  currency: Reference
   /**
    * @description Auxiliary reference. Used for German "Kreditorennummer" and "Debitorennummer".
    * <br>
@@ -764,87 +764,87 @@ export type TaxBreakdown = {
   amount?: number
 }
 
-export type OtherPaymentLine = {
-  ledger_account_id: string
-  total_amount: number
-  tax_rate_id: string
-  details: string
-  analysis_type_categories?: string[]
-  net_amount?: number
-  tax_amount?: number
-  is_purchase_for_resale?: boolean
-  trade_of_asset?: boolean
-  gst_amount?: number
-  pst_amount?: number
-  tax_recoverable?: boolean
-}
+// export type OtherPaymentLine = {
+//   ledger_account_id: string
+//   total_amount: number
+//   tax_rate_id: string
+//   details: string
+//   analysis_type_categories?: string[]
+//   net_amount?: number
+//   tax_amount?: number
+//   is_purchase_for_resale?: boolean
+//   trade_of_asset?: boolean
+//   gst_amount?: number
+//   pst_amount?: number
+//   tax_recoverable?: boolean
+// }
 
-export type OtherPayment = {
-  transaction_type_id: string
-  bank_account_id: string
-  payment_method_id: string
-  date: string
-  total_amount: number
-  reference: string
-  payment_lines: OtherPaymentLine[]
-  base_currency_total_itc_amount?: number
-  total_itc_amount?: number
-  base_currency_total_itr_amount?: number
-  total_itr_amount?: number
-  part_recoverable?: boolean
-  contact_id?: string
-  tax_address_region_id?: string
-  net_amount?: number
-  tax_amount?: number
-  withholding_tax_rate?: number
-  withholding_tax_amount?: number
-}
+// export type OtherPayment = {
+//   transaction_type_id: string
+//   bank_account_id: string
+//   payment_method_id: string
+//   date: string
+//   total_amount: number
+//   reference: string
+//   payment_lines: OtherPaymentLine[]
+//   base_currency_total_itc_amount?: number
+//   total_itc_amount?: number
+//   base_currency_total_itr_amount?: number
+//   total_itr_amount?: number
+//   part_recoverable?: boolean
+//   contact_id?: string
+//   tax_address_region_id?: string
+//   net_amount?: number
+//   tax_amount?: number
+//   withholding_tax_rate?: number
+//   withholding_tax_amount?: number
+// }
 
-export type OtherPaymentResponse = Reference & {
-  created_at: string
-  updated_at: string
-  transaction: Reference
-  transaction_type: Reference
-  deleted_at: string
-  base_currency_total_itc_amount: number
-  total_itc_amount: number
-  base_currency_total_itr_amount: number
-  total_itr_amount: number
-  part_recoverable: boolean
-  payment_method: Reference
-  contact: Reference
-  bank_account: Reference
-  tax_address_region: Reference
-  date: string
-  net_amount: number
-  tax_amount: number
-  total_amount: number
-  reference: string
-  payment_lines: OtherPaymentLinesResponse[]
-  editable?: boolean
-  deletable?: boolean
-  withholding_tax_rate?: number
-  withholding_tax_amount?: number
-}
+// export type OtherPaymentResponse = Reference & {
+//   created_at: string
+//   updated_at: string
+//   transaction: Reference
+//   transaction_type: Reference
+//   deleted_at: string
+//   base_currency_total_itc_amount: number
+//   total_itc_amount: number
+//   base_currency_total_itr_amount: number
+//   total_itr_amount: number
+//   part_recoverable: boolean
+//   payment_method: Reference
+//   contact: Reference
+//   bank_account: Reference
+//   tax_address_region: Reference
+//   date: string
+//   net_amount: number
+//   tax_amount: number
+//   total_amount: number
+//   reference: string
+//   payment_lines: OtherPaymentLinesResponse[]
+//   editable?: boolean
+//   deletable?: boolean
+//   withholding_tax_rate?: number
+//   withholding_tax_amount?: number
+// }
 
-export type OtherPaymentLinesResponse = {
-  id: string
-  displayed_as: string
-  analysis_type_categories: AnalysisTypeCategory[]
-  ledger_account: Reference
-  details: string
-  tax_rate: Reference
-  net_amount: number
-  tax_amount: number
-  total_amount: number
-  tax_breakdown: TaxBreakdown[]
-  is_purchase_for_resale: boolean
-  trade_of_asset: boolean
-  gst_amount: number
-  pst_amount: number
-  tax_recoverable: boolean
-}
+// export type OtherPaymentLinesResponse = {
+//   id: string
+//   displayed_as: string
+//   analysis_type_categories: AnalysisTypeCategory[]
+//   ledger_account: Reference
+//   details: string
+//   tax_rate: Reference
+//   net_amount: number
+//   tax_amount: number
+//   total_amount: number
+//   tax_breakdown: TaxBreakdown[]
+//   is_purchase_for_resale: boolean
+//   trade_of_asset: boolean
+//   gst_amount: number
+//   pst_amount: number
+//   tax_recoverable: boolean
+// }
 
-export type OtherPaymentRequest = {
-  other_payment: OtherPayment
-}
+// export type OtherPaymentRequest = {
+//   other_payment: OtherPayment
+// }

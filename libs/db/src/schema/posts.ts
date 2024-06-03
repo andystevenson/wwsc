@@ -10,7 +10,7 @@ export const posts = sqliteTable('posts', {
     .notNull()
     .references(() => users.id, { onDelete: 'cascade' }),
   createdAt: text('created_at')
-    .default(sql`CURRENT_TIMESTAMP`)
+    .default(sql<string>`(CURRENT_TIMESTAMP)`)
     .notNull(),
 })
 

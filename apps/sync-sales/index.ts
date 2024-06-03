@@ -15,10 +15,12 @@ const payouts: DailySummary[] = []
 
 await login()
 
+mkdirSync('./logs', { recursive: true })
+
 while (from.isBefore(to)) {
   console.log(from.format('YYYY-MM-DD'))
   const date = from.format('YYYY-MM-DD')
-  const directory = `./json/${date}`
+  const directory = `./logs/${date}`
   mkdirSync(directory, { recursive: true })
 
   // fetch the sales for the day
@@ -53,7 +55,7 @@ while (from.isBefore(to)) {
 }
 
 // write the collection of payouts to a file
-const file = `./json/${start.format('YYYY-MM')}-payouts.json`
+const file = `./logs/${start.format('YYYY-MM')}-payouts.json`
 writeFileSync(file, JSON.stringify(payouts, null, 2))
 
 await logout()

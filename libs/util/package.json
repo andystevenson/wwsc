@@ -1,0 +1,18 @@
+{
+  "name": "@wwsc/lib-util",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm --out-dir dist",
+    "lint": "tsc"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2"
+  },
+  "dependencies": {
+    "@tsconfig/node-lts": "^20.1.3"
+  }
+}

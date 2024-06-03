@@ -16,9 +16,9 @@ export const writeDailySalesSummaries = async (
   writeFileSync(file, JSON.stringify(salesSummaries, null, 2))
 
   for (const sale of salesSummaries) {
-    // await insertSale(sale)
+    await insertSale(sale)
     for (const payment of sale.payments) {
-      // await insertPayment(payment)
+      await insertPayment(payment)
     }
   }
 

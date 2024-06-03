@@ -1,4 +1,6 @@
+import { fetch } from '@wwsc/lib-util'
 let credentials: { token: string } | undefined
+
 export async function login() {
   const authentication = {
     subdomain: process.env.GOODTILL_SUBDOMAIN,

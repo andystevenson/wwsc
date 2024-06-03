@@ -1,5 +1,5 @@
-/// <reference lib="dom" /> // for fetch
 import * as env from './env'
+import { fetch } from '@wwsc/lib-util'
 
 export type Token = {
   access_token: string

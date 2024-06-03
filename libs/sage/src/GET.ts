@@ -1,5 +1,6 @@
 import { api } from './env'
 import type { Params } from './Types'
+import { fetch } from '@wwsc/lib-util'
 
 // GET is a high-order-function that returns a simple get request at single endpoint
 // it is a common pattern in the SAGE api
@@ -13,7 +14,6 @@ export function GET<T>(endpoint: string, bearer: string, params?: Params) {
     if (params) {
       const search = new URLSearchParams(params)
       url = `${url}?${search}`
-      console.log(`GET ${endpoint},${url}`)
     }
 
     const headers = {
@@ -24,7 +24,7 @@ export function GET<T>(endpoint: string, bearer: string, params?: Params) {
     const response = await fetch(url, { headers })
 
     if (!response.ok)
-      throw Error('sage-api-error:GET', {
+      throw new Error('sage-api-error:GET', {
         cause: { reason: `${response.statusText}`, status: response.status },
       })
 

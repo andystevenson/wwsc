@@ -1,11 +1,11 @@
-import { sqliteTable, integer, real, text } from 'drizzle-orm/sqlite-core'
-import type { DayOfWeek, Scope } from '@wwsc/lib-sumup-pos'
+import { sqliteTable, real, text } from 'drizzle-orm/sqlite-core'
+import type { DayOfWeek } from '@wwsc/lib-sumup-pos'
 
 export const salesCategories = sqliteTable('salesCategories', {
   id: text('id').primaryKey().notNull(),
   day: text('day').$type<DayOfWeek>().notNull(),
   date: text('date').notNull(),
-  scope: text('scope').$type<Scope>().notNull(),
+  scope: text('scope').notNull(),
   name: text('name').notNull(),
   quantity: real('quantity').notNull(),
   gross: real('gross').notNull(),

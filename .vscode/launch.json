@@ -8,6 +8,16 @@
       "type": "bun",
       "internalConsoleOptions": "neverOpen",
       "request": "launch",
+      "name": "sage-club",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}/apps/sage-club",
+      "stopOnEntry": true,
+      "watchMode": false
+    },
+    {
+      "type": "bun",
+      "internalConsoleOptions": "neverOpen",
+      "request": "launch",
       "name": "Debug File",
       "program": "${file}",
       "cwd": "${workspaceFolder}",

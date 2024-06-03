@@ -8,6 +8,7 @@ import {
 import memoize from 'lodash.memoize'
 import { authorization } from './sumup-auth.js'
 import { Big } from 'big.js'
+import { fetch } from '@wwsc/lib-util'
 
 const DP = 6
 
@@ -198,15 +199,19 @@ export const salesItemsFromPayments = async (
 ) => {
   let parts: SummarySalesItem[] = []
 
-  const { id: sales_id, sales_payments_history, register, staff } = sale
+  const {
+    id: sales_id,
+    sales_payments_history,
+    register,
+    staff,
+    sales_date_time,
+  } = sale
 
   const {
     id,
     product_id,
     price_inc_vat_per_item,
     item_notes,
-    created_at,
-    updated_at,
     line_total_after_discount,
     line_vat_after_discount,
     line_subtotal_after_discount,
@@ -259,6 +264,9 @@ export const salesItemsFromPayments = async (
       .round(DP)
       .toNumber()
 
+    // ! note sales items need to take the sales_date_time from the sale because
+    // ! the created_at could have happened the day before the sale!
+
     const salesItem: SummarySalesItem = {
       id: nPayments === 1 ? id : `from-payment-${id}.${n}`,
       sales_id,
@@ -271,8 +279,8 @@ export const salesItemsFromPayments = async (
       quantity,
       unit_price,
       item_notes,
-      created_at,
-      updated_at,
+      created_at: sales_date_time,
+      updated_at: sales_date_time,
       gross,
       discount,
       total,

@@ -21,6 +21,7 @@
     "@wwsc/lib-dates": "workspace:*",
     "@wwsc/lib-cli": "workspace:*",
     "@wwsc/lib-sumup-dashboard": "workspace:*",
+    "@wwsc/lib-sage": "workspace:*",
     "chalk": "^5.3.0",
     "cli-progress": "^3.12.0",
     "lodash.memoize": "^4.1.2",

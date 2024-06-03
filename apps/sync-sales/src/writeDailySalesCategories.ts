@@ -1,11 +1,13 @@
 import { dayjs } from '@wwsc/lib-dates'
 import { dailySalesCategories } from '@wwsc/lib-sumup-pos'
+import { sageSalesCategories } from './sageSalesCategories'
 
 import type {
   DailySalesCategory,
   SaleSummary,
   SummarySalesItem,
 } from '@wwsc/lib-sumup-pos'
+
 import { writeFileSync } from 'node:fs'
 import { insertSalesCategory, type InsertSalesCategory } from '@wwsc/lib-db'
 import { nanoid } from 'nanoid'
@@ -16,7 +18,9 @@ export const writeDailySalesCategories = async (
   items: SummarySalesItem[],
   directory: string,
 ) => {
-  const categories = dailySalesCategories(sales, items)
+  const dailyCategories = dailySalesCategories(sales, items)
+  const sageCategories = sageSalesCategories(items)
+  const categories = [...dailyCategories, ...sageCategories]
   if (categories.length === 0) return []
 
   const date = dayjs(categories[0].date).format('YYYY-MM-DD')
@@ -40,7 +44,7 @@ export const writeDailySalesCategories = async (
       fees: category.fees,
     }
 
-    // await insertSalesCategory(sc)
+    await insertSalesCategory(sc)
   }
 
   let file = `${directory}/sales-categories.json`
@@ -105,6 +109,11 @@ function checkDailyCategories(categories: DailySalesCategory[]) {
   const miscSumup = categories.filter((s) => s.scope === 'MISC_SUMUP')
   const miscVoucher = categories.filter((s) => s.scope === 'MISC_VOUCHER')
 
+  const deletedCash = categories.filter((s) => s.scope === 'DELETED_CASH')
+  const deletedCard = categories.filter((s) => s.scope === 'DELETED_CARD')
+  const deletedSumup = categories.filter((s) => s.scope === 'DELETED_SUMUP')
+  const deletedVoucher = categories.filter((s) => s.scope === 'DELETED_VOUCHER')
+
   const bankCharges = categories.filter((s) => s.scope === 'BANK_CHARGES')
   const misc = categories.filter(
     (s) => s.scope === 'PARENT_CATEGORY' && s.name === 'MISC',
@@ -138,6 +147,10 @@ function checkDailyCategories(categories: DailySalesCategory[]) {
     ...miscCard,
     ...miscSumup,
     ...miscVoucher,
+    ...deletedCash,
+    ...deletedCard,
+    ...deletedSumup,
+    ...deletedVoucher,
     ...bankCharges,
   ]
 
@@ -149,6 +162,7 @@ function checkDailyCategories(categories: DailySalesCategory[]) {
     ...teaCoffeeSumup,
     ...snacksSumup,
     ...miscSumup,
+    ...deletedSumup,
   ]
 
   const sageCashCategories = [
@@ -159,6 +173,7 @@ function checkDailyCategories(categories: DailySalesCategory[]) {
     ...teaCoffeeCash,
     ...snacksCash,
     ...miscCash,
+    ...deletedCash,
   ]
 
   const sageVoucherCategories = [
@@ -169,6 +184,7 @@ function checkDailyCategories(categories: DailySalesCategory[]) {
     ...teaCoffeeVoucher,
     ...snacksVoucher,
     ...miscVoucher,
+    ...deletedVoucher,
   ]
   checkAllTotalsMatch(all, registers, 'REGISTER')
   checkAllTotalsMatch(all, staff, 'STAFF')

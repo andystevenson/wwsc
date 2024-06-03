@@ -15,7 +15,7 @@ import type {
   CardBrand,
   PaymentMethod,
   EntryMode,
-  Scope,
+  Predicate,
 } from './Sale'
 
 export type {
@@ -29,7 +29,7 @@ export type {
   CardBrand,
   PaymentMethod,
   EntryMode,
-  Scope,
+  Predicate,
 }
 
 export {
@@ -41,3 +41,11 @@ export {
   dailySalesItems,
   dailySalesCategories,
 }
+
+import {
+  SingleCategory,
+  MultipleCategory,
+  addToCategory,
+  DefaultCategory,
+} from './salesCategoryGenerators'
+export { SingleCategory, MultipleCategory, addToCategory, DefaultCategory }

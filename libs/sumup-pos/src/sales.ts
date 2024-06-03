@@ -1,7 +1,7 @@
-/// <reference lib="dom" />
 import { authorization } from './sumup-auth'
 import { dayjs } from '@wwsc/lib-dates'
 import type { Sale } from './Sale'
+import { fetch } from '@wwsc/lib-util'
 
 /** sales - fetch sales from SumUp POS tills - known previously as goodtill
  * @param from - the start date for the sales

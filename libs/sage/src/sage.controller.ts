@@ -14,10 +14,6 @@ import type {
   LedgerEntry,
   TaxRateList,
   TaxRate,
-  OtherPayment,
-  OtherPaymentLine,
-  OtherPaymentResponse,
-  OtherPaymentRequest,
 } from './Types'
 import { dayjs } from '@wwsc/lib-dates'
 
@@ -143,18 +139,6 @@ export const getEntries = async (code: string, id: string) => {
     data.push(entryData)
   }
   return JSON.stringify(data, null, 2)
-}
-
-export const getUser = async (code: string) => {
-  // if we already have a user then return that
-
-  let user = await getSessionUser(code)
-  if (user) return user
-
-  const getUserData = GET('user', code)
-  user = await getUserData()
-  await saveSessionUser(code, user)
-  return user
 }
 
 export const getPaymentMethods = async (code: string) => {

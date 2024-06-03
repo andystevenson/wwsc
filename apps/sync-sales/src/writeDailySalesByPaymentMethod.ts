@@ -36,7 +36,7 @@ export const writeDailySalesByPaymentMethod = async (
       refunds: payments[type].refunds,
     }
 
-    // await insertPaymentSummary(paymentSummary)
+    await insertPaymentSummary(paymentSummary)
   }
 
   return payments
