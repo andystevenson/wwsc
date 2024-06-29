@@ -2,6 +2,8 @@ import { parseArgs, chalk } from '@wwsc/lib-cli'
 import { dayjs, tomorrowUK, todayUK, lastOctoberUK } from '@wwsc/lib-dates'
 import * as packageJson from '../package.json'
 
+const version = packageJson.default.version
+
 export const fromTo = () => {
   const args = parseArgs(process.argv.slice(2), {
     string: ['from', 'to'],
@@ -20,14 +22,14 @@ export const fromTo = () => {
   let { from, to, help, day, week, month, year, financial, version, v } = args
 
   if (version || v) {
-    console.log(packageJson.version)
+    console.log(version)
     process.exit()
   }
 
   if (help) {
     console.log(`${chalk.whiteBright.bold('sync-sales\n')}`)
     console.log(`${chalk.whiteBright.bold('VERSION')}`)
-    console.log(`  ${packageJson.version}\n`)
+    console.log(`  ${version}\n`)
     console.log(`${chalk.whiteBright.bold('USAGE')}`)
     console.log(`  sync-sales [options]\n`)
     console.log(`${chalk.whiteBright.bold('OPTIONS')}`)
@@ -35,16 +37,24 @@ export const fromTo = () => {
       `  --help            ${chalk.blueBright(': show this help page')}`,
     )
     console.log(
-      `  --version | -v    ${chalk.blueBright(`: show version ${chalk.whiteBright(`${packageJson.version}`)}`)}`,
+      `  --version | -v    ${chalk.blueBright(
+        `: show version ${chalk.whiteBright(`${version}`)}`,
+      )}`,
     )
     console.log(
-      `  --from YYYY-MM-DD ${chalk.blueBright(': date from which to start syncing sales - default is start of current day')}`,
+      `  --from YYYY-MM-DD ${chalk.blueBright(
+        ': date from which to start syncing sales - default is start of current day',
+      )}`,
     )
     console.log(
-      `  --to   YYYY-MM-DD ${chalk.blueBright(`: end date - default is date following '--from' date`)}`,
+      `  --to   YYYY-MM-DD ${chalk.blueBright(
+        `: end date - default is date following '--from' date`,
+      )}`,
     )
     console.log(
-      `  --day             ${chalk.blueBright(': sync sales for a single day')}`,
+      `  --day             ${chalk.blueBright(
+        ': sync sales for a single day',
+      )}`,
     )
     console.log(
       `  --week            ${chalk.blueBright(': sync sales for a week')}`,
@@ -56,7 +66,9 @@ export const fromTo = () => {
       `  --year            ${chalk.blueBright(': sync sales for a year')}`,
     )
     console.log(
-      `  --financial       ${chalk.blueBright(': sync sales for a financial year')}\n`,
+      `  --financial       ${chalk.blueBright(
+        ': sync sales for a financial year',
+      )}\n`,
     )
 
     process.exit()
@@ -65,14 +77,14 @@ export const fromTo = () => {
   const period = financial
     ? 'year'
     : year
-      ? 'year'
-      : month
-        ? 'month'
-        : week
-          ? 'week'
-          : day
-            ? 'day'
-            : 'day'
+    ? 'year'
+    : month
+    ? 'month'
+    : week
+    ? 'week'
+    : day
+    ? 'day'
+    : 'day'
 
   const format = 'YYYY-MM-DD'
 

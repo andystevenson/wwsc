@@ -35,6 +35,11 @@ import {
   type SelectSageTransaction,
 } from './schema/sage-transactions'
 
+import {
+  postcodes,
+  type InsertPostcode,
+  type SelectPostcode,
+} from './schema/postcodes'
 // functions
 import { insertPost, updatePost, deletePost } from './functions/post'
 import {
@@ -76,6 +81,12 @@ import {
   deleteSageTransaction,
 } from './functions/sage-transaction'
 
+import {
+  insertPostcode,
+  updatePostcode,
+  deletePostcode,
+} from './functions/postcode'
+
 export {
   db,
   posts,
@@ -86,6 +97,7 @@ export {
   paymentSummaries,
   salesCategories,
   sageTransactions,
+  postcodes,
 }
 
 export type {
@@ -105,6 +117,8 @@ export type {
   SelectSalesCategory,
   InsertSageTransaction,
   SelectSageTransaction,
+  InsertPostcode,
+  SelectPostcode,
 }
 export {
   insertUser,
@@ -115,6 +129,7 @@ export {
   insertPaymentSummary,
   insertSalesCategory,
   insertSageTransaction,
+  insertPostcode,
 }
 export {
   updateUser,
@@ -125,6 +140,7 @@ export {
   updatePaymentSummary,
   updateSalesCategory,
   updateSageTransaction,
+  updatePostcode,
 }
 export {
   deleteUser,
@@ -135,4 +151,5 @@ export {
   deletePaymentSummary,
   deleteSalesCategory,
   deleteSageTransaction,
+  deletePostcode,
 }

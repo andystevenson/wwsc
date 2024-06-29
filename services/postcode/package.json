@@ -1,0 +1,15 @@
+{
+  "name": "@wwsc/postcode",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "hono": "^4.3.7",
+    "@wwsc/lib-db": "workspace:*"
+  }
+}
