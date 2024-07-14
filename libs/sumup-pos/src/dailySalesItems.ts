@@ -6,7 +6,7 @@ import {
   SalesItem,
 } from './Sale.js'
 import memoize from 'lodash.memoize'
-import { authorization } from './sumup-auth.js'
+import { authorization } from './auth.js'
 import { Big } from 'big.js'
 import { fetch } from '@wwsc/lib-util'
 

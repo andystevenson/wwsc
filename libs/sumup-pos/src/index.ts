@@ -1,4 +1,4 @@
-import { login, logout } from './sumup-auth'
+import { login, logout } from './auth'
 import { sales } from './sales'
 import { dailySalesByPaymentMethod } from './dailySalesByPaymentMethod'
 import { dailySalesSummaries } from './dailySalesSummaries'

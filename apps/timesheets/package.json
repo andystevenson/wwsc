@@ -1,0 +1,15 @@
+{
+  "name": "@wwsc/timesheets",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "@wwsc/lib-sumup-pos": "workspace:*",
+    "hono": "^4.3.7"
+  }
+}

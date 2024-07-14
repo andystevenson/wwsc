@@ -8,7 +8,13 @@ const app = new Hono()
 
 // TODO: getAddress has other capabilities like location mapping etc.
 
-import { db, InsertPostcode, insertPostcode, SelectPostcode, postcodes } from '@wwsc/lib-db'
+import {
+  db,
+  InsertPostcode,
+  insertPostcode,
+  SelectPostcode,
+  postcodes,
+} from '@wwsc/lib-db'
 import { dayjs } from '@wwsc/lib-dates'
 
 app.use(cors())
@@ -17,16 +23,19 @@ app.use(prettyJSON())
 
 app.get('/', async (c) => {
   let postcode = c.req.query('postcode')
+
   console.log({ postcode })
   if (!postcode) {
     return c.json({ message: 'Missing postcode', ok: false }, 400)
   }
 
-
   // remove an whitespace from the postcode
   postcode = postcode.replace(/\s/g, '').toUpperCase()
 
-  let found = await db.selectDistinct().from(postcodes).where(eq(postcodes.postcode, postcode))
+  let found = await db
+    .selectDistinct()
+    .from(postcodes)
+    .where(eq(postcodes.postcode, postcode))
   if (found.length) {
     // we found a cached result
     let { result } = found[0]

@@ -1,4 +1,4 @@
-import { authorization } from './sumup-auth'
+import { authorization } from './auth'
 import { dayjs } from '@wwsc/lib-dates'
 import type { Sale } from './Sale'
 import { fetch } from '@wwsc/lib-util'
