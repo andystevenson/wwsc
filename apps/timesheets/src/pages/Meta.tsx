@@ -57,6 +57,7 @@ export const Meta: FC<Tags> = (props: Tags) => {
 
       <link rel="icon" href={icon} type="image/svg+xml" />
       <link rel="apple-touch-icon" type="image/png" href={icon180} />
+      <link rel="stylesheet" href="/style.css" />
       {scripts.map((src) => (
         <script src={src} defer />
       ))}

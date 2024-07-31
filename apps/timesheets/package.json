@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@wwsc/lib-sumup-pos": "workspace:*",
+    "@wwsc/lib-dates": "workspace:*",
     "hono": "^4.3.7"
   }
 }

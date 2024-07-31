@@ -1,23 +1,17 @@
-import { type WithSession, Hono, sessionMiddleware, store } from './Hono'
+import { sessionMiddleware, store, factory, protectedPage } from './Hono'
+import { HTTPException } from 'hono/http-exception'
 import { serveStatic } from 'hono/bun'
-import { logger } from 'hono/logger'
 import { cors } from 'hono/cors'
 import { trimTrailingSlash } from 'hono/trailing-slash'
-
-import login from './routes/login'
-import logout from './routes/logout'
-import auth from './routes/auth'
-
-// sage imports
-import user from './routes/user'
-import sage from './routes/sage'
-
 import home from './pages/home'
-import sales from './pages/sales'
+import user from './pages/user'
+import auth from './routes/auth'
+import shift from './routes/shift'
+import history from './routes/history'
+import { autoClockout } from './db/functions/autoClockout'
 
-const app = new Hono<WithSession>()
+const app = factory.createApp()
 
-app.use(logger())
 app.use(cors())
 app.use(trimTrailingSlash())
 app.use('/*', serveStatic({ root: './src/public' }))
@@ -25,8 +19,8 @@ app.use(
   '*',
   sessionMiddleware({
     store,
-    encryptionKey: Bun.env.SAGE_SESSION_ENCRYPTION_KEY,
-    expireAfterSeconds: 15 * 60,
+    encryptionKey: process.env.TIMESHEET_SESSION_KEY,
+    // expireAfterSeconds: 60 * 60 * 24 * 7,
     cookieOptions: {
       sameSite: 'Lax',
       path: '/',
@@ -35,12 +29,21 @@ app.use(
   }),
 )
 
-app.route('/', home)
-app.route('/sales', sales)
-app.route('/login', login)
-app.route('/logout', logout)
-app.route('/auth', auth)
-app.route('/user', user)
-app.route('/sage', sage)
+app.use('/user', protectedPage)
 
+app.route('/', home)
+app.route('/user', user)
+app.route('/auth', auth)
+app.route('/shift', shift)
+app.route('/history', history)
+
+// app.onError(() => {
+//   // if (err instanceof HTTPException) {
+//   //   // Get the custom response
+//   //   return err.getResponse()
+//   // }
+//   //...
+// })
+
+await autoClockout()
 export default app

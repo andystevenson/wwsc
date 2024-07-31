@@ -6,10 +6,6 @@ const home = new Hono<WithSession>()
 
 home.get('/', (c) => {
   const session = c.get('session')
-  const callback = session.get('callback')
-  const token = session.get('token')
-  console.log('callback in home', callback)
-  console.log('token in home', token)
   return c.html(
     <Page tags={tags}>
       <h1>Hello world</h1>

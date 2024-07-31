@@ -18,6 +18,16 @@
       "type": "bun",
       "internalConsoleOptions": "neverOpen",
       "request": "launch",
+      "name": "timesheets",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}/apps/timesheets",
+      "stopOnEntry": true,
+      "watchMode": false
+    },
+    {
+      "type": "bun",
+      "internalConsoleOptions": "neverOpen",
+      "request": "launch",
       "name": "Debug File",
       "program": "${file}",
       "cwd": "${workspaceFolder}",

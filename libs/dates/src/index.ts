@@ -3,11 +3,15 @@ import utc from 'dayjs/plugin/utc.js'
 import timezone from 'dayjs/plugin/timezone.js'
 import advancedFormat from 'dayjs/plugin/advancedFormat.js'
 import customParseFormat from 'dayjs/plugin/customParseFormat.js'
+import duration from 'dayjs/plugin/duration.js'
+import relativeTime from 'dayjs/plugin/relativeTime.js'
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(advancedFormat)
 dayjs.extend(customParseFormat)
+dayjs.extend(duration)
+dayjs.extend(relativeTime)
 
 export { dayjs, type Dayjs }
 export const tz = 'Europe/London'
@@ -21,8 +25,6 @@ export const today = dayjs().utc().startOf('day')
 export const tomorrow = today.add(1, 'day')
 export const yesterday = today.subtract(1, 'day')
 export const year = today.year()
-
-export const date = dayjs
 
 export const lastOctoberUK =
   todayUK.month() >= 9
@@ -110,14 +112,14 @@ type DateRange = {
 }
 
 export const dateRange = (range: string): DateRange => {
-  let from = date()
-  let to = date()
+  let from = dayjs()
+  let to = dayjs()
 
   let candidate = range
 
   const singleDate = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/(\d{4})$/
   if (singleDate.test(range)) {
-    from = date(range, ukDateFormat).startOf('day')
+    from = dayjs(range, ukDateFormat).startOf('day')
     to = from.add(1, 'day')
     candidate = 'regex'
   }
@@ -127,8 +129,8 @@ export const dateRange = (range: string): DateRange => {
 
   if (doubleDate.test(range)) {
     const [start, end] = range.split('-')
-    from = date(start, ukDateFormat).startOf('day')
-    to = date(end, ukDateFormat).add(1, 'day').startOf('day')
+    from = dayjs(start, ukDateFormat).startOf('day')
+    to = dayjs(end, ukDateFormat).add(1, 'day').startOf('day')
     candidate = 'regex'
   }
 

@@ -1,9 +1,9 @@
 console.log('sumup-pos/index.ts')
 
 import { login, logout } from './src/auth'
-import { staff } from './src/staff'
+import { registerClosures } from './src/index'
 
 await login()
-const result = await staff()
-console.log(result)
+const result = await registerClosures()
+console.log('%o', result)
 await logout()

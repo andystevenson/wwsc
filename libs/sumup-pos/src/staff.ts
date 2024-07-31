@@ -6,7 +6,6 @@
 
 import { authorization } from './auth'
 import { fetch } from '@wwsc/lib-util'
-import { write } from 'bun'
 
 export type Staff = {
   id: string
@@ -46,10 +45,9 @@ export async function staff() {
 
   if (response.ok) {
     const json = await response.json()
-    if (!json.status) return null
+    if (!json.status) return []
 
-    write('/var/log/wwsc/staff.json', JSON.stringify(json.data, null, 2))
-    return json.data
+    return json.data as Staff[]
   }
 
   throw Error(`sumup staff failed [${response.statusText}]`)

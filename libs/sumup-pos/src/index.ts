@@ -1,9 +1,12 @@
 import { login, logout } from './auth'
+import { staff, type Staff } from './staff'
 import { sales } from './sales'
 import { dailySalesByPaymentMethod } from './dailySalesByPaymentMethod'
 import { dailySalesSummaries } from './dailySalesSummaries'
 import { dailySalesItems } from './dailySalesItems'
 import { dailySalesCategories } from './dailySalesCategories'
+import { registerClosures } from './registerClosures'
+
 import type {
   DayOfWeek,
   Sale,
@@ -30,6 +33,7 @@ export type {
   PaymentMethod,
   EntryMode,
   Predicate,
+  Staff,
 }
 
 export {
@@ -40,6 +44,8 @@ export {
   dailySalesByPaymentMethod,
   dailySalesItems,
   dailySalesCategories,
+  staff,
+  registerClosures,
 }
 
 import {
