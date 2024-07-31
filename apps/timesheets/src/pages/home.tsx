@@ -12,12 +12,15 @@ home.get('/', (c) => {
   console.log('home', user)
   return c.html(
     <Page tags={newTags}>
-      <img
-        class="icon"
-        src="favicon.svg"
-        alt="West Warwickshire Sports Club icon"
-      />
+      <header>
+        <img
+          class="icon"
+          src="favicon.svg"
+          alt="West Warwickshire Sports Club icon"
+        />
+      </header>
       <dialog class="login">
+        <h1>timesheets</h1>
         <ul class="digits">
           <li>
             <button>7</button>

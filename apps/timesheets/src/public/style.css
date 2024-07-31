@@ -40,6 +40,16 @@ body {
 
 .login {
   padding: var(--size-2);
+
+  &:has(.invalid) {
+    border: 5px double var(--red-9);
+    animation: var(--animation-shake-x) forwards;
+  }
+  h1 {
+    font-size: var(--font-size-5);
+    color: var(--accent-color);
+    font-weight: bold;
+  }
   & .digits {
     margin: 0;
     padding: var(--size-fluid-2);
@@ -145,6 +155,7 @@ body {
 .icon {
   padding: 2ch;
   block-size: 14ch;
+  margin: 0 auto;
 }
 
 .clock {

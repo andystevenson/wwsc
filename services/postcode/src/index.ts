@@ -6,6 +6,10 @@ if (!apiKey) {
   process.exit(1)
 }
 
-const port = process.env.PORT || 8765
+const port = process.env.POSTCODE_PORT
+if (!port) {
+  console.error('POSTCODE_PORT not set')
+  process.exit(1)
+}
 console.log('Starting Postcode Server...', port)
 const server = Bun.serve({ port, fetch: app.fetch })

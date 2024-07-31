@@ -1,7 +1,7 @@
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
-      PORT: string
+      TIMESHEETS_PORT: string
       TIMESHEETS_DATABASE_URL: string
       TIMESHEETS_DATABASE_SYNC_URL: string
       TIMESHEETS_DATABASE_AUTH_TOKEN: string
@@ -14,8 +14,8 @@ declare global {
   }
 }
 
-if (!process.env.PORT) {
-  throw new Error('PORT environment variable is required')
+if (!process.env.TIMESHEETS_PORT) {
+  throw new Error('TIMESHEETS_PORT environment variable is required')
 }
 
 if (!process.env.TIMESHEETS_DATABASE_URL) {
@@ -42,11 +42,11 @@ if (!process.env.GOODTILL_PASSWORD) {
 }
 
 export default {
-  PORT: process.env.PORT,
-  TIMESHEETS_DATABASE_URL: process.env.TIMESHEET_DATABASE_URL,
-  TIMESHEETS_DATABASE_SYNC_URL: process.env.TIMESHEET_DATABASE_SYNC_URL,
-  TIMESHEETS_DATABASE_AUTH_TOKEN: process.env.TIMESHEET_DATABASE_AUTH_TOKEN,
-  TIMESHEETS_SESSION_KEY: process.env.TIMESHEET_SESSION_KEY,
+  TIMESHEETS_PORT: process.env.TIMESHEETS_PORT,
+  TIMESHEETS_DATABASE_URL: process.env.TIMESHEETS_DATABASE_URL,
+  TIMESHEETS_DATABASE_SYNC_URL: process.env.TIMESHEETS_DATABASE_SYNC_URL,
+  TIMESHEETS_DATABASE_AUTH_TOKEN: process.env.TIMESHEETS_DATABASE_AUTH_TOKEN,
+  TIMESHEETS_SESSION_KEY: process.env.TIMESHEETS_SESSION_KEY,
   GOODTILL_BASE_URL: process.env.GOODTILL_BASE_URL,
   GOODTILL_SUBDOMAIN: process.env.GOODTILL_SUBDOMAIN,
   GOODTILL_USERNAME: process.env.GOODTILL_USERNAME,

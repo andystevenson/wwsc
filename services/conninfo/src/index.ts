@@ -7,5 +7,10 @@ app.get('/', (c) => {
   return c.json(info)
 })
 
-const port = 7654
+const port = process.env.CONNINFO_PORT
+if (!port) {
+  console.error('CONNINFO_PORT not set')
+  process.exit(1)
+}
+
 const server = Bun.serve({ port, fetch: app.fetch })

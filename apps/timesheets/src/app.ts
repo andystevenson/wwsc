@@ -1,6 +1,8 @@
 import { sessionMiddleware, store, factory, protectedPage } from './Hono'
 import { HTTPException } from 'hono/http-exception'
 import { serveStatic } from 'hono/bun'
+import { ipRestriction } from 'hono/ip-restriction'
+import { getConnInfo } from 'hono/bun'
 import { cors } from 'hono/cors'
 import { trimTrailingSlash } from 'hono/trailing-slash'
 import home from './pages/home'
@@ -15,6 +17,14 @@ const app = factory.createApp()
 app.use(cors())
 app.use(trimTrailingSlash())
 app.use('/*', serveStatic({ root: './src/public' }))
+app.use(
+  '*',
+  ipRestriction(getConnInfo, {
+    denyList: [],
+    allowList: ['127.0.0.1', '::1'],
+  }),
+)
+
 app.use(
   '*',
   sessionMiddleware({

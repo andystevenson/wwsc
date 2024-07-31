@@ -13,6 +13,7 @@ let timeout = setTimeout(async () => {
 
 password?.addEventListener('input', async (e) => {
   let value = e.target.value
+  password.classList.remove('invalid')
   if (value.length === 4 && password.checkValidity()) {
     let response = await fetch(`/auth/login?passcode=${value}`, {
       method: 'GET',
@@ -21,7 +22,9 @@ password?.addEventListener('input', async (e) => {
         'Cache-Control': 'no-cache, no-store, must-revalidate',
       },
     })
+
     if (!response.ok) {
+      password.classList.add('invalid')
       return
     }
 
