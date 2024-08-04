@@ -12,7 +12,15 @@ async function handleRequest(request: Request): Promise<Response> {
   return new Response('Bad request', { status: 400 })
 }
 
+let port = process.env.WEBHOOKS_PORT
+if (!port) {
+  console.error('WEBHOOKS_PORT not set')
+  process.exit(1)
+}
+
+console.log(`webhooks on port ${port}`)
+
 Bun.serve({
-  port: 9876,
+  port,
   fetch: handleRequest,
 })

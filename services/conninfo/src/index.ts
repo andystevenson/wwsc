@@ -13,4 +13,5 @@ if (!port) {
   process.exit(1)
 }
 
+console.log(`conninfo on port ${port}`)
 const server = Bun.serve({ port, fetch: app.fetch })

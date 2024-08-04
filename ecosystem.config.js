@@ -1,20 +1,25 @@
 module.exports = {
   apps: [
-    // {
-    //   name: 'postcode',
-    //   script: 'services/postcode/src/index.ts',
-    //   interpreter: 'bun',
-    // },
     {
       name: 'conninfo',
       script: 'services/conninfo/src/index.ts',
       interpreter: 'bun',
     },
     {
+      name: 'postcode',
+      script: 'services/postcode/src/index.ts',
+      interpreter: 'bun',
+    },
+    {
+      name: 'postcode',
+      script: 'services/postcode/src/index.ts',
+      interpreter: 'bun',
+    },
+    {
       name: 'timesheets',
       script: 'src/index.ts',
       cwd: 'apps/timesheets',
-      interpreter: 'bun --hot',
+      interpreter: 'bun',
     },
   ],
   // Deployment Configuration
@@ -22,7 +27,7 @@ module.exports = {
     production: {
       user: 'ajs',
       host: ['wwsc.cloud'],
-      ref: 'origin/master',
+      ref: 'origin/main',
       repo: 'git@github.com:andystevenson/wwsc.git',
       path: '/home/ajs',
       'pre-setup': "echo 'pre-setup stuff'",
