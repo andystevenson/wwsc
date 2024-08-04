@@ -1,6 +1,6 @@
 import { eq, and, isNull } from 'drizzle-orm'
 import { dayjs } from '@wwsc/lib-dates'
-import { factory, protectedPage } from '../Hono'
+import { factory, protectedPage } from '../hono'
 import { db, shifts, InsertShift } from '../db/db'
 import { type Staff } from '@wwsc/lib-sumup-pos'
 
@@ -13,7 +13,12 @@ shift.post('/clockin', async (c) => {
   let start = dayjs(request.start)
 
   let session = c.get('session')
-  let user = session.get('user') as Staff
+  let user = c.get('user')
+
+  if (!session || !user) {
+    return c.redirect('/')
+  }
+
   let record: InsertShift = {
     uid: request.uid,
     username: user.display_name,
@@ -33,13 +38,13 @@ shift.post('/clockin', async (c) => {
 
   if (current.length) {
     let existingShift = current[0]
-    session.set('shift', existingShift)
+    c.set('shift', existingShift)
     return c.json(existingShift)
   }
 
   let result = await db.insert(shifts).values(record).returning()
   let newShift = result[0]
-  session.set('shift', newShift)
+  c.set('shift', newShift)
   console.log('clockin', request, newShift)
 
   return c.json(newShift)
@@ -54,8 +59,7 @@ shift.post('/clockout', async (c) => {
     .returning()
 
   let updated = result[0]
-  let session = c.get('session')
-  session.set('shift', null)
+  c.set('shift', null)
 
   console.log('clockout', request, updated)
   return c.json(updated)

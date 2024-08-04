@@ -1,5 +1,5 @@
 import { Page } from './Page'
-import { factory } from '../Hono'
+import { factory } from '../hono'
 import tags from './Tags'
 import { type Staff } from '@wwsc/lib-sumup-pos'
 import { type Shift } from '../db/Types'
@@ -19,17 +19,16 @@ userTags.scripts = [
   '/js/logout.js',
 ]
 
-const home = factory.createApp()
+const user = factory.createApp()
 
-home.get('/', (c) => {
-  const session = c.get('session')
-  const user = session?.get('user') as Staff
-  const shift = session?.get('shift') as Shift
+user.get('/', (c) => {
+  const user = c.get('user') as Staff
+  const shift = c.get('shift') as Shift
   const onshift = shift ? 'shift active' : 'shift'
   const clockin = shift ? 'clockin' : 'clockin active'
   const startDateTime = shift ? shift.start : ''
   const startTime = shift ? dayjs(shift.start).format('HH:mm') : '00:00'
-  console.log('home', { user, shift, onshift, clockin })
+  console.log('user', { user, shift, onshift, clockin })
   return c.html(
     <Page tags={userTags} bodyClass="page">
       <header>
@@ -213,4 +212,4 @@ home.get('/', (c) => {
   )
 })
 
-export default home
+export default user

@@ -1,4 +1,5 @@
 import { drizzle } from 'drizzle-orm/libsql'
+import { eq, and, isNull } from 'drizzle-orm'
 import { createClient } from '@libsql/client'
 import { shifts, type InsertShift, type SelectShift } from './schema/shifts'
 
@@ -13,4 +14,4 @@ const client = createClient({
 
 const db = drizzle(client)
 
-export { db, shifts, type InsertShift, type SelectShift }
+export { db, shifts, eq, and, isNull, type InsertShift, type SelectShift }

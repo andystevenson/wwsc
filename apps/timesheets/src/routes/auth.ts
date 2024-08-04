@@ -1,7 +1,8 @@
-import { factory } from '../Hono'
-import { login, logout, staff, type Staff } from '@wwsc/lib-sumup-pos'
 import { isNull, and, eq } from 'drizzle-orm'
+import { factory } from '../hono'
+import { findStaff } from '../pos/pos'
 import { db, shifts, SelectShift } from '../db/db'
+import { lucia, addSessionUser } from '../lucia'
 
 const auth = factory.createApp()
 
@@ -15,7 +16,6 @@ auth.get('/login', async (c) => {
     return c.json({ error: 'passcode required' }, 400)
   }
 
-  let session = c.get('session')
   let user = await findStaff(+passcode)
   let shift: SelectShift | null = null
 
@@ -23,7 +23,8 @@ auth.get('/login', async (c) => {
     c.status(401)
     return c.json({ error: 'invalid passcode' }, 401)
   }
-  session.set('user', user)
+
+  c.set('user', user)
 
   // check if the user is already clocked in
   let current = await db
@@ -33,46 +34,36 @@ auth.get('/login', async (c) => {
 
   if (current.length) {
     shift = current[0]
-    session.set('shift', shift)
+    c.set('shift', shift)
   }
 
-  console.log('user session', user, shift)
+  let session = await lucia.createSession(user.id, {})
+  let cookie = lucia.createSessionCookie(session.id).serialize()
+  addSessionUser(user)
+  c.header('Set-Cookie', cookie, { append: true })
+
+  c.set('session', session)
+  console.log('user session', session, user, shift)
   return c.redirect('/user', 301)
 })
 
 auth.post('/logout', async (c) => {
-  console.log('logout')
-  let session = c.get('session')
-  session.set('user', null)
-  session.deleteSession()
+  const session = c.get('session')
+  const user = c.get('user')
+  const shift = c.get('shift')
+  console.log('logout', session, user, shift)
+
+  if (!session || !user) {
+    return c.redirect('/')
+  }
+
+  await lucia.invalidateSession(session.id)
+  let cookie = lucia.createBlankSessionCookie().serialize()
+  c.header('Set-Cookie', cookie, { append: true })
+  c.set('session', null)
+  c.set('user', null)
+  c.set('shift', null)
   return c.redirect('/')
 })
-
-async function getStaff() {
-  try {
-    await login()
-    let all = await staff()
-    await logout()
-    return all
-  } catch (error) {
-    console.error('getStaff', error)
-    return []
-  }
-}
-
-let allStaff: Staff[] = []
-
-async function findStaff(passcode: number) {
-  if (!allStaff.length) {
-    allStaff = await getStaff()
-  }
-  return allStaff.find((staff) => staff.passcode === passcode)
-}
-
-setTimeout(async () => {
-  // refresh the staff list every 60 seconds
-  let all = await getStaff()
-  allStaff = all
-}, 1000 * 60)
 
 export default auth

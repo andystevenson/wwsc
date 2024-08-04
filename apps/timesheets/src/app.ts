@@ -1,7 +1,8 @@
-import { sessionMiddleware, store, factory, protectedPage } from './Hono'
+import { sessionMiddleware, factory, protectedPage } from './hono'
 import { HTTPException } from 'hono/http-exception'
 import { serveStatic } from 'hono/bun'
 import { ipRestriction } from 'hono/ip-restriction'
+import { csrf } from 'hono/csrf'
 import { getConnInfo } from 'hono/bun'
 import { cors } from 'hono/cors'
 import { trimTrailingSlash } from 'hono/trailing-slash'
@@ -15,6 +16,7 @@ import { autoClockout } from './db/functions/autoClockout'
 const app = factory.createApp()
 
 app.use(cors())
+app.use(csrf())
 app.use(trimTrailingSlash())
 app.use('/*', serveStatic({ root: './src/public' }))
 app.use(
@@ -25,19 +27,7 @@ app.use(
   }),
 )
 
-app.use(
-  '*',
-  sessionMiddleware({
-    store,
-    encryptionKey: process.env.TIMESHEET_SESSION_KEY,
-    // expireAfterSeconds: 60 * 60 * 24 * 7,
-    cookieOptions: {
-      sameSite: 'Lax',
-      path: '/',
-      httpOnly: true,
-    },
-  }),
-)
+app.use('*', sessionMiddleware)
 
 app.use('/user', protectedPage)
 

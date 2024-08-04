@@ -276,6 +276,7 @@ confirm?.addEventListener('click', async () => {
     let id = shift.querySelector('[name="id"]').value
     let start = shift.querySelector('[name="start"]').value
     let end = shift.querySelector('[name="end"]').value
+    let duration = shift.querySelector('.duration p').textContent
     let supervisor = shift.querySelector('[name="supervisor"]').checked
     let nobreaks = shift.querySelector('[name="nobreaks"]').checked
     let notes = shift.querySelector('[name="notes"]').value
@@ -285,6 +286,7 @@ confirm?.addEventListener('click', async () => {
       id,
       start,
       end,
+      duration,
       supervisor,
       nobreaks,
       notes,

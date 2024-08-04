@@ -1,5 +1,5 @@
-import { factory, protectedPage, Context } from '../Hono'
-import { dayjs, Dayjs } from '@wwsc/lib-dates'
+import { factory, protectedPage, Context } from '../hono'
+import { dayjs } from '@wwsc/lib-dates'
 import { longerHTML } from '../utilities/shiftHTML'
 import { type Staff } from '@wwsc/lib-sumup-pos'
 import { db, shifts } from '../db/db'
@@ -66,8 +66,7 @@ const dateRange = (range: DateRange) => {
 }
 
 const selectShifts = async (c: Context, range: DateRange) => {
-  let session = c.get('session')
-  let user = session.get('user') as Staff
+  let user = c.get('user') as Staff
   let superuser = user.display_order === 127
 
   let { startTime, endTime } = dateRange(range)

@@ -1,5 +1,5 @@
 import { Page } from './Page'
-import { factory } from '../Hono'
+import { factory } from '../hono'
 import tags from './Tags'
 let newTags = structuredClone(tags)
 newTags.scripts = ['/js/home.js']
@@ -7,9 +7,6 @@ newTags.scripts = ['/js/home.js']
 const home = factory.createApp()
 
 home.get('/', (c) => {
-  const session = c.get('session')
-  const user = session?.get('user')
-  console.log('home', user)
   return c.html(
     <Page tags={newTags}>
       <header>

@@ -1,25 +1,24 @@
-import { Hono, Context } from 'hono'
+import { Hono, type Context } from 'hono'
 import { createFactory } from 'hono/factory'
-import { Session, sessionMiddleware } from 'hono-sessions'
-import { BunSqliteStore } from 'hono-sessions/bun-sqlite-store'
-import { Database } from 'bun:sqlite'
-
-const db = new Database('file:/var/lib/wwsc/timesheets-sessions.db')
-const store = new BunSqliteStore(db)
+import { getCookie } from 'hono/cookie'
+import { lucia, User, Session } from './lucia'
+import { findStaff } from './pos/pos'
+import { db, shifts, eq, and, isNull } from './db/db'
+import { Shift } from './db/Types'
 
 export type WithSession = {
   Variables: {
-    session: Session
-    session_key_rotation: boolean
+    user: User | null
+    session: Session | null
+    shift: Shift | null
   }
 }
 
 const factory = createFactory<WithSession>()
 
 const protectedPage = factory.createMiddleware(async (c, next) => {
-  let session = c.get('session')
   c.header('Cache-Control', 'no-cache, no-store, must-revalidate')
-  let user = session.get('user')
+  let user = c.get('user')
   if (!user) {
     console.error('unauthorized')
     return c.redirect('/')
@@ -28,12 +27,46 @@ const protectedPage = factory.createMiddleware(async (c, next) => {
   await next()
 })
 
-export {
-  Hono,
-  type Session,
-  type Context,
-  sessionMiddleware,
-  store,
-  factory,
-  protectedPage,
-}
+const sessionMiddleware = factory.createMiddleware(async (c, next) => {
+  const sessionId = getCookie(c, lucia.sessionCookieName) ?? null
+  console.log('sessionMiddleware', sessionId)
+  if (!sessionId) {
+    c.set('user', null)
+    c.set('shift', null)
+    c.set('session', null)
+    return next()
+  }
+
+  let { session, user } = await lucia.validateSession(sessionId)
+  console.log('sessionMiddleware', { session, user })
+
+  if (session && session.fresh) {
+    // use `header()` instead of `setCookie()` to avoid TS errors
+    c.header('Set-Cookie', lucia.createSessionCookie(session.id).serialize(), {
+      append: true,
+    })
+  }
+  if (!session) {
+    c.header('Set-Cookie', lucia.createBlankSessionCookie().serialize(), {
+      append: true,
+    })
+  }
+
+  if (user) {
+    let staff = await findStaff(user.id)
+    let current = await db
+      .select()
+      .from(shifts)
+      .where(and(eq(shifts.uid, user.id), isNull(shifts.end)))
+
+    if (current.length) {
+      c.set('shift', current[0])
+    }
+
+    staff ? c.set('user', staff) : c.set('user', null)
+  }
+  c.set('session', session)
+  return next()
+})
+
+export { Hono, Context, sessionMiddleware, factory, protectedPage }
