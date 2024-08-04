@@ -30,7 +30,7 @@ module.exports = {
       ref: 'origin/main',
       repo: 'git@github.com:andystevenson/wwsc.git',
       path: '/home/ajs',
-      'pre-setup': "echo 'pre-setup stuff'",
+      'pre-setup': 'wwsc-setup.sh',
       'post-setup': "echo 'post-setup stuff'",
       'pre-deploy': "echo 'pre-deploy stuff'",
       'post-deploy': "echo 'post-deploy stuff'",
