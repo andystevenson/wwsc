@@ -17,4 +17,19 @@ module.exports = {
       interpreter: 'bun --hot',
     },
   ],
+  // Deployment Configuration
+  deploy: {
+    production: {
+      user: 'ajs',
+      host: ['wwsc.cloud'],
+      ref: 'origin/master',
+      repo: 'git@github.com:andystevenson/wwsc.git',
+      path: '/home/ajs',
+      'pre-setup': "echo 'pre-setup stuff'",
+      'post-setup': "echo 'post-setup stuff'",
+      'pre-deploy': 'pre-deploy stuff',
+      'post-deploy': 'post-deploy stuff',
+      'pre-deploy-local': "echo 'some local command'",
+    },
+  },
 }
