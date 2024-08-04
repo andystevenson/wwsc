@@ -1,5 +1,5 @@
 import { isNull, and, eq } from 'drizzle-orm'
-import { factory } from '../hono'
+import { factory } from '../hono-factory'
 import { findStaff } from '../pos/pos'
 import { db, shifts, SelectShift } from '../db/db'
 import { lucia, addSessionUser } from '../lucia'

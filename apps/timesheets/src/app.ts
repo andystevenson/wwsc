@@ -1,4 +1,4 @@
-import { sessionMiddleware, factory, protectedPage } from './hono'
+import { sessionMiddleware, factory, protectedPage } from './hono-factory'
 import { HTTPException } from 'hono/http-exception'
 import { serveStatic } from 'hono/bun'
 import { ipRestriction } from 'hono/ip-restriction'

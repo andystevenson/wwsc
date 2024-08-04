@@ -1,4 +1,4 @@
-import { factory, protectedPage, Context } from '../hono'
+import { factory, protectedPage, Context } from '../hono-factory'
 import { dayjs } from '@wwsc/lib-dates'
 import { longerHTML } from '../utilities/shiftHTML'
 import { type Staff } from '@wwsc/lib-sumup-pos'

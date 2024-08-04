@@ -1,6 +1,6 @@
 import { eq, and, isNull } from 'drizzle-orm'
 import { dayjs } from '@wwsc/lib-dates'
-import { factory, protectedPage } from '../hono'
+import { factory, protectedPage } from '../hono-factory'
 import { db, shifts, InsertShift } from '../db/db'
 import { type Staff } from '@wwsc/lib-sumup-pos'
 

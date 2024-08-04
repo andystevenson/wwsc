@@ -1,5 +1,5 @@
 import { Page } from './Page'
-import { factory } from '../hono'
+import { factory } from '../hono-factory'
 import tags from './Tags'
 import { type Staff } from '@wwsc/lib-sumup-pos'
 import { type Shift } from '../db/Types'

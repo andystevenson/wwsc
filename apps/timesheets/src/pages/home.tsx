@@ -1,5 +1,5 @@
 import { Page } from './Page'
-import { factory } from '../hono'
+import { factory } from '../hono-factory'
 import tags from './Tags'
 let newTags = structuredClone(tags)
 newTags.scripts = ['/js/home.js']
