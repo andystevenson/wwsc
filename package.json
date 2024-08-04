@@ -7,7 +7,16 @@
     "examples/*",
     "libs/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "bun run build-dates && bun run build-util && bun run build-cli && bun run build-dashboard && bun run build-pos && bun run build-sage && bun run build-db",
+    "build-dates": "bun --filter=@wwsc/lib-dates run build",
+    "build-util": "bun --filter=@wwsc/lib-util run build",
+    "build-cli": "bun --filter=@wwsc/lib-cli run build",
+    "build-dashboard": "bun --filter=@wwsc/lib-sumup-dashboard run build",
+    "build-pos": "bun --filter=@wwsc/lib-sumup-pos run build",
+    "build-sage": "bun --filter=@wwsc/lib-sage run build",
+    "build-db": "bun --filter=@wwsc/lib-db run build"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
