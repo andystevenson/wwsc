@@ -11,8 +11,8 @@ module.exports = {
       interpreter: 'bun',
     },
     {
-      name: 'postcode',
-      script: 'services/postcode/src/index.ts',
+      name: 'webhooks',
+      script: 'services/webhooks/src/index.ts',
       interpreter: 'bun',
     },
     {
