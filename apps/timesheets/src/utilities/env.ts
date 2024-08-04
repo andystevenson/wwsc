@@ -10,6 +10,7 @@ declare global {
       GOODTILL_SUBDOMAIN: string
       GOODTILL_USERNAME: string
       GOODTILL_PASSWORD: string
+      WHITELISTED_IPS: string
     }
   }
 }
@@ -41,6 +42,10 @@ if (!process.env.GOODTILL_PASSWORD) {
   throw new Error('GOODTILL_PASSWORD environment variable is required')
 }
 
+if (!process.env.WHITELISTED_IPS) {
+  throw new Error('WHITELISTED_IPS environment variable is required')
+}
+
 export default {
   TIMESHEETS_PORT: process.env.TIMESHEETS_PORT,
   TIMESHEETS_DATABASE_URL: process.env.TIMESHEETS_DATABASE_URL,
@@ -51,4 +56,5 @@ export default {
   GOODTILL_SUBDOMAIN: process.env.GOODTILL_SUBDOMAIN,
   GOODTILL_USERNAME: process.env.GOODTILL_USERNAME,
   GOODTILL_PASSWORD: process.env.GOODTILL_PASSWORD,
+  WHITELISTED_IPS: process.env.WHITELISTED_IPS,
 }

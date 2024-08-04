@@ -19,11 +19,14 @@ app.use(cors())
 app.use(csrf())
 app.use(trimTrailingSlash())
 app.use('/*', serveStatic({ root: './src/public' }))
+
+let whitelist = JSON.parse(process.env.WHITELISTED_IPS || '[]')
+console.log('whitelist', whitelist)
 app.use(
   '*',
   ipRestriction(getConnInfo, {
     denyList: [],
-    allowList: ['127.0.0.1', '::1'],
+    allowList: whitelist,
   }),
 )
 
