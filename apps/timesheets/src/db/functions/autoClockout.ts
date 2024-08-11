@@ -3,7 +3,6 @@ import { db, shifts, type InsertShift } from '../db'
 import { dayjs } from '@wwsc/lib-dates'
 
 export async function autoClockout() {
-  console.log('auto clockout', dayjs().format('YYYY-MM-DDTHH:mm:ss'))
   const now = dayjs()
   const shiftsToClockout = await db
     .select()

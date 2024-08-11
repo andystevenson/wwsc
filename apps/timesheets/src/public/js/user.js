@@ -1,4 +1,6 @@
-console.log('user.js loaded')
+dayjs.extend(window.dayjs_plugin_advancedFormat)
+dayjs.extend(window.dayjs_plugin_duration)
+dayjs.extend(window.dayjs_plugin_relativeTime)
 
 const clockin = document.querySelector('.clockin')
 const clockout = document.querySelector('.clockout')
@@ -147,20 +149,17 @@ function trackClockedInShifts() {
 }
 
 history?.addEventListener('change', async (e) => {
-  console.log('history change', e.target, e.target.value)
-
   if (e.target.name === 'allapproved') {
     allApproved(e.target)
     return
   }
 
   const shift = e.target.closest('li')
-  shift && updateShift(shift)
+  shift && shiftUpdated(shift)
 })
 
 history?.addEventListener('click', async (e) => {
   let update = e.target.closest('button')
-  console.log('history click', e.target, update)
   if (update?.classList.contains('update')) {
     update.classList.add('active')
     const updated = selectUpdated()
@@ -183,7 +182,7 @@ history?.addEventListener('click', async (e) => {
   }
 })
 
-function updateShift(shiftElement) {
+function shiftUpdated(shiftElement) {
   shiftElement.classList.add('updated')
   validateUpdate(shiftElement)
 }
@@ -260,20 +259,25 @@ function selectUpdated() {
   const update = history.querySelector('.update.active')
   const scope = update?.closest('details')
   const updated = Array.from(scope?.querySelectorAll('.updated'))
-  console.log('selectUpdated', updated)
   return updated
 }
 
 confirm?.addEventListener('click', async () => {
   let updated = selectUpdated()
-  console.log('confirm click', updated)
   if (updated.length === 0) {
     return
   }
 
   let updates = []
+  let deletes = []
   for (let shift of updated) {
     let id = shift.querySelector('[name="id"]').value
+    let deleteme = shift.querySelector('[name="deleteme"]').checked
+    if (deleteme) {
+      deletes.push(id)
+      continue
+    }
+
     let start = shift.querySelector('[name="start"]').value
     let end = shift.querySelector('[name="end"]').value
     let duration = shift.querySelector('.duration p').textContent
@@ -296,6 +300,25 @@ confirm?.addEventListener('click', async () => {
     updates.push(update)
   }
 
+  await updateShifts(updates)
+  let background = setTimeout(async () => {
+    await deleteShifts(deletes), clearTimeout(background)
+  }, 2000)
+
+  closeDetails()
+})
+
+function closeDetails() {
+  let details = history.querySelectorAll('details[open]')
+  details.forEach((d) => {
+    d.removeAttribute('open')
+  })
+}
+
+async function updateShifts(updates) {
+  if (updates.length === 0) {
+    return
+  }
   const request = {
     method: 'POST',
     headers: {
@@ -318,4 +341,33 @@ confirm?.addEventListener('click', async () => {
   cancelConfirmation.textContent = 'exit'
   cancelConfirmation.classList.add('exit')
   confirm.style.display = 'none'
-})
+}
+
+async function deleteShifts(ids) {
+  if (ids.length === 0) {
+    return
+  }
+
+  const request = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
+    },
+    body: JSON.stringify(ids),
+  }
+
+  const response = await fetch('/shift/deletes', request)
+  if (!response.ok) {
+    confirmation.close()
+    raiseError('delete failed, please logout!')
+    return
+  }
+  // delete was successful
+  confirmation.firstElementChild.textContent = `Deleted ${ids.length} ${
+    ids.length > 1 ? 'shifts' : 'shift'
+  } successfully!`
+  cancelConfirmation.textContent = 'exit'
+  cancelConfirmation.classList.add('exit')
+  confirm.style.display = 'none'
+}

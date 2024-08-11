@@ -1,4 +1,3 @@
-console.log('clock.js loaded')
 const date = document.querySelector('.date')
 const clock = document.querySelector('.clock')
 dayjs.extend(window.dayjs_plugin_advancedFormat)

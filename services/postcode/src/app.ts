@@ -1,9 +1,12 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { prettyJSON } from 'hono/pretty-json'
+import { ipRestriction } from 'hono/ip-restriction'
 import { trimTrailingSlash } from 'hono/trailing-slash'
 import { find } from './getAddress'
 import { eq } from 'drizzle-orm'
+import { conninfo } from '@wwsc/lib-hono'
+
 const app = new Hono()
 
 // TODO: getAddress has other capabilities like location mapping etc.
@@ -17,6 +20,15 @@ import {
 } from '@wwsc/lib-db'
 import { dayjs } from '@wwsc/lib-dates'
 
+let whitelist = JSON.parse(process.env.WHITELISTED_IPS || '[]')
+
+app.use(
+  '*',
+  ipRestriction(conninfo('postcode'), {
+    denyList: [],
+    allowList: whitelist,
+  }),
+)
 app.use(cors())
 app.use(trimTrailingSlash())
 app.use(prettyJSON())

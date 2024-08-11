@@ -29,7 +29,6 @@ const protectedPage = factory.createMiddleware(async (c, next) => {
 
 const sessionMiddleware = factory.createMiddleware(async (c, next) => {
   const sessionId = getCookie(c, lucia.sessionCookieName) ?? null
-  console.log('sessionMiddleware', sessionId)
   if (!sessionId) {
     c.set('user', null)
     c.set('shift', null)
@@ -38,7 +37,6 @@ const sessionMiddleware = factory.createMiddleware(async (c, next) => {
   }
 
   let { session, user } = await lucia.validateSession(sessionId)
-  console.log('sessionMiddleware', { session, user })
 
   if (session && session.fresh) {
     // use `header()` instead of `setCookie()` to avoid TS errors

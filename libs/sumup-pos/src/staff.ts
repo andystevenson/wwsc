@@ -29,6 +29,12 @@ export type Staff = {
   display_name: string
   can_modify_staff: boolean
   can_set_shareable: boolean
+  isSuperuser?: boolean // custom property annotated by the developer
+  isAdmin?: boolean // custom property annotated by the developer
+  isUser?: boolean // custom property annotated by the developer
+  isTrustee?: boolean // custom property annotated by the developer
+  isZeroHours?: boolean // custom property annotated by the developer
+  isPermanent?: boolean // custom property annotated by the developer
 }
 
 export type IsShareable = 'No' | 'Yes'

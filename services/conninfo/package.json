@@ -1,5 +1,5 @@
 {
-  "name": "@wwsc/postcode",
+  "name": "@wwsc/conninfo",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "hono": "^4.3.7",
-    "@wwsc/lib-db": "workspace:*",
     "@wwsc/lib-hono": "workspace:*"
   }
 }

@@ -8,7 +8,6 @@ const auth = factory.createApp()
 
 auth.get('/login', async (c) => {
   let passcode = c.req.query('passcode')
-  console.log('login', passcode)
   c.header('Cache-Control', 'no-cache, no-store, must-revalidate')
 
   if (!passcode) {
@@ -43,7 +42,6 @@ auth.get('/login', async (c) => {
   c.header('Set-Cookie', cookie, { append: true })
 
   c.set('session', session)
-  console.log('user session', session, user, shift)
   return c.redirect('/user', 301)
 })
 
@@ -51,7 +49,6 @@ auth.post('/logout', async (c) => {
   const session = c.get('session')
   const user = c.get('user')
   const shift = c.get('shift')
-  console.log('logout', session, user, shift)
 
   if (!session || !user) {
     return c.redirect('/')

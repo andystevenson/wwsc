@@ -1,5 +1,3 @@
-console.log('home.js loaded')
-
 const login = document.querySelector('.login')
 const password = document.getElementById('password')
 

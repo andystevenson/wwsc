@@ -14,23 +14,30 @@ userTags.scripts = [
   'https://cdn.jsdelivr.net/npm/dayjs@1/plugin/advancedFormat.js',
   'https://cdn.jsdelivr.net/npm/dayjs@1/plugin/duration.js',
   'https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js',
+  'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.js',
   '/js/user.js',
   '/js/clock.js',
   '/js/logout.js',
+  '/js/printer.js',
 ]
 
 const user = factory.createApp()
 
 user.get('/', (c) => {
-  const user = c.get('user') as Staff
-  const shift = c.get('shift') as Shift
+  const user = c.get('user')
+  if (!user) {
+    return c.redirect('/')
+  }
+
+  let privileges = user.mobile ? user.mobile.split(',')[0] : 'user'
+  const shift = c.get('shift')
   const onshift = shift ? 'shift active' : 'shift'
   const clockin = shift ? 'clockin' : 'clockin active'
   const startDateTime = shift ? shift.start : ''
   const startTime = shift ? dayjs(shift.start).format('HH:mm') : '00:00'
-  console.log('user', { user, shift, onshift, clockin })
+  let bodyClass = `page ${privileges}`
   return c.html(
-    <Page tags={userTags} bodyClass="page">
+    <Page tags={userTags} bodyClass={bodyClass}>
       <header>
         <img src="favicon.svg" alt="West Warwickshire Sports Club icon" />
         <button class="logout">
@@ -187,6 +194,54 @@ user.get('/', (c) => {
             title="this year's shift history"
           >
             <summary>year</summary>
+            <section class="content"></section>
+          </details>
+        </details>
+        <details class="reports">
+          <summary>
+            <span>reports</span>
+          </summary>
+          <details
+            class="zerohours"
+            name="reports"
+            hx-trigger="toggle[this.open]"
+            hx-target=".zerohours .content"
+            hx-post="/reports/zerohours"
+            hx-ext="json-enc"
+            hx-indicator=".zerohours summary"
+            title="zero-hour staff reports"
+          >
+            <summary>zero-hours</summary>
+            <section class="content"></section>
+          </details>
+          <details
+            class="permanent"
+            name="reports"
+            hx-trigger="toggle[this.open]"
+            hx-target=".permanent .content"
+            hx-post="/reports/permanent"
+            hx-ext="json-enc"
+            hx-indicator=".permanent summary"
+            title="permanent staff reports"
+          >
+            <summary>
+              <span>permanent</span>
+            </summary>
+            <section class="content"></section>
+          </details>
+          <details
+            class="combined"
+            name="reports"
+            hx-trigger="toggle[this.open]"
+            hx-target=".combined .content"
+            hx-post="/reports/combined"
+            hx-ext="json-enc"
+            hx-indicator=".combined summary"
+            title="permanent staff reports"
+          >
+            <summary>
+              <span>combined</span>
+            </summary>
             <section class="content"></section>
           </details>
         </details>

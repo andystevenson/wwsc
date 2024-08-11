@@ -171,3 +171,58 @@ export const dateRange = (range: string): DateRange => {
 
   return { from, to }
 }
+
+export type DateTimeRange =
+  | 'today'
+  | 'week'
+  | 'last7'
+  | 'fortnight'
+  | 'last14'
+  | 'month'
+  | 'last30'
+  | 'year'
+
+export const dateTimeRange = (range: DateTimeRange) => {
+  let today = dayjs().startOf('day')
+  let tomorrow = today.add(1, 'day').startOf('day')
+  let startTime = today.format('YYYY-MM-DDTHH:mm')
+  let endTime = tomorrow.format('YYYY-MM-DDTHH:mm')
+
+  switch (range) {
+    case 'today':
+      break
+    case 'week':
+      startTime =
+        today.day() === 0 // sunday
+          ? today.subtract(6, 'day').format('YYYY-MM-DDTHH:mm')
+          : today.startOf('week').add(1, 'day').format('YYYY-MM-DDTHH:mm')
+      break
+    case 'last7':
+      startTime = today.subtract(7, 'day').format('YYYY-MM-DDTHH:mm')
+      break
+    case 'fortnight':
+      startTime =
+        today.day() === 0 // sunday
+          ? today.subtract(13, 'day').format('YYYY-MM-DDTHH:mm')
+          : today
+              .startOf('week')
+              .subtract(1, 'week')
+              .add(1, 'day')
+              .format('YYYY-MM-DDTHH:mm')
+      break
+    case 'last14':
+      startTime = today.subtract(14, 'day').format('YYYY-MM-DDTHH:mm')
+      break
+    case 'month':
+      startTime = today.startOf('month').format('YYYY-MM-DDTHH:mm')
+      break
+    case 'last30':
+      startTime = today.subtract(30, 'day').format('YYYY-MM-DDTHH:mm')
+      break
+    case 'year':
+      startTime = today.startOf('year').format('YYYY-MM-DDTHH:mm')
+      break
+  }
+
+  return { startTime, endTime }
+}

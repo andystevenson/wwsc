@@ -1,22 +1,33 @@
 import { Shift } from '../db/Types'
 import { dayjs } from '@wwsc/lib-dates'
 
-function shiftHTML(superuser: boolean, shift: Shift) {
+function shiftHTML(privileges: string, shift: Shift) {
+  const superuser = privileges === 'superuser'
+  const admin = privileges === 'admin'
+  const editor = superuser || admin
   let clockedout = shift.end ? true : false
-  let liClass = clockedout ? '' : 'clockedin'
+  let liClass = clockedout ? `${privileges}` : `${privileges} clockedin`
   let liTitle = clockedout ? '' : 'title="clocked in, active shift"'
   let endClass = clockedout ? 'end' : 'end clockedin'
-  let readonly = superuser && clockedout ? '' : 'readonly disabled'
+  let readonly = editor && clockedout ? '' : 'readonly disabled'
   let approved =
-    superuser && clockedout
+    editor && clockedout
       ? `
       <label class='approved'>
         <span>approved</span>
         <input type="checkbox"  ${shift.approved ? 'checked' : ''}
           name="approved"/>
       </label>`
-      : '<label></label>'
+      : ''
 
+  let allowDelete =
+    editor && clockedout
+      ? `
+      <label class='deleteme'>
+        <span>delete</span>
+        <input type="checkbox" name="deleteme"/>
+      </label>`
+      : ''
   let startDay = dayjs(shift.start)
   let startDayMin = startDay.startOf('day').format('YYYY-MM-DDTHH:mm')
   let startDayMax = startDay.endOf('day').format('YYYY-MM-DDTHH:mm')
@@ -31,7 +42,7 @@ function shiftHTML(superuser: boolean, shift: Shift) {
   }
 
   return `
-  <li class=${liClass} ${liTitle}>
+  <li class="${liClass}" ${liTitle}>
     <input type="hidden" name="id" value="${shift.id}" />
     <p class="username">${shift.username}</p>
     <p class="day">${shift.day}</p>
@@ -64,14 +75,19 @@ function shiftHTML(superuser: boolean, shift: Shift) {
     </label>
     <label class="shiftnotes">
       <span>notes</span>
-      <input type="text" name="notes" value="${shift.notes}" ${readonly} />
+      <input type="text" name="notes" 
+        value="${shift.notes ? shift.notes : ''}" ${readonly} />
     </label>
     ${approved}
+    ${allowDelete}
   </li>
     `
 }
 
-function summaryHTML(superuser: boolean, shifts: Shift[]) {
+function summaryHTML(privileges: string, shifts: Shift[]) {
+  const superuser = privileges === 'superuser'
+  const admin = privileges === 'admin'
+  const editor = superuser || admin
   let staff = shifts.reduce((acc, shift) => {
     acc.add(shift.username)
     return acc
@@ -99,7 +115,7 @@ function summaryHTML(superuser: boolean, shifts: Shift[]) {
       ? `<b>${hours}</b> hours`
       : `<b>${minutes}</b> minutes`
 
-  let size = superuser
+  let size = editor
     ? `
       <label class="staff">
         <span>staff</span>
@@ -107,7 +123,7 @@ function summaryHTML(superuser: boolean, shifts: Shift[]) {
       </label>`
     : ''
 
-  let approved = superuser
+  let approved = editor
     ? `  
       <label class="approved">
         <span>all approved</span>
@@ -133,9 +149,9 @@ function summaryHTML(superuser: boolean, shifts: Shift[]) {
   return summary
 }
 
-function longerHTML(superuser: boolean, shifts: Shift[]) {
-  let summary = summaryHTML(superuser, shifts)
-  let html = shifts.map((shift) => shiftHTML(superuser, shift)).join('')
+function longerHTML(privileges: string, shifts: Shift[]) {
+  let summary = summaryHTML(privileges, shifts)
+  let html = shifts.map((shift) => shiftHTML(privileges, shift)).join('')
   return `${summary}<ul>${html}</ul>`
 }
 

@@ -8,14 +8,15 @@
     "libs/*"
   ],
   "scripts": {
-    "build": "bun run build-dates && bun run build-util && bun run build-cli && bun run build-dashboard && bun run build-pos && bun run build-sage && bun run build-db",
+    "build": "bun run build-dates && bun run build-util && bun run build-cli && bun run build-dashboard && bun run build-pos && bun run build-sage && bun run build-db && bun run build-hono",
     "build-dates": "bun --filter=@wwsc/lib-dates run build",
     "build-util": "bun --filter=@wwsc/lib-util run build",
     "build-cli": "bun --filter=@wwsc/lib-cli run build",
     "build-dashboard": "bun --filter=@wwsc/lib-sumup-dashboard run build",
     "build-pos": "bun --filter=@wwsc/lib-sumup-pos run build",
     "build-sage": "bun --filter=@wwsc/lib-sage run build",
-    "build-db": "bun --filter=@wwsc/lib-db run build"
+    "build-db": "bun --filter=@wwsc/lib-db run build",
+    "build-hono": "bun --filter=@wwsc/lib-hono run build"
   },
   "author": "",
   "license": "ISC",
@@ -31,6 +32,7 @@
     "@types/lodash.kebabcase": "^4.1.9",
     "@types/minimist": "^1.2.5",
     "big.js": "^6.2.1",
+    "csv-parse": "^5.5.6",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.31.4",
     "fetch-retry": "^6.0.0",
