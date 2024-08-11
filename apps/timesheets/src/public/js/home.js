@@ -34,9 +34,11 @@ password?.addEventListener('input', async (e) => {
 login?.addEventListener('click', (e) => {
   let digit = e.target.closest('button')
   if (!digit) {
+    password.focus()
     return
   }
   digit = digit.textContent
   password.value += digit
   password.dispatchEvent(new Event('input'))
+  password.focus()
 })

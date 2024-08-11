@@ -15,7 +15,7 @@ const selectShifts = async (c: Context, range: DateTimeRange) => {
   let privileges =
     user.display_order === 127
       ? 'superuser'
-      : user.mobile === 'admin'
+      : user.mobile?.includes('admin')
       ? 'admin'
       : 'user'
 
