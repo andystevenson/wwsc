@@ -5,5 +5,5 @@ import { registerClosures } from './src/index'
 
 await login()
 const result = await registerClosures()
-console.log('%o', result)
+Bun.write('sumup-pos.json', JSON.stringify(result, null, 2))
 await logout()

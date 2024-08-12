@@ -1,0 +1,160 @@
+/* the props */
+@import 'https://unpkg.com/open-props';
+
+/* optional imports that use the props */
+@import 'https://unpkg.com/open-props/normalize.min.css';
+@import 'https://unpkg.com/open-props/buttons.min.css';
+
+:root {
+  --alt-accent-color: #fb8304;
+  --accent-color: #7dba05;
+  --max-width: min(80vw, 1200px);
+}
+
+::selection {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+body {
+  accent-color: var(--accent-color);
+
+  display: grid;
+  grid-auto-rows: max-content;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  gap: var(--size-2);
+  padding: var(--size-2);
+  margin: 0 auto;
+  max-inline-size: var(--max-width);
+}
+
+details {
+  inline-size: var(--max-width);
+  max-inline-size: 100%;
+  margin-top: var(--size-3);
+  text-align: left;
+  summary {
+    font-size: var(--font-size-5);
+    font-weight: bold;
+    background-color: var(--accent-color);
+  }
+
+  &[open] {
+    outline: 3px solid var(--text-1);
+  }
+}
+
+.closure-months .content {
+  display: flex;
+  gap: var(--size-2);
+  align-items: center;
+  flex-wrap: wrap;
+
+  details {
+    inline-size: max-content;
+    margin-top: unset;
+    font-size: var(--font-size-2);
+
+    &[open] {
+      inline-size: 100%;
+      margin-block: var(--size-2);
+    }
+
+    summary {
+      font-size: inherit;
+    }
+  }
+}
+summary {
+  position: relative;
+
+  &.htmx-request {
+    &::after {
+      content: '';
+      display: inline-block;
+      background: url(favicon.svg);
+      position: absolute;
+      z-index: 1;
+      block-size: 2ch;
+      inline-size: 2ch;
+      background-size: cover;
+      top: 0.7ch;
+      margin-inline: var(--size-2);
+      animation: var(--animation-spin), var(--animation-blink);
+    }
+  }
+
+  &::after {
+    content: '';
+  }
+}
+
+.closure-month .content {
+  display: grid;
+}
+
+.closure {
+  inline-size: 100%;
+  max-inline-size: unset;
+  display: grid;
+  gap: var(--size-2);
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  padding: var(--size-2);
+  border: 1px solid var(--text-1);
+  border-radius: var(--size-2);
+  margin: var(--size-2) auto;
+  text-align: left;
+  align-items: center;
+
+  p:first-of-type {
+    font-weight: bold;
+  }
+  .variance {
+    display: grid;
+    grid-template-columns: 70px 5px 70px;
+    span:last-of-type {
+      font-family: var(--font-monospace-code);
+      text-align: right;
+    }
+    &.positive {
+      span:last-of-type {
+        color: var(--accent-color);
+      }
+    }
+    &.negative {
+      span:last-of-type {
+        color: var(--red-10);
+      }
+    }
+  }
+
+  .payments {
+    inline-size: 100%;
+    li {
+      display: grid;
+      gap: var(--size-1);
+      grid-template-columns: 70px 5px 80px;
+      span:last-of-type {
+        text-align: right;
+        font-family: var(--font-monospace-code);
+      }
+    }
+  }
+}

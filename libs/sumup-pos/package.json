@@ -6,10 +6,12 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
+    "dev": "bun --hot index.ts",
     "build": "tsup src/index.ts --dts --format cjs,esm --out-dir dist",
     "lint": "tsc"
   },
   "devDependencies": {
+    "@types/bun": "latest",
     "@types/lodash.memoize": "^4.1.9",
     "@types/uuid": "^9.0.8",
     "tsup": "^8.0.2"

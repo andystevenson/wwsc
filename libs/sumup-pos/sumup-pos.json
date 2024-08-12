@@ -1,0 +1,70 @@
+{
+  "status": true,
+  "data": [
+    {
+      "id": "7726615e-ce16-49ea-abaf-2b380cea11a4",
+      "register_id": "b89d089f-7937-436b-a9a3-329b302f2bd3",
+      "register_name": "Members Bar",
+      "staff_id": "ea84a41f-e7d8-42b4-946a-056e8ea11ddd",
+      "staff_name": "Ella Powers",
+      "time_from": "2024-08-10 23:58:36",
+      "time_to": "2024-08-11 22:06:07",
+      "notes": "",
+      "primary_register": 1,
+      "consolidate_register": 0,
+      "cash_balance": 101.16,
+      "expected_cash_balance": 101.08,
+      "cash_float": 101.08,
+      "payments": [
+        {
+          "method": "cash",
+          "expected": "101.08",
+          "counted": "101.16"
+        },
+        {
+          "method": "sumup",
+          "expected": "974.66",
+          "counted": "974.66"
+        },
+        {
+          "method": "voucher",
+          "expected": "15.18",
+          "counted": "15.18"
+        }
+      ]
+    },
+    {
+      "id": "bf3fa4da-8975-4842-98f1-904b43c29771",
+      "register_id": "7c77d7a3-28b4-4ea5-a8d1-9fb95bea3f39",
+      "register_name": "Westview Bar",
+      "staff_id": "0cd13a91-b184-4de8-a2de-6c482a3c197f",
+      "staff_name": "Clare Taylor",
+      "time_from": "2024-07-31 16:37:21",
+      "time_to": "2024-08-11 00:43:24",
+      "notes": "",
+      "primary_register": 1,
+      "consolidate_register": 0,
+      "cash_balance": 311.01,
+      "expected_cash_balance": 311.01,
+      "cash_float": 311.01,
+      "payments": [
+        {
+          "method": "cash",
+          "expected": "311.01",
+          "counted": "311.01"
+        },
+        {
+          "method": "sumup",
+          "expected": "1369.79",
+          "counted": "1369.79"
+        },
+        {
+          "method": "voucher",
+          "expected": "23.17",
+          "counted": "23.17"
+        }
+      ]
+    }
+  ],
+  "message": ""
+}

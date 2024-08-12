@@ -3,6 +3,7 @@ import Meta, { type Tags } from './Meta'
 
 export type PageProps = {
   tags: Tags
+  // @ts-ignore
   children?: JSX.Element[]
   bodyClass?: string
 }

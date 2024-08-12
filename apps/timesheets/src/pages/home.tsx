@@ -1,4 +1,4 @@
-import { Page } from './Page'
+import { Page } from '@wwsc/lib-hono'
 import { factory } from '../hono-factory'
 import tags from './Tags'
 let newTags = structuredClone(tags)

@@ -30,3 +30,26 @@ export const registerClosures = async (
     throw e
   }
 }
+
+export type RegisterClosure = {
+  id: string
+  register_id: string
+  register_name: string
+  staff_id: string
+  staff_name: string
+  time_from: string
+  time_to: string
+  notes: string
+  primary_register: number
+  consolidate_register: number
+  cash_balance: number
+  expected_cash_balance: number
+  cash_float: number
+  payments: RegisterPayment[]
+}
+
+export type RegisterPayment = {
+  method: string
+  expected: string
+  counted: string
+}

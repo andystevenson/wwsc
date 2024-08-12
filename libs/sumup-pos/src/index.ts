@@ -5,7 +5,11 @@ import { dailySalesByPaymentMethod } from './dailySalesByPaymentMethod'
 import { dailySalesSummaries } from './dailySalesSummaries'
 import { dailySalesItems } from './dailySalesItems'
 import { dailySalesCategories } from './dailySalesCategories'
-import { registerClosures } from './registerClosures'
+import {
+  registerClosures,
+  type RegisterClosure,
+  type RegisterPayment,
+} from './registerClosures'
 
 import type {
   DayOfWeek,
@@ -34,6 +38,8 @@ export type {
   EntryMode,
   Predicate,
   Staff,
+  RegisterClosure,
+  RegisterPayment,
 }
 
 export {

@@ -1,4 +1,5 @@
-import { Context } from 'hono'
+import { Hono, Context } from 'hono'
+import { Page, Meta, type Tags } from './Page'
 
 function conninfo(app: string) {
   return function (c: Context) {
@@ -14,4 +15,4 @@ function conninfo(app: string) {
   }
 }
 
-export { conninfo }
+export { Hono, type Context, Page, Meta, type Tags, conninfo }

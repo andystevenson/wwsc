@@ -21,6 +21,12 @@ module.exports = {
       cwd: 'apps/timesheets',
       interpreter: 'bun',
     },
+    {
+      name: 'closures',
+      script: 'src/index.ts',
+      cwd: 'apps/closures',
+      interpreter: 'bun',
+    },
   ],
   // Deployment Configuration
   deploy: {
