@@ -1,4 +1,4 @@
-import { gte, lte, and, asc, inArray } from 'drizzle-orm'
+import { gte, lte, and, asc, inArray, isNotNull } from 'drizzle-orm'
 import { dayjs } from '@wwsc/lib-dates'
 import { factory, protectedPage } from '../hono-factory'
 import { db, shifts } from '../db/db'
@@ -89,6 +89,7 @@ async function shiftsInDateRange(
     .from(shifts)
     .where(
       and(
+        isNotNull(shifts.end),
         gte(shifts.start, start),
         lte(shifts.start, end + 'T23:59'),
         inArray(shifts.uid, ids),
