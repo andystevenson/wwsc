@@ -143,8 +143,8 @@ function trackClockedInShifts() {
       return
     }
     endElement.value = endTime.format('YYYY-MM-DDTHH:mm')
-    let durationElement = shift.querySelector('.duration p')
-    durationElement.textContent = duration.format('HH:mm:ss')
+    let durationElement = shift.querySelector('[name=duration]')
+    durationElement.value = duration.format('HH:mm:ss')
   })
 }
 
