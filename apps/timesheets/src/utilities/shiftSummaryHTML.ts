@@ -13,17 +13,19 @@ function shiftSummaryHTML(shifts: SelectShift[]) {
   let summaries = shiftSummary(shifts)
   let body = summaries
     .map((summary) => {
-      let { name, shifts, normal, supervisor, total } = summary
+      let { name, shifts, normal, supervisor, breaks, total } = summary
       let normalHours = Math.floor(normal / 60) + (normal % 60) / 60
       let supervisorHours = Math.floor(supervisor / 60) + (supervisor % 60) / 60
+      let breakHours = Math.floor(breaks / 60) + (breaks % 60) / 60
       let totalHours = Math.floor(total / 60) + (total % 60) / 60
       return `
     <tr>
       <td>${name}</td>
       <td>${shifts}</td>
-      <td>${format(normal)} (${normalHours.toFixed(2)})</td>
-      <td>${format(supervisor)} (${supervisorHours.toFixed(2)})</td>
-      <td>${format(total)} (${totalHours.toFixed(2)})</td>
+      <td>${normalHours.toFixed(2)}</td>
+      <td>${supervisorHours.toFixed(2)}</td>
+      <td>${breakHours.toFixed(2)}</td>
+      <td>${totalHours.toFixed(2)} (${format(total)})</td>
     </tr>
   `
     })
@@ -37,7 +39,8 @@ function shiftSummaryHTML(shifts: SelectShift[]) {
           <th>shifts</th>
           <th>normal</th>
           <th>supervisor</th>
-          <th>total (decimal)</th>
+          <th>breaks</th>
+          <th>total (hh:mm)</th>
         </tr>
       </thead>
       <tbody>

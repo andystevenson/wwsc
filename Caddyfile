@@ -3,18 +3,26 @@ conninfo.localhost {
   reverse_proxy localhost:6543
 }
 
+
 postcode.localhost {
   reverse_proxy localhost:6432
 }
+
+
 
 webhooks.localhost {
   reverse_proxy localhost:6321
 }
 
+
+
 closures.localhost {
   reverse_proxy localhost:6210
 }
 
+
+
 timesheets.localhost {
   reverse_proxy localhost:7654
 }
+

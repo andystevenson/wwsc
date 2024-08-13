@@ -131,8 +131,8 @@ function trackClockedInShifts() {
   const liveShifts = document.querySelectorAll('.history .clockedin')
   liveShifts.forEach((clockedin) => {
     let shift = clockedin.closest('li')
-    let startElement = shift.querySelector('[name="start"]')
-    let endElement = shift.querySelector('[name="end"]')
+    let startElement = shift.querySelector('[name=start]')
+    let endElement = shift.querySelector('[name=end]')
     let startTime = dayjs(startElement.value)
     let endTime = dayjs()
     let diff = endTime.diff(startTime, 'second')
@@ -188,14 +188,15 @@ function shiftUpdated(shiftElement) {
 }
 
 function validateUpdate(shiftElement) {
-  const start = shiftElement.querySelector('[name="start"]')
-  const end = shiftElement.querySelector('[name="end"]')
-  const duration = shiftElement.querySelector('.duration p')
+  const start = shiftElement.querySelector('[name=start]')
+  const end = shiftElement.querySelector('[name=end]')
+  const duration = shiftElement.querySelector('[name=duration]')
 
   const min = dayjs(start.min)
 
   let startTime = dayjs(start.value)
-  let endTime = dayjs(end.value)
+  let durationTime = duration.valueAsNumber
+  let endTime = startTime.add(durationTime, 'millisecond')
 
   if (!startTime.isSame(min, 'day')) {
     raiseError('Cannot change shift start date!')
@@ -204,25 +205,18 @@ function validateUpdate(shiftElement) {
   }
 
   if (!endTime.isAfter(startTime, 'minute')) {
-    raiseError('Shift end time must be after start time!')
-    startTime = dayjs(start.dataset.value)
-    start.value = start.dataset.value
-    endTime = dayjs(end.dataset.value)
-    end.value = end.dataset.value
+    // raiseError('Shift end time must be after start time!')
+    // instead of an dialog... silently correct the end time
+    endTime = startTime.add(1, 'minute')
+    duration.value = '00:01'
   }
+  end.value = endTime.format('YYYY-MM-DDTHH:mm')
 
-  let diff = endTime.diff(startTime)
-  let newDuration = dayjs.duration(diff)
-  if (newDuration.days() > 0) {
-    raiseError('Shift duration cannot be more than 24 hours!')
-    startTime = dayjs(start.dataset.value)
-    start.value = start.dataset.value
-    endTime = dayjs(end.dataset.value)
-    end.value = end.dataset.value
-    diff = endTime.diff(startTime)
-    newDuration = dayjs.duration(diff)
-  }
-  duration.textContent = newDuration.format('HH:mm')
+  const tenHours = 10 * 60 * 60 * 1000
+  durationTime > tenHours
+    ? duration.parentElement.classList.add('longshift')
+    : duration.parentElement.classList.remove('longshift')
+  // console.log('validateUpdate', start.value, end.value, duration.value)
 }
 
 function raiseError(message) {
@@ -232,7 +226,7 @@ function raiseError(message) {
 
 function allApproved(allApprovedElement) {
   const scope = allApprovedElement.closest('details')
-  const approved = scope.querySelectorAll('[name="approved"]')
+  const approved = scope.querySelectorAll('[name=approved]')
   approved.forEach((a) => {
     if (a.checked) {
       return
@@ -271,20 +265,20 @@ confirm?.addEventListener('click', async () => {
   let updates = []
   let deletes = []
   for (let shift of updated) {
-    let id = shift.querySelector('[name="id"]').value
-    let deleteme = shift.querySelector('[name="deleteme"]').checked
+    let id = shift.querySelector('[name=id]').value
+    let deleteme = shift.querySelector('[name=deleteme]').checked
     if (deleteme) {
       deletes.push(id)
       continue
     }
 
-    let start = shift.querySelector('[name="start"]').value
-    let end = shift.querySelector('[name="end"]').value
-    let duration = shift.querySelector('.duration p').textContent
-    let supervisor = shift.querySelector('[name="supervisor"]').checked
-    let nobreaks = shift.querySelector('[name="nobreaks"]').checked
-    let notes = shift.querySelector('[name="notes"]').value
-    let approved = shift.querySelector('[name="approved"]').checked
+    let start = shift.querySelector('[name=start]').value
+    let end = shift.querySelector('[name=end]').value
+    let duration = shift.querySelector('[name=duration]').value
+    let supervisor = shift.querySelector('[name=supervisor]').checked
+    let nobreaks = shift.querySelector('[name=nobreaks]').checked
+    let notes = shift.querySelector('[name=notes]').value
+    let approved = shift.querySelector('[name=approved]').checked
 
     const update = {
       id,

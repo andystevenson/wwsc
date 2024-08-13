@@ -6,6 +6,7 @@ type ShiftSummary = {
   shifts: number
   normal: number
   supervisor: number
+  breaks: number
   total: number
 }
 
@@ -23,6 +24,7 @@ function shiftSummary(shifts: SelectShift[]) {
         shifts: 0,
         normal: 0,
         supervisor: 0,
+        breaks: 0,
         total: 0,
       }
       summaries.push(summary)
@@ -31,6 +33,12 @@ function shiftSummary(shifts: SelectShift[]) {
     let start = dayjs(shift.start)
     let end = dayjs(shift.end)
     let diff = end.diff(start, 'minutes')
+    // calculate breaks
+    let threshold = 4 * 60 + 30 // 4 hours 30 minutes
+    let breakTime = diff > threshold && shift.nobreaks === false ? 30 : 0
+    summary.breaks += breakTime
+
+    diff -= breakTime
     shift.supervisor ? (summary.supervisor += diff) : (summary.normal += diff)
     summary.total += diff
   }

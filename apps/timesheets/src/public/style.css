@@ -8,7 +8,7 @@
 :root {
   --alt-accent-color: #fb8304;
   --accent-color: #7dba05;
-  --max-width: min(80vw, 1200px);
+  --max-width: min(80vw, 1400px);
 }
 
 ::selection {
@@ -27,6 +27,11 @@ li {
 :focus-visible {
   outline: 2px solid var(--accent-color);
   outline-offset: 2px;
+}
+
+[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 body {
@@ -323,7 +328,7 @@ details {
   }
 
   li {
-    --columns: 180px 75px 205px 200px 60px 60px 60px 1fr 50px 50px;
+    --columns: 180px 75px 205px 205px 98px 60px 60px 1fr 50px 50px;
     max-inline-size: unset;
     display: grid;
     gap: var(--size-2);
@@ -348,28 +353,45 @@ details {
       border-radius: var(--radius-2);
     }
 
-    & .username,
-    & .day {
+    .username,
+    .day {
       font-weight: bold;
     }
 
+    .duration.longshift {
+      input {
+        background-color: var(--red-7);
+        color: var(--gray-2);
+      }
+    }
+
+    &.user {
+      --columns: 180px 75px 205px 205px 98px 60px 60px 1fr;
+
+      & .approved {
+        display: none;
+      }
+      & .deleteme {
+        display: none;
+      }
+    }
+
+    &.admin {
+      --columns: 180px 75px 205px 205px 98px 60px 60px 1fr 50px;
+
+      & .deleteme {
+        display: none;
+      }
+    }
+
     @container history (width <= 1250px) {
-      --columns: 205px 200px 60px 60px 60px 1fr 50px 50px;
+      --columns: 205px 200px 95px 60px 60px 1fr 50px 50px;
       &.user {
-        --columns: 205px 200px 60px 60px 60px 1fr;
-        & .approved {
-          display: none;
-        }
-        & .deleteme {
-          display: none;
-        }
+        --columns: 205px 205px 95px 60px 60px 1fr;
       }
 
       &.admin {
-        --columns: 205px 200px 60px 60px 60px 1fr 50px;
-        & .deleteme {
-          display: none;
-        }
+        --columns: 205px 205px 95px 60px 60px 1fr 50px;
       }
 
       grid-template-columns: var(--columns);
@@ -386,7 +408,7 @@ details {
     @container history (width <= 1000px) {
       --columns: 60px 60px 1fr 1fr 70px 70px;
       &.user {
-        --columns: 60px 60px 1fr 1fr 70px;
+        --columns: 60px 60px 1fr 1fr 95px;
 
         & .shiftnotes {
           grid-column: 3 / -1;
@@ -394,7 +416,7 @@ details {
       }
 
       &.admin {
-        --columns: 60px 60px 1fr 1fr 70px;
+        --columns: 60px 60px 1fr 1fr 95px;
       }
 
       grid-template-columns: var(--columns);
@@ -599,6 +621,16 @@ details {
       input[type='checkbox'] {
         margin-inline-start: unset;
         margin: 0 auto;
+      }
+    }
+    .duration {
+      place-self: center;
+    }
+    .end {
+      opacity: 0.5;
+      cursor: not-allowed;
+      > * {
+        cursor: inherit;
       }
     }
   }

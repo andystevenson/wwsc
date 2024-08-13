@@ -33,10 +33,14 @@ function shiftHTML(privileges: string, shift: Shift) {
   let startDayMax = startDay.endOf('day').format('YYYY-MM-DDTHH:mm')
 
   let duration = ''
+  let longshift = ''
   if (shift.end) {
     let start = dayjs(shift.start)
     let end = dayjs(shift.end)
     let diff = end.diff(start, 'minutes')
+    if (diff > 10 * 60) {
+      longshift = 'longshift'
+    }
     // @ts-ignore
     duration = dayjs.duration(diff, 'minutes').format('HH:mm')
   }
@@ -57,11 +61,11 @@ function shiftHTML(privileges: string, shift: Shift) {
       <span>end</span>
       <input type="datetime-local" name="end" 
         value="${shift.end ? shift.end : ''}"
-        data-value="${shift.end ? shift.end : ''}" ${readonly} />
+        data-value="${shift.end ? shift.end : ''}" disabled />
     </label>
-    <label class="duration">
+    <label class="duration  ${longshift}">
       <span>duration</span>
-      <p>${duration}</p>
+      <input type="time" name="duration" value="${duration}" ${readonly} />
     </label>
     <label class="nobreaks">
       <span>no breaks</span>
