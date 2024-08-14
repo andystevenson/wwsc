@@ -735,8 +735,8 @@ dialog {
     right: 5px;
     top: 0px;
   }
-  color: var(--blue-10);
-  border: 5px double var(--blue-10);
+  color: var(--blue-5);
+  border: 5px double var(--blue-5);
 }
 
 .cancel.exit {

@@ -42,6 +42,7 @@
     "minimist": "^1.2.8",
     "nanoid": "^5.0.7",
     "open-props": "^1.7.5",
+    "public-ip": "^7.0.1",
     "react": "^18.3.1"
   }
 }
