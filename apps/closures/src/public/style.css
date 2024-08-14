@@ -8,7 +8,7 @@
 :root {
   --alt-accent-color: #fb8304;
   --accent-color: #7dba05;
-  --max-width: min(80vw, 1200px);
+  --max-width: min(85vw, 1400px);
 }
 
 ::selection {
@@ -115,7 +115,7 @@ summary {
   max-inline-size: unset;
   display: grid;
   gap: var(--size-2);
-  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   padding: var(--size-2);
   border: 1px solid var(--text-1);
   border-radius: var(--size-2);
