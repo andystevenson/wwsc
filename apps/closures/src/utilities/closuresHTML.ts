@@ -15,7 +15,7 @@ function closuresHTML(closures: RegisterClosure[]) {
         notes,
       } = closure
 
-      let from = dayjs(time_from).format('dddd Do, HH:mm')
+      let to = dayjs(time_to).format('dddd Do, HH:mm')
       let variance = cash_balance - expected_cash_balance
       let varianceClass =
         variance > 0
@@ -27,7 +27,7 @@ function closuresHTML(closures: RegisterClosure[]) {
       <li class="closure">
         <p>${register_name}</p>
         <p>${staff_name}</p>
-        <p>${from}</p>
+        <p>${to}</p>
         <ul class="payments">
           ${payments
             .map((payment) => {
