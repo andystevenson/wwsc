@@ -31,6 +31,7 @@ module.exports = {
   // Deployment Configuration
   deploy: {
     production: {
+      key: '/Users/andystevenson/.ssh/id_ed25519.pub',
       user: 'ajs',
       host: ['wwsc.cloud'],
       ref: 'origin/main',
