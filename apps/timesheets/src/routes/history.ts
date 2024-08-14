@@ -3,7 +3,7 @@ import { dayjs, dateTimeRange, type DateTimeRange } from '@wwsc/lib-dates'
 import { longerHTML } from '../utilities/shiftHTML'
 import { type Staff } from '@wwsc/lib-sumup-pos'
 import { db, shifts, type SelectShift } from '../db/db'
-import { and, gte, lt, eq, asc } from 'drizzle-orm'
+import { and, gte, lt, eq, asc, desc } from 'drizzle-orm'
 import { findStaff } from '../pos/pos'
 
 const history = factory.createApp()
@@ -27,13 +27,13 @@ const selectShifts = async (c: Context, range: DateTimeRange) => {
         await db
           .select()
           .from(shifts)
-          .orderBy(asc(shifts.start))
+          .orderBy(desc(shifts.start))
           .where(and(gte(shifts.start, startTime), lt(shifts.start, endTime)))
       : // select only the shifts for the user in the range
         await db
           .select()
           .from(shifts)
-          .orderBy(asc(shifts.start))
+          .orderBy(desc(shifts.start))
           .where(
             and(
               eq(shifts.uid, user.id),
