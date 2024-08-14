@@ -24,7 +24,7 @@ home.get('/', (c) => {
           <section class="content">
             {months.map((month) => (
               <details
-                name={`month-${month}`}
+                name={`closure-month`}
                 class={`month-${month} closure-month`}
                 hx-trigger="toggle[this.open]"
                 hx-target={`.month-${month} .content`}

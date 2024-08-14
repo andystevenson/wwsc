@@ -2,7 +2,11 @@ import { type RegisterClosure } from '@wwsc/lib-sumup-pos'
 import { dayjs } from '@wwsc/lib-dates'
 
 function closuresHTML(closures: RegisterClosure[]) {
-  let lis = closures
+  let sorted = closures.sort((a, b) => {
+    return dayjs(b.time_to).unix() - dayjs(a.time_to).unix()
+  })
+
+  let lis = sorted
     .map((closure) => {
       let {
         register_name,

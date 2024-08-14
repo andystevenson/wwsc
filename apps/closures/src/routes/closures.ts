@@ -16,6 +16,7 @@ closures.get('/month', async (c) => {
   await logout()
   let startTime = start.format('YYYY-MM-DD')
   let endTime = end.format('YYYY-MM-DD')
+  console.log(`closures for ${startTime} to ${endTime}`)
 
   return c.html(closuresHTML(closures.data))
 })
