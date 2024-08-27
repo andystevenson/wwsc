@@ -61,7 +61,7 @@ function shiftHTML(privileges: string, shift: Shift) {
       <span>end</span>
       <input type="datetime-local" name="end" 
         value="${shift.end ? shift.end : ''}"
-        data-value="${shift.end ? shift.end : ''}" disabled />
+        data-value="${shift.end ? shift.end : ''}" ${readonly} />
     </label>
     <label class="duration  ${longshift}">
       <span>duration</span>

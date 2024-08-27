@@ -8,10 +8,12 @@ import { trimTrailingSlash } from 'hono/trailing-slash'
 import home from './pages/home'
 import user from './pages/user'
 import upload from './pages/upload'
+import uploadHolidays from './pages/upload-holidays'
 import auth from './routes/auth'
 import shift from './routes/shift'
 import history from './routes/history'
 import reports from './routes/reports'
+import holidays from './routes/holidays'
 import { autoClockout } from './db/functions/autoClockout'
 import { conninfo } from '@wwsc/lib-hono'
 
@@ -35,14 +37,17 @@ app.use('*', sessionMiddleware)
 
 app.use('/user', protectedPage)
 app.use('/upload', protectedPage)
+app.use('/upload-holidays', protectedPage)
 
 app.route('/', home)
 app.route('/user', user)
 app.route('/upload', upload)
+app.route('/upload-holidays', uploadHolidays)
 app.route('/auth', auth)
 app.route('/shift', shift)
 app.route('/history', history)
 app.route('/reports', reports)
+app.route('/holidays', holidays)
 
 // app.onError(() => {
 //   // if (err instanceof HTTPException) {

@@ -1,11 +1,19 @@
 import { eq, and, isNull } from 'drizzle-orm'
 import { dayjs } from '@wwsc/lib-dates'
 import { factory, protectedPage } from '../hono-factory'
-import { db, shifts, InsertShift } from '../db/db'
-import { type Staff } from '@wwsc/lib-sumup-pos'
+import {
+  db,
+  shifts,
+  holidays,
+  type InsertShift,
+  type InsertHoliday,
+} from '../db/db'
 import { parse } from 'csv-parse/sync'
-import { formatUpload } from '../pos/pos'
+import { formatUpload, findStaff } from '../pos/pos'
+import { Big } from 'big.js'
+import isBankHoliday from '../utilities/isBankHoliday'
 
+const accrualFactor = 0.127
 const shift = factory.createApp()
 
 shift.use(protectedPage)
@@ -19,13 +27,6 @@ shift.post('/clockin', async (c) => {
 
   if (!session || !user) {
     return c.redirect('/')
-  }
-
-  let record: InsertShift = {
-    uid: request.uid,
-    username: user.display_name,
-    day: start.format('dddd'),
-    start: request.start,
   }
 
   // if the user is already clocked in, return the current shift
@@ -44,9 +45,37 @@ shift.post('/clockin', async (c) => {
     return c.json(existingShift)
   }
 
+  // create a new shift record
+  let record: InsertShift = {
+    uid: request.uid,
+    username: user.display_name,
+    day: start.format('dddd'),
+    start: request.start,
+  }
   let result = await db.insert(shifts).values(record).returning()
   let newShift = result[0]
   c.set('shift', newShift)
+
+  let isBankHoliday = c.get('isBankHoliday')
+  let isPermanent = user.isPermanent
+  let isZeroHours = user.isZeroHours
+
+  let createHoliday = isZeroHours || (isPermanent && isBankHoliday)
+
+  if (!createHoliday) {
+    return c.json(newShift)
+  }
+
+  // create a holiday record to track the shift
+  let holiday: InsertHoliday = {
+    name: user.display_name,
+    date: start.format('YYYY-MM-DD'),
+    type: 'acc',
+    hours: 0,
+    shiftId: newShift.id,
+  }
+
+  let newHoliday = await db.insert(holidays).values(holiday).returning()
 
   return c.json(newShift)
 })
@@ -62,6 +91,20 @@ shift.post('/clockout', async (c) => {
   let updated = result[0]
   c.set('shift', null)
 
+  // update the holiday record with the duration accrued
+  let { start, end } = request
+  let startTime = dayjs(start)
+  let endTime = dayjs(end)
+  let duration = Big(endTime.diff(startTime, 'hours', true))
+    .times(accrualFactor)
+    .round(2, Big.roundUp)
+    .toNumber()
+
+  let holiday = await db
+    .update(holidays)
+    .set({ hours: duration })
+    .where(eq(holidays.shiftId, request.id))
+
   return c.json(updated)
 })
 
@@ -69,10 +112,26 @@ shift.post('/approve', async (c) => {
   let request = await c.req.json()
   await db.transaction(async (tx) => {
     for (const update of request) {
-      await tx
+      let result = await tx
         .update(shifts)
         .set({ ...update })
         .where(eq(shifts.id, update.id))
+
+      let start = dayjs(update.start)
+      let end = dayjs(update.end)
+      if (!start.isValid() || !end.isValid()) {
+        continue
+      }
+
+      let duration = Big(end.diff(start, 'hours', true))
+        .times(accrualFactor)
+        .round(2, Big.roundUp)
+        .toNumber()
+
+      let holiday = await tx
+        .update(holidays)
+        .set({ hours: end.diff(start, 'hours', true) })
+        .where(eq(holidays.shiftId, update.id))
     }
   })
   return c.json(request)
@@ -91,7 +150,40 @@ shift.post('/upload', async (c) => {
   // insert the records into the database
   await db.transaction(async (tx) => {
     for (const record of formatted.shifts) {
-      await tx.insert(shifts).values(record)
+      let result = await tx.insert(shifts).values(record).returning()
+
+      let start = dayjs(record.start)
+      let end = dayjs(record.end)
+      if (!start.isValid() || !end.isValid()) {
+        continue
+      }
+
+      let isBhol = await isBankHoliday(start.format('YYYY-MM-DD'))
+      let staff = await findStaff(record.uid)
+      if (!staff) {
+        continue
+      }
+      let isZeroHours = staff.isZeroHours
+      let isPermanent = staff.isPermanent
+
+      let createHoliday = isZeroHours || (isPermanent && isBhol)
+      if (!createHoliday) {
+        continue
+      }
+
+      let duration = Big(end.diff(start, 'hours', true))
+        .times(accrualFactor)
+        .round(2, Big.roundUp)
+        .toNumber()
+
+      let holiday: InsertHoliday = {
+        name: record.username,
+        date: start.format('YYYY-MM-DD'),
+        type: 'acc',
+        hours: duration,
+        shiftId: result[0].id,
+      }
+      await tx.insert(holidays).values(holiday)
     }
   })
 

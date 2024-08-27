@@ -9,6 +9,8 @@ async function handleRequest(request: Request): Promise<Response> {
       headers: { 'Content-Type': 'application/json' },
     })
   }
+  console.log('Received webhook: bad request', { status: 400 })
+
   return new Response('Bad request', { status: 400 })
 }
 

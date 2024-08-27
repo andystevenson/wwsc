@@ -13,13 +13,19 @@ import {
   LedgerIds,
   type OtherPayment,
   type User,
+  type OtherPaymentResponse,
 } from '@wwsc/lib-sage'
 
-import { SelectSalesCategory, insertSageTransaction } from '@wwsc/lib-db'
+import {
+  SelectSalesCategory,
+  insertSageTransaction,
+  SelectRegisterClosure,
+  SelectPaymentSummary,
+} from '@wwsc/lib-db'
 
 import { Big } from 'big.js'
 
-import { getSageCategories } from './getDailyTakings'
+import { getDailyTakings } from './getDailyTakings'
 
 import kebabCase from 'lodash.kebabcase'
 
@@ -49,14 +55,67 @@ export const getTransactionDefaults = async (bearer: string) => {
 
 export const postDailyTakings = async (bearer: string, date: string) => {
   const defaults = await getTransactionDefaults(bearer)
-  const categories = await getSageCategories(date)
+  const { categories, closures, refunds } = await getDailyTakings(date)
   let bankCharges = await postBankCharges(bearer, defaults, categories)
   let cash = await postCashTakings(bearer, defaults, categories)
   let sumup = await postSumupTakings(bearer, defaults, categories)
   let card = await postCardTakings(bearer, defaults, categories)
-  let vouchers = await postVoucherTakings(bearer, defaults, categories)
-  let refunds = await postRefunds(bearer, defaults, categories)
-  return { bankCharges, cash, sumup, card, vouchers, refunds }
+  let differences = await postTillDifferences(bearer, defaults, closures)
+
+  // let vouchers = await postVoucherTakings(bearer, defaults, categories)
+  let refunded = await postRefunds(bearer, defaults, refunds)
+  // return { bankCharges, cash, sumup, card, vouchers, refunds }
+  return { bankCharges, cash, sumup, card, refunded, differences }
+}
+
+export const postTillDifferences = async (
+  bearer: string,
+  defaults: TransactionDefaults,
+  closures: SelectRegisterClosure[],
+) => {
+  if (closures.length === 0) return []
+  const { account, ledgers } = defaults
+
+  let results: OtherPaymentResponse[] = []
+  for (const closure of closures) {
+    let { variance, to, name } = closure
+    if (variance === 0) continue
+
+    let value = Big(variance).abs().toNumber()
+    let payment: OtherPayment = {
+      transaction_type_id: 'OTHER_PAYMENT',
+      payment_method_id: 'CASH',
+      bank_account_id: account,
+      date: to,
+      total_amount: value,
+      reference: `cash till difference`,
+      payment_lines: [
+        {
+          ledger_account_id: ledgers.tillDifferences,
+          total_amount: value,
+          tax_rate_id: 'GB_NO_TAX',
+          details: `${name} variance`,
+        },
+      ],
+    }
+
+    if (variance > 0) {
+      payment.transaction_type_id = 'OTHER_RECEIPT'
+    }
+
+    let response = await otherPayment(bearer, payment)
+    await insertSageTransaction({
+      user: `${defaults.user.first_name} ${defaults.user.last_name}`,
+      transactionId: response.id,
+      date: response.date,
+      ledger: 'till-differences',
+      content: JSON.stringify(response),
+    })
+
+    results.push(response)
+  }
+
+  return results
 }
 
 export const postBankCharges = async (
@@ -64,7 +123,7 @@ export const postBankCharges = async (
   defaults: TransactionDefaults,
   categories: SelectSalesCategory[],
 ) => {
-  const bankCharges = categories.find((c) => c.name === 'BANK_CHARGES')
+  const bankCharges = categories.find((c) => c.name === 'ALL')
   if (!bankCharges) return null
 
   const { account, ledgers } = defaults
@@ -87,14 +146,14 @@ export const postBankCharges = async (
   }
 
   let response = await otherPayment(bearer, payment)
-  const transaction = await insertSageTransaction({
+  await insertSageTransaction({
     user: `${defaults.user.first_name} ${defaults.user.last_name}`,
     transactionId: response.id,
     date: response.date,
     ledger: 'bank-charges',
     content: JSON.stringify(response),
   })
-  return { response, transaction }
+  return { response }
 }
 
 type Filter = (categories: SelectSalesCategory[]) => SelectSalesCategory[]
@@ -243,53 +302,52 @@ export const postVoucherTakings = async (
   return { response, transaction }
 }
 
-// TODO: what about cash refunds?
+// TODO: what about cash refunds? do I need to post them to Sage?
 
 export const postRefunds = async (
   bearer: string,
   defaults: TransactionDefaults,
-  categories: SelectSalesCategory[],
+  refunds: SelectPaymentSummary[],
 ) => {
-  let targetCategories = categories.filter((c) => c.total < 0)
-  if (targetCategories.length === 0) return null
-
+  if (refunds.length === 0) return []
   const { account, ledgers } = defaults
-  const date = targetCategories[0].date
 
-  const sum = targetCategories.reduce(
-    (acc, c) => Big(acc).plus(c.total).toNumber(),
-    0,
-  )
+  let results: OtherPaymentResponse[] = []
+  for (const refund of refunds) {
+    let { type, date, refunds } = refund
+    if (refunds === 0) continue
 
-  let total = Big(sum).abs().toNumber()
+    let value = Big(refunds).abs().toNumber()
+    let payment: OtherPayment = {
+      transaction_type_id: 'OTHER_PAYMENT',
+      payment_method_id: 'CREDIT_DEBIT',
+      bank_account_id: account,
+      date,
+      total_amount: value,
+      reference: `sumup refund`,
+      payment_lines: [
+        {
+          ledger_account_id: ledgers.barWet,
+          total_amount: value,
+          tax_rate_id: 'GB_NO_TAX',
+          details: `${type} refund`,
+        },
+      ],
+    }
 
-  const lines = targetCategories.map((c) => ({
-    ledger_account_id: categoryNameToLedger(c.name, ledgers),
-    total_amount: Big(c.total).abs().toNumber(),
-    tax_rate_id: 'GB_NO_TAX',
-    details: kebabCase(c.name),
-  }))
+    let response = await otherPayment(bearer, payment)
+    await insertSageTransaction({
+      user: `${defaults.user.first_name} ${defaults.user.last_name}`,
+      transactionId: response.id,
+      date: response.date,
+      ledger: 'bar-wet',
+      content: JSON.stringify(response),
+    })
 
-  const payment: OtherPayment = {
-    transaction_type_id: 'OTHER_PAYMENT',
-    payment_method_id: 'CREDIT_DEBIT',
-    bank_account_id: account,
-    date,
-    total_amount: total,
-    reference: `refunds ${date}`,
-    payment_lines: lines,
+    results.push(response)
   }
 
-  let response = await otherPayment(bearer, payment)
-  const transaction = await insertSageTransaction({
-    user: `${defaults.user.first_name} ${defaults.user.last_name}`,
-    transactionId: response.id,
-    date: response.date,
-    ledger: '*',
-    content: JSON.stringify(response),
-  })
-
-  return { response, transaction }
+  return results
 }
 
 const cashTakings = (categories: SelectSalesCategory[]) => {

@@ -4,7 +4,7 @@ import { integer, sqliteTable, text } from 'drizzle-orm/sqlite-core'
 export const people = sqliteTable('people', {
   id: integer('id').primaryKey(),
   firstname: text('name').notNull(),
-  surname: text('name').notNull(),
+  surname: text('surname').notNull(),
   gender: text('gender', { enum: ['male', 'female'] }),
   dob: text('dob').$type<Date>().notNull(),
 })

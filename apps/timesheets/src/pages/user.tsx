@@ -15,6 +15,7 @@ userTags.scripts = [
   'https://cdn.jsdelivr.net/npm/dayjs@1/plugin/duration.js',
   'https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js',
   'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.js',
+  'https://unpkg.com/gridjs/dist/gridjs.umd.js',
   '/js/user.js',
   '/js/clock.js',
   '/js/logout.js',
@@ -244,6 +245,24 @@ user.get('/', (c) => {
             </summary>
             <section class="content"></section>
           </details>
+          <details class="holidays">
+            <summary>holidays</summary>
+            <section class="permanent"></section>
+            <section class="zerohours"></section>
+          </details>
+        </details>
+        <details
+          class="holidays"
+          name="holidays"
+          hx-trigger="toggle[this.open]"
+          hx-target=".holidays .content"
+          hx-get="/holidays"
+          hx-ext="json-enc"
+          hx-indicator=".holidays summary"
+          title="holidays records"
+        >
+          <summary>holidays</summary>
+          <section class="content"></section>
         </details>
       </main>
       <footer>

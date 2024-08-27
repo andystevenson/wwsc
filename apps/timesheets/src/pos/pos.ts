@@ -80,7 +80,8 @@ async function findStaffByName(name: string, active: boolean = true) {
 setInterval(async () => {
   // refresh the staff list every hour
   let all = await getStaff()
-  console.log('refreshed staff list', all.length)
+  let now = dayjs().format('HH:mm:ss')
+  console.log(`${now} refreshed staff list`, all.length)
   allStaff = all
 }, 1000 * 60 * 60)
 

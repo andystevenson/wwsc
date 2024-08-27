@@ -4,6 +4,17 @@ import { db } from './client'
 import { posts, type InsertPost, type SelectPost } from './schema/posts'
 import { users, type InsertUser, type SelectUser } from './schema/users'
 import { sales, type InsertSale, type SelectSale } from './schema/sales'
+import {
+  registerClosures,
+  type InsertRegisterClosure,
+  type SelectRegisterClosure,
+} from './schema/register-closures'
+
+import {
+  registerPayments,
+  type InsertRegisterPayment,
+  type SelectRegisterPayment,
+} from './schema/register-payments'
 
 import {
   salesItems,
@@ -98,6 +109,8 @@ export {
   salesCategories,
   sageTransactions,
   postcodes,
+  registerClosures,
+  registerPayments,
 }
 
 export type {
@@ -119,6 +132,10 @@ export type {
   SelectSageTransaction,
   InsertPostcode,
   SelectPostcode,
+  InsertRegisterClosure,
+  SelectRegisterClosure,
+  InsertRegisterPayment,
+  SelectRegisterPayment,
 }
 export {
   insertUser,

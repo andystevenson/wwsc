@@ -12,6 +12,7 @@ const cancelErrors = document.querySelector('.errors .cancel')
 const confirmation = document.querySelector('.confirmation')
 const cancelConfirmation = document.querySelector('.confirmation .cancel')
 const confirm = document.querySelector('.confirmation .confirm')
+const holidaysReport = document.querySelector('.reports .holidays')
 
 clockin?.addEventListener('click', async (e) => {
   let uid = clockin.dataset.uid
@@ -155,39 +156,65 @@ history?.addEventListener('change', async (e) => {
   }
 
   const shift = e.target.closest('li')
-  shift && shiftUpdated(shift)
-})
-
-history?.addEventListener('click', async (e) => {
-  let update = e.target.closest('button')
-  if (update?.classList.contains('update')) {
-    update.classList.add('active')
-    const updated = selectUpdated()
-    if (updated.length === 0) {
-      errors.firstElementChild.textContent = `Nothing was updated!`
-      errors.showModal()
-      return
-    }
-
-    let n = `${updated.length} shifts`
-    if (updated.length === 1) {
-      n = 'shift'
-    }
-
-    cancelConfirmation.textContent = 'cancel'
-    cancelConfirmation.classList.remove('exit')
-    confirm.style.display = 'block'
-    confirmation.firstElementChild.textContent = `Are you sure you want to update the selected ${n}?`
-    confirmation.showModal()
+  switch (e.target.name) {
+    case 'start':
+      shiftUpdated(shift)
+      startUpdated(shift)
+      break
+    case 'end':
+      shiftUpdated(shift)
+      startUpdated(shift)
+      break
+    case 'duration':
+      shiftUpdated(shift)
+      durationUpdate(shift)
+      break
   }
 })
 
-function shiftUpdated(shiftElement) {
-  shiftElement.classList.add('updated')
-  validateUpdate(shiftElement)
+function startUpdated(shiftElement) {
+  const start = shiftElement.querySelector('[name=start]')
+  const end = shiftElement.querySelector('[name=end]')
+  const duration = shiftElement.querySelector('[name=duration]')
+
+  const min = dayjs(start.min)
+
+  let startTime = dayjs(start.value)
+
+  if (!startTime.isSame(min, 'day')) {
+    raiseError('Cannot change shift start date!')
+    startTime = dayjs(start.dataset.value)
+    start.value = start.dataset.value
+  }
+
+  let endTime = dayjs(end.value)
+
+  if (!endTime.isAfter(startTime, 'minute')) {
+    endTime = startTime.add(1, 'minute')
+    duration.value = '00:01'
+    end.value = endTime.format('YYYY-MM-DDTHH:mm')
+  }
+
+  let durationTime = endTime.diff(startTime, 'millisecond')
+
+  let maxShiftDuration = 24 * 60 * 60 * 1000 - 60 * 1000
+  if (durationTime > maxShiftDuration) {
+    duration.value = '23:59'
+    durationTime = maxShiftDuration
+    endTime = startTime.add(durationTime, 'millisecond')
+    end.value = endTime.format('YYYY-MM-DDTHH:mm')
+  } else {
+    duration.value = dayjs.duration(durationTime).format('HH:mm')
+  }
+
+  const tenHours = 10 * 60 * 60 * 1000
+  durationTime > tenHours
+    ? duration.parentElement.classList.add('longshift')
+    : duration.parentElement.classList.remove('longshift')
+  // console.log('validateUpdate', start.value, end.value, duration.value)
 }
 
-function validateUpdate(shiftElement) {
+function durationUpdate(shiftElement) {
   const start = shiftElement.querySelector('[name=start]')
   const end = shiftElement.querySelector('[name=end]')
   const duration = shiftElement.querySelector('[name=duration]')
@@ -217,6 +244,34 @@ function validateUpdate(shiftElement) {
     ? duration.parentElement.classList.add('longshift')
     : duration.parentElement.classList.remove('longshift')
   // console.log('validateUpdate', start.value, end.value, duration.value)
+}
+
+history?.addEventListener('click', async (e) => {
+  let update = e.target.closest('button')
+  if (update?.classList.contains('update')) {
+    update.classList.add('active')
+    const updated = selectUpdated()
+    if (updated.length === 0) {
+      errors.firstElementChild.textContent = `Nothing was updated!`
+      errors.showModal()
+      return
+    }
+
+    let n = `${updated.length} shifts`
+    if (updated.length === 1) {
+      n = 'shift'
+    }
+
+    cancelConfirmation.textContent = 'cancel'
+    cancelConfirmation.classList.remove('exit')
+    confirm.style.display = 'block'
+    confirmation.firstElementChild.textContent = `Are you sure you want to update the selected ${n}?`
+    confirmation.showModal()
+  }
+})
+
+function shiftUpdated(shiftElement) {
+  shiftElement.classList.add('updated')
 }
 
 function raiseError(message) {
@@ -364,4 +419,68 @@ async function deleteShifts(ids) {
   cancelConfirmation.textContent = 'exit'
   cancelConfirmation.classList.add('exit')
   confirm.style.display = 'none'
+}
+
+holidaysReport?.addEventListener('toggle', async (e) => {
+  if (!e.target.open) {
+    return
+  }
+  await getHolidaysReport()
+})
+
+async function getHolidaysReport() {
+  let zerohours = holidaysReport.querySelector('.zerohours')
+  let permanent = holidaysReport.querySelector('.permanent')
+  if (!zerohours || !permanent) {
+    console.error('missing elements!!!')
+    return
+  }
+
+  const request = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
+    },
+  }
+
+  const response = await fetch('/holidays/report', request)
+  if (!response.ok) {
+    return
+  }
+
+  let { perms, zeros } = await response.json()
+  console.log({ perms, zeros })
+
+  permanent.innerHTML = ''
+  let pgrid = new gridjs.Grid({
+    language: {
+      search: {
+        placeholder: '🔍 Search...',
+      },
+    },
+    search: true,
+    data: perms,
+  })
+
+  let el = document.createElement('div')
+  el.classList.add('newgrid')
+  permanent.appendChild(el)
+  pgrid.render(el)
+
+  zeros.innerHTML = ''
+  let zgrid = new gridjs.Grid({
+    language: {
+      search: {
+        placeholder: '🔍 Search...',
+      },
+    },
+    search: true,
+    data: zeros,
+  })
+
+  let zel = document.createElement('div')
+  zel.classList.add('newgrid')
+  zerohours.appendChild(zel)
+  zgrid.render(zel)
 }

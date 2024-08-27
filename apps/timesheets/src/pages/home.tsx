@@ -60,6 +60,7 @@ home.get('/', (c) => {
             minlength={4}
             pattern="[0-9]{4}"
             placeholder="4 digit passcode required"
+            inputmode="numeric"
             required
             autofocus
           />

@@ -1,12 +1,13 @@
 import { spinner } from '@wwsc/lib-cli'
 import { fromTo } from './src/fromTo'
-import { login, logout, sales } from '@wwsc/lib-sumup-pos'
+import { login, logout, sales, registerClosures } from '@wwsc/lib-sumup-pos'
 import type { DailySummary } from '@wwsc/lib-sumup-pos'
 import { writeFileSync, mkdirSync } from 'node:fs'
 import { writeDailySalesSummaries } from './src/writeDailySalesSummaries'
 import { writeDailySalesByPaymentMethod } from './src/writeDailySalesByPaymentMethod'
 import { writeDailySalesItems } from './src/writeDailySalesItems'
 import { writeDailySalesCategories } from './src/writeDailySalesCategories'
+import { writeTillDifferences } from './src/writeTillDifferences'
 
 let { from, to } = fromTo()
 const start = from
@@ -15,12 +16,12 @@ const payouts: DailySummary[] = []
 
 await login()
 
-mkdirSync('./logs', { recursive: true })
+mkdirSync('/var/lib/wwsc/logs', { recursive: true })
 
 while (from.isBefore(to)) {
   console.log(from.format('YYYY-MM-DD'))
   const date = from.format('YYYY-MM-DD')
-  const directory = `./logs/${date}`
+  const directory = `/var/lib/wwsc/logs/${date}`
   mkdirSync(directory, { recursive: true })
 
   // fetch the sales for the day
@@ -49,13 +50,17 @@ while (from.isBefore(to)) {
     directory,
   )
 
+  const closures = await registerClosures(from)
+
+  const differences = await writeTillDifferences(closures.data, directory)
+
   payouts.push(paymentMethods)
 
   from = from.add(1, 'day')
 }
 
 // write the collection of payouts to a file
-const file = `./logs/${start.format('YYYY-MM')}-payouts.json`
+const file = `/var/lib/wwsc/logs/${start.format('YYYY-MM')}-payouts.json`
 writeFileSync(file, JSON.stringify(payouts, null, 2))
 
 await logout()

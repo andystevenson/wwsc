@@ -3,7 +3,7 @@ import { db } from '../client.js'
 import { InsertSale, SelectSale, sales } from '../schema/sales'
 
 export async function insertSale(data: InsertSale): Promise<void> {
-  await db.insert(sales).values(data)
+  await db.insert(sales).values(data).onConflictDoNothing({ target: sales.id })
 }
 
 export async function updateSale(

@@ -1,0 +1,14 @@
+{
+  "name": "@wwsc/public-ip",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "gip": "^2.0.2"
+  }
+}

@@ -1,7 +1,7 @@
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
-      PORT: string
+      SAGE_PORT: string
       SAGE_CLIENT_ID: string
       SAGE_CLIENT_SECRET: string
       SAGE_SCOPE: string
@@ -19,8 +19,8 @@ declare global {
   }
 }
 
-if (!process.env.PORT) {
-  throw new Error('PORT environment variable is required')
+if (!process.env.SAGE_PORT) {
+  throw new Error('SAGE_PORT environment variable is required')
 }
 
 if (!process.env.SAGE_CLIENT_ID) {

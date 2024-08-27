@@ -3,7 +3,7 @@ import { people } from './people'
 
 export const emails = sqliteTable('emails', {
   id: integer('id').primaryKey(),
-  email: text('title').notNull(),
+  email: text('email').notNull(),
   context: text('context'),
   person: integer('person')
     .notNull()

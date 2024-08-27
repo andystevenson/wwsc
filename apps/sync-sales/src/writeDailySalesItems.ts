@@ -2,24 +2,39 @@ import { spinner } from '@wwsc/lib-cli'
 import { dailySalesItems, type Sale } from '@wwsc/lib-sumup-pos'
 
 import { writeFileSync } from 'node:fs'
-import { insertSalesItem } from '@wwsc/lib-db'
+import { db, salesItems, insertSalesItem } from '@wwsc/lib-db'
+import { eq } from 'drizzle-orm'
+import { unique } from 'drizzle-orm/mysql-core'
 
 export const writeDailySalesItems = async (
   sales: Sale[],
   directory: string,
 ) => {
-  const salesItems = await spinner(dailySalesItems(sales), {
+  const items = await spinner(dailySalesItems(sales), {
     text: 'Generating sales items...',
     successText: 'Sales items generated',
     color: 'green',
   })
 
   let file = `${directory}/sales-items.json`
-  writeFileSync(file, JSON.stringify(salesItems, null, 2))
+  writeFileSync(file, JSON.stringify(items, null, 2))
 
-  for (const item of salesItems) {
+  type SalesItem = (typeof items)[number]
+  let uniqueItems: SalesItem[] = []
+  for (const item of items) {
+    let exists = await db
+      .select()
+      .from(salesItems)
+      .where(eq(salesItems.id, item.id))
+    if (exists.length) {
+      continue
+    }
+    uniqueItems.push(item)
     await insertSalesItem(item)
   }
 
-  return salesItems
+  console.log(
+    `Unique sales items: ${uniqueItems.length} ${items.length} ${sales.length}`,
+  )
+  return uniqueItems
 }

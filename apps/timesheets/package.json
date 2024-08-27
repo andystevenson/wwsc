@@ -9,9 +9,10 @@
     "@types/bun": "latest"
   },
   "dependencies": {
-    "@wwsc/lib-sumup-pos": "workspace:*",
     "@wwsc/lib-dates": "workspace:*",
     "@wwsc/lib-hono": "workspace:*",
+    "@wwsc/lib-sumup-pos": "workspace:*",
+    "csv-stringify": "^6.5.1",
     "hono": "^4.3.7"
   }
 }

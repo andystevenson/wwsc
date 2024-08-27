@@ -5,12 +5,15 @@ import { lucia, User, Session } from './lucia'
 import { findStaff } from './pos/pos'
 import { db, shifts, eq, and, isNull } from './db/db'
 import { Shift } from './db/Types'
+import { isBankHoliday } from './utilities/isBankHoliday'
+import { dayjs } from '@wwsc/lib-dates'
 
 export type WithSession = {
   Variables: {
     user: User | null
     session: Session | null
     shift: Shift | null
+    isBankHoliday: boolean
   }
 }
 
@@ -33,6 +36,7 @@ const sessionMiddleware = factory.createMiddleware(async (c, next) => {
     c.set('user', null)
     c.set('shift', null)
     c.set('session', null)
+    c.set('isBankHoliday', false)
     return next()
   }
 
@@ -64,6 +68,8 @@ const sessionMiddleware = factory.createMiddleware(async (c, next) => {
     staff ? c.set('user', staff) : c.set('user', null)
   }
   c.set('session', session)
+  let today = dayjs().format('YYYY-MM-DD')
+  c.set('isBankHoliday', await isBankHoliday(today))
   return next()
 })
 

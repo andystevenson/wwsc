@@ -2,7 +2,7 @@ import { parseArgs, chalk } from '@wwsc/lib-cli'
 import { dayjs, tomorrowUK, todayUK, lastOctoberUK } from '@wwsc/lib-dates'
 import * as packageJson from '../package.json'
 
-const version = packageJson.default.version
+const packageVersion = packageJson.version
 
 export const fromTo = () => {
   const args = parseArgs(process.argv.slice(2), {
@@ -22,7 +22,7 @@ export const fromTo = () => {
   let { from, to, help, day, week, month, year, financial, version, v } = args
 
   if (version || v) {
-    console.log(version)
+    console.log(packageVersion)
     process.exit()
   }
 
@@ -38,7 +38,7 @@ export const fromTo = () => {
     )
     console.log(
       `  --version | -v    ${chalk.blueBright(
-        `: show version ${chalk.whiteBright(`${version}`)}`,
+        `: show version ${chalk.whiteBright(`${packageVersion}`)}`,
       )}`,
     )
     console.log(

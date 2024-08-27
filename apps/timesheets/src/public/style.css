@@ -328,7 +328,7 @@ details {
   }
 
   li {
-    --columns: 180px 75px 205px 205px 98px 60px 60px 1fr 50px 50px;
+    --columns: 160px 90px 205px 205px 98px 60px 60px 1fr 50px 50px;
     max-inline-size: unset;
     display: grid;
     gap: var(--size-2);
@@ -371,7 +371,7 @@ details {
     }
 
     &.user {
-      --columns: 180px 75px 205px 205px 98px 60px 60px 1fr;
+      --columns: 160px 90px 205px 205px 98px 60px 60px 1fr;
 
       & .approved {
         display: none;
@@ -382,7 +382,7 @@ details {
     }
 
     &.admin {
-      --columns: 180px 75px 205px 205px 98px 60px 60px 1fr 50px;
+      --columns: 160px 90px 205px 205px 98px 60px 60px 1fr 50px;
 
       & .deleteme {
         display: none;
@@ -631,13 +631,6 @@ details {
     .duration {
       place-self: center;
     }
-    .end {
-      opacity: 0.5;
-      cursor: not-allowed;
-      > * {
-        cursor: inherit;
-      }
-    }
   }
 }
 
@@ -761,24 +754,6 @@ dialog {
       overscroll-behavior-inline: contain;
       overflow-x: scroll;
     }
-
-    .newgrid {
-      overflow-x: scroll;
-    }
-
-    .gridjs {
-      overflow-x: scroll;
-      .gridjs-search {
-        margin-inline-start: var(--size-2);
-        margin-block: var(--size-2);
-      }
-      .gridjs-table {
-        background-color: var(--alt-accent-color);
-        .gridjs-td {
-          white-space: nowrap;
-        }
-      }
-    }
   }
 }
 
@@ -791,6 +766,16 @@ body.user {
 .reports {
   summary {
     background-color: var(--alt-accent-color);
+  }
+
+  .holidays {
+    section {
+      margin-block-end: var(--size-2);
+      [type='search'] {
+        background-color: var(--surface-2);
+        border: 1px solid var(--gray-6);
+      }
+    }
   }
 }
 
@@ -850,6 +835,110 @@ body.user {
         top: 0px;
         cursor: pointer;
       }
+    }
+  }
+}
+
+.holidays {
+  .content {
+    display: grid;
+    gap: var(--size-3);
+
+    > * {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--size-1);
+    }
+  }
+
+  span {
+    white-space: nowrap;
+  }
+
+  .permanent.summary,
+  .zerohours.summary {
+    div {
+      padding-inline: var(--size-3);
+      padding-block: var(--size-1);
+      display: flex;
+      gap: var(--size-1);
+      border: 1px solid var(--gray-4);
+      border-radius: var(--radius-2);
+
+      &.accrued {
+        border: 3px double var(--accent-color);
+        font-weight: bold;
+      }
+
+      span:first-of-type {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .zerohours.summary {
+    div.accrued {
+      border: 1px solid var(--gray-4);
+      font-weight: unset;
+    }
+
+    div.paid {
+      border: 3px double var(--accent-color);
+      font-weight: bold;
+    }
+  }
+
+  .permanent.taken {
+    span {
+      padding-inline: var(--size-2);
+      border: 1px solid var(--gray-4);
+      border-radius: var(--radius-2);
+      &.accrued {
+        border: 3px double var(--accent-color);
+        font-weight: bold;
+      }
+      &.partial {
+        border: 2px dashed var(--gray-4);
+      }
+    }
+  }
+
+  .zerohours.taken {
+    div {
+      display: flex;
+      gap: var(--size-1);
+      border: 3px double var(--accent-color);
+      border-radius: var(--radius-2);
+
+      font-weight: bold;
+    }
+
+    span {
+      padding-inline: var(--size-2);
+      border: 1px solid var(--gray-4);
+      border-radius: var(--radius-2);
+
+      &.partial {
+        border: 2px dashed var(--gray-4);
+      }
+    }
+  }
+}
+
+.newgrid {
+  overflow-x: scroll;
+}
+
+.gridjs {
+  overflow-x: scroll;
+  .gridjs-search {
+    margin-inline-start: var(--size-2);
+    margin-block: var(--size-2);
+  }
+  .gridjs-table {
+    background-color: var(--alt-accent-color);
+    .gridjs-td {
+      white-space: nowrap;
     }
   }
 }

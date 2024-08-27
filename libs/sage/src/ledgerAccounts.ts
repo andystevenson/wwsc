@@ -12,6 +12,7 @@ export const UsedLedgers = [
   'Tea & Coffee (4011)',
   'Member voucher payments (8207)',
   'Bank Charges (7901)',
+  'Till Differences (8206)',
 ]
 
 export const getLedgerAccounts = async (bearer: string) => {
@@ -63,6 +64,10 @@ export const ledgerIds = (ledgers: LedgerAccount[]) => {
     (ledger) => ledger.displayed_as === UsedLedgers[7],
   )
 
+  const tillDifferences = ledgers.find(
+    (ledger) => ledger.displayed_as === UsedLedgers[8],
+  )
+
   if (
     !barDry ||
     !barWet ||
@@ -71,7 +76,8 @@ export const ledgerIds = (ledgers: LedgerAccount[]) => {
     !vending ||
     !teaCoffee ||
     !vouchers ||
-    !bankCharges
+    !bankCharges ||
+    !tillDifferences
   ) {
     throw new Error('WWC ledger account not found')
   }
@@ -85,6 +91,7 @@ export const ledgerIds = (ledgers: LedgerAccount[]) => {
     teaCoffee: teaCoffee.id,
     vouchers: vouchers.id,
     bankCharges: bankCharges.id,
+    tillDifferences: tillDifferences.id,
   }
 
   return ids

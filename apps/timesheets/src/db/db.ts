@@ -1,7 +1,19 @@
 import { drizzle } from 'drizzle-orm/libsql'
-import { eq, and, isNull } from 'drizzle-orm'
+import { eq, gte, lt, and, isNull, asc } from 'drizzle-orm'
 import { createClient } from '@libsql/client'
-import { shifts, type InsertShift, type SelectShift } from './schema/shifts'
+import {
+  shifts,
+  type InsertShift,
+  type SelectShift,
+  type UpdateShift,
+} from './schema/shifts'
+
+import {
+  holidays,
+  type InsertHoliday,
+  type SelectHoliday,
+  type UpdateHoliday,
+} from './schema/holidays'
 
 if (!process.env.TIMESHEETS_DATABASE_URL) {
   throw new Error('TIMESHEETS_DATABASE_URL is required')
@@ -14,4 +26,20 @@ const client = createClient({
 
 const db = drizzle(client)
 
-export { db, shifts, eq, and, isNull, type InsertShift, type SelectShift }
+export {
+  db,
+  eq,
+  gte,
+  lt,
+  and,
+  asc,
+  isNull,
+  shifts,
+  type InsertShift,
+  type SelectShift,
+  type UpdateShift,
+  holidays,
+  type InsertHoliday,
+  type SelectHoliday,
+  type UpdateHoliday,
+}
