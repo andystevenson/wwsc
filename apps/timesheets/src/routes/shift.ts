@@ -1,4 +1,4 @@
-import { eq, and, isNull } from 'drizzle-orm'
+import { eq, gte, and, isNull, isNotNull } from 'drizzle-orm'
 import { dayjs } from '@wwsc/lib-dates'
 import { factory, protectedPage } from '../hono-factory'
 import {
@@ -171,10 +171,13 @@ shift.post('/upload', async (c) => {
         continue
       }
 
-      let duration = Big(end.diff(start, 'hours', true))
-        .times(accrualFactor)
-        .round(2, Big.roundUp)
-        .toNumber()
+      let duration =
+        isPermanent && isBhol
+          ? 8
+          : Big(end.diff(start, 'hours', true))
+              .times(accrualFactor)
+              .round(2, Big.roundUp)
+              .toNumber()
 
       let holiday: InsertHoliday = {
         name: record.username,
@@ -198,6 +201,59 @@ shift.post('/deletes', async (c) => {
     }
   })
   return c.json(request)
+})
+
+shift.get('/sync', async (c) => {
+  let date = c.req.query('date')
+  if (!date) {
+    console.error('/sync no date')
+    return c.json({ error: 'no date' })
+  }
+
+  let zeros = []
+  let perms = []
+  let start = dayjs(date).startOf('day').format('YYYY-MM-DD')
+  let inscope = await db
+    .select()
+    .from(shifts)
+    .where(and(gte(shifts.start, start), isNotNull(shifts.end)))
+
+  for (const shift of inscope) {
+    let staff = await findStaff(shift.uid)
+    if (!staff) {
+      continue
+    }
+
+    let isZeroHours = staff.isZeroHours
+    let isPermanent = staff.isPermanent
+    let isBhol = await isBankHoliday(shift.start)
+    let createHoliday = isZeroHours || (isPermanent && isBhol)
+    if (!createHoliday) {
+      continue
+    }
+
+    let start = dayjs(shift.start)
+    let end = dayjs(shift.end)
+    let duration =
+      isPermanent && isBhol
+        ? 8
+        : Big(end.diff(start, 'hours', true))
+            .times(accrualFactor)
+            .round(2, Big.roundUp)
+            .toNumber()
+
+    let record: InsertHoliday = {
+      name: shift.username,
+      date: start.format('YYYY-MM-DD'),
+      type: 'acc',
+      hours: duration,
+      shiftId: shift.id,
+    }
+
+    let holiday = await db.insert(holidays).values(record).returning()
+    isPermanent ? perms.push(holiday[0]) : zeros.push(holiday[0])
+  }
+  return c.json({ date, inscope, zeros, perms })
 })
 
 export default shift

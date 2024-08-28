@@ -3,6 +3,7 @@ import { and, eq, gte, lt, db, holidays } from '../db/db'
 import { dayjs } from '@wwsc/lib-dates'
 
 export const isBankHoliday = async (date: string) => {
+  let target = dayjs(date).format('YYYY-MM-DD')
   let startOfYear = dayjs(date).startOf('year')
   let endOfYear = dayjs(date).add(1, 'year')
   if (!startOfYear.isValid() || !endOfYear.isValid()) {
@@ -20,7 +21,7 @@ export const isBankHoliday = async (date: string) => {
       ),
     )
 
-  let is = bankHolidays.find((holiday) => holiday.date === date)
+  let is = bankHolidays.find((holiday) => holiday.date === target)
   return is ? true : false
 }
 
