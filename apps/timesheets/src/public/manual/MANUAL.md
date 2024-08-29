@@ -15,7 +15,7 @@ The system has the following simple processes.
 
 1. **Login and Logout** - getting into the system and leaving the system.
 2. **Clock in and Clock out** - clock in to start a shift, clock out to finish a shift
-3. **History** - view the history of the shifts you have worked over different time period.
+3. **History** - view the history of the shifts you have worked over different time periods.
 4. **Holidays** - show accrued leave, leave taken, holidays paid etc. _(displayed differently for permanent / zero-hours staff)_
 
 ## Login and Logout
@@ -30,11 +30,11 @@ Once you have entered the correct passcode you will be taken to the user screen.
 
 <img alt="user page" src="user.webp" width="500px">
 
-> _(obviously it should have your own name!!. Please hit the logout button, top right, if it is not your name.)_
+> _(obviously it should have your own name!!. Please hit the "logout" button, top right, if it is not your name.)_
 
 The "clock in" button is explained below.
 
-To leave the system hit the "logout" button in top right of the screen.
+To leave the system hit the "logout" button in the top right of the screen.
 
 > _(By the way if you save the webpage on your phone you can use your phone to login as long as you are in the building.)_
 
@@ -50,7 +50,7 @@ You will then be presented with the clocked in screen.
 
 The screen will show the time you started your shift and the duration _(how long you shift has been)_ will keep advancing while the page is open.
 
-Typically at this point you should hit the logout button and start work.
+Typically at this point you should hit the "logout" button and start work.
 
 At the end of your shift you should login again and you will see the same screen. However it will typically look more like this.
 
@@ -78,7 +78,7 @@ Typically at this point hit the "logout" button and head home!
 
 In order to help you understand the shifts you've worked recently you can have a look at your shift history.
 
-Once you login, click on the history button and you will see the following.
+Once you login, click on the "history" button and you will see the following.
 
 <img alt="history page" src="history.webp" width="500px">
 
@@ -103,7 +103,7 @@ For each shift you will see the start date & time, end date & time, duration of 
 
 ## Holidays
 
-Once you login, click on the "holidays" tab to view your holiday entitlement and history.
+Once you login, click on the "holidays" button to view your holiday entitlement and history.
 
 ### Zero Hours
 
