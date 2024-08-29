@@ -9,7 +9,7 @@ There are 2 main categories of staff at West Warwicks.
 **Permanent** and **Zero Hours**
 
 - Permanent staff are salary based and paid monthly.
-- Zero hours staff are paid an hourly rate based on their age and role.
+- Zero hours staff are paid an hourly rate based on their age and role. Paydays are on a Monday every fortnight/14 days.
 
 The system has the following simple processes.
 
@@ -28,7 +28,7 @@ You are prompted to enter the 4-digit passcode to get into the system. _(when yo
 
 Once you have entered the correct passcode you will be taken to the user screen.
 
-<img alt="user page" src="user.webp" width="200px">
+<img alt="user page" src="user.webp" width="500px">
 
 > _(obviously it should have your own name!!. Please hit the logout button, top right, if it is not your name.)_
 
@@ -42,11 +42,11 @@ To leave the system hit the "logout" button in top right of the screen.
 
 Once you have gone through the login process above, to start your shift press the "clock in" button in the middle of the page.
 
-<img alt="user page" src="user.webp" width="200px">
+<img alt="user page" src="user.webp" width="500px">
 
-You will then be presented with to clocked in screen.
+You will then be presented with the clocked in screen.
 
-<img alt="clocked in page" src="clocked-in.webp" width="300px">
+<img alt="clocked in page" src="clocked-in.webp" width="500px">
 
 The screen will show the time you started your shift and the duration _(how long you shift has been)_ will keep advancing while the page is open.
 
@@ -54,7 +54,7 @@ Typically at this point you should hit the logout button and start work.
 
 At the end of your shift you should login again and you will see the same screen. However it will typically look more like this.
 
-<img alt="clock out page" src="clock-out.webp" width="300px">
+<img alt="clock out page" src="clock-out.webp" width="500px">
 
 You will see the duration of your shift has advanced and you have a couple of options to tick and notes to fill in if you want to pass information onto your line manager.
 
@@ -68,7 +68,7 @@ You will see the duration of your shift has advanced and you have a couple of op
 
 To end your shift hit the "clock out" button.
 
-<img alt="clocked out page" src="clocked-out.webp" width="300px">
+<img alt="clocked out page" src="clocked-out.webp" width="500px">
 
 If you have successfully clocked out, the "clock out" button will disappear. You will then see your shift start time, shift end time and the duration in hours:minutes:seconds. There will also be "padlock" symbols against both lines which means the shift is over and you cannot change any of the inputs.
 
@@ -80,7 +80,7 @@ In order to help you understand the shifts you've worked recently you can have a
 
 Once you login, click on the history button and you will see the following.
 
-<img alt="history page" src="history.webp" width="300px">
+<img alt="history page" src="history.webp" width="500px">
 
 This allows you to see the history of your shifts over different time periods.
 
@@ -122,7 +122,7 @@ The first line contains the following information.
 - **days** - simply _taken / 8_
 
 The following lines show the days taken as holiday as indicated on the rota. Dates in bold with a double green border around them show dates in which holiday hours were paid and how many hours were entered.
-ß
+
 <img alt="holidays permanent page" src="holidays-zerohours-paid.webp" width="100px">
 
 ### Permanent
@@ -146,4 +146,4 @@ Days with a dashed line around them indicate half-days leave taken.
 
 ## Troubleshooting
 
-- Forbidden - if you try to login to the system from outside West Warwicks you will get the following screen.
+- Forbidden - if you try to login to the system from outside West Warwicks you will simply get the word 'Forbidden' displayed on the screen.
