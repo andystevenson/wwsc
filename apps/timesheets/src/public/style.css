@@ -717,7 +717,7 @@ dialog {
 
 .history li.clockedin {
   position: relative;
-  opacity: 0.5;
+  opacity: 0.75;
   cursor: not-allowed;
 
   &::after {

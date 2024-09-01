@@ -14,6 +14,19 @@ const cancelConfirmation = document.querySelector('.confirmation .cancel')
 const confirm = document.querySelector('.confirmation .confirm')
 const holidaysReport = document.querySelector('.reports .holidays')
 
+document.addEventListener('keydown', (e) => {
+  console.log('key', e.key)
+  if (e.key === 'Escape') {
+    closeDetails()
+  }
+
+  if (e.key === 'Backspace' && e.metaKey) {
+    const shift = document.querySelector('li:hover')
+    if (!shift) return
+    clockSomeoneOut(shift)
+  }
+})
+
 clockin?.addEventListener('click', async (e) => {
   let uid = clockin.dataset.uid
   let start = dayjs().format('YYYY-MM-DDTHH:mm')
@@ -156,23 +169,21 @@ history?.addEventListener('change', async (e) => {
   }
 
   const shift = e.target.closest('li')
+  shiftUpdated(shift)
   switch (e.target.name) {
     case 'start':
-      shiftUpdated(shift)
-      startUpdated(shift)
+      timeUpdated(shift)
       break
     case 'end':
-      shiftUpdated(shift)
-      startUpdated(shift)
+      timeUpdated(shift)
       break
     case 'duration':
-      shiftUpdated(shift)
       durationUpdate(shift)
       break
   }
 })
 
-function startUpdated(shiftElement) {
+function timeUpdated(shiftElement) {
   const start = shiftElement.querySelector('[name=start]')
   const end = shiftElement.querySelector('[name=end]')
   const duration = shiftElement.querySelector('[name=duration]')
@@ -246,6 +257,34 @@ function durationUpdate(shiftElement) {
   // console.log('validateUpdate', start.value, end.value, duration.value)
 }
 
+function isSuperuser() {
+  return document.querySelector('.page.superuser') !== null
+}
+
+function clockSomeoneOut(shift) {
+  if (!isSuperuser()) {
+    return
+  }
+  const { id } = clockin.dataset
+  const shiftId = shift.querySelector('[name=id]').value
+  if (id === shiftId) {
+    raiseError('Cannot clock yourself out!')
+    return
+  }
+
+  shiftUpdated(shift)
+  const name = shift.querySelector('.username').textContent
+  console.log('clockSomeoneOut', shift)
+  const details = shift.closest('details')
+  const update = details.querySelector('.update')
+  update?.classList.add('active')
+  cancelConfirmation.textContent = 'cancel'
+  cancelConfirmation.classList.remove('exit')
+  confirm.style.display = 'block'
+  confirmation.firstElementChild.textContent = `Are you sure you want to clock out ${name}?`
+  confirmation.showModal()
+}
+
 history?.addEventListener('click', async (e) => {
   let update = e.target.closest('button')
   if (update?.classList.contains('update')) {
@@ -311,9 +350,22 @@ function selectUpdated() {
   return updated
 }
 
+function selectShift(shift) {
+  let id = shift.querySelector('[name=id]').value
+  let start = shift.querySelector('[name=start]').value
+  let end = shift.querySelector('[name=end]').value
+  let duration = shift.querySelector('[name=duration]').value
+  let supervisor = shift.querySelector('[name=supervisor]').checked
+  let nobreaks = shift.querySelector('[name=nobreaks]').checked
+  let notes = shift.querySelector('[name=notes]').value
+  let approved = shift.querySelector('[name=approved]')?.checked
+  return { id, start, end, duration, supervisor, nobreaks, notes, approved }
+}
+
 confirm?.addEventListener('click', async () => {
   let updated = selectUpdated()
   if (updated.length === 0) {
+    closeDetails()
     return
   }
 
@@ -321,29 +373,14 @@ confirm?.addEventListener('click', async () => {
   let deletes = []
   for (let shift of updated) {
     let id = shift.querySelector('[name=id]').value
-    let deleteme = shift.querySelector('[name=deleteme]').checked
+    let deleteme = shift.querySelector('[name=deleteme]')?.checked
     if (deleteme) {
       deletes.push(id)
       continue
     }
 
-    let start = shift.querySelector('[name=start]').value
-    let end = shift.querySelector('[name=end]').value
-    let duration = shift.querySelector('[name=duration]').value
-    let supervisor = shift.querySelector('[name=supervisor]').checked
-    let nobreaks = shift.querySelector('[name=nobreaks]').checked
-    let notes = shift.querySelector('[name=notes]').value
-    let approved = shift.querySelector('[name=approved]').checked
-
     const update = {
-      id,
-      start,
-      end,
-      duration,
-      supervisor,
-      nobreaks,
-      notes,
-      approved,
+      ...selectShift(shift),
       clockout: 'supervisor',
     }
     updates.push(update)
@@ -358,7 +395,7 @@ confirm?.addEventListener('click', async () => {
 })
 
 function closeDetails() {
-  let details = history.querySelectorAll('details[open]')
+  let details = document.querySelectorAll('details[open]')
   details.forEach((d) => {
     d.removeAttribute('open')
   })
