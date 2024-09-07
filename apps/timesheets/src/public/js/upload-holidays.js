@@ -26,7 +26,7 @@ async function uploadCSV() {
     contents.classList.add('active')
     fileInput.value = ''
     reader.removeEventListener('load', loader, false)
-    await shiftsUpload()
+    await holidaysUpload()
   }
 
   reader.addEventListener('load', loader, false)
@@ -41,7 +41,7 @@ function showError(message) {
   errorMesssage.textContent = message
 }
 
-async function shiftsUpload() {
+async function holidaysUpload() {
   let headers = { 'Content-Type': 'application/json' }
   let body = JSON.stringify({ payload: payload.value })
 
@@ -72,11 +72,4 @@ async function shiftsUpload() {
   el.classList.add('newgrid')
   contents.appendChild(el)
   grid.render(el)
-
-  if (json.errors.length > 0) {
-    showError(
-      'upload failed, input data has errors, please correct and try again',
-    )
-    return
-  }
 }

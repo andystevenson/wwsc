@@ -97,7 +97,6 @@ function permanent(holidays: InsertHoliday[]) {
         .times(contract)
         .round(0, Big.roundUp)
         .times(8)
-      console.log('after', { allowed })
       accrued = Big(0)
       bfwd = Big(holiday.hours)
     }
@@ -155,12 +154,12 @@ function zerohours(holidays: InsertHoliday[]) {
   return {
     who,
     start,
-    bfwd: bfwd.toNumber(),
-    accrued: accrued.toNumber(),
-    paid: paid.toNumber(),
-    total: accrued.add(paid).toNumber(),
-    taken: taken.toNumber(),
-    days: taken.div(8).toNumber(),
+    bfwd: bfwd.round(2).toNumber(),
+    accrued: accrued.round(2).toNumber(),
+    paid: paid.round(2).toNumber(),
+    total: accrued.add(paid).round(2).toNumber(),
+    taken: taken.round(2).toNumber(),
+    days: taken.div(8).round(2).toNumber(),
   }
 }
 

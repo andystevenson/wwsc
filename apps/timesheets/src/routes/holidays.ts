@@ -1,7 +1,6 @@
-import { dayjs } from '@wwsc/lib-dates'
 import { factory, protectedPage } from '../hono-factory'
-import { db, holidays, and, eq, gte, asc, shifts } from '../db/db'
-import { zeroHourStaff, permanentStaff, ids } from '../pos/pos'
+import { db, holidays, and, eq, gte, asc } from '../db/db'
+import { zeroHourStaff, permanentStaff } from '../pos/pos'
 import {
   permanent,
   zerohours,
@@ -54,6 +53,10 @@ route.get('/report', async (c) => {
   let zeros = []
   for (const staff of zeroHourStaff()) {
     if (!staff.active) continue
+    if (!staff.display_name) {
+      console.error('no display name', staff)
+      continue
+    }
     let days = await getHolidays(staff.display_name)
     zeros.push(zerohours(days))
   }
@@ -68,6 +71,7 @@ route.get('/report', async (c) => {
 
   zeros = zeros.sort((a, b) => a.who.localeCompare(b.who))
   perms = perms.sort((a, b) => a.who.localeCompare(b.who))
+
   return c.json({ zeros, perms })
 })
 
@@ -84,6 +88,7 @@ async function getLastBfwd(staff: string) {
 async function getHolidays(staff: string) {
   let bfwd = await getLastBfwd(staff)
   if (!bfwd) {
+    console.error('no bfwd', staff)
     return []
   }
 

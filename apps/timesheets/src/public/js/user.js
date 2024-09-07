@@ -487,7 +487,6 @@ async function getHolidaysReport() {
   }
 
   let { perms, zeros } = await response.json()
-  console.log({ perms, zeros })
 
   permanent.innerHTML = ''
   let pgrid = new gridjs.Grid({
