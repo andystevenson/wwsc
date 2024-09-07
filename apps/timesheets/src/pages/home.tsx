@@ -1,6 +1,6 @@
 import { Page } from '@wwsc/lib-hono'
 import { factory } from '../hono-factory'
-import tags from './tags'
+import tags from './pageTags'
 let newTags = structuredClone(tags)
 newTags.scripts = ['/js/home.js']
 

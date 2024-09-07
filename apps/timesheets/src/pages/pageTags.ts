@@ -12,4 +12,5 @@ const tags: Tags = {
   scripts: [],
 }
 
+// wonder what is going on here?
 export default tags
