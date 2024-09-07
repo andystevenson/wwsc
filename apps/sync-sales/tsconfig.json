@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./dist",
-    "module": "preserve",
+    "module": "ESNext",
     "moduleResolution": "Bundler",
     "sourceMap": true
   },

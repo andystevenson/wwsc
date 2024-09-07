@@ -40,4 +40,4 @@ export async function autoClockout() {
 
 // run it on startup
 
-setInterval(autoClockout, 1000 * 60) // every 10 minutes
+setInterval(autoClockout, 1000 * 60) // every minute

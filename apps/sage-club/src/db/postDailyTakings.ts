@@ -56,9 +56,9 @@ export const getTransactionDefaults = async (bearer: string) => {
 export const postDailyTakings = async (bearer: string, date: string) => {
   const defaults = await getTransactionDefaults(bearer)
   const { categories, closures, refunds } = await getDailyTakings(date)
-  let bankCharges = await postBankCharges(bearer, defaults, categories)
   let cash = await postCashTakings(bearer, defaults, categories)
   let sumup = await postSumupTakings(bearer, defaults, categories)
+  let bankCharges = await postBankCharges(bearer, defaults, categories)
   let card = await postCardTakings(bearer, defaults, categories)
   let differences = await postTillDifferences(bearer, defaults, closures)
 

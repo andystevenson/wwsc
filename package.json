@@ -37,7 +37,7 @@
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.33.0",
     "fetch-retry": "^6.0.0",
-    "hono": "^4.5.10",
+    "hono": "^4.5.11",
     "hono-sessions": "^0.5.8",
     "lodash.kebabcase": "^4.1.1",
     "lucia": "^3.2.0",

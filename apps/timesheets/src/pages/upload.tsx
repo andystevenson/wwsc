@@ -1,6 +1,6 @@
 import { Page } from '@wwsc/lib-hono'
 import { factory } from '../hono-factory'
-import tags from './Tags'
+import tags from './tags'
 import { type Staff } from '@wwsc/lib-sumup-pos'
 import { type Shift } from '../db/Types'
 import dayjs from 'dayjs'

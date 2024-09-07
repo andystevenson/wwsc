@@ -18,6 +18,18 @@ await login()
 
 mkdirSync('/var/lib/wwsc/logs', { recursive: true })
 
+type Sale = Awaited<ReturnType<typeof sales>>[number]
+
+export function excludeNonPayments(sales: Sale[]) {
+  return sales.filter((sale) => {
+    let missing = sale.sales_payments_history.length === 0
+    // if (missing) {
+    //   console.log('Missing payment', sale.id)
+    // }
+    return !missing
+  })
+}
+
 while (from.isBefore(to)) {
   console.log(from.format('YYYY-MM-DD'))
   const date = from.format('YYYY-MM-DD')
@@ -31,8 +43,14 @@ while (from.isBefore(to)) {
     color: 'green',
   })
 
+  const filteredSales = excludeNonPayments(salesData)
+
+  if (salesData.length !== filteredSales.length) {
+    console.log(`Sales: ${salesData.length}, filtered: ${filteredSales.length}`)
+  }
+
   // summarize the sales
-  let summaries = await writeDailySalesSummaries(salesData, directory)
+  let summaries = await writeDailySalesSummaries(filteredSales, directory)
 
   // save the payment methods
   let paymentMethods = await writeDailySalesByPaymentMethod(
@@ -41,7 +59,7 @@ while (from.isBefore(to)) {
   )
 
   // save the sales items
-  let salesItems = await writeDailySalesItems(salesData, directory)
+  let salesItems = await writeDailySalesItems(filteredSales, directory)
 
   // save the sales categories
   const categories = await writeDailySalesCategories(

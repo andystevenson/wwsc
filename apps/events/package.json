@@ -1,0 +1,16 @@
+{
+  "name": "@wwsc/events",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "@wwsc/lib-dates": "workspace:*",
+    "@wwsc/lib-hono": "workspace:*",
+    "hono": "^4.3.7"
+  }
+}

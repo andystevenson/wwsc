@@ -1,4 +1,4 @@
-import { Tags } from '@wwsc/lib-hono'
+import { Tags } from './Page'
 
 const tags: Tags = {
   author: 'andystevenson@mac.com',

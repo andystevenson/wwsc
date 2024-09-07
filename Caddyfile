@@ -17,3 +17,7 @@ closures.localhost {
 timesheets.localhost {
 	reverse_proxy localhost:7654
 }
+
+events.localhost {
+	reverse_proxy localhost:7543
+}

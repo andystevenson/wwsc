@@ -2,9 +2,13 @@ import { spinner } from '@wwsc/lib-cli'
 import { dailySalesItems, type Sale } from '@wwsc/lib-sumup-pos'
 
 import { writeFileSync } from 'node:fs'
-import { db, salesItems, insertSalesItem } from '@wwsc/lib-db'
+import {
+  db,
+  salesItems,
+  insertSalesItem,
+  type InsertSalesItem,
+} from '@wwsc/lib-db'
 import { eq } from 'drizzle-orm'
-import { unique } from 'drizzle-orm/mysql-core'
 
 export const writeDailySalesItems = async (
   sales: Sale[],
@@ -33,8 +37,8 @@ export const writeDailySalesItems = async (
     await insertSalesItem(item)
   }
 
-  console.log(
-    `Unique sales items: ${uniqueItems.length} ${items.length} ${sales.length}`,
-  )
+  // console.log(
+  //   `Unique sales items: ${uniqueItems.length} ${items.length} ${sales.length}`,
+  // )
   return uniqueItems
 }

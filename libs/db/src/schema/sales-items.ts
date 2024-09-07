@@ -1,4 +1,4 @@
-import { sqliteTable, integer, real, text } from 'drizzle-orm/sqlite-core'
+import { sqliteTable, real, text } from 'drizzle-orm/sqlite-core'
 import { sales } from './sales'
 import type { RegisterName } from '@wwsc/lib-sumup-pos'
 

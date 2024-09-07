@@ -31,8 +31,8 @@ export const writeDailySalesSummaries = async (
     }
   }
 
-  console.log(
-    `Unique sales: ${uniqueSales.length} ${salesSummaries.length} ${salesData.length}`,
-  )
+  // console.log(
+  //   `Unique sales: ${uniqueSales.length} ${salesSummaries.length} ${salesData.length}`,
+  // )
   return uniqueSales
 }
