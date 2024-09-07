@@ -22,6 +22,12 @@ module.exports = {
       interpreter: 'bun',
     },
     {
+      name: 'events',
+      script: 'src/index.ts',
+      cwd: 'apps/events',
+      interpreter: 'bun',
+    },
+    {
       name: 'closures',
       script: 'src/index.ts',
       cwd: 'apps/closures',
@@ -40,7 +46,7 @@ module.exports = {
       'pre-setup': 'wwsc-pre-setup.sh',
       'post-setup': 'wwsc-post-setup.sh',
       'pre-deploy': "echo 'pre-deploy stuff'",
-      'post-deploy': '/bin/sh -c \'echo "post-deploy stuff"\'',
+      'post-deploy': "echo 'post-deploy stuff'",
       'pre-deploy-local': "echo 'some local command'",
     },
   },
