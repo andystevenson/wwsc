@@ -544,18 +544,6 @@ main .week {
 
     > header > ol {
       position: relative;
-      &::after {
-        counter-reset: all-day-event-count var(--_all-day-event-count);
-        content: counter(all-day-event-count);
-        display: block;
-        padding-block: var(--size-1);
-        font-size: var(--font-size-1);
-        font-weight: var(--font-weight-2);
-        color: var(--accent-color);
-        position: absolute;
-        top: 0;
-        left: -5px;
-      }
       display: grid;
       grid-template-columns: var(--size-9) repeat(7, 1fr);
       border-block-end: var(--_thicker-line);

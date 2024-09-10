@@ -289,8 +289,6 @@ views.get('/week', (c) => {
         <ol class="days">
           {Array.from({ length: 8 }, (_, i) => {
             let day = monday.add(i, 'day')
-            let dayName = day.format('dddd')
-            let nth = day.format('Do')
             let date = day.format('YYYY-MM-DD')
             return (
               <li>
@@ -300,7 +298,7 @@ views.get('/week', (c) => {
                     let time = hour.toString().padStart(2, '0')
                     if (i === 0) {
                       return (
-                        <li id={`dwhl${date}T${hour}:00`} class="hourslot time">
+                        <li id={`t${hour}`} class="hourslot time">
                           <span>{time}:00</span>
                         </li>
                       )

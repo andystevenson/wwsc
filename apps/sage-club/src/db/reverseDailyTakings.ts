@@ -7,8 +7,10 @@ import { deleteOtherPayment } from '@wwsc/lib-sage'
 
 import { db, sageTransactions } from '@wwsc/lib-db'
 import { eq } from 'drizzle-orm'
+import sage from '../routes/sage'
 
 export const reverseDailyTakings = async (bearer: string, date: string) => {
+  type DateType = typeof sageTransactions.date
   const transactions = await db
     .select()
     .from(sageTransactions)

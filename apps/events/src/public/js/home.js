@@ -13,6 +13,7 @@ document.addEventListener('htmx:afterSwap', (event) => {
   for (let i = 0; i < main.length; i++) {
     if (main[i].id !== elt.id) {
       main[i].classList.remove('active')
+      main[i].innerHTML = ''
     }
   }
   scrollIntoView(elt.id)
@@ -20,7 +21,7 @@ document.addEventListener('htmx:afterSwap', (event) => {
 
 function scrollIntoView(id) {
   console.log('scrollIntoView', id)
-  if (id !== 'day') {
+  if (id !== 'day' && id !== 'week') {
     return
   }
   let now = new Date()
