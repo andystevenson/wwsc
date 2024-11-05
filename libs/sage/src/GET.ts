@@ -32,3 +32,8 @@ export function GET<T>(endpoint: string, bearer: string, params?: Params) {
     return data
   }
 }
+
+export async function get(endpoint: string, bearer: string, params?: Params) {
+  let getData = GET<any>(endpoint, bearer, params)
+  return getData()
+}

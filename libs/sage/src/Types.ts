@@ -1,11 +1,20 @@
+export type Base = {
+  id: string
+  displayed_as: string
+  $path: string
+}
+
 export type Params = { [key: string]: string }
 
+export type Link = {
+  href: string
+  rel: string
+  type: string
+}
+
 export type Reference = {
-  /** @description The unique identifier for the item */
   id: string
-  /** @description The name of the resource */
   displayed_as: string
-  /** @description The API path for the resource */
   $path: string
 }
 
@@ -13,15 +22,6 @@ export type PaymentMethod = Reference
 
 export type PaymentMethodList = {
   $items: PaymentMethod[]
-}
-
-export type Link = {
-  /** @description The link path */
-  href: string
-  /** @description The relationship of the link to the resource */
-  rel: string
-  /** @description The content-type of the link */
-  type: string
 }
 
 export type BankAccountDetails = {

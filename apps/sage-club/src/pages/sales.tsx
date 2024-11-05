@@ -1,5 +1,5 @@
-import { Page } from './Page'
-import tags from './Tags'
+import { Page } from '@wwsc/lib-hono'
+import tags from './pageTags'
 import { type WithSession, Hono } from '../Hono'
 
 const newTags = structuredClone(tags)

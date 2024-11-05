@@ -1,20 +1,21 @@
-import env from '../utilities/env'
-import { type WithSession, Hono } from '../Hono'
-import { getToken } from '@wwsc/lib-sage'
+import { factory } from "../Hono";
+import { getToken, type Token } from "@wwsc/lib-sage";
 
-const auth = new Hono<WithSession>()
+const auth = factory.createApp();
 
-auth.get('/callback', async (c) => {
-  const code = c.req.query('code')
+auth.get("/callback", async (c) => {
+  const code = c.req.query("code");
+  if (!code) return c.redirect("/");
 
-  if (!code) return c.redirect('/')
+  const session = c.get("session");
+  session.set("callback", c.req.queries());
 
-  const session = c.get('session')
-  session.set('callback', c.req.queries())
-  let token = await getToken(code)
-  session.set('token', token)
+  let token = await getToken(code) as Token;
+  if (!token) return c.redirect("/");
 
-  return c.redirect('/')
-})
+  session.set("token", token);
 
-export default auth
+  return c.redirect("/");
+});
+
+export default auth;

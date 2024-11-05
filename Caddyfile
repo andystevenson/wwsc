@@ -21,3 +21,7 @@ timesheets.localhost {
 events.localhost {
 	reverse_proxy localhost:7543
 }
+
+membership.localhost {
+	reverse_proxy localhost:7432
+}

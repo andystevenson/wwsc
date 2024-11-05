@@ -1,5 +1,5 @@
-import { Hono } from 'hono'
-import env from '../utilities/env'
+import { factory } from "../Hono";
+import env from "../utilities/env";
 
 const params = new URLSearchParams({
   filter: env.SAGE_API_VERSION,
@@ -9,16 +9,16 @@ const params = new URLSearchParams({
   scope: env.SAGE_SCOPE,
   state: env.SAGE_STATE_SECRET,
   country: env.SAGE_COUNTRY,
-})
+});
 
-const url = `${env.SAGE_AUTH_URL}?${params}`
+const url = `${env.SAGE_AUTH_URL}?${params}`;
 
-const login = new Hono()
+const login = factory.createApp();
 
-login.get('/', (c) => {
-  c.header('Content-Type', 'application/json')
-  c.header('Access-Control-Allow-Origin', '*')
-  return c.redirect(url)
-})
+login.get("/", (c) => {
+  c.header("Content-Type", "application/json");
+  c.header("Access-Control-Allow-Origin", "*");
+  return c.redirect(url);
+});
 
-export default login
+export default login;

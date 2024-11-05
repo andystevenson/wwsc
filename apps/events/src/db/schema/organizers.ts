@@ -1,18 +1,18 @@
-import { sqliteTable, text } from 'drizzle-orm/sqlite-core'
-import { nanoid } from 'nanoid'
+import { sqliteTable, text } from "drizzle-orm/sqlite-core";
+import { nanoid } from "nanoid";
 
-export const origanizers = sqliteTable('origanizers', {
-  id: text('id')
+export const organizers = sqliteTable("origanizers", {
+  id: text("id")
     .primaryKey()
     .$default(() => `organizer_${nanoid()}`),
-  name: text('name').notNull(),
-  phone: text('phone'),
-  email: text('email'),
-  postcode: text('postcode'),
-  address: text('address'),
-  notes: text('notes').default(''),
-})
+  name: text("name").notNull(),
+  phone: text("phone"),
+  email: text("email"),
+  postcode: text("postcode"),
+  address: text("address"),
+  notes: text("notes").default(""),
+});
 
-export type Organizer = typeof origanizers.$inferInsert
-export type SelectOrganizer = typeof origanizers.$inferSelect
-export type UpdateOrganizer = Omit<Organizer, 'id'>
+export type Organizer = typeof organizers.$inferInsert;
+export type SelectOrganizer = typeof organizers.$inferSelect;
+export type UpdateOrganizer = Omit<Organizer, "id">;

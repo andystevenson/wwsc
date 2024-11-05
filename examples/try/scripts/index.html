@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hello</title>
+</head>
+
+<body>
+  <h1>HIDeous!</h1>
+  <script>
+    async function run() {
+
+      // Get all devices the user has previously granted the website access to.
+      const devices = await navigator.hid.getDevices();
+      console.log({ devices });
+    }
+    run();
+  </script>
+</body>
+
+</html>

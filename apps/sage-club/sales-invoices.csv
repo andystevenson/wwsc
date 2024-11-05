@@ -1,0 +1,525 @@
+id,si,name,date,description,net,vat,total,ledger,type
+a504de3585c14a81b77a9f53fa648747,SI-64737,Moore Funeral,2024-03-01,total,934.38,186.87,1121.25,WWC,invoice
+a504de3585c14a81b77a9f53fa648747,SI-64737,Moore Funeral,2024-03-01,Funeral Buffet x 75,934.38,186.87,1121.25,Venue Dry (4009),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,total,1784.46,356.94,2141.4,WWC,invoice
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 02.03.24 Ladies 2's x 20",45.83,9.17,55.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 02.03.24 Ladies 3's x 20",45.83,9.17,55.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 02.03.24 Mens 2's x 32",73.33,14.67,88.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 02.03.24 Mens 5's x 24",55.0,11.0,66.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 02.03.24 Ladies 5's x 20",45.83,9.17,55.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 02.03.24 Badgers x 16",36.67,7.33,44.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 03.03.24 U16's x 11",25.21,5.04,30.25,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 03.03.24 Mixed x 24",55.0,11.0,66.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 08.03.24 U18's x 10",22.91,4.59,27.5,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 09.03.24 Ladies 4's x 20",45.83,9.17,55.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,Tea/coffee @ £0.75 pp 09.03.24 Ladies 1's x 20,12.5,2.5,15.0,Venue Dry (4009),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 09.03.24 Mens 3's x 30",68.75,13.75,82.5,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,Jacket spud + fillings @ £4.95 pp 09.03.24 Ladies 1's x 38,156.75,31.35,188.1,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 09.03.24 Mens 6's x 24",55.0,11.0,66.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 09.03.24 Ladies 4's x 16",36.67,7.33,44.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 09.03.24 Ladies 6's x 20",45.83,9.17,55.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 16.03.24 Ladies 3's x 20",45.83,9.17,55.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 16.03.24 Ladies 2's x 30",68.75,13.75,82.5,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 16.03.24 Mens 2's x 32",73.33,14.67,88.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 16.03.24 Ladies 5's x 20",45.83,9.17,55.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 16.03.24 Mens 5's x 18",41.25,8.25,49.5,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,Tea/coffee @ £0.75 pp 17.03.24 Mens 1's x 20,12.5,2.5,15.0,Venue Dry (4009),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,Protein pasta bake @ £5.95 pp 17.03.24 Mens 1's x 44,218.17,43.63,261.8,Venue Dry (4009),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp  17.03.24 U18's x 16",36.67,7.33,44.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 23.03.24 Ladies 4's x 20",45.83,9.17,55.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,Tea/coffee @ £0.75 pp 23.03.24 Ladies 1's x 20,12.5,2.5,15.0,Venue Dry (4009),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 23.03.24 Mens 3's x 30",68.75,13.75,82.5,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 23.003.24 Mens 6's x 20",45.83,9.17,55.0,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,Protein pasta bake @ £5.95 pp 23.03.24 Ladies 1's x 35,173.54,34.71,208.25,Venue Dry (4009),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 23.03.24 Ladies 6's x 10",22.91,4.59,27.5,Sport teas (4004),line
+b78eaa49be10403d9216342a9f315c9c,SI-64757,Hockey Teas,2024-03-01,"Sausage, chips and beans @ £2.75pp 23.03.24 Mens 4's x 20",45.83,9.17,55.0,Sport teas (4004),line
+495cb757890e4c36a7349cabf0a7b639,SI-64718,Keith Jolly,2024-03-02,total,1534.08,306.82,1840.9,WWC,invoice
+495cb757890e4c36a7349cabf0a7b639,SI-64718,Keith Jolly,2024-03-02,3 course sit down meal deposit for 02/03/24,200.0,40.0,240.0,Venue Dry (4009),line
+495cb757890e4c36a7349cabf0a7b639,SI-64718,Keith Jolly,2024-03-02,3 course sit down meal - remaining balance,985.75,197.15,1182.9,Venue Dry (4009),line
+495cb757890e4c36a7349cabf0a7b639,SI-64718,Keith Jolly,2024-03-02,1 course for DJ,12.5,2.5,15.0,Venue Dry (4009),line
+495cb757890e4c36a7349cabf0a7b639,SI-64718,Keith Jolly,2024-03-02,Tea & Coffee x 62,103.33,20.67,124.0,Venue Dry (4009),line
+495cb757890e4c36a7349cabf0a7b639,SI-64718,Keith Jolly,2024-03-02,Prosecco on arrival x 62,232.5,46.5,279.0,Venue Wet (4008),line
+cd6f899ed6d94f1bb2be1f10a917ad58,SI-64738,Keith Jolly,2024-03-02,total,1534.08,306.82,1840.9,WWC,invoice
+cd6f899ed6d94f1bb2be1f10a917ad58,SI-64738,Keith Jolly,2024-03-02,3 course sit down meal @ £22.95pp x 62,1185.75,237.15,1422.9,Venue Dry (4009),line
+cd6f899ed6d94f1bb2be1f10a917ad58,SI-64738,Keith Jolly,2024-03-02,Bespoke menu 1 x £15,12.5,2.5,15.0,Venue Dry (4009),line
+cd6f899ed6d94f1bb2be1f10a917ad58,SI-64738,Keith Jolly,2024-03-02,Alcohol - Prosecco on arrival £4.50 x 62,232.5,46.5,279.0,Venue Wet (4008),line
+cd6f899ed6d94f1bb2be1f10a917ad58,SI-64738,Keith Jolly,2024-03-02,Tea & Coffee @ £2 pp x 62,103.33,20.67,124.0,Venue Dry (4009),line
+ea34dbe8687343f9894d2d654fd3d709,SI-64739,Biddle Funeral,2024-03-04,total,947.5,189.5,1137.0,WWC,invoice
+ea34dbe8687343f9894d2d654fd3d709,SI-64739,Biddle Funeral,2024-03-04,Funeral buffet x 60,947.5,189.5,1137.0,Venue Dry (4009),line
+ddbc3faf5f8c423387a9f428c624ae19,SI-64740,1's Squash Teas,2024-03-04,total,33.33,6.67,40.0,WWC,invoice
+ddbc3faf5f8c423387a9f428c624ae19,SI-64740,1's Squash Teas,2024-03-04,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+fe64ede4f434460e812f7e8df705a062,SI-64742,England Over 70's Hockey,2024-03-06,total,223.75,44.75,268.5,WWC,invoice
+fe64ede4f434460e812f7e8df705a062,SI-64742,England Over 70's Hockey,2024-03-06,Lasagna £8.95 x 30,223.75,44.75,268.5,Venue Dry (4009),line
+257e215035984b7194735c33123ca64d,SI-64743,Bassi Funeral,2024-03-07,total,560.0,112.0,672.0,WWC,invoice
+257e215035984b7194735c33123ca64d,SI-64743,Bassi Funeral,2024-03-07,"Funeral buffet, discounted @ £16.00 x 42",560.0,112.0,672.0,Venue Dry (4009),line
+08610f3f3b99485e9c70165493ec8cae,SI-64744,Sue Baker 09.03.2024,2024-03-09,total,863.33,172.67,1036.0,WWC,invoice
+08610f3f3b99485e9c70165493ec8cae,SI-64744,Sue Baker 09.03.2024,2024-03-09,Medium buffet @ £12.95 pp x 80,863.33,172.67,1036.0,Venue Dry (4009),line
+f6e7dceced3a4fa9b507c1569123a62e,SI-64745,1's Squash Teas,2024-03-11,total,33.33,6.67,40.0,WWC,invoice
+f6e7dceced3a4fa9b507c1569123a62e,SI-64745,1's Squash Teas,2024-03-11,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+420ddd793040411b880ec23a8d9e642d,SI-64658,Warwickshire LTA,2024-03-12,total,602.08,120.42,722.5,WWC,invoice
+420ddd793040411b880ec23a8d9e642d,SI-64658,Warwickshire LTA,2024-03-12,Tea & Coffee @ £1.50 pp x 50,62.5,12.5,75.0,Venue Dry (4009),line
+420ddd793040411b880ec23a8d9e642d,SI-64658,Warwickshire LTA,2024-03-12,Medium buffet @ £12.95 pp x 50,539.58,107.92,647.5,Venue Dry (4009),line
+ae3de121c37e479fbd2a3834dcacf784,SI-64746,Ben Rea Hockey,2024-03-13,total,298.33,59.67,358.0,WWC,invoice
+ae3de121c37e479fbd2a3834dcacf784,SI-64746,Ben Rea Hockey,2024-03-13,"Lasagne, Garlic Bread & Salad - Sports Tea £8.95 x 40",298.33,59.67,358.0,Venue Dry (4009),line
+facf657c5c4d4e6188afa4cd6c214f4a,SI-64748,Inner Wheel Club of Solihull,2024-03-19,total,519.58,103.92,623.5,WWC,invoice
+facf657c5c4d4e6188afa4cd6c214f4a,SI-64748,Inner Wheel Club of Solihull,2024-03-19,2 Course Meal x 29,519.58,103.92,623.5,Venue Dry (4009),line
+83bed04ec2ce4ee8833538ff9acdd522,SI-64749,Jukes Funeral 22.03.24,2024-03-22,total,1263.33,252.67,1516.0,WWC,invoice
+83bed04ec2ce4ee8833538ff9acdd522,SI-64749,Jukes Funeral 22.03.24,2024-03-22,Funeral buffet x 80,1263.33,252.67,1516.0,Venue Dry (4009),line
+8384de1acf78481e827974ce22554c88,SI-64750,Cricket Dinner,2024-03-23,total,787.79,157.56,945.35,WWC,invoice
+8384de1acf78481e827974ce22554c88,SI-64750,Cricket Dinner,2024-03-23,Bespoke menu £12.95pp x 73,787.79,157.56,945.35,Venue Dry (4009),line
+872079662a7347e8ae6dd8a15ddb2d18,SI-64751,1's Squash Teas,2024-03-25,total,33.33,6.67,40.0,WWC,invoice
+872079662a7347e8ae6dd8a15ddb2d18,SI-64751,1's Squash Teas,2024-03-25,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+a9f8cee065b443829805c9544156526c,SI-64752,Reeves Funeral 25.03.24,2024-03-25,total,373.75,74.75,448.5,WWC,invoice
+a9f8cee065b443829805c9544156526c,SI-64752,Reeves Funeral 25.03.24,2024-03-25,Funeral Buffet x 30,373.75,74.75,448.5,Venue Dry (4009),line
+595683b30043430aa35407d1a9437da6,SI-64753,First Aid Course,2024-03-25,total,16.25,3.25,19.5,WWC,invoice
+595683b30043430aa35407d1a9437da6,SI-64753,First Aid Course,2024-03-25,Tea & Coffee @ £2 pp reduced to £1.50pp x 13,16.25,3.25,19.5,Venue Dry (4009),line
+5c30a3d6719a427c97a5259f0fa99391,SI-64754,Josephine Enright's Funeral,2024-03-26,total,1434.38,286.87,1721.25,WWC,invoice
+5c30a3d6719a427c97a5259f0fa99391,SI-64754,Josephine Enright's Funeral,2024-03-26,Funeral buffet £22.95pp x 75,1434.38,286.87,1721.25,Venue Dry (4009),line
+3a71149723904a9198c5f743cb2d31cd,SI-64756,Reeves Funeral Gathering 27.03.24,2024-03-27,total,347.42,69.48,416.9,WWC,invoice
+3a71149723904a9198c5f743cb2d31cd,SI-64756,Reeves Funeral Gathering 27.03.24,2024-03-27,Funeral buffet x 22,347.42,69.48,416.9,Venue Dry (4009),line
+2eb2e90ad9e040078cd4cbd0d9620cdc,SI-64758,Michala Funeral 28.03.24,2024-03-28,total,436.04,87.21,523.25,WWC,invoice
+2eb2e90ad9e040078cd4cbd0d9620cdc,SI-64758,Michala Funeral 28.03.24,2024-03-28,Funeral Buffet x 35,436.04,87.21,523.25,Venue Dry (4009),line
+dbcdce57ad68448eb7acb42f20e481c8,SI-64759,Lively Funeral 28.03.24,2024-03-28,total,436.04,87.21,523.25,WWC,invoice
+dbcdce57ad68448eb7acb42f20e481c8,SI-64759,Lively Funeral 28.03.24,2024-03-28,Funeral Buffet x 35,436.04,87.21,523.25,Venue Dry (4009),line
+cda0ca5eef24449381f2de6a3ff40599,SI-64760,Rodger 50th Party 30.03.24,2024-03-30,total,565.0,113.0,678.0,WWC,invoice
+cda0ca5eef24449381f2de6a3ff40599,SI-64760,Rodger 50th Party 30.03.24,2024-03-30,Premium buffet @ £16.95 pp x 40,565.0,113.0,678.0,Venue Dry (4009),line
+648fa7cad0df401db6f20de1441db210,SI-64761,Mackey Funeral 04.04.24,2024-04-04,total,1530.0,306.0,1836.0,WWC,invoice
+648fa7cad0df401db6f20de1441db210,SI-64761,Mackey Funeral 04.04.24,2024-04-04,Funeral buffet £22.95pp x 80,1530.0,306.0,1836.0,Venue Dry (4009),line
+f0d2bbae349f418a918e346843c57bdb,SI-64762,Alexi and Paul Wedding 04.04.24,2024-04-04,total,370.96,74.19,445.15,WWC,invoice
+f0d2bbae349f418a918e346843c57bdb,SI-64762,Alexi and Paul Wedding 04.04.24,2024-04-04,3 course sit down meal @ £22.95pp x 15,286.88,57.37,344.25,Venue Dry (4009),line
+f0d2bbae349f418a918e346843c57bdb,SI-64762,Alexi and Paul Wedding 04.04.24,2024-04-04,Alcohol 2 x Prosecco @ £22.95,38.25,7.65,45.9,Venue Wet (4008),line
+f0d2bbae349f418a918e346843c57bdb,SI-64762,Alexi and Paul Wedding 04.04.24,2024-04-04,Bespoke menu child @£10 x 1,8.33,1.67,10.0,Venue Dry (4009),line
+f0d2bbae349f418a918e346843c57bdb,SI-64762,Alexi and Paul Wedding 04.04.24,2024-04-04,Chair covers reduced £2.50 x 18,37.5,7.5,45.0,Venue Dry (4009),line
+440c098baf194b908f21f90d8136d6bb,SI-64763,Gauld 50th Birthday 05.04.24,2024-04-05,total,1025.21,205.04,1230.25,WWC,invoice
+440c098baf194b908f21f90d8136d6bb,SI-64763,Gauld 50th Birthday 05.04.24,2024-04-05,Medium buffet @ £12.95 pp x 95,1025.21,205.04,1230.25,Venue Dry (4009),line
+1b15b06cc7464c64a70c250e157e1f36,SI-64764,Hodson 30th Birthday 06.04.24,2024-04-06,total,745.83,149.17,895.0,WWC,invoice
+1b15b06cc7464c64a70c250e157e1f36,SI-64764,Hodson 30th Birthday 06.04.24,2024-04-06,Light buffet @ £8.95 pp x 100,745.83,149.17,895.0,Venue Dry (4009),line
+e618fba8066e43b2841219c31dd77acf,SI-64765,Fielding Family Party 07.04.24,2024-04-07,total,372.92,74.58,447.5,WWC,invoice
+e618fba8066e43b2841219c31dd77acf,SI-64765,Fielding Family Party 07.04.24,2024-04-07,Light buffet @ £8.95 pp x 50,372.92,74.58,447.5,Venue Dry (4009),line
+0dacb802ad744345849bd945d21c445a,SI-64766,Strazdins Funeral 09.04.24,2024-04-09,total,516.38,103.27,619.65,WWC,invoice
+0dacb802ad744345849bd945d21c445a,SI-64766,Strazdins Funeral 09.04.24,2024-04-09,Funeral buffet £22.95pp x 27,516.38,103.27,619.65,Venue Dry (4009),line
+f1f795d3e5ee4b5bae49c455ade64e1a,SI-64767,Holder Funeral 10.04.24,2024-04-10,total,1121.25,224.25,1345.5,WWC,invoice
+f1f795d3e5ee4b5bae49c455ade64e1a,SI-64767,Holder Funeral 10.04.24,2024-04-10,Funeral Buffet x 90,1121.25,224.25,1345.5,Venue Dry (4009),line
+582c467bf76e44859c8bd2c1fab49808,SI-64755,Mansell Funeral 12.04.24,2024-04-12,total,473.75,94.75,568.5,WWC,invoice
+582c467bf76e44859c8bd2c1fab49808,SI-64755,Mansell Funeral 12.04.24,2024-04-12,Funeral buffet x 30 ,473.75,94.75,568.5,Venue Dry (4009),line
+a780d523d5164791b5b6476666a53a2f,SI-64768,Treacy Party 12.04.24,2024-04-12,total,833.63,166.72,1000.35,WWC,invoice
+a780d523d5164791b5b6476666a53a2f,SI-64768,Treacy Party 12.04.24,2024-04-12,Premium buffet @ £16.95 pp x 45,635.63,127.12,762.75,Venue Dry (4009),line
+a780d523d5164791b5b6476666a53a2f,SI-64768,Treacy Party 12.04.24,2024-04-12,Bespoke menu. Veggie £10.95 x 8,73.0,14.6,87.6,Venue Dry (4009),line
+a780d523d5164791b5b6476666a53a2f,SI-64768,Treacy Party 12.04.24,2024-04-12,Chair covers reduced to £2.50 x 60,125.0,25.0,150.0,Venue Dry (4009),line
+833efd544e7343908f4b1ceb2365d0f1,SI-64769,Sherriff Christening 13.04.24,2024-04-13,total,323.75,64.75,388.5,WWC,invoice
+833efd544e7343908f4b1ceb2365d0f1,SI-64769,Sherriff Christening 13.04.24,2024-04-13,Medium buffet @ £12.95 pp x 30,323.75,64.75,388.5,Venue Dry (4009),line
+8daf1ab8eaa041599e626f76fcb8ecd9,SI-64770,Pure Physiotherapy,2024-04-15,total,209.87,41.98,251.85,WWC,invoice
+8daf1ab8eaa041599e626f76fcb8ecd9,SI-64770,Pure Physiotherapy,2024-04-15,Tea & Coffee @ £2 pp x 23,38.33,7.67,46.0,Venue Dry (4009),line
+8daf1ab8eaa041599e626f76fcb8ecd9,SI-64770,Pure Physiotherapy,2024-04-15,Light buffet @ £8.95 pp x 23,171.54,34.31,205.85,Venue Dry (4009),line
+7539bd75eda34eea840574dcdd4d7785,SI-64771,Inner Wheel Club of Solihull,2024-04-16,total,465.83,93.17,559.0,WWC,invoice
+7539bd75eda34eea840574dcdd4d7785,SI-64771,Inner Wheel Club of Solihull,2024-04-16,2 Course Meal x 26,465.83,93.17,559.0,Venue Dry (4009),line
+0a4535e197174b3498c444fc894b9161,SI-64773,Ben Rea Hockey,2024-04-17,total,208.5,41.7,250.2,WWC,invoice
+0a4535e197174b3498c444fc894b9161,SI-64773,Ben Rea Hockey,2024-04-17,"Bespoke menu-Sausage, chips and beans x 36",208.5,41.7,250.2,Venue Dry (4009),line
+6e2773b121db49cc814f03752a1a42ed,SI-64774,Chris Funeral Gathering 17.04.24,2024-04-17,total,137.04,27.41,164.45,WWC,invoice
+6e2773b121db49cc814f03752a1a42ed,SI-64774,Chris Funeral Gathering 17.04.24,2024-04-17,Funeral Buffet x 11,137.04,27.41,164.45,Venue Dry (4009),line
+97e2a479418043fc9377cc0427dc3283,SI-64775,Cohesion Recruitment,2024-04-18,total,365.0,73.0,438.0,WWC,invoice
+97e2a479418043fc9377cc0427dc3283,SI-64775,Cohesion Recruitment,2024-04-18,Tea & Coffee @ £2 pp x 40,66.67,13.33,80.0,Venue Dry (4009),line
+97e2a479418043fc9377cc0427dc3283,SI-64775,Cohesion Recruitment,2024-04-18,Light buffet @ £8.95 pp x 40,298.33,59.67,358.0,Venue Dry (4009),line
+5a90572db25b44789af12fb3828f0fdd,SI-64776,First Aid Course,2024-04-19,total,16.25,3.25,19.5,WWC,invoice
+5a90572db25b44789af12fb3828f0fdd,SI-64776,First Aid Course,2024-04-19,Tea & Coffee @ £2 pp reduced £1.50pp x 13,16.25,3.25,19.5,Venue Dry (4009),line
+635a079111604b4abc057813dbf0d8d7,SI-64777,Lotarew Funeral Gathering,2024-04-19,total,157.92,31.58,189.5,WWC,invoice
+635a079111604b4abc057813dbf0d8d7,SI-64777,Lotarew Funeral Gathering,2024-04-19,Tea & Coffee @ £2 pp x 10,16.67,3.33,20.0,Venue Dry (4009),line
+635a079111604b4abc057813dbf0d8d7,SI-64777,Lotarew Funeral Gathering,2024-04-19,Premium buffet @ £16.95 pp x 10,141.25,28.25,169.5,Venue Dry (4009),line
+fac71a482de94804bf381e9f82863a79,SI-64778,Olton Hockey,2024-04-20,total,2129.92,425.98,2555.9,WWC,invoice
+fac71a482de94804bf381e9f82863a79,SI-64778,Olton Hockey,2024-04-20,3 course sit down meal @ £22.95pp reduced to £20.95 x 122,2129.92,425.98,2555.9,Venue Dry (4009),line
+b27226df96944708a39ca30de33e1c62,SI-64787,Hockey Teas,2024-04-20,total,137.5,27.5,165.0,WWC,invoice
+b27226df96944708a39ca30de33e1c62,SI-64787,Hockey Teas,2024-04-20,"Sausage, chips and beans @ £2.75pp x 60",137.5,27.5,165.0,Sport teas (4004),line
+a96f67553a3648ddaa94d411220493f5,SI-64779,Jones 60th Party ,2024-04-21,total,1407.72,281.53,1689.25,WWC,invoice
+a96f67553a3648ddaa94d411220493f5,SI-64779,Jones 60th Party ,2024-04-21,Premium buffet @ £16.95 pp,1200.63,240.12,1440.75,Venue Dry (4009),line
+a96f67553a3648ddaa94d411220493f5,SI-64779,Jones 60th Party ,2024-04-21,Bespoke menu. Vegan @ £10.95 x 5,45.63,9.12,54.75,Venue Dry (4009),line
+a96f67553a3648ddaa94d411220493f5,SI-64779,Jones 60th Party ,2024-04-21,Childrens finger buffet @ £5.95 pp+ extras £1pp=£6.95pp x 25,144.79,28.96,173.75,Venue Dry (4009),line
+a96f67553a3648ddaa94d411220493f5,SI-64779,Jones 60th Party ,2024-04-21,Tea & Coffee @ £2 pp x 10,16.67,3.33,20.0,Venue Dry (4009),line
+3042898360874ea78bb698736a5632a2,SI-64780,Wilson Shirley Gardening Society Lunch,2024-04-23,total,512.63,102.52,615.15,WWC,invoice
+3042898360874ea78bb698736a5632a2,SI-64780,Wilson Shirley Gardening Society Lunch,2024-04-23,3 course sit down meal @ £22.95pp x 12,229.5,45.9,275.4,Venue Dry (4009),line
+3042898360874ea78bb698736a5632a2,SI-64780,Wilson Shirley Gardening Society Lunch,2024-04-23,Sit down 2 course meal @ £19.95 pp x 15,249.38,49.87,299.25,Venue Dry (4009),line
+3042898360874ea78bb698736a5632a2,SI-64780,Wilson Shirley Gardening Society Lunch,2024-04-23,Tea & Coffee @ £2 pp reduced to £1.50pp x 27,33.75,6.75,40.5,Venue Dry (4009),line
+f0e4d57606b24698b95dc20b428b2fce,SI-64772,Furlonger/Funeral Wake for Gordon Allen,2024-04-26,total,947.5,189.5,1137.0,WWC,invoice
+f0e4d57606b24698b95dc20b428b2fce,SI-64772,Furlonger/Funeral Wake for Gordon Allen,2024-04-26,Funeral buffet x 60,947.5,189.5,1137.0,Venue Dry (4009),line
+da55db35cb0a4d34947ab0fac609ae25,SI-64781,Pugh Funeral 26.04.24,2024-04-26,total,552.71,110.54,663.25,WWC,invoice
+da55db35cb0a4d34947ab0fac609ae25,SI-64781,Pugh Funeral 26.04.24,2024-04-26,Funeral buffet x 35,552.71,110.54,663.25,Venue Dry (4009),line
+e6731df512d8414e910879a7487060c8,SI-64782,Denise - Christening 28.04.24,2024-04-28,total,1542.92,308.58,1851.5,WWC,invoice
+e6731df512d8414e910879a7487060c8,SI-64782,Denise - Christening 28.04.24,2024-04-28,Hot fork buffet 1 course reduced to £12.95pp x 120,1295.0,259.0,1554.0,Venue Dry (4009),line
+e6731df512d8414e910879a7487060c8,SI-64782,Denise - Christening 28.04.24,2024-04-28,Bespoke menu Sandwiches+chips £5.95 x 50,247.92,49.58,297.5,Venue Dry (4009),line
+321f41916e234512af2da9553119d1a1,SI-64783,Solihull Sixth Form ,2024-05-01,total,177.05,35.4,212.45,WWC,invoice
+321f41916e234512af2da9553119d1a1,SI-64783,Solihull Sixth Form ,2024-05-01,Tea & Coffee @ £2 pp x 10,16.67,3.33,20.0,Venue Dry (4009),line
+321f41916e234512af2da9553119d1a1,SI-64783,Solihull Sixth Form ,2024-05-01,Tea/Coffee+pastries @ £5pp x 10,41.67,8.33,50.0,Venue Dry (4009),line
+321f41916e234512af2da9553119d1a1,SI-64783,Solihull Sixth Form ,2024-05-01,Medium buffet @ £12.95 pp x 11,118.71,23.74,142.45,Venue Dry (4009),line
+8643f71fa2244e9ba06683dc5815897a,SI-64785,Jill Higgins - 90th Birthday,2024-05-02,total,465.46,93.09,558.55,WWC,invoice
+8643f71fa2244e9ba06683dc5815897a,SI-64785,Jill Higgins - 90th Birthday,2024-05-02,3 course sit down meal @ £22.95pp x 21,401.63,80.32,481.95,Venue Dry (4009),line
+8643f71fa2244e9ba06683dc5815897a,SI-64785,Jill Higgins - 90th Birthday,2024-05-02,Alcohol,63.83,12.77,76.6,Venue Wet (4008),line
+28ca524c4dd646b289bed652b362953b,SI-64788,Teal Party 04.05.24,2024-05-04,total,485.62,97.13,582.75,WWC,invoice
+28ca524c4dd646b289bed652b362953b,SI-64788,Teal Party 04.05.24,2024-05-04,Medium buffet @ £12.95 pp x 45,485.62,97.13,582.75,Venue Dry (4009),line
+73ad64abc1ab4a2cbe657ec1b95e2ae2,SI-64784,TRW PENSION,2024-05-09,total,15.0,3.0,18.0,WWC,invoice
+73ad64abc1ab4a2cbe657ec1b95e2ae2,SI-64784,TRW PENSION,2024-05-09,Tea & Coffee @ £2 pp Reduced to £1.50 x 12,15.0,3.0,18.0,Venue Dry (4009),line
+e5beff02438c49109b7ef2f6d355d4b1,SI-64789,TRW PENSION,2024-05-09,total,91.67,18.33,110.0,WWC,invoice
+e5beff02438c49109b7ef2f6d355d4b1,SI-64789,TRW PENSION,2024-05-09,Function room hire,91.67,18.33,110.0,Room Hire (4019),line
+02bdbac957fd46c1845ff4ba98fe40f9,SI-64790,TRW PENSION,2024-05-09,total,15.0,3.0,18.0,WWC,invoice
+02bdbac957fd46c1845ff4ba98fe40f9,SI-64790,TRW PENSION,2024-05-09,Tea & Coffee @ £2 pp discounted to £1.50 x 12,15.0,3.0,18.0,Venue Dry (4009),line
+c87cf2beaa934842baf8d579d9015acf,SI-64791,Kielty - Communion 11.05.24,2024-05-11,total,291.67,58.33,350.0,WWC,invoice
+c87cf2beaa934842baf8d579d9015acf,SI-64791,Kielty - Communion 11.05.24,2024-05-11,Function room hire,291.67,58.33,350.0,Room Hire (4019),line
+3e200a6d25c04cc49b2bdfcf91573999,SI-64792,Kielty - Communion 11.05.24,2024-05-11,total,1182.41,236.49,1418.9,WWC,invoice
+3e200a6d25c04cc49b2bdfcf91573999,SI-64792,Kielty - Communion 11.05.24,2024-05-11,Bespoke menu £20 x 60,1000.0,200.0,1200.0,Venue Dry (4009),line
+3e200a6d25c04cc49b2bdfcf91573999,SI-64792,Kielty - Communion 11.05.24,2024-05-11,Bespoke menu vegan £10.95 x 2 ,18.25,3.65,21.9,Venue Dry (4009),line
+3e200a6d25c04cc49b2bdfcf91573999,SI-64792,Kielty - Communion 11.05.24,2024-05-11,Childrens hot plated food @ £5.50PP x 24,110.0,22.0,132.0,Venue Dry (4009),line
+3e200a6d25c04cc49b2bdfcf91573999,SI-64792,Kielty - Communion 11.05.24,2024-05-11,Bespoke menu-kids ice cream £2.50 x 26,54.16,10.84,65.0,Venue Dry (4009),line
+eaa3d4b43863475f8b3b81ba7f81a18c,SI-64793,O'Callaghan Funeral 13.05.24,2024-05-13,total,2195.0,439.0,2634.0,WWC,invoice
+eaa3d4b43863475f8b3b81ba7f81a18c,SI-64793,O'Callaghan Funeral 13.05.24,2024-05-13,Funeral buffet discounted £21.95 x 120,2195.0,439.0,2634.0,Venue Dry (4009),line
+ea586fef36ce4cbdb1530d7f20dfb60d,SI-64794,2's Squash Teas,2024-05-13,total,33.33,6.67,40.0,WWC,invoice
+ea586fef36ce4cbdb1530d7f20dfb60d,SI-64794,2's Squash Teas,2024-05-13,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+ee2f081846304ede8e7b384e93a0672f,SI-64795,Godsell - Gala lunch 14.05.24,2024-05-14,total,1606.63,321.32,1927.95,WWC,invoice
+ee2f081846304ede8e7b384e93a0672f,SI-64795,Godsell - Gala lunch 14.05.24,2024-05-14,3 course sit down meal @ £22.95pp x 78,1491.75,298.35,1790.1,Venue Dry (4009),line
+ee2f081846304ede8e7b384e93a0672f,SI-64795,Godsell - Gala lunch 14.05.24,2024-05-14,Tea & Coffee @ £1.50 discounted x 78,97.5,19.5,117.0,Venue Dry (4009),line
+ee2f081846304ede8e7b384e93a0672f,SI-64795,Godsell - Gala lunch 14.05.24,2024-05-14,Bespoke menu-staff food £6.95 x 3,17.38,3.47,20.85,Venue Dry (4009),line
+97c6a77e7f35469189ccb16f00155e61,SI-64796,Woodhall Funeral 15.05.24,2024-05-15,total,896.41,179.29,1075.7,WWC,invoice
+97c6a77e7f35469189ccb16f00155e61,SI-64796,Woodhall Funeral 15.05.24,2024-05-15,Funeral buffet x 50,789.58,157.92,947.5,Venue Dry (4009),line
+97c6a77e7f35469189ccb16f00155e61,SI-64796,Woodhall Funeral 15.05.24,2024-05-15,Orange Juice,8.33,1.67,10.0,Venue Dry (4009),line
+97c6a77e7f35469189ccb16f00155e61,SI-64796,Woodhall Funeral 15.05.24,2024-05-15,Alcohol,98.5,19.7,118.2,Venue Wet (4008),line
+8d12b98467cc49b58283ef157fc39e97,SI-64797,Hurley Funeral 16.05.24,2024-05-16,total,622.92,124.58,747.5,WWC,invoice
+8d12b98467cc49b58283ef157fc39e97,SI-64797,Hurley Funeral 16.05.24,2024-05-16,Funeral Buffet x 50,622.92,124.58,747.5,Venue Dry (4009),line
+74e8bd6259cd416597977521efc48297,SI-64798,Maddie Rose 21st Party 18.05.24,2024-05-18,total,706.25,141.25,847.5,WWC,invoice
+74e8bd6259cd416597977521efc48297,SI-64798,Maddie Rose 21st Party 18.05.24,2024-05-18,Premium buffet @ £16.95 pp x 50,706.25,141.25,847.5,Venue Dry (4009),line
+b382f308d643416bbd561604041a64d1,SI-64799,Hockey,2024-05-19,total,171.54,34.31,205.85,WWC,invoice
+b382f308d643416bbd561604041a64d1,SI-64799,Hockey,2024-05-19,"Bespoke menu. Curry, rice, naan £8.95 x 23",171.54,34.31,205.85,Venue Dry (4009),line
+f2fc384132ea456cacd08cf4c58731f0,SI-64800,Cricket Conference Meeting 20.05.24,2024-05-20,total,107.91,21.59,129.5,WWC,invoice
+f2fc384132ea456cacd08cf4c58731f0,SI-64800,Cricket Conference Meeting 20.05.24,2024-05-20,Light buffet @ £8.95 pp x 10,74.58,14.92,89.5,Venue Dry (4009),line
+f2fc384132ea456cacd08cf4c58731f0,SI-64800,Cricket Conference Meeting 20.05.24,2024-05-20,Tea & Coffee @ £2 pp x 10 x 2,33.33,6.67,40.0,Venue Dry (4009),line
+80a1047e22d6421d9dff41e513664026,SI-64801,Gunn Funeral 20.05.24,2024-05-20,total,473.75,94.75,568.5,WWC,invoice
+80a1047e22d6421d9dff41e513664026,SI-64801,Gunn Funeral 20.05.24,2024-05-20,Funeral buffet x 30,473.75,94.75,568.5,Venue Dry (4009),line
+09df13e141c64122b7a8ebef4a82012d,SI-64802,1's Squash Teas,2024-05-20,total,33.33,6.67,40.0,WWC,invoice
+09df13e141c64122b7a8ebef4a82012d,SI-64802,1's Squash Teas,2024-05-20,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+2aee4aa4df024dea929f36053e15c742,SI-64786,Inner Wheel Club of Solihull,2024-05-21,total,437.68,87.53,525.21,WWC,invoice
+2aee4aa4df024dea929f36053e15c742,SI-64786,Inner Wheel Club of Solihull,2024-05-21,2 Course Meal x 24,430.0,86.0,516.0,Venue Dry (4009),line
+2aee4aa4df024dea929f36053e15c742,SI-64786,Inner Wheel Club of Solihull,2024-05-21,Bar charge,7.68,1.53,9.21,Room Hire (4019),line
+d39686e5b9044b0da7ae212eaf190700,SI-64803,Ford funeral 22.05.24,2024-05-22,total,3051.67,610.33,3662.0,WWC,invoice
+d39686e5b9044b0da7ae212eaf190700,SI-64803,Ford funeral 22.05.24,2024-05-22,Funeral buffet @£21.95pp x 160,2926.67,585.33,3512.0,Venue Dry (4009),line
+d39686e5b9044b0da7ae212eaf190700,SI-64803,Ford funeral 22.05.24,2024-05-22,Trio of mini cakes £2.50pp x 60,125.0,25.0,150.0,Venue Dry (4009),line
+dd5f8f6c15234a7b8ac861fde965e699,SI-64805,Armstrong Funeral 24.05.24,2024-05-24,total,809.79,161.96,971.75,WWC,invoice
+dd5f8f6c15234a7b8ac861fde965e699,SI-64805,Armstrong Funeral 24.05.24,2024-05-24,Funeral Buffet £14.95 x 65,809.79,161.96,971.75,Venue Dry (4009),line
+d15348b8c38145ffaf5eab67c470d02a,SI-64806,King Funeral 24.05.24,2024-05-24,total,473.75,94.75,568.5,WWC,invoice
+d15348b8c38145ffaf5eab67c470d02a,SI-64806,King Funeral 24.05.24,2024-05-24,Funeral buffet £18.95 x 30,473.75,94.75,568.5,Venue Dry (4009),line
+6980473d9f1347d9a1dca1a587839594,SI-64807,Quinney Retirement Party 25.05.24,2024-05-25,total,847.5,169.5,1017.0,WWC,invoice
+6980473d9f1347d9a1dca1a587839594,SI-64807,Quinney Retirement Party 25.05.24,2024-05-25,Premium buffet @ £16.95 pp x 60,847.5,169.5,1017.0,Venue Dry (4009),line
+8fb674a7e64c4d5eb00a0fa37af6bc97,SI-64808,Kirby Funeral 29.05.24,2024-05-29,total,498.33,99.67,598.0,WWC,invoice
+8fb674a7e64c4d5eb00a0fa37af6bc97,SI-64808,Kirby Funeral 29.05.24,2024-05-29,Funeral Buffet £14.95  ,498.33,99.67,598.0,Venue Dry (4009),line
+f1c40a9d060b43b3a4371ea3ce74a930,SI-64804,Evans Funeral 30.05.24,2024-05-30,total,765.0,153.0,918.0,WWC,invoice
+f1c40a9d060b43b3a4371ea3ce74a930,SI-64804,Evans Funeral 30.05.24,2024-05-30,Funeral buffet £22.95pp x 40,765.0,153.0,918.0,Venue Dry (4009),line
+066bb850edee4aeca8124b2d92baa42a,SI-64809,Murphy Funeral 30.05.24,2024-05-30,total,673.13,134.62,807.75,WWC,invoice
+066bb850edee4aeca8124b2d92baa42a,SI-64809,Murphy Funeral 30.05.24,2024-05-30,Funeral buffet £17.95pp x 45,673.13,134.62,807.75,Venue Dry (4009),line
+3d9210a32e784740a0b6199cc2e3399b,SI-64810,First Aid Course,2024-05-31,total,16.25,3.25,19.5,WWC,invoice
+3d9210a32e784740a0b6199cc2e3399b,SI-64810,First Aid Course,2024-05-31,Tea & Coffee reduced @£1.50pp x 13,16.25,3.25,19.5,Venue Dry (4009),line
+3ad8756e8e6d4d4aa753ce459229bf48,SI-64811,Cox - Wedding 31.05.24,2024-05-31,total,850.88,170.17,1021.05,WWC,invoice
+3ad8756e8e6d4d4aa753ce459229bf48,SI-64811,Cox - Wedding 31.05.24,2024-05-31,Medium buffet @ £12.95 pp x 75,809.38,161.87,971.25,Venue Dry (4009),line
+3ad8756e8e6d4d4aa753ce459229bf48,SI-64811,Cox - Wedding 31.05.24,2024-05-31,Pizza and chips,41.5,8.3,49.8,Venue Dry (4009),line
+7f2a9310e37f426185b34a918d71e51a,SI-64812,Grainger 6th Birthday Party 01.06.24,2024-06-01,total,278.75,55.75,334.5,WWC,invoice
+7f2a9310e37f426185b34a918d71e51a,SI-64812,Grainger 6th Birthday Party 01.06.24,2024-06-01,Bar charge,41.67,8.33,50.0,Room Hire (4019),line
+7f2a9310e37f426185b34a918d71e51a,SI-64812,Grainger 6th Birthday Party 01.06.24,2024-06-01,£7.50 x 28,175.0,35.0,210.0,Venue Dry (4009),line
+7f2a9310e37f426185b34a918d71e51a,SI-64812,Grainger 6th Birthday Party 01.06.24,2024-06-01,Tea & Coffee @ £2.50 pp x 25,52.08,10.42,62.5,Venue Dry (4009),line
+7f2a9310e37f426185b34a918d71e51a,SI-64812,Grainger 6th Birthday Party 01.06.24,2024-06-01,Jug of squash/kids party @ £3 per jug x 4,10.0,2.0,12.0,Venue Dry (4009),line
+587a5c3cd5a446a2aef9c1ed205cd9aa,SI-64813,Evans  Family Party 01.06.24,2024-06-01,total,456.37,91.28,547.65,WWC,invoice
+587a5c3cd5a446a2aef9c1ed205cd9aa,SI-64813,Evans  Family Party 01.06.24,2024-06-01,Medium buffet @ £16.95 pp x 27,381.37,76.28,457.65,Venue Dry (4009),line
+587a5c3cd5a446a2aef9c1ed205cd9aa,SI-64813,Evans  Family Party 01.06.24,2024-06-01,£7.50 x 12,75.0,15.0,90.0,Venue Dry (4009),line
+4f8d93e21af64d95800fb56865cc287f,SI-64814,2's Squash Teas,2024-06-03,total,33.33,6.67,40.0,WWC,invoice
+4f8d93e21af64d95800fb56865cc287f,SI-64814,2's Squash Teas,2024-06-03,Squash Teas x 10,33.33,6.67,40.0,Venue Dry (4009),line
+df70851776104a418f28f9a2ae5fbdb1,SI-64815,Leadbetter Funeral 06.06.24,2024-06-06,total,423.75,84.75,508.5,WWC,invoice
+df70851776104a418f28f9a2ae5fbdb1,SI-64815,Leadbetter Funeral 06.06.24,2024-06-06,Funeral buffet £16.95pp,423.75,84.75,508.5,Venue Dry (4009),line
+317df039f97642318269419015ca9b0a,SI-64816,Cobban 07.06.24 80th Party,2024-06-07,total,269.79,53.96,323.75,WWC,invoice
+317df039f97642318269419015ca9b0a,SI-64816,Cobban 07.06.24 80th Party,2024-06-07,Medium buffet @ £16.95 pp/reduced on old menu prices £12.95pp x 25,269.79,53.96,323.75,Venue Dry (4009),line
+7df2179d3f00415f81c4023ecfc22d77,SI-64817,Squash Foundation Lunch 08.06.24,2024-06-08,total,491.46,98.29,589.75,WWC,invoice
+7df2179d3f00415f81c4023ecfc22d77,SI-64817,Squash Foundation Lunch 08.06.24,2024-06-08,Bespoke menu ,491.46,98.29,589.75,Venue Dry (4009),line
+49a7c2be73f14bbcbdf655c31a1deda1,SI-64818,Harper 08.06.24 30th Party,2024-06-08,total,125.0,25.0,150.0,WWC,invoice
+49a7c2be73f14bbcbdf655c31a1deda1,SI-64818,Harper 08.06.24 30th Party,2024-06-08,Bar charge/No Food charge,125.0,25.0,150.0,Room Hire (4019),line
+a215f30268b54a35b50c4687d0313727,SI-64819,Dwyer 09.06.24 40th Birthday Lunch,2024-06-09,total,360.83,72.17,433.0,WWC,invoice
+a215f30268b54a35b50c4687d0313727,SI-64819,Dwyer 09.06.24 40th Birthday Lunch,2024-06-09,Sunday Lunch x 18,314.25,62.85,377.1,Venue Dry (4009),line
+a215f30268b54a35b50c4687d0313727,SI-64819,Dwyer 09.06.24 40th Birthday Lunch,2024-06-09,Sunday Lunch kids options x 2,21.58,4.32,25.9,Venue Dry (4009),line
+a215f30268b54a35b50c4687d0313727,SI-64819,Dwyer 09.06.24 40th Birthday Lunch,2024-06-09,£7.50 x 4,25.0,5.0,30.0,Venue Dry (4009),line
+5add41fb700246c4a01dd7efbda6264b,SI-64820,1's Squash Teas,2024-06-10,total,33.33,6.67,40.0,WWC,invoice
+5add41fb700246c4a01dd7efbda6264b,SI-64820,1's Squash Teas,2024-06-10,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+ba86d0d2d07c4fe893241d3acf89c922,SI-64821,Plant Funeral 11.06.24,2024-06-11,total,1188.96,237.79,1426.75,WWC,invoice
+ba86d0d2d07c4fe893241d3acf89c922,SI-64821,Plant Funeral 11.06.24,2024-06-11,Funeral buffet @£21.95pp x 65,1188.96,237.79,1426.75,Venue Dry (4009),line
+b6ec38b7bb37491c8826dcd32f6ddc4e,SI-64822,Alison Owen ,2024-06-13,total,158.33,31.67,190.0,WWC,invoice
+b6ec38b7bb37491c8826dcd32f6ddc4e,SI-64822,Alison Owen ,2024-06-13,"Sandwiches, chips, tea+coffee £10 x 19",158.33,31.67,190.0,Venue Dry (4009),line
+f3b9016e5b0749f09330df620372e41d,SI-64823,Owen Funeral 14.06.24,2024-06-14,total,1495.83,299.17,1795.0,WWC,invoice
+f3b9016e5b0749f09330df620372e41d,SI-64823,Owen Funeral 14.06.24,2024-06-14,Funeral buffet £17.95pp x 100,1495.83,299.17,1795.0,Venue Dry (4009),line
+0e613c19f8104d62bba21e6ac0759b5d,SI-64824,Edmond 90th Birthday 14.06.24,2024-06-14,total,485.63,97.12,582.75,WWC,invoice
+0e613c19f8104d62bba21e6ac0759b5d,SI-64824,Edmond 90th Birthday 14.06.24,2024-06-14,**£12.95 old prices x 45 ,485.63,97.12,582.75,Venue Dry (4009),line
+bc8b3cec0507463e83f5a8afe89859cf,SI-64826,Teledano Football Presentation 15.06.24,2024-06-15,total,630.58,126.12,756.7,WWC,invoice
+bc8b3cec0507463e83f5a8afe89859cf,SI-64826,Teledano Football Presentation 15.06.24,2024-06-15,New Brochure 1 course @£18.95pp x 26,410.58,82.12,492.7,Venue Dry (4009),line
+bc8b3cec0507463e83f5a8afe89859cf,SI-64826,Teledano Football Presentation 15.06.24,2024-06-15,£7.50+ice cream £3.50=£11 x 24,220.0,44.0,264.0,Venue Dry (4009),line
+9c099250edbf4315945986c5096f7aa6,SI-64827,Brotherton 60th Party 15.06.24,2024-06-15,total,600.0,120.0,720.0,WWC,invoice
+9c099250edbf4315945986c5096f7aa6,SI-64827,Brotherton 60th Party 15.06.24,2024-06-15,Premium buffet @ £16.95 pp x 40,565.0,113.0,678.0,Venue Dry (4009),line
+9c099250edbf4315945986c5096f7aa6,SI-64827,Brotherton 60th Party 15.06.24,2024-06-15,"Bespoke menu, extra food £42",35.0,7.0,42.0,Venue Dry (4009),line
+b89790afde9e40cf94ba63cce98b0a71,SI-64828,2's Squash Teas,2024-06-17,total,33.33,6.67,40.0,WWC,invoice
+b89790afde9e40cf94ba63cce98b0a71,SI-64828,2's Squash Teas,2024-06-17,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+954a8f6ec49c487f8fcdc367577e21fb,SI-64825,Inner Wheel Club of Solihull,2024-06-18,total,412.08,82.42,494.5,WWC,invoice
+954a8f6ec49c487f8fcdc367577e21fb,SI-64825,Inner Wheel Club of Solihull,2024-06-18,2 Course Meal x 23,412.08,82.42,494.5,Venue Dry (4009),line
+b36fa898037849418a3c7b76a0e8248a,SI-64829,First Aid Course,2024-06-20,total,16.25,3.25,19.5,WWC,invoice
+b36fa898037849418a3c7b76a0e8248a,SI-64829,First Aid Course,2024-06-20,Tea & Coffee discounted @ £1.50 pp x 13,16.25,3.25,19.5,Venue Dry (4009),line
+207472d642554522aa0be290c7eef61d,SI-64831,Keogh Funeral 20.06.24,2024-06-20,total,640.21,128.04,768.25,WWC,invoice
+207472d642554522aa0be290c7eef61d,SI-64831,Keogh Funeral 20.06.24,2024-06-20,Funeral buffet @£21.95pp x 35,640.21,128.04,768.25,Venue Dry (4009),line
+7bd92a3ddeb44393b2f1868367bc852a,SI-64830,First Aid Course,2024-06-21,total,16.25,3.25,19.5,WWC,invoice
+7bd92a3ddeb44393b2f1868367bc852a,SI-64830,First Aid Course,2024-06-21,Tea & Coffee discounted @ £1.50 pp x 13,16.25,3.25,19.5,Venue Dry (4009),line
+c4e9c84cd7a04f6097fa71b4435379d1,SI-64832,Cat/Jody Martins 07th Birthday Party 21.06.24,2024-06-21,total,289.79,57.96,347.75,WWC,invoice
+c4e9c84cd7a04f6097fa71b4435379d1,SI-64832,Cat/Jody Martins 07th Birthday Party 21.06.24,2024-06-21,Childrens finger buffet @ £5.95 pp x 45,223.12,44.63,267.75,Venue Dry (4009),line
+c4e9c84cd7a04f6097fa71b4435379d1,SI-64832,Cat/Jody Martins 07th Birthday Party 21.06.24,2024-06-21,Bespoke menu pizza and nuggets,66.67,13.33,80.0,Venue Dry (4009),line
+e82746db2e754026a00c16615540e715,SI-64833,Troth 70th Birthday,2024-06-22,total,1174.17,234.83,1409.0,WWC,invoice
+e82746db2e754026a00c16615540e715,SI-64833,Troth 70th Birthday,2024-06-22,Hot fork buffet 2 course @£18.95pp x 70,1105.42,221.08,1326.5,Venue Dry (4009),line
+e82746db2e754026a00c16615540e715,SI-64833,Troth 70th Birthday,2024-06-22,Old prices £5.50 x 15,68.75,13.75,82.5,Venue Dry (4009),line
+588b1a0d3afc4bf082aa5f6e61b33bfb,SI-64834,Gallagher 60th Wedding Anniversary,2024-06-23,total,606.92,121.38,728.3,WWC,invoice
+588b1a0d3afc4bf082aa5f6e61b33bfb,SI-64834,Gallagher 60th Wedding Anniversary,2024-06-23,Sunday Lunch,478.17,95.63,573.8,Venue Dry (4009),line
+588b1a0d3afc4bf082aa5f6e61b33bfb,SI-64834,Gallagher 60th Wedding Anniversary,2024-06-23,Alcohol,123.75,24.75,148.5,Venue Wet (4008),line
+588b1a0d3afc4bf082aa5f6e61b33bfb,SI-64834,Gallagher 60th Wedding Anniversary,2024-06-23,Drinks,5.0,1.0,6.0,Bar Wet (4007),line
+2bcd8e0c5ba14e12b90cb9c41fda5726,SI-64835,Wilde Baby shower 23.06.24,2024-06-23,total,372.92,74.58,447.5,WWC,invoice
+2bcd8e0c5ba14e12b90cb9c41fda5726,SI-64835,Wilde Baby shower 23.06.24,2024-06-23,Light buffet @ £8.95 pp x 50,372.92,74.58,447.5,Venue Dry (4009),line
+9443e8c84eb4497f973b2ff47e88dd6d,SI-64836,1's Squash Teas,2024-06-24,total,33.33,6.67,40.0,WWC,invoice
+9443e8c84eb4497f973b2ff47e88dd6d,SI-64836,1's Squash Teas,2024-06-24,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+4f7e786e919540ab98998bfb08d0fabd,SI-64837,Sherlock 26.06.24,2024-06-26,total,248.96,49.79,298.75,WWC,invoice
+4f7e786e919540ab98998bfb08d0fabd,SI-64837,Sherlock 26.06.24,2024-06-26,Light buffet @ £11.95 pp x 25,248.96,49.79,298.75,Venue Dry (4009),line
+111d1b031aa64440bc2bffdf5b6e07d9,SI-64838,First Aid Course,2024-06-28,total,16.25,3.25,19.5,WWC,invoice
+111d1b031aa64440bc2bffdf5b6e07d9,SI-64838,First Aid Course,2024-06-28,Tea & Coffee reduced@ £1.50 pp x 13,16.25,3.25,19.5,Venue Dry (4009),line
+50093db90f5648a19cf4043f8d3d2d44,SI-64839,Phil Williams-Cricket Memorial ,2024-06-30,total,372.92,74.58,447.5,WWC,invoice
+50093db90f5648a19cf4043f8d3d2d44,SI-64839,Phil Williams-Cricket Memorial ,2024-06-30,Light buffet @ £8.95 pp x 50,372.92,74.58,447.5,Venue Dry (4009),line
+a94c385ee5ce4c9ea6db12944a349ff7,SI-64908,Hockey Teas,2024-06-30,total,391.11,78.22,469.33,WWC,invoice
+a94c385ee5ce4c9ea6db12944a349ff7,SI-64908,Hockey Teas,2024-06-30,Carling ,216.11,43.22,259.33,Venue Wet (4008),line
+a94c385ee5ce4c9ea6db12944a349ff7,SI-64908,Hockey Teas,2024-06-30,Cold River Cider,175.0,35.0,210.0,Venue Wet (4008),line
+b43238cedbf24142ac185d35741deaa9,SI-64841,2's Squash Teas,2024-07-01,total,33.33,6.67,40.0,WWC,invoice
+b43238cedbf24142ac185d35741deaa9,SI-64841,2's Squash Teas,2024-07-01,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+f18e8c37725341e9b1a4b424bb5b85fc,SI-64842,Solihull Sixth Form ,2024-07-01,total,407.95,81.6,489.55,WWC,invoice
+f18e8c37725341e9b1a4b424bb5b85fc,SI-64842,Solihull Sixth Form ,2024-07-01,Tea/Coffee+pastries reduced @ £4pp x 19,63.33,12.67,76.0,Venue Dry (4009),line
+f18e8c37725341e9b1a4b424bb5b85fc,SI-64842,Solihull Sixth Form ,2024-07-01,Tea & Coffee and biscuits @ £2.50 pp x 19,39.58,7.92,47.5,Venue Dry (4009),line
+f18e8c37725341e9b1a4b424bb5b85fc,SI-64842,Solihull Sixth Form ,2024-07-01,Medium buffet reduced @ £12.95 pp x 19,205.04,41.01,246.05,Venue Dry (4009),line
+f18e8c37725341e9b1a4b424bb5b85fc,SI-64842,Solihull Sixth Form ,2024-07-01,Orange Juice,16.67,3.33,20.0,Venue Dry (4009),line
+f18e8c37725341e9b1a4b424bb5b85fc,SI-64842,Solihull Sixth Form ,2024-07-01,Screen & projector hire ,83.33,16.67,100.0,Events Revenue (4018),line
+300e077446a74fd88d5fa7c557df8275,SI-64843,Holley Funeral 02.07.24,2024-07-02,total,1384.59,276.91,1661.5,WWC,invoice
+300e077446a74fd88d5fa7c557df8275,SI-64843,Holley Funeral 02.07.24,2024-07-02,Funeral buffet @£21.95pp,1280.42,256.08,1536.5,Venue Dry (4009),line
+300e077446a74fd88d5fa7c557df8275,SI-64843,Holley Funeral 02.07.24,2024-07-02,Trio of mini cakes £2.50pp x 50,104.17,20.83,125.0,Venue Dry (4009),line
+ccfb6829db2b4d91a1772e5ebd2933de,SI-64844,Gray Funeral 03.07.24,2024-07-03,total,1324.38,264.87,1589.25,WWC,invoice
+ccfb6829db2b4d91a1772e5ebd2933de,SI-64844,Gray Funeral 03.07.24,2024-07-03,Funeral buffet @£21.95pp x 65,1188.96,237.79,1426.75,Venue Dry (4009),line
+ccfb6829db2b4d91a1772e5ebd2933de,SI-64844,Gray Funeral 03.07.24,2024-07-03,Trio of mini cakes £2.50pp x 65,135.42,27.08,162.5,Venue Dry (4009),line
+f2006ac48ea54cd5ad2bda7d08694f75,SI-64845,Pure Physiotherapy,2024-07-03,total,278.83,55.77,334.6,WWC,invoice
+f2006ac48ea54cd5ad2bda7d08694f75,SI-64845,Pure Physiotherapy,2024-07-03,Light buffet @ £11.95 pp x 28 ,278.83,55.77,334.6,Venue Dry (4009),line
+6aa6233ab8a74bcd932e53c2dd043a57,SI-64846,Hall Funeral ,2024-07-05,total,660.83,132.17,793.0,WWC,invoice
+6aa6233ab8a74bcd932e53c2dd043a57,SI-64846,Hall Funeral ,2024-07-05,Funeral buffet £17.95pp x 40,598.33,119.67,718.0,Venue Dry (4009),line
+6aa6233ab8a74bcd932e53c2dd043a57,SI-64846,Hall Funeral ,2024-07-05,Trio of mini cakes £2.50pp x 30,62.5,12.5,75.0,Venue Dry (4009),line
+7e8423e71a1e4200bd60eaa62ee75e3f,SI-64847,Tennis Committee,2024-07-06,total,1522.25,304.45,1826.7,WWC,invoice
+7e8423e71a1e4200bd60eaa62ee75e3f,SI-64847,Tennis Committee,2024-07-06,Design & Printing of Leaflets,8.33,1.67,10.0,Printing (7500),line
+7e8423e71a1e4200bd60eaa62ee75e3f,SI-64847,Tennis Committee,2024-07-06,Bespoke menu £21.95 x 106,1513.92,302.78,1816.7,Venue Dry (4009),line
+d0e3a1b6b3664e37880d716a938af2cf,SI-64848,Sandhu-Jones Kids Party 07.07.24,2024-07-07,total,225.0,45.0,270.0,WWC,invoice
+d0e3a1b6b3664e37880d716a938af2cf,SI-64848,Sandhu-Jones Kids Party 07.07.24,2024-07-07,Premium buffet @ £21.95 pp x 10,182.92,36.58,219.5,Venue Dry (4009),line
+d0e3a1b6b3664e37880d716a938af2cf,SI-64848,Sandhu-Jones Kids Party 07.07.24,2024-07-07,£7.50 x 3,18.75,3.75,22.5,Venue Dry (4009),line
+d0e3a1b6b3664e37880d716a938af2cf,SI-64848,Sandhu-Jones Kids Party 07.07.24,2024-07-07,Tea & Coffee @ £2.50 pp x 10,20.83,4.17,25.0,Venue Dry (4009),line
+d0e3a1b6b3664e37880d716a938af2cf,SI-64848,Sandhu-Jones Kids Party 07.07.24,2024-07-07,Jug of squash/kids party @ £3 per jug x 1,2.5,0.5,3.0,Venue Dry (4009),line
+7487fcb2ced74cfbbe569e71407b8014,SI-64849,Hegarty 07.07.24,2024-07-07,total,254.37,50.88,305.25,WWC,invoice
+7487fcb2ced74cfbbe569e71407b8014,SI-64849,Hegarty 07.07.24,2024-07-07,Sunday Lunch 12 x 2 course £20.95,209.5,41.9,251.4,Venue Dry (4009),line
+7487fcb2ced74cfbbe569e71407b8014,SI-64849,Hegarty 07.07.24,2024-07-07,Sunday Lunch 3 x 2 course kids £12.95,32.37,6.48,38.85,Venue Dry (4009),line
+7487fcb2ced74cfbbe569e71407b8014,SI-64849,Hegarty 07.07.24,2024-07-07,£7.50 x 2,12.5,2.5,15.0,Venue Dry (4009),line
+6c5510c09b714f718ee1e99405e20de3,SI-64851,james - funeral - 2024-07-08,2024-07-08,total,1059.5,211.9,1271.4,WWC,invoice
+6c5510c09b714f718ee1e99405e20de3,SI-64851,james - funeral - 2024-07-08,2024-07-08,Funeral buffet @£21.95pp x 52,951.17,190.23,1141.4,Venue Dry (4009),line
+6c5510c09b714f718ee1e99405e20de3,SI-64851,james - funeral - 2024-07-08,2024-07-08,Trio of mini cakes £2.50pp x 52,108.33,21.67,130.0,Venue Dry (4009),line
+b053b91ed3034cd39ece28ee32c67096,SI-64852,smith - funeral - 2024-07-08,2024-07-08,total,772.92,154.58,927.5,WWC,invoice
+b053b91ed3034cd39ece28ee32c67096,SI-64852,smith - funeral - 2024-07-08,2024-07-08,Funeral buffet £17.95pp,747.92,149.58,897.5,Venue Dry (4009),line
+b053b91ed3034cd39ece28ee32c67096,SI-64852,smith - funeral - 2024-07-08,2024-07-08,Bespoke menu pizzas x 3,25.0,5.0,30.0,Venue Dry (4009),line
+063f3b2a0157462b82550872e210e3f9,SI-64853,1's Squash Teas,2024-07-08,total,33.33,6.67,40.0,WWC,invoice
+063f3b2a0157462b82550872e210e3f9,SI-64853,1's Squash Teas,2024-07-08,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+882790f11d93415dabc3ec350ad00fba,SI-64854,smith - funeral - 2024-07-09,2024-07-09,total,2916.67,583.33,3500.0,WWC,invoice
+882790f11d93415dabc3ec350ad00fba,SI-64854,smith - funeral - 2024-07-09,2024-07-09,Funeral buffet @£21.95pp x 170 reduced price £3500 total,2916.67,583.33,3500.0,Venue Dry (4009),line
+9856607d5acd4349928e357e879a8fb4,SI-64840,Slater Funeral 10.07.24 ,2024-07-10,total,916.87,183.38,1100.25,WWC,invoice
+9856607d5acd4349928e357e879a8fb4,SI-64840,Slater Funeral 10.07.24 ,2024-07-10,Funeral buffet @£21.95pp x 45,823.12,164.63,987.75,Venue Dry (4009),line
+9856607d5acd4349928e357e879a8fb4,SI-64840,Slater Funeral 10.07.24 ,2024-07-10,Trio of mini cakes £2.50pp x 45,93.75,18.75,112.5,Venue Dry (4009),line
+714f2b3084c2419fba1d61dacb05514b,SI-64855,Lucent Financial Planning,2024-07-11,total,326.84,65.36,392.2,WWC,invoice
+714f2b3084c2419fba1d61dacb05514b,SI-64855,Lucent Financial Planning,2024-07-11,Screen & projector hire ,41.67,8.33,50.0,Events Revenue (4018),line
+714f2b3084c2419fba1d61dacb05514b,SI-64855,Lucent Financial Planning,2024-07-11,Tea & Coffee @ £2.50 pp reduced £1.50 x 34,42.5,8.5,51.0,Venue Dry (4009),line
+714f2b3084c2419fba1d61dacb05514b,SI-64855,Lucent Financial Planning,2024-07-11,Bespoke menu salad,16.67,3.33,20.0,Venue Dry (4009),line
+714f2b3084c2419fba1d61dacb05514b,SI-64855,Lucent Financial Planning,2024-07-11,Premium buffet @ £21.95 pp reduced £16.95 x 16,226.0,45.2,271.2,Venue Dry (4009),line
+82f662b7ecf342cd820bdff8f65c2217,SI-64856,wright - funeral - 2024-07-11,2024-07-11,total,365.83,73.17,439.0,WWC,invoice
+82f662b7ecf342cd820bdff8f65c2217,SI-64856,wright - funeral - 2024-07-11,2024-07-11,Funeral buffet @£21.95pp x 20,365.83,73.17,439.0,Venue Dry (4009),line
+ccbf152a687c4eb28350f220938178fe,SI-64857,marsh - funeral - 2024-07-11,2024-07-11,total,1753.96,350.79,2104.75,WWC,invoice
+ccbf152a687c4eb28350f220938178fe,SI-64857,marsh - funeral - 2024-07-11,2024-07-11,Funeral buffet @£21.95pp x 80,1463.33,292.67,1756.0,Venue Dry (4009),line
+ccbf152a687c4eb28350f220938178fe,SI-64857,marsh - funeral - 2024-07-11,2024-07-11,Alcohol,265.63,53.12,318.75,Venue Wet (4008),line
+ccbf152a687c4eb28350f220938178fe,SI-64857,marsh - funeral - 2024-07-11,2024-07-11,Orange Juice,25.0,5.0,30.0,Venue Dry (4009),line
+72404f43f7cf42d6a2297795e9d52b12,SI-64858,40th party - brandon - 2024-07-12,2024-07-12,total,1412.5,282.5,1695.0,WWC,invoice
+72404f43f7cf42d6a2297795e9d52b12,SI-64858,40th party - brandon - 2024-07-12,2024-07-12,Premium buffet @ £21.95 pp old brochure price £16.95 x 100,1412.5,282.5,1695.0,Venue Dry (4009),line
+2518c57fab9c4a6aa4047e5da75f2025,SI-64859,Ewing 13.07.24,2024-07-13,total,254.25,50.85,305.1,WWC,invoice
+2518c57fab9c4a6aa4047e5da75f2025,SI-64859,Ewing 13.07.24,2024-07-13,Medium buffet @ £16.95 pp x 18,254.25,50.85,305.1,Venue Dry (4009),line
+ed6ec459101142d7946be8a2ec36072b,SI-64860,Tucker 50th Birthday 13.07.24,2024-07-13,total,1000.0,200.0,1200.0,WWC,invoice
+ed6ec459101142d7946be8a2ec36072b,SI-64860,Tucker 50th Birthday 13.07.24,2024-07-13,Bespoke menu,1000.0,200.0,1200.0,Venue Dry (4009),line
+102d2aa7fd9040e2be41aa3b8ebc4771,SI-64861,strong - funeral - 2024-07-15,2024-07-15,total,747.92,149.58,897.5,WWC,invoice
+102d2aa7fd9040e2be41aa3b8ebc4771,SI-64861,strong - funeral - 2024-07-15,2024-07-15,Funeral buffet £17.95pp x 50,747.92,149.58,897.5,Venue Dry (4009),line
+4b91f397d13e4a8492cc0ec660a0825e,SI-64862,Inner Wheel Club of Solihull,2024-07-16,total,458.33,91.67,550.0,WWC,invoice
+4b91f397d13e4a8492cc0ec660a0825e,SI-64862,Inner Wheel Club of Solihull,2024-07-16,2 Course Sit down Meal £25.00 x 22,458.33,91.67,550.0,Venue Dry (4009),line
+91a1c95b03c64fc19ef381bc9a1f51e2,SI-64863,rowlands - funeral - 2024-07-19,2024-07-19,total,457.29,91.46,548.75,WWC,invoice
+91a1c95b03c64fc19ef381bc9a1f51e2,SI-64863,rowlands - funeral - 2024-07-19,2024-07-19,Funeral buffet @£21.95pp x 25,457.29,91.46,548.75,Venue Dry (4009),line
+171a95c0cc684ed4a7ae9261502aa40b,SI-64864,sue charman - 70th party - 2024-07-20,2024-07-20,total,497.5,99.5,597.0,WWC,invoice
+171a95c0cc684ed4a7ae9261502aa40b,SI-64864,sue charman - 70th party - 2024-07-20,2024-07-20,Bespoke menu £9.95 x 60,497.5,99.5,597.0,Venue Dry (4009),line
+cb56cf95725d49e6911ea009574f2daf,SI-64865,Phil Budd - Cricket,2024-07-22,total,142.49,28.51,171.0,WWC,invoice
+cb56cf95725d49e6911ea009574f2daf,SI-64865,Phil Budd - Cricket,2024-07-22,Sports Tea £4.75 x 28,110.83,22.17,133.0,Venue Dry (4009),line
+cb56cf95725d49e6911ea009574f2daf,SI-64865,Phil Budd - Cricket,2024-07-22,Tea/coffee @ £1 pp x 28,23.33,4.67,28.0,Venue Dry (4009),line
+cb56cf95725d49e6911ea009574f2daf,SI-64865,Phil Budd - Cricket,2024-07-22,Pack of paper cups,8.33,1.67,10.0,Venue Dry (4009),line
+b9253102957f4645a756e087ccd30b6a,SI-64866,1's Squash Teas,2024-07-22,total,33.33,6.67,40.0,WWC,invoice
+b9253102957f4645a756e087ccd30b6a,SI-64866,1's Squash Teas,2024-07-22,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+030205e589544770a5a399fe69b69218,SI-64867,First Aid Course,2024-07-22,total,16.25,3.25,19.5,WWC,invoice
+030205e589544770a5a399fe69b69218,SI-64867,First Aid Course,2024-07-22,Tea & Coffee reduced @ £1.50 pp x 13,16.25,3.25,19.5,Venue Dry (4009),line
+85790c52d0844e0f86b14e008cc9cc4c,SI-64868,Lewis Funeral 24.07.24,2024-07-24,total,611.25,122.25,733.5,WWC,invoice
+85790c52d0844e0f86b14e008cc9cc4c,SI-64868,Lewis Funeral 24.07.24,2024-07-24,Funeral buffet @£21.95pp x 30,548.75,109.75,658.5,Venue Dry (4009),line
+85790c52d0844e0f86b14e008cc9cc4c,SI-64868,Lewis Funeral 24.07.24,2024-07-24,Trio of mini cakes £2.50pp x 30,62.5,12.5,75.0,Venue Dry (4009),line
+6aaf419ba34445caa4a5349da39edb6e,SI-64869,Shaw Funeral 25.07.24,2024-07-25,total,1495.83,299.17,1795.0,WWC,invoice
+6aaf419ba34445caa4a5349da39edb6e,SI-64869,Shaw Funeral 25.07.24,2024-07-25,Funeral buffet £17.95pp x 100,1495.83,299.17,1795.0,Venue Dry (4009),line
+3e835c06c3844c9690966992a95cfaae,SI-64870,lucy & george - wedding - 2024-07-27,2024-07-27,total,2563.75,512.75,3076.5,WWC,invoice
+3e835c06c3844c9690966992a95cfaae,SI-64870,lucy & george - wedding - 2024-07-27,2024-07-27,Sit down 2 course meal @ £19.95 pp x 100,1666.25,333.25,1999.5,Venue Dry (4009),line
+3e835c06c3844c9690966992a95cfaae,SI-64870,lucy & george - wedding - 2024-07-27,2024-07-27,Reduced cost/old menu £5.50 x 12,55.0,11.0,66.0,Venue Dry (4009),line
+3e835c06c3844c9690966992a95cfaae,SI-64870,lucy & george - wedding - 2024-07-27,2024-07-27,Alcohol-Asti,175.0,35.0,210.0,Venue Wet (4008),line
+3e835c06c3844c9690966992a95cfaae,SI-64870,lucy & george - wedding - 2024-07-27,2024-07-27,Alcohol-Corona,440.0,88.0,528.0,Venue Wet (4008),line
+3e835c06c3844c9690966992a95cfaae,SI-64870,lucy & george - wedding - 2024-07-27,2024-07-27,Alcohol-Red wine,202.5,40.5,243.0,Venue Wet (4008),line
+3e835c06c3844c9690966992a95cfaae,SI-64870,lucy & george - wedding - 2024-07-27,2024-07-27,Orange Juice,25.0,5.0,30.0,Venue Dry (4009),line
+5feb36bebe464eb096ecc326b158dea9,SI-64871,sofia james - christening - 2024-07-28,2024-07-28,total,815.71,163.14,978.85,WWC,invoice
+5feb36bebe464eb096ecc326b158dea9,SI-64871,sofia james - christening - 2024-07-28,2024-07-28,Medium buffet @ £12.95 pp (Old brochure price) x 65,701.46,140.29,841.75,Venue Dry (4009),line
+5feb36bebe464eb096ecc326b158dea9,SI-64871,sofia james - christening - 2024-07-28,2024-07-28,Childrens finger buffet @ £5.95 pp x 18,89.25,17.85,107.1,Venue Dry (4009),line
+5feb36bebe464eb096ecc326b158dea9,SI-64871,sofia james - christening - 2024-07-28,2024-07-28,Tea & Coffee @ £1.50 pp (Old brochure price) x 20,25.0,5.0,30.0,Venue Dry (4009),line
+d774685dae8e41c8a72fb2c3297a4748,SI-64872,Hawkins Baby Shower 28.07.24,2024-07-28,total,240.13,48.02,288.15,WWC,invoice
+d774685dae8e41c8a72fb2c3297a4748,SI-64872,Hawkins Baby Shower 28.07.24,2024-07-28,Medium buffet @ £16.95 pp x 17,240.13,48.02,288.15,Venue Dry (4009),line
+364b478c35124485be5fc413e082118e,SI-64873,Jenkins Funeral 29.07.24,2024-07-29,total,598.33,119.67,718.0,WWC,invoice
+364b478c35124485be5fc413e082118e,SI-64873,Jenkins Funeral 29.07.24,2024-07-29,Funeral buffet £17.95pp x 40,598.33,119.67,718.0,Venue Dry (4009),line
+46a9a80947d1453985cbcf8762387300,SI-64874,2's Squash Teas,2024-07-29,total,33.33,6.67,40.0,WWC,invoice
+46a9a80947d1453985cbcf8762387300,SI-64874,2's Squash Teas,2024-07-29,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+005ddfc6a3af447aa156aa858fa0ceae,SI-64875,Bates Funeral 31.07.24,2024-07-31,total,1630.0,326.0,1956.0,WWC,invoice
+005ddfc6a3af447aa156aa858fa0ceae,SI-64875,Bates Funeral 31.07.24,2024-07-31,Funeral buffet @£21.95pp x 80,1463.33,292.67,1756.0,Venue Dry (4009),line
+005ddfc6a3af447aa156aa858fa0ceae,SI-64875,Bates Funeral 31.07.24,2024-07-31,Trio of mini cakes £2.50pp x 80,166.67,33.33,200.0,Venue Dry (4009),line
+f355f6d188e74b52a4db2c3aa4321d10,SI-64850,Reece Funeral Gathering,2024-08-02,total,852.08,170.42,1022.5,WWC,invoice
+f355f6d188e74b52a4db2c3aa4321d10,SI-64850,Reece Funeral Gathering,2024-08-02,Funeral buffet £17.95pp x 50,747.91,149.59,897.5,Venue Dry (4009),line
+f355f6d188e74b52a4db2c3aa4321d10,SI-64850,Reece Funeral Gathering,2024-08-02,Trio of mini cakes £2.50pp x 50,104.17,20.83,125.0,Venue Dry (4009),line
+478c5e8c4fbd4117878c6583cdd71cd0,SI-64876,Reece Funeral Gathering,2024-08-02,total,852.09,170.41,1022.5,WWC,invoice
+478c5e8c4fbd4117878c6583cdd71cd0,SI-64876,Reece Funeral Gathering,2024-08-02,Funeral buffet £17.95pp x 50,747.92,149.58,897.5,Venue Dry (4009),line
+478c5e8c4fbd4117878c6583cdd71cd0,SI-64876,Reece Funeral Gathering,2024-08-02,Trio of mini cakes £2.50pp x 50,104.17,20.83,125.0,Venue Dry (4009),line
+b66f7ac3faab4eae870b1a16dea8669f,SI-64877,1's Squash Teas,2024-08-05,total,33.33,6.67,40.0,WWC,invoice
+b66f7ac3faab4eae870b1a16dea8669f,SI-64877,1's Squash Teas,2024-08-05,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+4201538b77c141bc902226f261f9c9ec,SI-64878,Thomas Funeral 08.08.24,2024-08-08,total,489.0,97.8,586.8,WWC,invoice
+4201538b77c141bc902226f261f9c9ec,SI-64878,Thomas Funeral 08.08.24,2024-08-08,Funeral buffet @£21.95pp x 24,439.0,87.8,526.8,Venue Dry (4009),line
+4201538b77c141bc902226f261f9c9ec,SI-64878,Thomas Funeral 08.08.24,2024-08-08,Trio of mini cakes £2.50pp x 24,50.0,10.0,60.0,Venue Dry (4009),line
+bc3e09068c4b49c792516be46896d9ee,SI-64879,Jackson Wedding 10.08.24,2024-08-10,total,685.0,137.0,822.0,WWC,invoice
+bc3e09068c4b49c792516be46896d9ee,SI-64879,Jackson Wedding 10.08.24,2024-08-10,Light buffet @ £11.95 pp x 50,497.92,99.58,597.5,Venue Dry (4009),line
+bc3e09068c4b49c792516be46896d9ee,SI-64879,Jackson Wedding 10.08.24,2024-08-10,£7.50 x 15,93.75,18.75,112.5,Venue Dry (4009),line
+bc3e09068c4b49c792516be46896d9ee,SI-64879,Jackson Wedding 10.08.24,2024-08-10,Chair covers ,93.33,18.67,112.0,Events Revenue (4018),line
+24b52d41edc240669a6347934b18a653,SI-64886,james+paige - wedding - 2024-08-10,2024-08-10,total,685.0,137.0,822.0,WWC,invoice
+24b52d41edc240669a6347934b18a653,SI-64886,james+paige - wedding - 2024-08-10,2024-08-10,wedding reception,685.0,137.0,822.0,Venue Dry (4009),line
+13ed68a1c6104e83b5d96c1372a1f1d4,SI-64881,Jones Funeral 15.08.24,2024-08-15,total,2845.0,569.0,3414.0,WWC,invoice
+13ed68a1c6104e83b5d96c1372a1f1d4,SI-64881,Jones Funeral 15.08.24,2024-08-15,Funeral buffet £25.95pp x 120,2595.0,519.0,3114.0,Venue Dry (4009),line
+13ed68a1c6104e83b5d96c1372a1f1d4,SI-64881,Jones Funeral 15.08.24,2024-08-15,Trio of mini cakes £2.50pp x 120,250.0,50.0,300.0,Venue Dry (4009),line
+0bdb860d7f7641c4aef042e800f561b8,SI-64887,Poppy & Michael Wedding 17.08.24,2024-08-17,total,1647.08,329.42,1976.5,WWC,invoice
+0bdb860d7f7641c4aef042e800f561b8,SI-64887,Poppy & Michael Wedding 17.08.24,2024-08-17,Chair covers ,93.33,18.67,112.0,Events Revenue (4018),line
+0bdb860d7f7641c4aef042e800f561b8,SI-64887,Poppy & Michael Wedding 17.08.24,2024-08-17,Bespoke menu £16.95 x 110,1553.75,310.75,1864.5,Venue Dry (4009),line
+1f6cab3704d84ab18685de653db55aac,SI-64888,1's Squash Teas,2024-08-19,total,33.33,6.67,40.0,WWC,invoice
+1f6cab3704d84ab18685de653db55aac,SI-64888,1's Squash Teas,2024-08-19,Chefs Choice £4 x 10,33.33,6.67,40.0,Venue Dry (4009),line
+6b1cbecf2e4d44e2b8ea20b72ca6cbd2,SI-64889,First Aid Course,2024-08-22,total,16.25,3.25,19.5,WWC,invoice
+6b1cbecf2e4d44e2b8ea20b72ca6cbd2,SI-64889,First Aid Course,2024-08-22,Tea & Coffee reduced @£1.50 x 13,16.25,3.25,19.5,Venue Dry (4009),line
+27b29b8cc53441f392fd6e794ce1ebb2,SI-64883,davies - funeral - 2024-08-23,2024-08-23,total,83.33,16.67,100.0,WWC,invoice
+27b29b8cc53441f392fd6e794ce1ebb2,SI-64883,davies - funeral - 2024-08-23,2024-08-23,funeral deposit,83.33,16.67,100.0,Venue Dry (4009),line
+31e12ec936234ed3987c9370a8c21988,SI-64890,davies - funeral - 2024-08-23,2024-08-23,total,1196.67,239.33,1436.0,WWC,invoice
+31e12ec936234ed3987c9370a8c21988,SI-64890,davies - funeral - 2024-08-23,2024-08-23,Funeral buffet £17.95pp x 80,1196.67,239.33,1436.0,Venue Dry (4009),line
+1e4fff5c929c4e66adaa5b2f12896f3f,SI-64885,danni+dawn - party - 2024-08-24,2024-08-24,total,1295.0,259.0,1554.0,WWC,invoice
+1e4fff5c929c4e66adaa5b2f12896f3f,SI-64885,danni+dawn - party - 2024-08-24,2024-08-24,party,1295.0,259.0,1554.0,Venue Dry (4009),line
+3e6e9015a1304a7d8ac33384d83e0b91,SI-64891,danni+dawn - party - 2024-08-24,2024-08-24,total,1295.0,259.0,1554.0,WWC,invoice
+3e6e9015a1304a7d8ac33384d83e0b91,SI-64891,danni+dawn - party - 2024-08-24,2024-08-24,Bespoke menu £12.95 x 120,1295.0,259.0,1554.0,Venue Dry (4009),line
+1684dacd435b4acb94f99ea91b819914,SI-64892,zahra Indian wedding party 26.08.24,2024-08-26,total,2166.67,433.33,2600.0,WWC,invoice
+1684dacd435b4acb94f99ea91b819914,SI-64892,zahra Indian wedding party 26.08.24,2024-08-26,Bespoke menu,2166.67,433.33,2600.0,Venue Dry (4009),line
+0b2e414704114df086ec64554b3d1068,SI-64893,Parkin Funeral 27.08.24,2024-08-27,total,384.08,76.82,460.9,WWC,invoice
+0b2e414704114df086ec64554b3d1068,SI-64893,Parkin Funeral 27.08.24,2024-08-27,Funeral buffet x 22,384.08,76.82,460.9,Venue Dry (4009),line
+fde39c51f6bc4790947857aad19fe29f,SI-64894,Burns Wedding 29.08.24,2024-08-29,total,2293.62,458.73,2752.35,WWC,invoice
+fde39c51f6bc4790947857aad19fe29f,SI-64894,Burns Wedding 29.08.24,2024-08-29,Bespoke menu,1058.0,211.6,1269.6,Venue Dry (4009),line
+fde39c51f6bc4790947857aad19fe29f,SI-64894,Burns Wedding 29.08.24,2024-08-29,Light buffet reduced  @ £8.95 pp x 120,895.0,179.0,1074.0,Venue Dry (4009),line
+fde39c51f6bc4790947857aad19fe29f,SI-64894,Burns Wedding 29.08.24,2024-08-29,Alcohol,140.62,28.13,168.75,Venue Wet (4008),line
+fde39c51f6bc4790947857aad19fe29f,SI-64894,Burns Wedding 29.08.24,2024-08-29,Orange Juice,33.33,6.67,40.0,Venue Dry (4009),line
+fde39c51f6bc4790947857aad19fe29f,SI-64894,Burns Wedding 29.08.24,2024-08-29,Chair covers ,166.67,33.33,200.0,Events Revenue (4018),line
+2f977a45fb4048518b9f77b5862387b2,SI-64895,gallighan - party - 2024-08-30,2024-08-30,total,988.75,197.75,1186.5,WWC,invoice
+2f977a45fb4048518b9f77b5862387b2,SI-64895,gallighan - party - 2024-08-30,2024-08-30,Medium buffet @ £16.95 pp x 70,988.75,197.75,1186.5,Venue Dry (4009),line
+ec72d87f347e4485a723d273b8522689,SI-64884,summerfield - party - 2024-08-31,2024-08-31,total,596.67,119.33,716.0,WWC,invoice
+ec72d87f347e4485a723d273b8522689,SI-64884,summerfield - party - 2024-08-31,2024-08-31,party,596.67,119.33,716.0,Venue Dry (4009),line
+e880b195190540d4aa33b044455f98c6,SI-64896,summerfield - party - 2024-08-31,2024-08-31,total,820.42,164.08,984.5,WWC,invoice
+e880b195190540d4aa33b044455f98c6,SI-64896,summerfield - party - 2024-08-31,2024-08-31,Light buffet reduced  @ £8.95 pp x 110,820.42,164.08,984.5,Venue Dry (4009),line
+2e5333be8d8449fd933be1312f65f0a8,SI-64897,party - begley - 2024-11-08,2024-09-04,total,212.5,42.5,255.0,WWC,invoice
+2e5333be8d8449fd933be1312f65f0a8,SI-64897,party - begley - 2024-11-08,2024-09-04,deposit,212.5,42.5,255.0,Venue Wet (4008),line
+e733291f82b94184ab8a8d94f5d66f44,SI-64906,Warwickshire LTA,2024-09-05,total,438.17,87.63,525.8,WWC,invoice
+e733291f82b94184ab8a8d94f5d66f44,SI-64906,Warwickshire LTA,2024-09-05,Light buffet @ £11.95 pp x 44,438.17,87.63,525.8,Venue Dry (4009),line
+1db370f9cab045c9a01f867c9d6520b8,SI-64899,funeral - price - 2024-09-06,2024-09-06,total,1097.5,219.5,1317.0,WWC,invoice
+1db370f9cab045c9a01f867c9d6520b8,SI-64899,funeral - price - 2024-09-06,2024-09-06,party,1097.5,219.5,1317.0,Venue Wet (4008),line
+7eb12af9f2cc481b97c4458d42d8af55,SI-64905,Olton and West Warwicks Cricket ,2024-09-06,total,1089.5,217.9,1307.4,WWC,invoice
+7eb12af9f2cc481b97c4458d42d8af55,SI-64905,Olton and West Warwicks Cricket ,2024-09-06,sportsfest catering,1089.5,217.9,1307.4,Bar Wet (4007),line
+7a26cf1202a94fa9b1fe2960a5f66dd5,SI-64907,Painters Party 06.09.24,2024-09-06,total,1708.75,341.75,2050.5,WWC,invoice
+7a26cf1202a94fa9b1fe2960a5f66dd5,SI-64907,Painters Party 06.09.24,2024-09-06,Premium buffet @ £21.95 pp x 90,1646.25,329.25,1975.5,Venue Dry (4009),line
+7a26cf1202a94fa9b1fe2960a5f66dd5,SI-64907,Painters Party 06.09.24,2024-09-06,Tea & Coffee @ £2.50 pp x 30,62.5,12.5,75.0,Venue Dry (4009),line
+706dc0e0cfde483c8720656adba4a0bf,SI-64898,party - billingsley - 2024-09-07,2024-09-07,total,1162.5,232.5,1395.0,WWC,invoice
+706dc0e0cfde483c8720656adba4a0bf,SI-64898,party - billingsley - 2024-09-07,2024-09-07,party,1162.5,232.5,1395.0,Venue Wet (4008),line
+65abdc6216514db59d0db527a1aa32b2,SI-64901,funeral - flaherty - 2024-09-10,2024-09-10,total,1018.75,203.75,1222.5,WWC,invoice
+65abdc6216514db59d0db527a1aa32b2,SI-64901,funeral - flaherty - 2024-09-10,2024-09-10,funeral,1018.75,203.75,1222.5,Venue Wet (4008),line
+d94479a595b74c76835e4658704da5a8,SI-64909,Tennis Lunch/Matt Corp,2024-09-11,total,61.34,12.26,73.6,WWC,invoice
+d94479a595b74c76835e4658704da5a8,SI-64909,Tennis Lunch/Matt Corp,2024-09-11,Bar Food,57.17,11.43,68.6,Venue Dry (4009),line
+d94479a595b74c76835e4658704da5a8,SI-64909,Tennis Lunch/Matt Corp,2024-09-11,Tea & Coffee @ £2.50 pp x 2,4.17,0.83,5.0,Venue Dry (4009),line
+2a4c7dd8311c44c5ac6312ea0deb9402,SI-64911,First Aid Course,2024-09-12,total,16.25,3.25,19.5,WWC,invoice
+2a4c7dd8311c44c5ac6312ea0deb9402,SI-64911,First Aid Course,2024-09-12,Tea & Coffee reduced @ £1.50 pp x 13,16.25,3.25,19.5,Venue Dry (4009),line
+9cb5eb8a338544c59eee6fb03136c106,SI-64912,West Midlands Police ,2024-09-12,total,1071.04,214.21,1285.25,WWC,invoice
+9cb5eb8a338544c59eee6fb03136c106,SI-64912,West Midlands Police ,2024-09-12,Light buffet @ £11.95 pp x 95,946.04,189.21,1135.25,Venue Dry (4009),line
+9cb5eb8a338544c59eee6fb03136c106,SI-64912,West Midlands Police ,2024-09-12,Tea & Coffee @ £2.50 pp x 60,125.0,25.0,150.0,Venue Dry (4009),line
+28ca8556364747e397328b5f91db9c39,SI-64913,First Aid Course,2024-09-13,total,16.25,3.25,19.5,WWC,invoice
+28ca8556364747e397328b5f91db9c39,SI-64913,First Aid Course,2024-09-13,Tea & Coffee reduced @ £1.50 pp x 13,16.25,3.25,19.5,Venue Dry (4009),line
+cd5132d533e94410b8393ea345ff0e33,SI-64914,simone dalley - christening - 2024-09-14,2024-09-14,total,414.58,82.92,497.5,WWC,invoice
+cd5132d533e94410b8393ea345ff0e33,SI-64914,simone dalley - christening - 2024-09-14,2024-09-14,Bespoke menu £9.95 x 50,414.58,82.92,497.5,Venue Dry (4009),line
+0c9873d02989417780a7705860c1299b,SI-64915,Bates/Mitchell kids party 15.09.24,2024-09-15,total,176.67,35.33,212.0,WWC,invoice
+0c9873d02989417780a7705860c1299b,SI-64915,Bates/Mitchell kids party 15.09.24,2024-09-15,£7.50 x 20,125.0,25.0,150.0,Venue Dry (4009),line
+0c9873d02989417780a7705860c1299b,SI-64915,Bates/Mitchell kids party 15.09.24,2024-09-15,Drinks ,51.67,10.33,62.0,Bar Wet (4007),line
+d81f6d7e6c134dd6bd0c9bc45b97dd06,SI-64910,Inner Wheel Club of Solihull,2024-09-17,total,479.17,95.83,575.0,WWC,invoice
+d81f6d7e6c134dd6bd0c9bc45b97dd06,SI-64910,Inner Wheel Club of Solihull,2024-09-17,2 Course Sit down Meal £25.00 x 23,479.17,95.83,575.0,Venue Dry (4009),line
+970b757059aa44d4a6d017d50c7c4f68,SI-64880,Solihull Borough Conservatives,2024-09-19,total,166.67,33.33,200.0,WWC,invoice
+970b757059aa44d4a6d017d50c7c4f68,SI-64880,Solihull Borough Conservatives,2024-09-19,Deposit payment,166.67,33.33,200.0,Venue Dry (4009),line
+15c6edb9a53e41aa8a46abe14ff711c4,SI-64920,Solihull Borough Conservatives,2024-09-19,total,257.5,51.5,309.0,WWC,invoice
+15c6edb9a53e41aa8a46abe14ff711c4,SI-64920,Solihull Borough Conservatives,2024-09-19,Banquet Menu balance payment ,215.83,43.17,259.0,Venue Dry (4009),line
+15c6edb9a53e41aa8a46abe14ff711c4,SI-64920,Solihull Borough Conservatives,2024-09-19,Tea & Coffee @ £2.50 pp x 20,41.67,8.33,50.0,Venue Dry (4009),line
+d47902916da3456b9ec48f287c6bd820,SI-64882,roche - function - 2024-09-20,2024-09-20,total,83.33,16.67,100.0,WWC,invoice
+d47902916da3456b9ec48f287c6bd820,SI-64882,roche - function - 2024-09-20,2024-09-20,function deposit,83.33,16.67,100.0,Venue Dry (4009),line
+2bb3e79bd4aa4a0c934ecc7c0ee7cd5f,SI-64900,funeral - clarke - 2024-09-20,2024-09-20,total,1342.29,268.46,1610.75,WWC,invoice
+2bb3e79bd4aa4a0c934ecc7c0ee7cd5f,SI-64900,funeral - clarke - 2024-09-20,2024-09-20,Funeral buffet x 85,1342.29,268.46,1610.75,Venue Dry (4009),line
+32d473f6a85846d9b340999a2685e9f4,SI-64916,Duggan Christening 21.09.24,2024-09-21,total,2600.21,520.04,3120.25,WWC,invoice
+32d473f6a85846d9b340999a2685e9f4,SI-64916,Duggan Christening 21.09.24,2024-09-21,Medium buffet @ £16.95 pp x 125,1765.63,353.12,2118.75,Venue Dry (4009),line
+32d473f6a85846d9b340999a2685e9f4,SI-64916,Duggan Christening 21.09.24,2024-09-21,Childrens finger buffet @ £7.95 pp x 30,198.75,39.75,238.5,Venue Dry (4009),line
+32d473f6a85846d9b340999a2685e9f4,SI-64916,Duggan Christening 21.09.24,2024-09-21,Bespoke menu £5.95 x 60,297.5,59.5,357.0,Venue Dry (4009),line
+32d473f6a85846d9b340999a2685e9f4,SI-64916,Duggan Christening 21.09.24,2024-09-21,Alcohol,295.83,59.17,355.0,Venue Wet (4008),line
+32d473f6a85846d9b340999a2685e9f4,SI-64916,Duggan Christening 21.09.24,2024-09-21,Orange Juice,42.5,8.5,51.0,Venue Dry (4009),line
+5fbf521fd1634c91a01f59d109da2a5c,SI-64917,Gardner Kids Party 22.09.24,2024-09-22,total,251.58,50.32,301.9,WWC,invoice
+5fbf521fd1634c91a01f59d109da2a5c,SI-64917,Gardner Kids Party 22.09.24,2024-09-22,Bar charge,62.5,12.5,75.0,Room Hire (4019),line
+5fbf521fd1634c91a01f59d109da2a5c,SI-64917,Gardner Kids Party 22.09.24,2024-09-22,Childrens finger buffet @ £7.95 pp x 22,145.75,29.15,174.9,Venue Dry (4009),line
+5fbf521fd1634c91a01f59d109da2a5c,SI-64917,Gardner Kids Party 22.09.24,2024-09-22,Bespoke menu,33.33,6.67,40.0,Venue Dry (4009),line
+5fbf521fd1634c91a01f59d109da2a5c,SI-64917,Gardner Kids Party 22.09.24,2024-09-22,Jug of squash/kids party @ £3 per jug x 4,10.0,2.0,12.0,Venue Dry (4009),line
+9676f66e76d442f9ac73053368467c7b,SI-64918,Burtoft Funeral 24.09.24,2024-09-24,total,1646.25,329.25,1975.5,WWC,invoice
+9676f66e76d442f9ac73053368467c7b,SI-64918,Burtoft Funeral 24.09.24,2024-09-24,Funeral buffet @£21.95pp x 90,1646.25,329.25,1975.5,Venue Dry (4009),line
+6867ae82c44e431b81e17884dca9fe4f,SI-64919,Madgwick Funeral 24.09.24,2024-09-24,total,538.5,107.7,646.2,WWC,invoice
+6867ae82c44e431b81e17884dca9fe4f,SI-64919,Madgwick Funeral 24.09.24,2024-09-24,Funeral buffet £17.95pp x 36,538.5,107.7,646.2,Venue Dry (4009),line
+9d4d414a2d3542ab84949ba934184aff,SI-64921,First Aid Course,2024-09-26,total,16.25,3.25,19.5,WWC,invoice
+9d4d414a2d3542ab84949ba934184aff,SI-64921,First Aid Course,2024-09-26,Tea & Coffee reduced @ £1.50 pp x 13,16.25,3.25,19.5,Venue Dry (4009),line
+310d690d74124a3793baf44acde14360,SI-64922,Davis funeral 26.09.24,2024-09-26,total,1018.75,203.75,1222.5,WWC,invoice
+310d690d74124a3793baf44acde14360,SI-64922,Davis funeral 26.09.24,2024-09-26,Funeral buffet @£21.95pp x 50,914.58,182.92,1097.5,Venue Dry (4009),line
+310d690d74124a3793baf44acde14360,SI-64922,Davis funeral 26.09.24,2024-09-26,Trio of mini cakes £2.50pp x 50,104.17,20.83,125.0,Venue Dry (4009),line
+be4baad952164da0a11d9d25afea2a99,SI-64923,Langley School,2024-09-27,total,1046.25,209.25,1255.5,WWC,invoice
+be4baad952164da0a11d9d25afea2a99,SI-64923,Langley School,2024-09-27,Bespoke menu-Buffet £13.95 x 90,1046.25,209.25,1255.5,Venue Dry (4009),line
+478bd4e2cdb446a3b694c454b23bfbe0,SI-64924,Walker Family Party 28.09.24,2024-09-28,total,955.21,191.04,1146.25,WWC,invoice
+478bd4e2cdb446a3b694c454b23bfbe0,SI-64924,Walker Family Party 28.09.24,2024-09-28,Bespoke menu-Buffet £13.95 x 75,871.88,174.37,1046.25,Venue Dry (4009),line
+478bd4e2cdb446a3b694c454b23bfbe0,SI-64924,Walker Family Party 28.09.24,2024-09-28,Chair covers ,83.33,16.67,100.0,Events Revenue (4018),line
+bfd50dab2f8e4b9189a1317d1d48e0b3,SI-64925,Ben Rea Hockey,2024-10-02,total,205.38,41.07,246.45,WWC,invoice
+bfd50dab2f8e4b9189a1317d1d48e0b3,SI-64925,Ben Rea Hockey,2024-10-02,"Bespoke menu, Sausage, chips and beans £7.95 x 31",205.38,41.07,246.45,Venue Dry (4009),line
+5adb665779b8454abb52831dfba1174a,SI-64928,ellie prragnell - party - 2024-10-05,2024-10-02,total,438.08,87.62,525.7,WWC,invoice
+5adb665779b8454abb52831dfba1174a,SI-64928,ellie prragnell - party - 2024-10-05,2024-10-02,party,438.08,87.62,525.7,Venue Dry (4009),line
+c132c1c2c6714b88bd1067050dc0616d,SI-64929,hudson - funeral - 2024-10-03,2024-10-03,total,83.33,16.67,100.0,WWC,invoice
+c132c1c2c6714b88bd1067050dc0616d,SI-64929,hudson - funeral - 2024-10-03,2024-10-03,funeral,83.33,16.67,100.0,Venue Dry (4009),line
+3977e83917454be19898a43699457955,SI-64931,morris - funeral - 2024-10-07,2024-10-07,total,83.33,16.67,100.0,WWC,invoice
+3977e83917454be19898a43699457955,SI-64931,morris - funeral - 2024-10-07,2024-10-07,funeral,83.33,16.67,100.0,Venue Dry (4009),line
+2e1a490f1dbb4ccc99a47419b31f5aac,SI-64930,tomlinson - funeral - 2024-10-08,2024-10-08,total,83.33,16.67,100.0,WWC,invoice
+2e1a490f1dbb4ccc99a47419b31f5aac,SI-64930,tomlinson - funeral - 2024-10-08,2024-10-08,funeral,83.33,16.67,100.0,Venue Dry (4009),line
+881150e6eacc427ca1caab6276ccbb5f,SI-64932,gallagher - funeral - 2024-10-10,2024-10-10,total,1196.87,239.38,1436.25,WWC,invoice
+881150e6eacc427ca1caab6276ccbb5f,SI-64932,gallagher - funeral - 2024-10-10,2024-10-10,funeral,1196.87,239.38,1436.25,Venue Dry (4009),line
+58631531bd1e44f6aca738b450eab1c4,SI-64926,hooper - party 80th - 2024-10-19,2024-10-19,total,370.25,74.05,444.3,WWC,invoice
+58631531bd1e44f6aca738b450eab1c4,SI-64926,hooper - party 80th - 2024-10-19,2024-10-19,food,370.25,74.05,444.3,Venue Dry (4009),line
+75e3072c2f764bef9aace9eb2fe6475b,SI-64933,lucy clyne - christening - 2024-11-02,2024-11-02,total,212.5,42.5,255.0,WWC,invoice
+75e3072c2f764bef9aace9eb2fe6475b,SI-64933,lucy clyne - christening - 2024-11-02,2024-11-02,christening,212.5,42.5,255.0,Venue Dry (4009),line
+c5b350eaa9c3433c88e4c0fd1642ff72,SI-64927,jim bates - party - 2024-12-10 ,2024-12-10,total,208.33,41.67,250.0,WWC,invoice
+c5b350eaa9c3433c88e4c0fd1642ff72,SI-64927,jim bates - party - 2024-12-10 ,2024-12-10,party - deposit,208.33,41.67,250.0,Venue Dry (4009),line

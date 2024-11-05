@@ -1,0 +1,56 @@
+id,name,RRP,promoRRP,diff
+c83f1222-b471-4989-b0e6-4dbe47d5da0b,Archers (double),7.67,6.43,1.24
+6051896d-4ba4-4b83-b75d-4051b935de1e,Bacardi (double),7.67,6.43,1.24
+62e43d22-b03e-4c81-883c-b68b4f9707d3,Bells (double),7.67,6.43,1.24
+44a7cb6d-d61b-46ec-ab86-f547522de0b0,Campari (double),7.67,6.43,1.24
+3ee4191e-638d-4d5c-85fe-6d12e856f109,Captain Morgan (double),7.67,6.43,1.24
+8f5ed186-cd4f-4d92-95ca-6d706c4b23dc,Captain Morgan Spiced (double),7.67,6.43,1.24
+e5de3fb5-8ad9-456d-8b50-3e1793e423e1,Chambord (double),7.67,6.43,1.24
+63e21c59-66d0-45c0-a388-d6371cb35367,Cinzano (double),7.67,6.43,1.24
+431e0133-491e-4fca-90b2-0381739a01e6,Ciroc (double),7.67,6.43,1.24
+fb9e5ced-3b88-4a30-862b-c5af22cb66ed,Cockburns Port (double),7.67,6.43,1.24
+f7cc2249-29a4-4938-a1cf-60e47dad3a04,Cointreau (double),7.67,6.43,1.24
+db0b75f8-f446-422b-abf9-c92de0447f5a,Courvoisier (double),8.73,7.49,1.24
+f6ea8e94-d58d-41a2-aad4-4aaf1d187a7e,Dissaronno (double),7.67,6.43,1.24
+8d64fe05-14c6-42a4-be5c-93fe3b573462,El Torito Silver (double),7.67,6.43,1.24
+854b5d2f-7e1f-446b-a209-39db3bfff539,Glenmorangie (double),8.73,7.49,1.24
+c7e8dcc0-c262-4d9c-8747-795d27898321,Gordons Gin (double),7.67,6.43,1.24
+56113a21-163f-4740-b9b5-acf9f88f66f9,Gordons Gin (double) (Lemon),7.67,6.43,1.24
+68bd28a4-e458-4073-8da7-0626caf3cee4,Gordons Gin (double) (Orange),7.67,6.43,1.24
+f5541884-3e04-4275-8cd1-675abcb083a2,Gordons Gin (double) (Pink),7.67,6.43,1.24
+a393a4f3-d1fb-4246-bf42-549c9d6f4794,Gordons Gin 0.0 (double),7.2,5.95,1.25
+55d9ccd7-e5c0-4092-be52-400392fbed6e,Harveys Bristol Cream (double),7.67,6.43,1.24
+bba8081a-3573-4040-b712-3d9ea8e75817,Hendricks Gin (double),9.45,8.21,1.24
+6c609c85-76d4-465f-8b57-59df9bfef92f,Hennessy (double),9.45,8.21,1.24
+db41ab2e-15f4-4213-a598-4ef1d0db893d,Jack Daniels (double),8.73,7.49,1.24
+53868f45-1759-4af0-9a1d-09278c4a4c4a,Jack Daniels Apple (double),8.73,7.49,1.24
+62177582-626a-42c8-8170-b1daf173851f,Jagermeister (double),7.67,6.43,1.24
+54a2b0de-14bd-48b2-b892-6ac202c6094a,Jamesons (double),7.67,6.43,1.24
+e912b012-a1c3-4276-a841-378c7d2d8785,Malibu (double),7.67,6.43,1.24
+6be88023-3dab-416d-8e86-d4e59eaa15c4,Martini (double),7.67,6.43,1.24
+2ef8b1e4-a7f0-4908-a87a-35fbf6707020,Sambuca (double),7.67,6.43,1.24
+1f2aa216-318d-4cdb-bf59-92c07cf3eb59,Smirnoff (double),7.67,6.43,1.24
+b2997e16-c80e-4dfc-8064-bfd4dfe28334,Sourz (double),7.67,6.43,1.24
+203fb5d3-d8d9-410f-b931-08019c5da43c,Southern Comfort (double),7.67,6.43,1.24
+03acec6c-5973-470a-b2cf-a66c4e710cba,Tequila Rose (double),7.67,6.43,1.24
+1653e25a-1d93-49ee-9500-5f92600eccd4,Whitley Neill (double),8.73,6.863,1.87
+a8ac67f2-e142-4013-b4d8-ff3cba7a9047,Whitley Neill (double) (Blood Orange),8.73,6.863,1.87
+a8770ea4-9b13-48de-8b19-999a5d4e2109,Whitley Neill (double) (Gooseberry),8.73,6.863,1.87
+0e320f27-1d50-4b48-97ad-6d5dba266c09,Whitley Neill (double) (Quince),8.73,6.863,1.87
+d4794279-52fa-4ac2-b46b-3b758b8c2b42,Whitley Neill (double) (Raspberry),8.73,6.863,1.87
+ae0ee973-056f-4114-bb87-382a3ade3d1b,Whitley Neill (double) (Rhubarb),8.73,6.863,1.87
+211a0473-ba5d-4dbf-970b-6873c4ccec0d,Carling (jug),20.8,19.49,1.31
+0f887591-c7ed-46ad-b353-4e4b59612cfd,Cobra (jug),25,23.1,1.9
+e41160a0-b4bc-4fcf-9f36-86ee0734d358,Madri (jug),23.76,22.9,0.86
+281d650f-fed5-4a64-aab0-263c0f0fa422,Pravha (jug),21.76,20.67,1.09
+85dabce6-e181-4761-ac78-96ed008d2c4e,Carling (matchday),5.2,4.2,1
+953e2c55-1627-4f2e-9222-ab9a82a70e01,Guinness (matchday),5.44,4.44,1
+4062a406-5e6f-43b9-86d1-8c1ab65c3cb3,Guinness (x2),10.88,8.86,2.02
+58fe807e-2489-4744-9a84-2a885cff76f7,Baby Guinness (x3),13.17,12,1.17
+c829951e-efb6-4d9f-a01a-1c07d024a5f1,Sourz (x3),11.51,10,1.51
+bb854745-c0cc-4a58-bbd7-0aed81e47f02,Baby Guinness (x10),43.9,38,5.9
+59d09cd4-9bbe-4f70-9a4d-3d19eb8df438,Sourz (x10),38.36,30,8.36
+36057d53-1252-4aaf-86f0-7b5102645fbe,Veuve Clicquot (promo),89,60,29
+ceb6c96c-27f2-405c-92cd-5dfc8edfa510,Whispering Angel (promo),35,28,7
+d9bf14f7-d662-4c21-905c-dc2767c8f0fa,Il Caggio (Fizz Friday),22.5,15,7.5
+c9f3c94f-8f9a-41ef-80fe-a7754508bfe8,Il Caggio Mini (Fizz Friday),7.85,6.75,1.1

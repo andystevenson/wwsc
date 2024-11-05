@@ -1,0 +1,7032 @@
+[
+  {
+    "id": "2082c5c9-8bf6-422c-8051-8d94096f5f10",
+    "name": "Alina special Panini",
+    "display": "Alina special",
+    "sku": "WWSC-PANINI-ALINA-SPECIAL",
+    "purchase_price": 2,
+    "selling_price": 7.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "782dfba0-7d3d-4dd5-8311-9a8df72dec7b",
+    "name": "Apple Crumble",
+    "display": "Apple Crumble",
+    "sku": "APPLE_CRUMBLE",
+    "purchase_price": 1.58,
+    "selling_price": 3.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "bb74ed3d-fa75-4b16-b08b-539d41a8687e",
+    "name": "Bacon Sandwich",
+    "display": "Bacon",
+    "sku": "WWSC-SANDWICH-BACON",
+    "purchase_price": 2,
+    "selling_price": 5.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "eaa503a0-a615-48da-8ebc-9f20f5c4899f",
+    "name": "Beef Bap with Fries",
+    "display": "Beef Bap with Fries",
+    "sku": "BEEF_BAP_WITH_FRIES",
+    "purchase_price": 3.98,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "39b522e6-4043-4036-828b-5c84ae2fe3c8",
+    "name": "Beef Fajita",
+    "display": "Beef Fajita",
+    "sku": "WWSC-BEEF-FAJITA-WRAP",
+    "purchase_price": 3.8,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "bb12b17f-46a3-4197-b04a-eae86fb298fe",
+    "name": "Beef Meatballs & Pasta",
+    "display": "Beef Meatballs & Pasta",
+    "sku": "WWSC-BEEF-MEATBALLS-AND-PASTA",
+    "purchase_price": 5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f23b2958-0e3c-413b-9f25-3ed38bd4ef97",
+    "name": "Caesar Salad",
+    "display": "Caesar Salad",
+    "sku": "WWSC-CAESAR-SALAD",
+    "purchase_price": 2.78,
+    "selling_price": 6.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "0b95a813-8d90-4635-b4d3-c4e338a5ba0a",
+    "name": "Cajun Fried Chicken Strips",
+    "display": "Cajun Fried Chicken Strips",
+    "sku": "WWSC-EURO-SOUTHERN-FRIED_CHICKEN-STRIPS",
+    "purchase_price": 4.78,
+    "selling_price": 11.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "2219214a-c812-455d-b033-5b70aeeb277f",
+    "name": "Cheese & Tomato Pizza",
+    "display": "Cheese & Tomato Pizza",
+    "sku": "CHEESE_AND_TOMATO_PIZZA",
+    "purchase_price": 3.98,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c45cdff4-6f08-475c-88ec-142a1afda5fd",
+    "name": "Cheese & red onion Panini",
+    "display": "Cheese & red onion",
+    "sku": "WWSC-PANINI-CHEESE-AND-RED-ONION",
+    "purchase_price": 2,
+    "selling_price": 7.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "42ff79e6-c88a-4c2f-908f-20cb5ecf0d64",
+    "name": "Chicken & Mushroom Pie",
+    "display": "Chicken & Mushroom Pie",
+    "sku": "CHICKEN_MUSHROOM_PIE",
+    "purchase_price": 3.5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5b67416a-319e-438b-a03a-1eaabc67b6b4",
+    "name": "Chicken Curry, Rice & Naan",
+    "display": "Chicken Curry, Rice & Naan",
+    "sku": "CHICKEN_CURRY_RICE_NAAN",
+    "purchase_price": 3.5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "89b9ae1c-dfad-416f-b1db-b8675987b3af",
+    "name": "Chicken Fajita",
+    "display": "Chicken Fajita",
+    "sku": "WWSC-EURO-CHICKEN_FAJITA",
+    "purchase_price": 3.8,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "aff26fa4-523a-4544-9449-0bd551192017",
+    "name": "Chicken Fajita Wrap",
+    "display": "Chicken Fajita Wrap",
+    "sku": "CHICKEN_FAJITA_WRAP",
+    "purchase_price": 3.8,
+    "selling_price": 9.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "d7231970-b231-417b-92ce-c59e6da7f2f8",
+    "name": "Chicken Jalfrezi",
+    "display": "Chicken Jalfrezi",
+    "sku": "CHICKEN_JALFREZI",
+    "purchase_price": 3.5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b6a0f4b3-d023-47a0-8d7a-167ec2be8dd7",
+    "name": "Chicken Kebab Skewers",
+    "display": "Chicken Kebab Skewers",
+    "sku": "CHICKEN_KEBAB_SKEWERS",
+    "purchase_price": 5.18,
+    "selling_price": 12.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b1cce80e-f6d1-4572-8815-321946513705",
+    "name": "Chicken Kiev",
+    "display": "Chicken Kiev",
+    "sku": "CHICKEN_KIEV",
+    "purchase_price": 3.95,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6f0926f7-49d8-44d9-8e0b-2c8516d57002",
+    "name": "Chicken Shawarma",
+    "display": "Chicken Shawarma",
+    "sku": "WWSC-CHICKEN-SHAWARMA",
+    "purchase_price": 3.58,
+    "selling_price": 8.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "67b04c1f-2114-46c0-8230-e23632137fe7",
+    "name": "Chicken Teriyaki",
+    "display": "Chicken Teriyaki",
+    "sku": "CHICKEN_TERIYAKI_RICE",
+    "purchase_price": 5.475,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c8d5efea-ec36-4c28-9bf7-db273740ac28",
+    "name": "Chicken, Leek & Mushroom Pie",
+    "display": "Chicken Leek & Mushroom Pie",
+    "sku": "CHICKEN_LEEK_MUSHROOM_PIE",
+    "purchase_price": 3.5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "1dee82b2-ff37-4905-ae05-f7e6c6be6059",
+    "name": "Chickpea & Spinach Curry & Rice",
+    "display": "Chickpea & Spinach Curry & Rice",
+    "sku": "CHICKPEA_SPINACH_CURRY",
+    "purchase_price": 3.5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9b962cb2-2189-4019-be34-7e2455c8f5b5",
+    "name": "Chilli with Rice",
+    "display": "Chilli, Rice & Garlic Bread",
+    "sku": "WWSC-CHILLI-RICE",
+    "purchase_price": 2.975,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "65f9dda9-a4a1-4650-8f9c-5e409becf109",
+    "name": "Chips",
+    "display": "Chips",
+    "sku": "WWSC-CHIPS",
+    "purchase_price": 3.25,
+    "selling_price": 6.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f3cf1f60-700f-4ed3-996e-33d53faf9e75",
+    "name": "Chips (large with cheese)",
+    "display": "Large with Cheese",
+    "sku": "WWSC-CHIPS-LARGE-CHEESE",
+    "purchase_price": 2.1,
+    "selling_price": 8.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "646249b6-85c2-4916-8597-4f72917091e0",
+    "name": "Chips (large)",
+    "display": "Large",
+    "sku": "WWSC-CHIPS-LARGE",
+    "purchase_price": 2.1,
+    "selling_price": 6.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9488e31a-79c0-4f3b-bfd8-7dce0b90fcd4",
+    "name": "Chips (small with cheese)",
+    "display": "Small with Cheese",
+    "sku": "WWSC-CHIPS-SMALL-CHEESE",
+    "purchase_price": 2.1,
+    "selling_price": 4.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "2b7b1ad1-bda4-4d60-8af7-48ea508f719a",
+    "name": "Chips (small)",
+    "display": "Small",
+    "sku": "WWSC-CHIPS-SMALL",
+    "purchase_price": 0.52,
+    "selling_price": 3.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "41a43547-ba44-4d34-adee-6ec743c7c0bf",
+    "name": "Chocolate Brownie & Ice Cream",
+    "display": "Chocolate Brownie & Ice Cream",
+    "sku": "WWSC-CHOCOLATE-BROWNIE-ICE-CREAM",
+    "purchase_price": 1.4,
+    "selling_price": 4,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5fc79792-6790-4f27-90bd-4a3d00ea0722",
+    "name": "Club Sandwich",
+    "display": "Club Sandwich",
+    "sku": "CLUB_SANDWICH",
+    "purchase_price": 5.475,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "8403272d-0c70-442b-8195-adb0c3af5126",
+    "name": "Cobs",
+    "display": "Ham",
+    "sku": "WWSC-COBS-HAM",
+    "purchase_price": 1.5,
+    "selling_price": 3.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f0b78530-be68-46fb-82d3-8e4f80d2dc25",
+    "name": "Cobs",
+    "display": "Cheese",
+    "sku": "WWSC-COBS-CHEESE",
+    "purchase_price": 1.5,
+    "selling_price": 3.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a29c8e53-ab8d-4aef-b759-9e48593827dc",
+    "name": "Cobs",
+    "display": "Cobs",
+    "sku": "WWSC-COBS",
+    "purchase_price": 1.5,
+    "selling_price": 3.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "67590c60-7fa7-454b-9e2f-8aedaad7c27f",
+    "name": "Cod Fillet Burger",
+    "display": "Cod Fillet Burger",
+    "sku": "WWSC-COD-FILLET-BURGER",
+    "purchase_price": 5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "95b70d96-9e3e-4d8f-96a5-796357924139",
+    "name": "Combo 3 for 10",
+    "display": "Combo 3 for 10",
+    "sku": "WWSC-COMBO3FOR10",
+    "purchase_price": 5,
+    "selling_price": 10,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "aef03ddc-bafa-4a6d-9d73-f091af515c95",
+    "name": "Combo 5 for 15",
+    "display": "Combo 5 for 15",
+    "sku": "WWSC-COMBO5FOR15",
+    "purchase_price": 7.5,
+    "selling_price": 15,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "0e0e79be-43f1-4ca3-a9dc-fd4e4ab0a2e5",
+    "name": "Cottage Pie",
+    "display": "Cottage Pie",
+    "sku": "COTTAGE_PIE",
+    "purchase_price": 4,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "4389e9e9-4c4c-4dee-8efb-2ce239ed0191",
+    "name": "Creamy Leek & Mushroom Pie",
+    "display": "Creamy Leek & Mushroom Pie",
+    "sku": "WWSC-CREAMY-LEEK-AND-MUSHROOM-PIE",
+    "purchase_price": 2.95,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a9ad9631-f128-4d54-aa23-71240bc37707",
+    "name": "Crispy Chilli Beef & Rice",
+    "display": "Crispy Chilli Beef,  Rice & Crackers",
+    "sku": "WWSC-CRISPY-CHILLI-BEEF-RICE-CRACKERS",
+    "purchase_price": 3.5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "73f7ced3-f170-4f47-bd50-51ce912983d0",
+    "name": "Curry & Cobra",
+    "display": "Curry & Cobra!",
+    "sku": "WWSC-CURRY-AND-PINT-PROMO",
+    "purchase_price": 5,
+    "selling_price": 12.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b231e100-04eb-498e-baf8-9aa1ac373bc4",
+    "name": "Curry Sauce",
+    "display": "Curry Sauce",
+    "sku": "CURRY_SAUCE",
+    "purchase_price": 0.975,
+    "selling_price": 1.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "2db2007d-45dd-40a8-8586-5cbfaeb2b60e",
+    "name": "Desserts",
+    "display": "Desserts",
+    "sku": "WWSC-DESSERTS",
+    "purchase_price": 0.87,
+    "selling_price": 3.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "3e0754c4-87ff-4077-9287-9c316b82fdac",
+    "name": "Dirty Fries",
+    "display": "Dirty Fries",
+    "sku": "WWSC-DIRTY-FRIES",
+    "purchase_price": 3.58,
+    "selling_price": 8.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "684ca620-b80b-4915-9fe1-5f41e0e8cf4b",
+    "name": "Dirty Fries with Chilli",
+    "display": "Dirty Fries with Chilli",
+    "sku": "WWSC-DIRTY-FRIES-WITH-CHILLI",
+    "purchase_price": 3,
+    "selling_price": 8.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "d19f7838-b5c1-4deb-bd6b-fcbe76b053ae",
+    "name": "Dirty Fries with Chilli",
+    "display": "Dirty Fries with Chilli",
+    "sku": "WWSC-DIRTY-FRIES-WITH-CHILLI",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "7460b703-4c5d-4250-b7f1-36a5c77a0b2f",
+    "name": "Double Burger Stack",
+    "display": "Double Burger Stack",
+    "sku": "DOUBLE_BURGER_STACK",
+    "purchase_price": 3.13,
+    "selling_price": 8.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "8d4dcb03-126b-4ac0-9192-c8f5493c25b7",
+    "name": "Egg Mayonnaise Sandwich",
+    "display": "Egg Mayonnaise Sandwich",
+    "sku": "WWSC-EGG-MAYONNAISE-SANDWICH",
+    "purchase_price": 2.38,
+    "selling_price": 5.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5aa04843-751c-47c1-9e00-4dd991565985",
+    "name": "Egg Mayonnaise Sandwich",
+    "display": "Egg mayonnaise",
+    "sku": "WWSC-SANDWICH-EGG-MAYONNAISE",
+    "purchase_price": 2,
+    "selling_price": 5.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b0e8201c-93fd-4cbf-b74b-fe1cc932683d",
+    "name": "Eton Mess",
+    "display": "Eton Mess",
+    "sku": "WWSC-ETON-MESS",
+    "purchase_price": 2.6,
+    "selling_price": 6.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "8d0524fd-c9e3-4db6-95a7-ab0ed6c41d66",
+    "name": "Fajita chicken, peppers & siracha sauce Panini",
+    "display": "Fajita chicken, peppers & siracha sauce",
+    "sku": "WWSC-PANINI-FAJITA-CHICKEN-PEPPERS-AND-SRIRACHA-SAUCE",
+    "purchase_price": 2,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "32127e84-a32d-4c8c-ba08-5d00277b8694",
+    "name": "Falafel Burger",
+    "display": "Falafel Burger",
+    "sku": "WWSC-FALAFEL-BURGER",
+    "purchase_price": 2.7,
+    "selling_price": 7.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "4cbd03b8-db79-4d65-9b10-b857cdb388e1",
+    "name": "Feta Cheese Salad",
+    "display": "Feta Cheese Salad",
+    "sku": "FETA_SALAD",
+    "purchase_price": 3.8,
+    "selling_price": 9.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5331041a-7890-4fa2-b432-7aa090a8da14",
+    "name": "Fish Finger Sandwich",
+    "display": "Fish Finger Sandwich",
+    "sku": "WWSC-FISH-FINGER-BUTTY",
+    "purchase_price": 3,
+    "selling_price": 7.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "bf80aae9-b393-441a-8a71-0a2fa473074b",
+    "name": "Fish Friday",
+    "display": "Fish Friday!",
+    "sku": "FISH_AND_CHIPS",
+    "purchase_price": 3.75,
+    "selling_price": 12.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "483f6476-9851-4909-bb2a-6e3512ae4df2",
+    "name": "Fish Pie",
+    "display": "Fish Pie",
+    "sku": "FISH_PIE",
+    "purchase_price": 2.95,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9abbffce-9fda-47cd-ab4b-76ebc96e5935",
+    "name": "Fishcake, Chips & Peas",
+    "display": "Fishcake, Chips & Peas",
+    "sku": "FISHCAKE_CHIPS_PEAS",
+    "purchase_price": 3.975,
+    "selling_price": 8.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6c39bef7-1f55-4b9e-918b-eb50f572b375",
+    "name": "Gammon Ham Sandwich",
+    "display": "Gammon Ham Sandwich",
+    "sku": "WWSC-GAMMON-HAM-SANDWICH",
+    "purchase_price": 2.38,
+    "selling_price": 5.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "52d6153f-e9b6-44da-b6df-d21ec5c6755d",
+    "name": "Gammon, Egg & Chips",
+    "display": "Gammon, Egg & Chips",
+    "sku": "GAMMON_EGG_AND_CHIPS",
+    "purchase_price": 5.475,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "387c8bf6-c7d5-47c1-bedf-c220b161f2c9",
+    "name": "Grated Mature Cheddar Sandwich",
+    "display": "Grated Mature Cheddar",
+    "sku": "WWSC-GRATED-MATURE-CHEDDAR",
+    "purchase_price": 2.38,
+    "selling_price": 5.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "709fe074-a391-4785-a65c-40bbf0f72c9c",
+    "name": "Grated Mature Cheese Sandwich",
+    "display": "Grated mature cheese",
+    "sku": "WWSC-SANDWICH-GRATED-MATURE-CHEESE",
+    "purchase_price": 2,
+    "selling_price": 5.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5fa04c09-8c98-48cb-9135-78fe360b055a",
+    "name": "Grilled Chicken Burger",
+    "display": "Grilled Chicken Burger",
+    "sku": "GRILLED_CHICKEN_BURGER",
+    "purchase_price": 4.38,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "d6e0d6c9-6461-4846-a8a9-15af4e6451fc",
+    "name": "Grilled Sliced Chicken Breast Sandwich",
+    "display": "Chicken Sandwich",
+    "sku": "GRILLED_CHICKEN_ BREAST_SANDWICH",
+    "purchase_price": 1.73,
+    "selling_price": 5.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "03bba671-f83a-402d-a885-e365c157ce67",
+    "name": "Grilled chicken, tomato & cashew pesto Panini",
+    "display": "Grilled chicken, tomato & cashew pesto",
+    "sku": "WWSC-PANINI-GRILLED-CHICKEN-TOMATO-AND-CASHEW-PESTO",
+    "purchase_price": 2.5,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "300676d3-a905-4d7d-a9be-12b9c515fd5f",
+    "name": "Haggis, Mash & Veg",
+    "display": "Haggis, Mash & Veg",
+    "sku": "HAGGIS_MASH_VEG",
+    "purchase_price": 3.25,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "7845137c-f0d4-4475-84f4-d6f846e9cbfb",
+    "name": "Halloumi Burger with Pineapple & Chips",
+    "display": "Halloumi Burger With Pineapple & Chips",
+    "sku": "HALLOUMI_BURGER _CHIPS",
+    "purchase_price": 4.475,
+    "selling_price": 8.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "adf1771c-743d-4c60-bd0a-85da8d1735a3",
+    "name": "Halloumi Kebab Skewers",
+    "display": "Halloumi Kebab Skewers",
+    "sku": "HALLOUMI_KEBAB_SKEWERS",
+    "purchase_price": 4.78,
+    "selling_price": 11.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "7fa8ff32-ad99-4206-b219-098fd2ba6f87",
+    "name": "Ham & cheese Panini",
+    "display": "Ham & cheese",
+    "sku": "WWSC-PANINI-HAM-AND-CHEES",
+    "purchase_price": 2,
+    "selling_price": 7.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "337eaa16-1139-4764-a59b-e6b943ae7601",
+    "name": "Ham Sandwich",
+    "display": "Ham",
+    "sku": "WWSC-SANDWICH-HAM",
+    "purchase_price": 2,
+    "selling_price": 5.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "8fcbf03d-dc68-4468-8cf9-b604eb201483",
+    "name": "Handmade Beef Burger",
+    "display": "Handmade Beef Burger",
+    "sku": "WWSC-BEEF-BURGER",
+    "purchase_price": 4.38,
+    "selling_price": 11.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f08c0d36-f3ea-4b28-93fc-90ae250b352b",
+    "name": "Hot Beef Bap",
+    "display": "Hot Beef Bap",
+    "sku": "HOT_BEEF_BAP",
+    "purchase_price": 3.98,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "71c4148a-2551-471f-b2fc-6ab582316391",
+    "name": "Hot Dog & Chips",
+    "display": "Hot Dog & Chips",
+    "sku": "HOT_DOG_CHIPS",
+    "purchase_price": 2.95,
+    "selling_price": 7.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "186e8164-6741-4857-8d4e-539fe59fa59e",
+    "name": "Hot Lamb Bap",
+    "display": "Hot Lamb Bap",
+    "sku": "HOT_LAMB_BAP",
+    "purchase_price": 3.98,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "de7d3bb1-5d32-489a-b4c9-565bf9c7f39c",
+    "name": "Hot Pork Bap",
+    "display": "Hot Pork Bap",
+    "sku": "WWSC-HOT-PORK-BAP",
+    "purchase_price": 3.13,
+    "selling_price": 8.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "e2913298-a28a-44a6-b8df-f1d2d292eb88",
+    "name": "Ice Cream",
+    "display": "Ice Cream",
+    "sku": "WWSC-ICE-CREAM",
+    "purchase_price": 1,
+    "selling_price": 3.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "2a6f9d0d-c778-4388-bd4e-909acd071f23",
+    "name": "Ice Cream - Calippo Orange",
+    "display": "Ice Cream - Calippo Orange",
+    "sku": "WWSC-ICE-CREAM-CALIPPO-ORANGE",
+    "purchase_price": 1,
+    "selling_price": 1.7,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b2cdad33-7964-463f-a4a9-921d51b4e8db",
+    "name": "Ice Cream - Cornetto Classic",
+    "display": "Ice Cream - Cornetto Classic",
+    "sku": "WWSC-ICE-CREAM-CORNETTO-CLASSIC",
+    "purchase_price": 1,
+    "selling_price": 1.9,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "0940816e-c0b4-4f1a-80b0-3774d3a6aaf7",
+    "name": "Ice Cream - Magnum Classic",
+    "display": "Ice Cream - Magnum Classic",
+    "sku": "WWSC-ICE-CREAM-MAGNUM-CLASSIC",
+    "purchase_price": 1.5,
+    "selling_price": 2.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "1dc91fa5-d489-4990-953a-9431a2881d8e",
+    "name": "Ice Cream - Twister",
+    "display": "Ice Cream - Twister",
+    "sku": "WWSC-ICE-CREAM-TWISTER",
+    "purchase_price": 1,
+    "selling_price": 1.8,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "83943ed1-ca5b-4baf-8af1-b1ea5cc3a56e",
+    "name": "Indian Platter",
+    "display": "Indian Platter",
+    "sku": "INDIAN_PLATTER",
+    "purchase_price": 2.95,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "80cbe502-8f3c-4723-9c82-508372e012f0",
+    "name": "Irish Stew",
+    "display": "Irish Stew",
+    "sku": "WWSC-IRISH-STEW",
+    "purchase_price": 3.13,
+    "selling_price": 8.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c67a3a8b-9213-45f1-a012-9ed71eb3283e",
+    "name": "Jacket Potato",
+    "display": "Jacket Potato",
+    "sku": "WWSC-JACKET-POTATO",
+    "purchase_price": 2.38,
+    "selling_price": 5.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b020d673-2d2d-4660-84e8-d7e8f7a1fcbc",
+    "name": "Jumbo Fish Finger, Chips & Peas",
+    "display": "Jumbo Fish Finger, Chips & Peas",
+    "sku": "JUMBO_FISHFINGER_CHIPS_PEAS",
+    "purchase_price": 3.975,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a201f198-6d88-4154-a0ed-9422c9b2142f",
+    "name": "Katsu Chicken Curry & Rice",
+    "display": "Katsu Chicken Curry & Rice",
+    "sku": "KATSU_CHICKEN_CURRY_",
+    "purchase_price": 5.475,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "e9e81d4c-62e7-4733-b2d1-6b84448abab7",
+    "name": "Lamb Kebab Wrap & Chips",
+    "display": "Lamb Kebab Wrap & Chips",
+    "sku": "LAMB_KEBAB_WRAP_CHIPS",
+    "purchase_price": 2.95,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9acf0106-8739-4c58-9373-73617474662a",
+    "name": "Lamb Minted Koftas",
+    "display": "Lamb Minted Koftas",
+    "sku": "WWSC-LAMB-MINTED-KOFTAS",
+    "purchase_price": 4.38,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9d14c211-ed14-499a-b841-0f97c2970f6a",
+    "name": "Lasagne",
+    "display": "Lasagne",
+    "sku": "LASAGNE",
+    "purchase_price": 4.38,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "1440617d-4f0b-4b6e-82cc-a2c42f3a8d80",
+    "name": "Mac & Cheese",
+    "display": "Mac & Cheese",
+    "sku": "MAC_CHEESE_",
+    "purchase_price": 3.98,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "7300f635-6b12-40f8-b767-6799ceda21f8",
+    "name": "Mac & Cheese",
+    "display": "Mac & Cheese",
+    "sku": "WWSC-EURO-MAC_CHEESE",
+    "purchase_price": 5,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "0145ac19-33a4-44cc-b3f6-84bf32f3599f",
+    "name": "Margherita Pizza",
+    "display": "Margherita Pizza",
+    "sku": "WWSC-EURO-MARGHERITA-PIZZA",
+    "purchase_price": 4.78,
+    "selling_price": 11.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "1115bf99-da4b-44cb-8891-968d2c6bb435",
+    "name": "Meat Feast Pizza",
+    "display": "Meat Feast Pizza",
+    "sku": "MEATFEAST_PIZZA",
+    "purchase_price": 4.78,
+    "selling_price": 11.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "d81334ed-a6af-4e1b-b9e9-5d2fb3c36183",
+    "name": "Meatball Pasta",
+    "display": "Meatball Pasta",
+    "sku": "MEATBALL_PASTA",
+    "purchase_price": 4.945,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9b733db5-e77c-4455-8213-57e0fd5d631a",
+    "name": "Minted Lamb Burger",
+    "display": "Minted Lamb Burger",
+    "sku": "WWSC-MINTED-LAMB-BURGER",
+    "purchase_price": 3.13,
+    "selling_price": 8.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "8975f428-4a84-45be-9edc-07919ad654d9",
+    "name": "Nachos with Cheese & Jalepenos",
+    "display": "Nachos with Cheese & Jalepenos",
+    "sku": "NACHOS_CHEESE_JALEPENOS",
+    "purchase_price": 3.4,
+    "selling_price": 8.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "1e5d883d-49cc-4f8f-9f06-626cc88ee5a5",
+    "name": "Nachos with Chilli",
+    "display": "Nachos with Chilli",
+    "sku": "WWSC-NACHOS-WITH-CHILLI",
+    "purchase_price": 4.38,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6a7e2f11-3c9f-4073-b52e-fa5e5f59228a",
+    "name": "Onion Rings",
+    "display": "Onion Rings",
+    "sku": "ONION_RINGS",
+    "purchase_price": 0.75,
+    "selling_price": 1.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "40844e6e-6a44-4a3b-b8fc-db31adc3aa1e",
+    "name": "Panini",
+    "display": "Panini",
+    "sku": "WWSC-PANINI",
+    "purchase_price": 2.5,
+    "selling_price": 7,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b1a38c98-76e8-4d05-9114-b162b34a9541",
+    "name": "Pasta Carbonara",
+    "display": "Pasta Carbonara & Garlic Bread",
+    "sku": "WWSC-CARBONARA-AND-GARLIC-BREAD",
+    "purchase_price": 5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5c2c3ebf-024f-4396-a1c3-d8bb32335631",
+    "name": "Philly Cheesesteak",
+    "display": "Philly Cheesesteak",
+    "sku": "PHILLY_CHEESESTEAK",
+    "purchase_price": 3.95,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "561f035d-9296-4a27-a48c-6e0b86f74aea",
+    "name": "Piri Piri Chicken",
+    "display": "Piri Piri Chicken",
+    "sku": "WWSC-PIRI-PIRI-CHICKEN",
+    "purchase_price": 4.78,
+    "selling_price": 11.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "787f6f7a-23b9-41b4-9af2-0e6329c46f33",
+    "name": "Pulled BBQ Chicken Sub",
+    "display": "Pulled BBQ Chicken Sub",
+    "sku": "PULLED_BBQ_CHICKEN_SUB",
+    "purchase_price": 3.75,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "4b64ea93-9ea4-47e1-8532-5a49c9624291",
+    "name": "Quorn Fajita",
+    "display": "Quorn Fajita",
+    "sku": "VEGETABLE_FAJITA_WRAP_1",
+    "purchase_price": 3.4,
+    "selling_price": 8.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "76434feb-b541-4672-87b9-ab208204f711",
+    "name": "Roast Chicken Breast",
+    "display": "Roast Chicken Breast",
+    "sku": "ROAST_CHICKEN _BREAST",
+    "purchase_price": 5.18,
+    "selling_price": 12.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "bcafda03-a3c7-4b64-a73e-60e007ce79df",
+    "name": "Roast Pork, Mash & Veg",
+    "display": "Roast Pork, Mash & Veg",
+    "sku": "ROAST_PORK_MASH_VEG",
+    "purchase_price": 3.95,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "658e95b8-84bc-4afa-9af7-0a2914df7f5e",
+    "name": "Sandwich",
+    "display": "Sandwich",
+    "sku": "WWSC-SANDWICH",
+    "purchase_price": 2,
+    "selling_price": 5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "06ffcf1a-35a6-4aff-9a9a-89d02b272313",
+    "name": "Sandwich Platter",
+    "display": "Sandwich Platter",
+    "sku": "SANDWICH-PLATTER",
+    "purchase_price": 6,
+    "selling_price": 15,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "89c446f3-7f90-4f17-9d4b-56a084511704",
+    "name": "Sausage & Mash",
+    "display": "Lashford Sausages, Mash & Gravy",
+    "sku": "WWSC-SAUSAGE-AND-MASH",
+    "purchase_price": 4.38,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c660e86d-7089-4440-92bd-34c3ac9df651",
+    "name": "Sausage Roll, Chips & Beans",
+    "display": "Sausage Roll, Chips & Beans",
+    "sku": "WWSC-SAUSAGE-ROLL-CHIPS-BEANS",
+    "purchase_price": 2.7,
+    "selling_price": 6.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b230767d-57fe-4eb3-9ace-1ec5a353ce12",
+    "name": "Sausage Sandwich",
+    "display": "Sausage Sandwich",
+    "sku": "WWSC-SAUSAGE-SANDWICH",
+    "purchase_price": 2.6,
+    "selling_price": 6.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "2d5d075d-601a-4cb3-bee1-068ff53d7808",
+    "name": "Sausage Sandwich",
+    "display": "Sausage",
+    "sku": "WWSC-SANDWICH-SAUSAGE",
+    "purchase_price": 2,
+    "selling_price": 6.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5301fd4e-7b23-4ecb-9e44-30688e5aceda",
+    "name": "Scampi, Chips & Peas",
+    "display": "Scampi, Chips & Pas",
+    "sku": "SCAMPI_CHIPS_PEAS",
+    "purchase_price": 3.5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6fd26d77-d77c-419c-9bff-e73b5df43271",
+    "name": "Seabass, New Pots & Veg",
+    "display": "Seabass, New Pots & Veg",
+    "sku": "SEABASS-NEW POTS-VEG",
+    "purchase_price": 2.95,
+    "selling_price": 11.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "3ddc826a-597c-48f1-b434-ae9e384853d1",
+    "name": "Sharing Board 3 for £10",
+    "display": "Sharing Board 3 FOR £10",
+    "sku": "SHARING_BOARD",
+    "purchase_price": 4,
+    "selling_price": 10,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6d509b9c-d610-4005-9fea-2078a1b4c20b",
+    "name": "Sharing Board 5 for £15",
+    "display": "Sharing Board 5 FOR £15",
+    "sku": "SHARING_BOARD_5_FOR_15",
+    "purchase_price": 5,
+    "selling_price": 15,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "62a0a008-0e84-41fa-8a48-de1cc528450d",
+    "name": "Shepherd's Pie",
+    "display": "Shepherd's Pie",
+    "sku": "SHEPHERDS_PIE",
+    "purchase_price": 3.5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5e4dea5d-7743-4bc1-aac6-d71711b6f84d",
+    "name": "Soup of the Day",
+    "display": "Soup of the Day",
+    "sku": "SOUP_OF_THE_DAY_ROLL",
+    "purchase_price": 2.2,
+    "selling_price": 5.5,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "efe70d1e-50b9-4900-a6af-6126fd9b5e5c",
+    "name": "Southern Fried Chicken Burger",
+    "display": "Southern Fried Chicken Burger",
+    "sku": "WWSC-SOUTHERN-FRIED-CHICKEN-BURGER",
+    "purchase_price": 4,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "7f7ad53e-9ec2-4ba9-8e1f-93f142a05fc0",
+    "name": "Southern Fried Chicken Strips",
+    "display": "Southern Fried Chicken Strips (defunct)",
+    "sku": "WWSC-SOUTHERN-FRIED-CHICKEN-STRIPS",
+    "purchase_price": 4.78,
+    "selling_price": 11.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "2a252ad4-f4bd-4918-ac00-fb2ea4ff6b9b",
+    "name": "Southern Fried Chicken Wrap",
+    "display": "Southern Fried Chicken Wrap",
+    "sku": "SOUTHERN_FRIED_CHICKEN_WRAP",
+    "purchase_price": 4.5,
+    "selling_price": 11.25,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "fcab6bda-a770-4fe4-8303-61a4923f74aa",
+    "name": "Southern fried chicken, cheese & BBQ sauce Panini",
+    "display": "Southern fried chicken, cheese & BBQ sauce",
+    "sku": "WWSC-PANINI-SOUTHERN-FRIED-CHICKEN-CHEESE-AND-BBQ-SAUCE",
+    "purchase_price": 2.5,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "deb2fa57-629d-4c8b-87fa-56e63ad4de95",
+    "name": "Spaghetti Bolognese",
+    "display": "Spaghetti Bolognese",
+    "sku": "Spaghetti_Bolognese",
+    "purchase_price": 2.95,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "3dfb7e7b-d6e0-4305-b0ff-d0f84ca50d7b",
+    "name": "Specials this Week",
+    "display": "Specials this Week",
+    "sku": "WWSC-SPECIALS-THIS-WEEK",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "465124f1-083c-4375-965e-ef90c8efc780",
+    "name": "Specials this Week - Beef and Ale Pie",
+    "display": "Beef and Ale Pie",
+    "sku": "WWSC-SPECIALS-BEEF-ALE-PIE",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "0449b107-5af5-4191-9caa-76f30c555a44",
+    "name": "Specials this Week - Chicken Curry",
+    "display": "Chicken Curry",
+    "sku": "WWSC-SPECIALS-CHICKEN-CURRY",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "ad4d3c5b-ae9f-4e1c-98b8-8a37fb607582",
+    "name": "Specials this Week - Pork & Stir Fry",
+    "display": "Pork & Stir Fry",
+    "sku": "WWSC-SPECIALS-PORK-STIR-FRY",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "de86757f-8dbc-4e51-a895-9a97df527789",
+    "name": "Steak",
+    "display": "Steak",
+    "sku": "WWSC_STEAK",
+    "purchase_price": 3.13,
+    "selling_price": 17.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "ac71a749-3fdd-4cf6-bc7b-e2fc8498e5a3",
+    "name": "Steak & Ale Pie",
+    "display": "Steak & Ale Pie",
+    "sku": "WWSC-STEAK-AND-ALE-PIE",
+    "purchase_price": 3.5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5c5c5662-d6d3-44e6-a9a4-b99929fb8671",
+    "name": "Steak & Stilton Pie",
+    "display": "Steak & Stilton Pie",
+    "sku": "STEAK_STILTON_PIE",
+    "purchase_price": 2.95,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f2646507-7c20-415d-8ab1-a63e925245b6",
+    "name": "Sticky Pork Bao Buns",
+    "display": "Sticky Pork Bao Buns",
+    "sku": "STICKY_PORK_BAO_BUNS",
+    "purchase_price": 2.95,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "3db432d1-8508-431c-a62a-16ea2f9f9575",
+    "name": "Sticky Quorn Bao Buns",
+    "display": "Sticky Quorn Bao Buns",
+    "sku": "STICKY_QUORN_BAO_BUNS",
+    "purchase_price": 2.95,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6f17c0c7-8126-4709-9a15-d0a1f7dae81f",
+    "name": "Sticky Toffee Pudding",
+    "display": "Sticky Toffee Pudding",
+    "sku": "STICKY_TOFFEE_PUDDING",
+    "purchase_price": 1.58,
+    "selling_price": 3.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5d49c6ab-c03e-423f-b83e-c66b0c864019",
+    "name": "Tandoori Chicken Salad",
+    "display": "Tandoori Chicken Salad",
+    "sku": "WWSC-TANDOORI-CHICKEN-SALAD",
+    "purchase_price": 4.975,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "517d8cf7-bcab-4059-8447-799a7aea52a0",
+    "name": "Tomato & Basil Pasta",
+    "display": "Tomato & Basil Pasta",
+    "sku": "WWSC-TOMATO-BASIL-PASTA",
+    "purchase_price": 2.5,
+    "selling_price": 8.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f67a7db6-fb84-44a8-b582-ccd6c8a0b238",
+    "name": "Tuna Mayonnaise Sandwich",
+    "display": "Tuna Mayonnaise Sandwich",
+    "sku": "WWSC-TUNA-MAYONNAISE-SANDWICH",
+    "purchase_price": 2.38,
+    "selling_price": 5.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "02525476-c5ce-4157-a358-43381e33fe1f",
+    "name": "Tuna Mayonnaise Sandwich",
+    "display": "Tuna Mayonnaise",
+    "sku": "WWSC-SANDWICH-TUNA-MAYONNAISE",
+    "purchase_price": 2,
+    "selling_price": 5.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a17f9874-8ca2-4a11-8e94-cf6c785b49c4",
+    "name": "Tuna Salad",
+    "display": "Tuna Salad",
+    "sku": "WWSC-TUNA-SALAD",
+    "purchase_price": 2.43,
+    "selling_price": 6.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "16efb82f-5c1f-4168-b8bc-bf9935b28aad",
+    "name": "Tuna melt Panini",
+    "display": "Tuna melt",
+    "sku": "WWSC-PANINI-TUNA-MELT",
+    "purchase_price": 2,
+    "selling_price": 7.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "e628955b-09e1-4f1c-ae69-083af99b7efd",
+    "name": "Turkey Bap",
+    "display": "Turkey Bap",
+    "sku": "WWSC-TURKEY-BAP",
+    "purchase_price": 3.13,
+    "selling_price": 8.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b1ad6230-43a2-47ad-87b0-2365e505fb77",
+    "name": "Turkey Curry, Rice & Naan",
+    "display": "Turkey Curry, Rice & Naan",
+    "sku": "TURKEY_CURRY_RICE_NAAN",
+    "purchase_price": 3.5,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "fff1f2bd-4eb4-4cbc-89f5-ae9e83d8838a",
+    "name": "Ultimate Combo",
+    "display": "Ultimate Combo",
+    "sku": "ULTIMATE_COMBO",
+    "purchase_price": 7.18,
+    "selling_price": 17.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "58f0124a-742a-417e-b52b-b27c1a888a94",
+    "name": "Vegan cheese Panini",
+    "display": "Vegan cheese Panini",
+    "sku": "WWSC-PANINI-VEGAN-CHEES",
+    "purchase_price": 2,
+    "selling_price": 7.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "532d6de6-66fc-4c72-ad74-c6720d8a3971",
+    "name": "Vegetable Balti",
+    "display": "Vegetable Balti",
+    "sku": "VEGETABLE_BALTI",
+    "purchase_price": 3.13,
+    "selling_price": 7.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "218189d8-3984-450f-a18f-f5729476af35",
+    "name": "Vegetable Lasagne",
+    "display": "Vegetable Lasagne",
+    "sku": "VEGETABLE_LASAGNE",
+    "purchase_price": 2.95,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "d7f8c033-4f6a-4669-b6aa-bbf82577fbd8",
+    "name": "Vegetable Wellington",
+    "display": "Vegetable Wellington",
+    "sku": "VEGETABLE_WELLINGTON",
+    "purchase_price": 3.13,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "79736d38-440c-49a0-b57c-9f6777d0dbdb",
+    "name": "Vegetarian Bolognese",
+    "display": "Vegetarian Bolognese",
+    "sku": "VEGETARIAN_BOLOGNESE",
+    "purchase_price": 2.95,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "aee0126a-4865-49a3-aee4-410df9d04db3",
+    "name": "Vegetarian Fish & Chips",
+    "display": "Vegetarian Fish & Chips",
+    "sku": "VEGETARIAN_ FISH_CHIPS",
+    "purchase_price": 3.13,
+    "selling_price": 9.45,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5860975c-7785-4d24-a466-ca6d864b0f1e",
+    "name": "Vegetarian Pizza",
+    "display": "Vegetarian Pizza",
+    "sku": "VEGETARIAN_PIZZA",
+    "purchase_price": 3.98,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "7a6e01b1-d9bf-4420-85b4-61dad8bca8bb",
+    "name": "Vegetarian Platter",
+    "display": "Vegetarian Platter",
+    "sku": "VEGETARIAN_PLATTER",
+    "purchase_price": 3.75,
+    "selling_price": 10.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "cfadf99f-202a-4d94-8a95-af9b955a26bf",
+    "name": "Veggie/Vegan Burger",
+    "display": "Veggie/Vegan Burger",
+    "sku": "WWSC-VEGGIE-BURGER",
+    "purchase_price": 3.98,
+    "selling_price": 9.95,
+    "category": "BAR FOOD",
+    "parent": "FOOD"
+  },
+  {
+    "id": "655b32d0-90e7-47cf-81e4-01d7005a5057",
+    "name": "Bacon Bap",
+    "display": "Bacon Bap",
+    "sku": "WWSC-BACON-BAP",
+    "purchase_price": 1.25,
+    "selling_price": 4,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c6605270-25ad-4837-aca7-ec1ace47de66",
+    "name": "Breaded Halloumi Burger",
+    "display": "Breaded Halloumi Burger",
+    "sku": "WWSC-BREADED- HALLOUMI-BURGER",
+    "purchase_price": 1.5,
+    "selling_price": 4.95,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6aebceec-b889-445c-8911-dc087243cb75",
+    "name": "Burger",
+    "display": "Burger",
+    "sku": "WWSC-BURGER",
+    "purchase_price": 1.5,
+    "selling_price": 4.95,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c91167aa-db70-493d-a7c3-3ec279e7c787",
+    "name": "Chicken Burger",
+    "display": "Chicken Burger",
+    "sku": "WWSC-CHICKEN-BURGER",
+    "purchase_price": 1.25,
+    "selling_price": 6.95,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "e94004fc-c8fc-44d7-be0d-4e11e8c16355",
+    "name": "Chips",
+    "display": "Chips",
+    "sku": "WWSC-CHIPS",
+    "purchase_price": 1,
+    "selling_price": 3,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "69eeaff4-9ba9-41d5-9d07-2e8105e863a8",
+    "name": "Egg Bap",
+    "display": "Egg Bap",
+    "sku": "WWSC-EGG-BAP",
+    "purchase_price": 1.25,
+    "selling_price": 3.5,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6b2a0150-b59f-476e-9f32-80221455fba7",
+    "name": "Halal Chicken Burger",
+    "display": "Halal Chicken Burger",
+    "sku": "WWSC-HALAL-CHICKEN-BURGER",
+    "purchase_price": 1.25,
+    "selling_price": 6.5,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "28fd0155-068c-477d-addf-b8a6c43e3624",
+    "name": "Hot Dog",
+    "display": "Hot Dog",
+    "sku": "WWSC-HOT-DOG",
+    "purchase_price": 1.25,
+    "selling_price": 4.95,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "80369449-8f96-4c46-90c0-50da1c77388a",
+    "name": "Lamb Kofta",
+    "display": "Lamb Kofta",
+    "sku": "WWSC-JUBILEE-LAMB-KOFTA",
+    "purchase_price": 1.5,
+    "selling_price": 4.5,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "3a4f58a5-3b78-4e8f-bb33-89b69e61f7fe",
+    "name": "Minted Lamb Burger",
+    "display": "Minted Lamb Burger",
+    "sku": "WWSC-JUBILEE-MINTED-LAMB-BURGER",
+    "purchase_price": 2,
+    "selling_price": 6.5,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "7e5f338c-67b1-4c58-b046-ea60dc2115ea",
+    "name": "Pork Kebab",
+    "display": "Pork Kebab",
+    "sku": "WWSC-PORK-KEBAB",
+    "purchase_price": 1.5,
+    "selling_price": 4.5,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "7ba995ca-7e17-48f5-9169-a7598d68c4eb",
+    "name": "Sausage Bap",
+    "display": "Sausage Bap",
+    "sku": "WWSC-SAUSAGE-BAP",
+    "purchase_price": 1.25,
+    "selling_price": 4,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "24ab8126-eed3-49cc-8830-8737e88f7e6e",
+    "name": "Steak Baguette",
+    "display": "Steak Baguette",
+    "sku": "WWSC-STEAK-BAGUETTE",
+    "purchase_price": 2.5,
+    "selling_price": 7.5,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "99d2f7ae-d235-4f73-a4c1-661def8888e3",
+    "name": "Tandoori Chicken",
+    "display": "Tandoori Chicken",
+    "sku": "WWSC-JUBILEE-TANDOORI-CHICKEN",
+    "purchase_price": 1.5,
+    "selling_price": 4.5,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "1ecfb908-15b3-4478-bbf0-e5bcf478c0b9",
+    "name": "Vegan Cheese & Tomato Toastie",
+    "display": "Vegan Cheese & Tomato Toastie",
+    "sku": "WWSC-VEGAN-CHEESE-TOMATO-TOASTIE",
+    "purchase_price": 1.25,
+    "selling_price": 4,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5906e5be-32a2-43f9-bbd0-b545e43603e0",
+    "name": "Vegetarian Sausage Bap",
+    "display": "Vegetarian Sausage Bap",
+    "sku": "WWSC-VEGGIE-SAUSAGE-BAP",
+    "purchase_price": 1.25,
+    "selling_price": 4,
+    "category": "BBQ",
+    "parent": "FOOD"
+  },
+  {
+    "id": "40100fef-8be1-4007-abdb-2752cfa372e4",
+    "name": "0% San Miguel",
+    "display": "0% San Miguel",
+    "sku": "WWSC-0%-SAN-MIGUEL",
+    "purchase_price": 0.77,
+    "selling_price": 4.31,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "15a81dc8-281d-41b8-9729-b980afe04693",
+    "name": "2 4  £7.50 Guinness",
+    "display": "2 4 £7.50 Guinness",
+    "sku": "WWSC_GUINNESS_OFFER",
+    "purchase_price": 1.45,
+    "selling_price": 8.438,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "dccbddf0-4239-4c6a-867d-e96abf54e7e7",
+    "name": "2 for £4.50 Coors Light",
+    "display": "2 for £4.50 Coors Light",
+    "sku": "COORS_LIGHT_24450",
+    "purchase_price": 0.77,
+    "selling_price": 4.106,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "18ff4093-a022-49e1-b650-3a5d20578652",
+    "name": "Atlantic Pale Ale",
+    "display": "Atlantic Pale Ale",
+    "sku": "WWSC-ATLANTIC-PALE-ALE",
+    "purchase_price": 1.43,
+    "selling_price": 5.56,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e3ca6438-95d6-4e59-9ead-16af176c15be",
+    "name": "Atlantic Pale Ale (half)",
+    "display": "half",
+    "sku": "WWSC-ATLANTIC-PALE-ALE-HALF",
+    "purchase_price": 0.72,
+    "selling_price": 2.84,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8de11e2a-9725-4a24-867d-eba7231c3882",
+    "name": "Atlantic Pale Ale (pint)",
+    "display": "pint",
+    "sku": "WWSC-ATLANTIC-PALE-ALE-PINT",
+    "purchase_price": 1.39,
+    "selling_price": 5.56,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "02772511-5a8e-497d-aada-319d174c727c",
+    "name": "Badger Fursty Ferret",
+    "display": "Badger Fursty Ferret",
+    "sku": "WWSC-BADGER-FURSTY-FERRET",
+    "purchase_price": 1.75,
+    "selling_price": 5.25,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "1711309b-89a4-4d0f-a069-da2e32a103e0",
+    "name": "Black Sheep",
+    "display": "Black Sheep",
+    "sku": "WWSC-BLACK-SHEEP-BOTTLE",
+    "purchase_price": 1.75,
+    "selling_price": 5.25,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "04192a61-8a8e-45c6-afbb-91e5a634fc0b",
+    "name": "Brew XI",
+    "display": "Brew XI",
+    "sku": "WWSC-BREW-XI",
+    "purchase_price": 0.87,
+    "selling_price": 4.95,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "9ee1e822-8f2f-48fe-9c90-c80fb92301bd",
+    "name": "Brew XI (half)",
+    "display": "half",
+    "sku": "WWSC-BREW-XI-HALF",
+    "purchase_price": 0.43,
+    "selling_price": 2.588,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "83fb6983-408e-40ed-9e37-b490eb76e5bc",
+    "name": "Brew XI (pint)",
+    "display": "pint",
+    "sku": "WWSC-BREW-XI-PINT",
+    "purchase_price": 0.87,
+    "selling_price": 4.95,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "4fbf3019-0106-43ec-af8a-2a4e2ae30c55",
+    "name": "Brewdog Dead Pony Club",
+    "display": "Brewdog Dead Pony Club",
+    "sku": "WWSC-BREWDOG-DEAD-PONY-CLUB",
+    "purchase_price": 1.25,
+    "selling_price": 3.375,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "16057a31-c384-43e6-8e54-612c2693071d",
+    "name": "Brewdog Dead Pony Club (Variant)",
+    "display": "Brewdog Dead Pony Club",
+    "sku": "DEAD_DEAD_DEAD",
+    "purchase_price": 1.25,
+    "selling_price": 4.5,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "35f6230a-3468-45ae-8eeb-57721c6e2b43",
+    "name": "Brewdog Punk IPA",
+    "display": "Brewdog Punk IPA",
+    "sku": "WWSC-BREWDOG-PUNK-IPA",
+    "purchase_price": 1.25,
+    "selling_price": 5.063,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "804816b8-3e93-4958-8b24-669ac15665a7",
+    "name": "Brewdog Shore Leave",
+    "display": "Brewdog Shore Leave",
+    "sku": "WWSC-BREWDOG-SHORE-LEAVE",
+    "purchase_price": 1.75,
+    "selling_price": 5.25,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "5c896f11-86df-40e0-be26-ef135b6ce22b",
+    "name": "Budweiser",
+    "display": "Budweiser",
+    "sku": "WWSC-BUDWEISER",
+    "purchase_price": 1.1,
+    "selling_price": 4.106,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e42ff5a9-dec2-4a93-a229-9550387207e9",
+    "name": "Carling",
+    "display": "Carling",
+    "sku": "WWSC-CARLING",
+    "purchase_price": 0.98,
+    "selling_price": 5.2,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "2f1d0dbf-8b7e-489e-a842-c95124846d39",
+    "name": "Carling (half)",
+    "display": "half",
+    "sku": "WWSC-CARLING-HALF",
+    "purchase_price": 0.6,
+    "selling_price": 2.72,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "211a0473-ba5d-4dbf-970b-6873c4ccec0d",
+    "name": "Carling (jug)",
+    "display": "jug",
+    "sku": "WWSC-CARLING-JUG",
+    "purchase_price": 4.76,
+    "selling_price": 19.49,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "85dabce6-e181-4761-ac78-96ed008d2c4e",
+    "name": "Carling (matchday)",
+    "display": "matchday",
+    "sku": "WWSC-CARLING-MATCHDAY",
+    "purchase_price": 0.98,
+    "selling_price": 4.2,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b5f98b0e-ef47-4250-bf34-5690ed5eec12",
+    "name": "Carling (pint)",
+    "display": "pint",
+    "sku": "WWSC-CARLING-PINT",
+    "purchase_price": 1.19,
+    "selling_price": 5.2,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8df307ab-9931-417e-8834-34a50b490ecf",
+    "name": "Carling (x5)",
+    "display": "matchday x5",
+    "sku": "WWSC-CARLING-MATCHDAY-X5",
+    "purchase_price": 0.98,
+    "selling_price": 20,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "62361591-8565-4c6a-9595-a0f5ce8a7587",
+    "name": "Carling Dark Fruit Cider",
+    "display": "Carling Dark Fruit Cider",
+    "sku": "WWSC-CARLING-DARK-FRUIT-CIDER",
+    "purchase_price": 1.14,
+    "selling_price": 5.175,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e25ce1a5-7521-475b-9d95-93e365c5426d",
+    "name": "Carling Dark Fruit Cider (half)",
+    "display": "half",
+    "sku": "WWSC-CARLING-DARK-FRUIT-HALF",
+    "purchase_price": 0.6,
+    "selling_price": 2.813,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "16ee9300-ce4f-4467-b962-01d4ea04a6d5",
+    "name": "Carling Dark Fruit Cider (pint)",
+    "display": "pint",
+    "sku": "WWSC-CARLING-DARK-FRUIT-PINT",
+    "purchase_price": 1.19,
+    "selling_price": 5.175,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "03e1dd2a-9969-4260-bcb4-2dd4f080d30d",
+    "name": "Cobra",
+    "display": "Cobra",
+    "sku": "WWSC-COBRA",
+    "purchase_price": 1.68,
+    "selling_price": 6.25,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "dece588b-2171-4d30-9763-95a6db779de6",
+    "name": "Cobra (half)",
+    "display": "half",
+    "sku": "WWSC-COBRA-HALF",
+    "purchase_price": 0.84,
+    "selling_price": 3.2,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "0f887591-c7ed-46ad-b353-4e4b59612cfd",
+    "name": "Cobra (jug)",
+    "display": "jug",
+    "sku": "WWSC-COBRA-JUG",
+    "purchase_price": 6.73,
+    "selling_price": 23.1,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "33afa326-5963-4383-afed-9be07ee046ae",
+    "name": "Cobra (pint)",
+    "display": "pint",
+    "sku": "WWSC-COBRA-PINT",
+    "purchase_price": 1.68,
+    "selling_price": 6.25,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "c6cdd2cd-d1e5-475a-8668-681c52a5a200",
+    "name": "Cold River Cider",
+    "display": "Cold River Cider",
+    "sku": "WWSC-COLD-RIVER-CIDER",
+    "purchase_price": 0.94,
+    "selling_price": 5.44,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "51928ff5-7814-482d-a74b-99be87dda1b5",
+    "name": "Cold River Cider (half)",
+    "display": "half",
+    "sku": "WWSC-COLD-RIVER-CIDER-HALF",
+    "purchase_price": 0.47,
+    "selling_price": 2.95,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "203cacc6-bfbd-40ff-944d-cb251b62f6bf",
+    "name": "Cold River Cider (pint)",
+    "display": "pint",
+    "sku": "WWSC-COLD-RIVER-CIDER-PINT",
+    "purchase_price": 0.94,
+    "selling_price": 5.44,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "7a29e6b6-07b0-4557-9d68-98da26394d68",
+    "name": "Coors Light",
+    "display": "Coors Light",
+    "sku": "WWSC-COORS-LIGHT",
+    "purchase_price": 0.77,
+    "selling_price": 4.32,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "29b1e3d1-a6a7-47fc-95e1-efa12e129fc5",
+    "name": "Corona",
+    "display": "Corona",
+    "sku": "WWSC-CORONA",
+    "purchase_price": 0.87,
+    "selling_price": 4.32,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "ba4a9693-39bb-498c-9080-6f04f48c0194",
+    "name": "Corona Cero",
+    "display": "Corona Cero",
+    "sku": "WWSC-CORONA-CERO",
+    "purchase_price": 0.95,
+    "selling_price": 4.43,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "d86b29cd-0d99-4b51-9875-d71034b2402d",
+    "name": "Daura",
+    "display": "Daura GF",
+    "sku": "WWSC-DAURA",
+    "purchase_price": 0.81,
+    "selling_price": 4.73,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "4f846298-5f73-4d49-85ca-edca85de9761",
+    "name": "Dingbat",
+    "display": "Dingbat",
+    "sku": "WWSC-DINGBAT",
+    "purchase_price": 1.95,
+    "selling_price": 5.063,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f04f4730-9ce0-476a-ac7b-cf15a1295c3d",
+    "name": "Doombar",
+    "display": "Doombar",
+    "sku": "WWSC-DOOMBAR",
+    "purchase_price": 1.28,
+    "selling_price": 5.55,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "95f5bdcb-969c-468b-8f51-932415e4406a",
+    "name": "Doombar (draught)",
+    "display": "Doombar (draught)",
+    "sku": "WWSC-DOOMBAR-DRAUGHT",
+    "purchase_price": 1.41,
+    "selling_price": 5.95,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a6bb28ab-3823-4d1c-a1ee-56182f62bd46",
+    "name": "Doombar (half)",
+    "display": "half",
+    "sku": "WWSC-DOOMBAR-HALF",
+    "purchase_price": 0.64,
+    "selling_price": 2.84,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b795533d-b17f-4581-939c-e16789ec4856",
+    "name": "Doombar (pint)",
+    "display": "pint",
+    "sku": "WWSC-DOOMBAR-PINT",
+    "purchase_price": 1.28,
+    "selling_price": 5.55,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "2d048fe9-cfa4-4d30-b1eb-1daec2920ae1",
+    "name": "Doombar draught (half)",
+    "display": "half",
+    "sku": "WWSC-DOOMBAR DRAUGHT-HALF",
+    "purchase_price": 0.705,
+    "selling_price": 3.27,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "45a40bb8-3fea-406a-b36b-ad37e37d80c1",
+    "name": "Doombar draught (pint)",
+    "display": "pint",
+    "sku": "WWSC-DOOMBAR DRAUGHT-PINT",
+    "purchase_price": 1.41,
+    "selling_price": 5.95,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "ad441519-1e00-4b3c-bac3-60ce4fc1673d",
+    "name": "Golden Hen",
+    "display": "Golden Hen",
+    "sku": "WWSC-GOLDEN-HEN",
+    "purchase_price": 2,
+    "selling_price": 5.35,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "bd9ca49b-31cd-45dd-987d-9b186bf7e5b5",
+    "name": "Golden Hen (half)",
+    "display": "half",
+    "sku": "WWSC-GOLDEN-HEN-HALF",
+    "purchase_price": 0.72,
+    "selling_price": 2.68,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "fb7fcab4-6615-4475-9906-5de15815086e",
+    "name": "Golden Hen (pint)",
+    "display": "pint",
+    "sku": "WWSC-GOLDEN-HEN-PINT",
+    "purchase_price": 1.39,
+    "selling_price": 5.35,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "5838bcb9-9f53-43c8-b87b-eb24cfdae1ff",
+    "name": "Guinness",
+    "display": "Guinness",
+    "sku": "WWSC-GUINNESS",
+    "purchase_price": 1.45,
+    "selling_price": 5.44,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "76026304-f21e-41d2-b8b6-29275bfcbe73",
+    "name": "Guinness (half)",
+    "display": "half",
+    "sku": "WWSC-GUINNESS-HALF",
+    "purchase_price": 0.78,
+    "selling_price": 2.95,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "953e2c55-1627-4f2e-9222-ab9a82a70e01",
+    "name": "Guinness (matchday)",
+    "display": "matchday",
+    "sku": "WWSC-GUINNESS-MATCHDAY",
+    "purchase_price": 1.45,
+    "selling_price": 4.44,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "4c9f9793-b099-4635-866d-f27c66b0bd74",
+    "name": "Guinness (pint)",
+    "display": "pint",
+    "sku": "WWSC-GUINNESS-PINT",
+    "purchase_price": 1.56,
+    "selling_price": 5.44,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "4062a406-5e6f-43b9-86d1-8c1ab65c3cb3",
+    "name": "Guinness (x2)",
+    "display": "x2",
+    "sku": "WWSC-GUINNESS-X2-OFFER",
+    "purchase_price": 3.12,
+    "selling_price": 8.86,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8ccf2beb-1700-42d1-b446-a039032f08e8",
+    "name": "Guinness (x5)",
+    "display": "x5",
+    "sku": "WWSC-GUINNESS-MATCHDAY-X5",
+    "purchase_price": 1.45,
+    "selling_price": 20,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "fa91b66d-04f3-475d-9f2a-40e8f55655b3",
+    "name": "Guinness 0.0%",
+    "display": "Guinness 0.0%",
+    "sku": "WWSC-GUINNESS-0.0%",
+    "purchase_price": 1.56,
+    "selling_price": 4.67,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f21ea060-b3a1-4694-97ee-23aac968bc1f",
+    "name": "Madri",
+    "display": "Madri",
+    "sku": "WWSC-MADRI",
+    "purchase_price": 1.31,
+    "selling_price": 5.94,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a3ee0ccf-d51a-43a8-8a34-84bbe86f671b",
+    "name": "Madri (half)",
+    "display": "half",
+    "sku": "WWSC-MADRI-HALF",
+    "purchase_price": 0.66,
+    "selling_price": 3.09,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e41160a0-b4bc-4fcf-9f36-86ee0734d358",
+    "name": "Madri (jug)",
+    "display": "jug",
+    "sku": "WWSC-MADRI-JUG",
+    "purchase_price": 5.24,
+    "selling_price": 22.9,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6989fafb-3d36-4ebe-9eb0-8f34078f5479",
+    "name": "Madri (pint)",
+    "display": "pint",
+    "sku": "WWSC-MADRI-PINT",
+    "purchase_price": 1.31,
+    "selling_price": 5.94,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "5f74f372-83e2-44e3-9842-6105908368d2",
+    "name": "Moretti 0.0",
+    "display": "Moretti 0.0",
+    "sku": "WWSC-MORETTI-00",
+    "purchase_price": 0.95,
+    "selling_price": 4.43,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "165e3797-e7da-452f-b525-4d1bf2ae3c96",
+    "name": "Peacocks Apple Cider",
+    "display": "Peacocks Apple Cider",
+    "sku": "WWSC-PEACOCKS-APPLE-CIDER",
+    "purchase_price": 1.03,
+    "selling_price": 5.31,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "392e396b-ea05-414f-9224-9a3d94ff8174",
+    "name": "Pedigree",
+    "display": "Pedigree",
+    "sku": "WWSC-PEDIGREE",
+    "purchase_price": 1,
+    "selling_price": 4,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "70142ea6-74db-4f55-b3f9-eaaf13a31400",
+    "name": "Peroni",
+    "display": "Peroni",
+    "sku": "WWSC-PERONI",
+    "purchase_price": 1.3,
+    "selling_price": 6.62,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "694f24d1-61b2-45c0-99fa-551d2d27a4f2",
+    "name": "Peroni (large)",
+    "display": "large",
+    "sku": "WWSC-PERONI-LARGE",
+    "purchase_price": 2.49,
+    "selling_price": 6.62,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e98a42d2-3aca-474f-90c1-2df123a38263",
+    "name": "Peroni (small)",
+    "display": "small",
+    "sku": "WWSC-PERONI-SMALL",
+    "purchase_price": 1.02,
+    "selling_price": 4.59,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "dcb05f29-297a-4d8f-b629-1dee43fc25ee",
+    "name": "Pravha",
+    "display": "Pravha",
+    "sku": "WWSC-PRAVHA",
+    "purchase_price": 1.1,
+    "selling_price": 5.44,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "bad0eced-3913-432e-8014-cd8760cb9d72",
+    "name": "Pravha (half)",
+    "display": "half",
+    "sku": "WWSC-PRAVHA-HALF",
+    "purchase_price": 0.68,
+    "selling_price": 2.95,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "281d650f-fed5-4a64-aab0-263c0f0fa422",
+    "name": "Pravha (jug)",
+    "display": "jug",
+    "sku": "WWSC-PRAVHA-JUG",
+    "purchase_price": 5.44,
+    "selling_price": 20.67,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "5bad56e9-40a2-46f2-9c3c-c483e0c99ff3",
+    "name": "Pravha (pint)",
+    "display": "pint",
+    "sku": "WWSC-PRAVHA-PINT",
+    "purchase_price": 1.36,
+    "selling_price": 5.44,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "243fa38a-a3a8-4565-b716-c937ffa999e6",
+    "name": "Rekorderlig",
+    "display": "Rekorderlig",
+    "sku": "WWSC-REKORDERLIG",
+    "purchase_price": 1.03,
+    "selling_price": 5.32,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "81810d1c-5098-4f5a-a830-f97f178aebb7",
+    "name": "Scrum Down",
+    "display": "Scrum Down",
+    "sku": "WWSC-SCRUM-DOWN",
+    "purchase_price": 2,
+    "selling_price": 5.36,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "9bcc6616-c44c-4f91-a0ff-4e438db35f18",
+    "name": "Scrum Down (half)",
+    "display": "half",
+    "sku": "WWSC-SCRUM-DOWN-HALF",
+    "purchase_price": 0.72,
+    "selling_price": 2.68,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f0012bb7-6e5b-4083-ab4f-3a4ed2b5b4fe",
+    "name": "Scrum Down (pint)",
+    "display": "pint",
+    "sku": "WWSC-SCRUM-DOWN-PINT",
+    "purchase_price": 1.39,
+    "selling_price": 5.36,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "10685f32-a517-4cb5-a115-aae237c90065",
+    "name": "Sharps Solar Wave",
+    "display": "Sharps Solar Wave",
+    "sku": "Sharps_Solar_Wave_ALE",
+    "purchase_price": 1.61,
+    "selling_price": 5.569,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "92b5d1d7-34a5-434e-9227-782eb6b0b6a8",
+    "name": "Sharps Solar Wave (half)",
+    "display": "half",
+    "sku": "ATLANTIC_PALE_ALE_HALF",
+    "purchase_price": 0.805,
+    "selling_price": 3.094,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "ded98a30-337c-4146-bcfb-73ae2cb220b8",
+    "name": "Sharps Solar Wave (pint)",
+    "display": "pint",
+    "sku": "ATLANTIC_PALE_ALE_PINT",
+    "purchase_price": 1.61,
+    "selling_price": 5.569,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "1cec93f4-da29-49c3-aa93-15b70bd785eb",
+    "name": "Shipyard American IPA",
+    "display": "Shipyard American IPA",
+    "sku": "WWSC-SHIPYARD-AMERICAN-IPA",
+    "purchase_price": 1.75,
+    "selling_price": 5.25,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "813888ce-6ee2-4fa5-9d26-5103da683b24",
+    "name": "Stella 0.0",
+    "display": "Stella 0.0",
+    "sku": "WWSC-STELLA-00",
+    "purchase_price": 0.83,
+    "selling_price": 4.14,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "d20ca73b-c500-48ac-bcc3-253635d6dbed",
+    "name": "Thatchers Zero",
+    "display": "Thatchers Zero",
+    "sku": "WWSC-THATCHERS-ZERO",
+    "purchase_price": 3.21,
+    "selling_price": 4.5,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "78f84d6b-6fec-4a18-85e9-4d58eca7c51f",
+    "name": "Timothy Taylor",
+    "display": "Timothy Taylor",
+    "sku": "WWSC-TIMOTHY-TAYLOR",
+    "purchase_price": 1.28,
+    "selling_price": 5.55,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "d04760d9-df12-4c52-962b-67124143e05d",
+    "name": "Timothy Taylor (bottle)",
+    "display": "bottle",
+    "sku": "WWSC-TIMOTHY-TAYLOR-BOTTLE",
+    "purchase_price": 1.28,
+    "selling_price": 4,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "71ba26ea-01f7-422b-ad54-5dd56a8cbca1",
+    "name": "Timothy Taylor (half)",
+    "display": "half",
+    "sku": "WWSC-TIMOTHY-TAYLOR-HALF",
+    "purchase_price": 0.64,
+    "selling_price": 2,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "95c0c153-9a52-46d5-9ce3-199b44fcfa21",
+    "name": "Timothy Taylor (pint)",
+    "display": "pint",
+    "sku": "WWSC-TIMOTHY-TAYLOR-PINT",
+    "purchase_price": 1.28,
+    "selling_price": 4.5,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "59f25a41-3e6c-4895-a0c3-a2ddbabe7eed",
+    "name": "Worthington",
+    "display": "Worthington",
+    "sku": "WWSC-WORTHINGTON",
+    "purchase_price": 1.2,
+    "selling_price": 4.46,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "5e2b069a-a73e-4734-9e2c-19a0c06cde5a",
+    "name": "Worthington (half)",
+    "display": "half",
+    "sku": "WWSC-WORTHINGTON-HALF",
+    "purchase_price": 0.56,
+    "selling_price": 2.42,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "d83f17d5-3beb-4138-a652-641d4bae35b4",
+    "name": "Worthington (pint)",
+    "display": "pint",
+    "sku": "WWSC-WORTHINGTON-PINT",
+    "purchase_price": 1.2,
+    "selling_price": 4.46,
+    "category": "BEER",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "925f8117-778a-4838-9347-776109e7a33b",
+    "name": "All Day Breakfast",
+    "display": "All Day Breakfast",
+    "sku": "WWSC-ALL-DAY-BREAKFAST",
+    "purchase_price": 4.75,
+    "selling_price": 9.5,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "75d89167-5b85-4266-8748-2d0b63878b20",
+    "name": "Bacon & Egg Breakfast Wrap",
+    "display": "Bacon & Egg Breakfast Wrap",
+    "sku": "BACON_EGG _BREAKFAST_WRAP",
+    "purchase_price": 2.38,
+    "selling_price": 5.95,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5c2cee25-6008-4e6d-81da-0e70dbec9ba6",
+    "name": "Bacon Sandwich",
+    "display": "Bacon Sandwich",
+    "sku": "WWSC-BACON-SANDWICH",
+    "purchase_price": 2.38,
+    "selling_price": 5.95,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c576238c-43b9-47ba-8aa5-a6e918d0942c",
+    "name": "Beans On Toast",
+    "display": "Beans On Toast",
+    "sku": "WWSC-BEANS-ON-TOAST",
+    "purchase_price": 2.38,
+    "selling_price": 5.95,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a4c711ae-24a3-4d3a-b559-8c6c1a43fd38",
+    "name": "Egg On Toast",
+    "display": "Egg On Toast",
+    "sku": "WWSC-EGG-ON-TOAST",
+    "purchase_price": 2.38,
+    "selling_price": 5.95,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "99c42b9e-d81f-4bac-98d3-599c8c34c38a",
+    "name": "Eggs On Toast",
+    "display": "Eggs On Toast",
+    "sku": "WWSC-EGGS-ON-TOAST",
+    "purchase_price": 2,
+    "selling_price": 4.95,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "462a689e-3c40-474e-84a7-bfcdd071ffe0",
+    "name": "Fresh Fruit",
+    "display": "Fresh Fruit",
+    "sku": "FRESH_FRUIT",
+    "purchase_price": 0,
+    "selling_price": 0.75,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b5c423de-6665-447c-81c7-6e7c30734cf1",
+    "name": "Full English Breakfast",
+    "display": "Full English Breakfast",
+    "sku": "FULL_ENGLISH_BREAKFAST",
+    "purchase_price": 4.75,
+    "selling_price": 11.95,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "bcf29cf5-b007-47bd-8749-d383582a1c16",
+    "name": "Omelette",
+    "display": "Omelette",
+    "sku": "WWSC-OMELETTE",
+    "purchase_price": 3.18,
+    "selling_price": 7.95,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "43d559a1-3fa6-4b38-935a-c5c44db1317d",
+    "name": "Porridge",
+    "display": "Porridge",
+    "sku": "WWSC-PORRIDGE",
+    "purchase_price": 1.5,
+    "selling_price": 3.5,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "0d7adb45-efdc-4915-a473-3dfd496968f5",
+    "name": "Sausage & Egg Breakfast Wrap",
+    "display": "Sausage & Egg Breakfast Wrap",
+    "sku": "SAUSAGE_EGG_BREAKFAST_WRAP",
+    "purchase_price": 2.6,
+    "selling_price": 6.5,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "04d7cc9b-3bfd-4249-947e-323ee8fe82c1",
+    "name": "Sausage Sandwich",
+    "display": "Sausage Sandwich",
+    "sku": "WWSC-SAUSAGE-SANDWICH",
+    "purchase_price": 2.6,
+    "selling_price": 6.5,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9d8fc001-b26a-4d9f-88ea-4c12cc19755f",
+    "name": "Toast",
+    "display": "Toast",
+    "sku": "TOAST",
+    "purchase_price": 0.5,
+    "selling_price": 1.95,
+    "category": "BREAKFAST",
+    "parent": "FOOD"
+  },
+  {
+    "id": "48b5fecf-d0e8-44fa-8422-54f26d855a43",
+    "name": "2 Cocktails",
+    "display": "2 Cocktails",
+    "sku": "WWSC-2-COCKTAILS",
+    "purchase_price": 4,
+    "selling_price": 11.25,
+    "category": "COCKTAILS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b8d341cf-6cc1-4c9d-8dc8-76d9f0114ae5",
+    "name": "Bellini",
+    "display": "Bellini",
+    "sku": "WWSC-BELLINI",
+    "purchase_price": 2,
+    "selling_price": 6.75,
+    "category": "COCKTAILS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "bfefc718-72ed-41bb-83e6-e7ed86248134",
+    "name": "Bramble",
+    "display": "Bramble",
+    "sku": "WWSC-BRAMBLE",
+    "purchase_price": 2,
+    "selling_price": 6.75,
+    "category": "COCKTAILS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a0e39e0c-afc7-456a-9e84-addc845f5aca",
+    "name": "Cherry Cola",
+    "display": "Cherry Cola",
+    "sku": "WWSC-CHERRY-COLA",
+    "purchase_price": 2,
+    "selling_price": 6.75,
+    "category": "COCKTAILS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "2ed45bfc-fa6b-41ff-9c90-d8d6c51e9230",
+    "name": "Espresso Martini",
+    "display": "Espresso Martini",
+    "sku": "WWSC-ESPRESSO-MARTINI",
+    "purchase_price": 2,
+    "selling_price": 6.75,
+    "category": "COCKTAILS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "82442edf-337a-4684-ba99-461532f36278",
+    "name": "Mojito",
+    "display": "Mojito",
+    "sku": "WWSC-MOJITO",
+    "purchase_price": 2,
+    "selling_price": 6.75,
+    "category": "COCKTAILS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a83352d5-3935-4037-98fa-cba18d40058b",
+    "name": "Passionfruit Martini",
+    "display": "Passionfruit Martini",
+    "sku": "WWSC-PASSIONFRUIT-MARTINI",
+    "purchase_price": 2,
+    "selling_price": 6.75,
+    "category": "COCKTAILS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "049bb85a-8bb3-4f4e-ab9b-eb5a5d354983",
+    "name": "Chilli with Rice",
+    "display": "Chilli with Rice",
+    "sku": "WWSC-EURO-CHILLI_WITH_RICE",
+    "purchase_price": 2.975,
+    "selling_price": 10.95,
+    "category": "Euro 2024",
+    "parent": "FOOD"
+  },
+  {
+    "id": "e98b41e7-7cad-4697-828d-53f20f2c59cf",
+    "name": "Curry, Rice & Naan",
+    "display": "Curry, Rice & Naan",
+    "sku": "WWSC-EURO-CURRY_RICE_NAAN",
+    "purchase_price": 5,
+    "selling_price": 9.99,
+    "category": "Euro 2024",
+    "parent": "FOOD"
+  },
+  {
+    "id": "0c932984-e063-49fb-a737-50b147554041",
+    "name": "Fish & Chips",
+    "display": "Fish & Chips",
+    "sku": "WWSC-EURO-FISH&CHIPS_",
+    "purchase_price": 3.75,
+    "selling_price": 12.95,
+    "category": "Euro 2024",
+    "parent": "FOOD"
+  },
+  {
+    "id": "e97dba12-fb30-4bfd-a813-089edb49c8e3",
+    "name": "Ham, egg & chips",
+    "display": "Ham, egg & chips",
+    "sku": "WWSC-EURO-HAMEGG&CHIPS",
+    "purchase_price": 4.75,
+    "selling_price": 9.5,
+    "category": "Euro 2024",
+    "parent": "FOOD"
+  },
+  {
+    "id": "ca1f13a3-dd38-4337-ba03-065967a0b4a6",
+    "name": "Homemade Beef Burger",
+    "display": "Beef Burger & Chips",
+    "sku": "WWSC-EURO-HOMEMADE_BEEF_BURGER",
+    "purchase_price": 5,
+    "selling_price": 11.95,
+    "category": "Euro 2024",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f7800b3d-9615-4162-a010-fdc403796083",
+    "name": "Jacket Potato",
+    "display": "Jacket Potato",
+    "sku": "WWSC-EURO-JACKET_POTATO",
+    "purchase_price": 2.38,
+    "selling_price": 5.95,
+    "category": "Euro 2024",
+    "parent": "FOOD"
+  },
+  {
+    "id": "ede88b8c-7174-47d7-8db8-a7ac35faa0b1",
+    "name": "Mac & Cheese",
+    "display": "Mac & Cheese",
+    "sku": "WWSC-EURO-MAC_CHEESE",
+    "purchase_price": 3.98,
+    "selling_price": 9.95,
+    "category": "Euro 2024",
+    "parent": "FOOD"
+  },
+  {
+    "id": "4e6c63bb-3fd0-4218-9979-bce9ded58f9e",
+    "name": "Margherita Pizza",
+    "display": "Margherita Pizza",
+    "sku": "WWSC-EURO-MARGHERITA_PIZZA",
+    "purchase_price": 4.78,
+    "selling_price": 10.95,
+    "category": "Euro 2024",
+    "parent": "FOOD"
+  },
+  {
+    "id": "36f8f478-a9d8-48ab-ad2a-aec5051d015d",
+    "name": "Milkshake",
+    "display": "Milkshake",
+    "sku": "WWSC-EURO-MILKSHAKE",
+    "purchase_price": 1,
+    "selling_price": 3,
+    "category": "Euro 2024",
+    "parent": "FOOD"
+  },
+  {
+    "id": "83ea3597-e328-4567-aca2-2e33e1d19196",
+    "name": "Sausage & Mash",
+    "display": "Sausage & Mash",
+    "sku": "WWSC-EURO-SAUSAGE_MASH",
+    "purchase_price": 5,
+    "selling_price": 10.95,
+    "category": "Euro 2024",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c847f884-9793-4477-8c66-766f271168d8",
+    "name": "Southern Fried Chicken Burger",
+    "display": "Southern Fried Chicken Burger",
+    "sku": "WWSC-EURO-SOUTHERN_FRIED_CHICKEN_BURGER",
+    "purchase_price": 5,
+    "selling_price": 10.95,
+    "category": "Euro 2024",
+    "parent": "FOOD"
+  },
+  {
+    "id": "363d6b61-5111-434b-b2a6-d5cceba05f4e",
+    "name": "Southern Fried Chicken Strips",
+    "display": "Southern Fried Chicken Strips",
+    "sku": "WWSC-EURO-SOUTHERN_FRIED_CHICKEN_STRIPS",
+    "purchase_price": 4.78,
+    "selling_price": 11.95,
+    "category": "Euro 2024",
+    "parent": "FOOD"
+  },
+  {
+    "id": "d9bf14f7-d662-4c21-905c-dc2767c8f0fa",
+    "name": "Il Caggio (Fizz Friday)",
+    "display": "Il Caggio",
+    "sku": "WWSC-IL-CAGGIO-FIZZ-FRIDAY",
+    "purchase_price": 8.45,
+    "selling_price": 15,
+    "category": "FIZZ FRIDAY",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "c9f3c94f-8f9a-41ef-80fe-a7754508bfe8",
+    "name": "Il Caggio Mini (Fizz Friday)",
+    "display": "Il Caggio Mini",
+    "sku": "WWSC-IL-CAGGIO-MINI-FIZZ-FRIDAY",
+    "purchase_price": 2.95,
+    "selling_price": 6.75,
+    "category": "FIZZ FRIDAY",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "44e0e148-e32a-40e0-90c0-faa2b32e1bc4",
+    "name": "DEPOSIT",
+    "display": "DEPOSIT",
+    "sku": "DEPOSIT",
+    "purchase_price": 0,
+    "selling_price": 0,
+    "category": "FUNCTIONS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b4771e1c-333c-49be-88b7-390640846f27",
+    "name": "FOOD",
+    "display": "FOOD",
+    "sku": "WWSC-FUNCTIONS-FOOD",
+    "purchase_price": 0,
+    "selling_price": 0,
+    "category": "FUNCTIONS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "ac024b8f-c434-4b68-a0e6-b1b9c7198e1a",
+    "name": "Social Membership",
+    "display": "Social Member",
+    "sku": "WWSC-SOCIAL-MEMBER",
+    "purchase_price": 0,
+    "selling_price": 100,
+    "category": "FUNCTIONS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "1642bf99-ab76-4180-9d7d-0a97faf14cb5",
+    "name": "Hot Dog & Chips - Adult",
+    "display": "Hot Dog & Chips - Adult",
+    "sku": "HOT_DOG_&_CHIPS",
+    "purchase_price": 2,
+    "selling_price": 6.95,
+    "category": "HALLOWEEN",
+    "parent": "FOOD"
+  },
+  {
+    "id": "3c788766-64b5-4142-bb43-b2d92ddf72bf",
+    "name": "Hot Dog & Chips - Kids",
+    "display": "Hot Dog & Chips - Kids",
+    "sku": "HOT_DOG_CHIPS_KIDS",
+    "purchase_price": 1.73,
+    "selling_price": 4.95,
+    "category": "HALLOWEEN",
+    "parent": "FOOD"
+  },
+  {
+    "id": "88761e8e-1911-4bc5-b58f-b0c11feb89f2",
+    "name": "Sausage & Mash - Adult",
+    "display": "Sausage & Mash - Adult",
+    "sku": "SAUSAGE_ &_MASH_ADULT",
+    "purchase_price": 2.75,
+    "selling_price": 8.5,
+    "category": "HALLOWEEN",
+    "parent": "FOOD"
+  },
+  {
+    "id": "300c9742-a9c7-4d0d-9de9-ef4c26f18b08",
+    "name": "Sausage & Mash - Kids",
+    "display": "Sausage & Mash - Kids",
+    "sku": "SAUSAGE_&_MASH_KIDS",
+    "purchase_price": 2.25,
+    "selling_price": 5.95,
+    "category": "HALLOWEEN",
+    "parent": "FOOD"
+  },
+  {
+    "id": "1b7870d0-e86c-4243-8401-0466459cb82f",
+    "name": "Southern Fried Chicken & Chips - Adult",
+    "display": "Southern Fried Chicken & Chips - Adult",
+    "sku": "SOUTHERN_FRIED_CHICKEN_CHIPS_ADULT",
+    "purchase_price": 2.75,
+    "selling_price": 8.5,
+    "category": "HALLOWEEN",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9c704de2-18e0-4adb-a6fc-54aedc16b72f",
+    "name": "Southern Fried Chicken & Chips - Kids",
+    "display": "Southern Fried Chicken & Chips - Kids",
+    "sku": "SOUTHERN_FRIED_CHICKEN_CHIPS_KIDS",
+    "purchase_price": 2.25,
+    "selling_price": 5.95,
+    "category": "HALLOWEEN",
+    "parent": "FOOD"
+  },
+  {
+    "id": "4a8a2ccb-7bac-4944-a6de-579676b8069c",
+    "name": "Tomato & Basil Pasta - Adult",
+    "display": "Tomato & Basil Pasta - Adult",
+    "sku": "TOMATO_&_BASIL_PASTA_ADULT",
+    "purchase_price": 2.75,
+    "selling_price": 8.5,
+    "category": "HALLOWEEN",
+    "parent": "FOOD"
+  },
+  {
+    "id": "0d04254e-d987-4c0d-aa43-8a592178a8bd",
+    "name": "Tomato & Basil Pasta - Kids",
+    "display": "Tomato & Basil Pasta - Kids",
+    "sku": "TOMATO_&_BASIL_PASTA_KIDS",
+    "purchase_price": 2.25,
+    "selling_price": 5.95,
+    "category": "HALLOWEEN",
+    "parent": "FOOD"
+  },
+  {
+    "id": "366d7d13-defa-434f-b708-25763ebc93e2",
+    "name": "Chicken Nuggets, Chips & Beans (kids)",
+    "display": "Chicken Nuggets, Chips & Beans (kids)",
+    "sku": "WWSC-CHICKEN-NUGGETS-CHIPS-BEANS",
+    "purchase_price": 3,
+    "selling_price": 7.5,
+    "category": "KIDS MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "51c044b4-ab3c-428b-8cc8-37ac365f5b5a",
+    "name": "Fish Fingers & Chips (kids)",
+    "display": "Fish Fingers & Chips",
+    "sku": "WWSC-FISH-FINGERS-AND-CHIPS-KIDS",
+    "purchase_price": 3,
+    "selling_price": 7.5,
+    "category": "KIDS MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b767f3cc-7669-4951-b8fd-4f072b496ee7",
+    "name": "Ice Cream (kids)",
+    "display": "Ice Cream (kids)",
+    "sku": "WWSC-ICE-CREAM-KIDS",
+    "purchase_price": 1.4,
+    "selling_price": 3.5,
+    "category": "KIDS MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "8de11658-946f-4b8a-8c29-2f426d668d2a",
+    "name": "Mac & Cheese (kids)",
+    "display": "Mac & Cheese",
+    "sku": "WWSC-MAC-AND-CHEESE-KIDS",
+    "purchase_price": 3,
+    "selling_price": 7.5,
+    "category": "KIDS MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c32e292d-a803-47b9-aa46-74da1ae857c5",
+    "name": "Meatball Pasta",
+    "display": "Meatball Pasta",
+    "sku": "MEATBALL_PASTA_KIDS",
+    "purchase_price": 2.975,
+    "selling_price": 5.95,
+    "category": "KIDS MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "76e7b46e-62cb-4e50-8b0b-193ff88af702",
+    "name": "Sausage & Mash (kids)",
+    "display": "Sausage & Mash (kids)",
+    "sku": "WWSC-SAUSAGE-AND-MASH-KIDS",
+    "purchase_price": 3,
+    "selling_price": 7.5,
+    "category": "KIDS MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5942c2f4-d405-41e8-a890-12e93f83f890",
+    "name": "Tomato & Basil Pasta",
+    "display": "Tomato & Basil Pasta",
+    "sku": "TOMATO_BASIL_PASTA",
+    "purchase_price": 2.975,
+    "selling_price": 6.5,
+    "category": "KIDS MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5a839c4d-ebe0-4b84-9f7a-b57950d960dc",
+    "name": "Coffee Amaretto",
+    "display": "Coffee Amaretto",
+    "sku": "WWSC-COFFEE-AMARETTO",
+    "purchase_price": 1.99,
+    "selling_price": 6.413,
+    "category": "LIQUER COFFEE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b29b38ca-d775-400c-b6b8-77c38c472252",
+    "name": "Coffee Baileys",
+    "display": "Coffee Baileys",
+    "sku": "WWSC-COFFEE-BAILEYS",
+    "purchase_price": 1.99,
+    "selling_price": 6.413,
+    "category": "LIQUER COFFEE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "881d57fb-009c-417d-bd36-71f00614b0d4",
+    "name": "Coffee Bells",
+    "display": "Coffee Bells",
+    "sku": "WWSC-COFFEE-BELLS",
+    "purchase_price": 1.99,
+    "selling_price": 6.413,
+    "category": "LIQUER COFFEE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "aaf5c13d-3d31-4db9-8eb9-31e4dc841de4",
+    "name": "Coffee Brandy",
+    "display": "Coffee Brandy",
+    "sku": "WWSC-COFFEE-BRANDY",
+    "purchase_price": 1.99,
+    "selling_price": 6.413,
+    "category": "LIQUER COFFEE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "2c553799-7947-4f81-856e-983dae2c5e07",
+    "name": "Coffee Cointreau",
+    "display": "Coffee Cointreau",
+    "sku": "WWSC-COFFEE-COINTREAU",
+    "purchase_price": 1.99,
+    "selling_price": 6.413,
+    "category": "LIQUER COFFEE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "93c7efc2-d0eb-422e-bba6-fba8ae1e4e72",
+    "name": "Coffee Irish",
+    "display": "Coffee Irish",
+    "sku": "WWSC-COFFEE-IRISH",
+    "purchase_price": 1.99,
+    "selling_price": 6.413,
+    "category": "LIQUER COFFEE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a0c31677-1eeb-4da4-a1f0-1c02ff4581aa",
+    "name": "Coffee Tia Maria",
+    "display": "Coffee Tia Maria",
+    "sku": "WWSC-COFFEE-TIA-MARIA",
+    "purchase_price": 1.99,
+    "selling_price": 6.413,
+    "category": "LIQUER COFFEE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8bc3a65d-3ff0-442f-aabe-5902af7f60c1",
+    "name": "Mothers Day (Adult)",
+    "display": "adult",
+    "sku": "WWSC-MOTHERS-DAY-ADULT",
+    "purchase_price": 9.1,
+    "selling_price": 25.95,
+    "category": "MOTHERS-DAY",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b32500b6-7a18-4738-a9ec-0eb07f6e0e10",
+    "name": "Mothers Day (Deposit)",
+    "display": "deposit",
+    "sku": "WWSC-MOTHERS-DAY-DEPOSIT",
+    "purchase_price": 0,
+    "selling_price": -10,
+    "category": "MOTHERS-DAY",
+    "parent": "FOOD"
+  },
+  {
+    "id": "1965a304-c79d-423b-afab-40c84c44466e",
+    "name": "Mothers Day (Kids)",
+    "display": "kids",
+    "sku": "WWSC-MOTHERS-DAY-KIDS",
+    "purchase_price": 5.95,
+    "selling_price": 16.95,
+    "category": "MOTHERS-DAY",
+    "parent": "FOOD"
+  },
+  {
+    "id": "55e0356a-e078-49b4-8598-9be4259672ae",
+    "name": "Reception Cans",
+    "display": "Cans",
+    "sku": "WWSC-RECEPTION-CANS",
+    "purchase_price": 0.5,
+    "selling_price": 1,
+    "category": "RECEPTION DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "afcb4d55-001e-49ea-a442-2201a5172f80",
+    "name": "Reception Lucozade",
+    "display": "Lucozade",
+    "sku": "WWSC-RECEPTION-LUCOZADE",
+    "purchase_price": 0.5,
+    "selling_price": 1.5,
+    "category": "RECEPTION DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "94a68b26-27fc-48a6-a979-ee0dc9b64ea9",
+    "name": "Reception Pepsi MAX",
+    "display": "Pepsi Max",
+    "sku": "WWSC-RECEPTION-PEPSI-MAX",
+    "purchase_price": 0.5,
+    "selling_price": 1.5,
+    "category": "RECEPTION DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "ed8bd7cd-389e-4699-8f1d-ef934e4d59e1",
+    "name": "Reception Ribena",
+    "display": "Ribena",
+    "sku": "WWSC-RECEPTION-RIBENA",
+    "purchase_price": 0.5,
+    "selling_price": 1.5,
+    "category": "RECEPTION DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "04e8e6c0-0582-4ad0-8b12-5473941dca42",
+    "name": "Reception Water",
+    "display": "Water",
+    "sku": "WWSC-RECEPTION-WATER",
+    "purchase_price": 0.5,
+    "selling_price": 1,
+    "category": "RECEPTION DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "bee10467-16fe-47c0-90ff-95c843829739",
+    "name": "Crisps",
+    "display": "Crisps",
+    "sku": "WWSC-CRISPS",
+    "purchase_price": 0.445,
+    "selling_price": 1.05,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "31b1da36-a1af-45f8-9173-468601ddfa99",
+    "name": "Crisps",
+    "display": "crisps",
+    "sku": "WWSC-BAR-CRISPS",
+    "purchase_price": 0.445,
+    "selling_price": 1.05,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "4685c175-ddb1-4958-90e4-7a1196620a3c",
+    "name": "Crisps (discounted)",
+    "display": "discounted",
+    "sku": "WWSC-DISCOUNTED-CRISPS",
+    "purchase_price": 0.445,
+    "selling_price": 0.6,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5c8e93bc-734a-46a9-ad62-ce6a052da86b",
+    "name": "Jalapeno Pretzels",
+    "display": "Jalapeno Pretzels",
+    "sku": "WWSC-JALAPENO-PRETZELS",
+    "purchase_price": 0.5,
+    "selling_price": 1.95,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "eab86317-3cd1-42b1-af1f-bd499cad884f",
+    "name": "Kettle Crisps",
+    "display": "Kettle Crisps",
+    "sku": "WWSC-KETTLE-CRISPS",
+    "purchase_price": 0.52,
+    "selling_price": 1.5,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "35d04746-2fbf-410e-aa4b-7737c3d0b448",
+    "name": "Mars",
+    "display": "Mars",
+    "sku": "WWSC-MARS",
+    "purchase_price": 0.35,
+    "selling_price": 1,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b9107917-b901-492a-ba66-2bd9d7c47076",
+    "name": "Mini Cheddars",
+    "display": "Mini Cheddars",
+    "sku": "MINI_CHEDDARS",
+    "purchase_price": 0.557,
+    "selling_price": 1.15,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "2c2d72d4-e9c9-4c5d-af93-4324efb586c8",
+    "name": "Onion Rings",
+    "display": "Onion Rings",
+    "sku": "Onion_Rings",
+    "purchase_price": 0.69,
+    "selling_price": 1.6,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "02d0d688-4701-4318-9f5e-8a702dd62f0b",
+    "name": "Peanuts (Chilli)",
+    "display": "Peanuts (Chilli)",
+    "sku": "WWSC-PEANUTS-CHILLI",
+    "purchase_price": 0.42,
+    "selling_price": 1.2,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "2ea64eb6-88e6-4fa3-b942-1f869f18bc77",
+    "name": "Peanuts (Roasted)",
+    "display": "Peanuts (Roasted)",
+    "sku": "PEANUTS_ROASTED",
+    "purchase_price": 0.42,
+    "selling_price": 1.2,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f8642f6a-f291-499b-b9f1-8ba3222834a8",
+    "name": "Peanuts (Salted)",
+    "display": "Peanuts (Salted)",
+    "sku": "WWSC-PEANUTS-SALTED",
+    "purchase_price": 0.42,
+    "selling_price": 1.2,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "28b148ed-ea99-499b-93f3-5b279c9fa710",
+    "name": "Poppadom",
+    "display": "Poppadom",
+    "sku": "WWSC-POPPADOM",
+    "purchase_price": 0.5,
+    "selling_price": 1.95,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6379d624-bcf0-4d02-8285-f75b04dedcdd",
+    "name": "Pork Crunch",
+    "display": "Pork Crunch",
+    "sku": "PORK_CRUNCH",
+    "purchase_price": 0.78,
+    "selling_price": 1.95,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c09ad019-91ca-48be-b444-0f9f3177859a",
+    "name": "Pork Scratchings",
+    "display": "Pork Scratchings",
+    "sku": "WWSC-PORK-SCRATCHINGS",
+    "purchase_price": 1.099,
+    "selling_price": 1.95,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "941a4dd5-c576-4174-9a68-ab0ee42d66db",
+    "name": "Pretzels (Snyder)",
+    "display": "Pretzels (Snyder)",
+    "sku": "WWSC-PRETZELS-SNYDER",
+    "purchase_price": 0.42,
+    "selling_price": 1.2,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "ad200115-4755-4995-ae58-f7be517f9831",
+    "name": "Protein Cookie",
+    "display": "Protein Cookie",
+    "sku": "WWSC-PROTEIN-COOKIE",
+    "purchase_price": 0.7,
+    "selling_price": 2,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "07fdf87a-4946-430d-a022-80672e1f15b2",
+    "name": "Reception Chocolate",
+    "display": "Chocolate",
+    "sku": "WWSC-RECEPTION-CHOCOLATE",
+    "purchase_price": 0.4,
+    "selling_price": 1,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "3181264d-94ae-4d77-9710-d51fd2b9fa6a",
+    "name": "Reception Crisps",
+    "display": "Crisps",
+    "sku": "WWSC-RECEPTION-CRISPS",
+    "purchase_price": 0.445,
+    "selling_price": 1,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a863261b-6ee8-4024-a5de-fee2be5f48a7",
+    "name": "Reception Sweets",
+    "display": "Sweets",
+    "sku": "WWSC-RECEPTION-SWEETS",
+    "purchase_price": 0.445,
+    "selling_price": 1,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "d95efe64-4295-4fd4-bcbb-1581a659b6a9",
+    "name": "Scampi Fries",
+    "display": "Scampi Fries",
+    "sku": "WWSC-SCAMPI-FRIES",
+    "purchase_price": 0.35,
+    "selling_price": 1,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "8836519d-1f50-41e4-80fd-b337fce5b83e",
+    "name": "Snickers",
+    "display": "Snickers",
+    "sku": "WWSC-SNICKERS",
+    "purchase_price": 0.35,
+    "selling_price": 1,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "2835ce8b-840b-44d6-b37b-4a85c1bfb534",
+    "name": "Spicy Rings",
+    "display": "SPICY RINGS",
+    "sku": "Spicy_Rings",
+    "purchase_price": 0.64,
+    "selling_price": 1.6,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "8274bf99-e624-48e0-b283-f19bb4e75ac1",
+    "name": "Starburst",
+    "display": "Starburst",
+    "sku": "WWSC-STARBURST",
+    "purchase_price": 0.35,
+    "selling_price": 1,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a8baa4e2-903d-48e4-9e1b-20997b1a560c",
+    "name": "Twirl",
+    "display": "Twirl",
+    "sku": "WWSC-TWIRL",
+    "purchase_price": 0.35,
+    "selling_price": 1,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "ac8fee5f-4ebf-421d-b284-59fa60ec7fad",
+    "name": "Twix",
+    "display": "Twix",
+    "sku": "WWSC-TWIX",
+    "purchase_price": 0.35,
+    "selling_price": 1,
+    "category": "SNACKS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "180bc359-40f3-47f8-ba4b-803d72c13624",
+    "name": "Appletizer",
+    "display": "Appletizer",
+    "sku": "WWSC-APPLETIZER",
+    "purchase_price": 0.84,
+    "selling_price": 2.5,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "4f524782-9a4a-4e7e-8376-96e42e2f6cd9",
+    "name": "Bitter Lemon",
+    "display": "Bitter Lemon",
+    "sku": "WWSC-BITTER-LEMON",
+    "purchase_price": 0.52,
+    "selling_price": 2.081,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "2611877d-08c1-473c-a690-ce911c6bbae5",
+    "name": "Can of Pop",
+    "display": "Can of Pop",
+    "sku": "WWSC-CAN-OF-POP",
+    "purchase_price": 0.35,
+    "selling_price": 1,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "0783a232-5e47-4703-898e-0106449fcc87",
+    "name": "Canada Dry",
+    "display": "Canada Dry",
+    "sku": "WWSC-CANADA-DRY",
+    "purchase_price": 0.58,
+    "selling_price": 2.081,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "4e65abe7-fcfe-4df2-86dd-3009f709689e",
+    "name": "Coca Cola",
+    "display": "Coca Cola",
+    "sku": "WWSC-COCA-COLA",
+    "purchase_price": 0.5,
+    "selling_price": 1.75,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "b4fa577c-e4db-47a7-be81-2bbc40409e57",
+    "name": "Coca Cola (dash)",
+    "display": "dash",
+    "sku": "COCA_COLA_DASH",
+    "purchase_price": 0.5,
+    "selling_price": 1,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "3edda24b-e40c-405a-ac97-f07be9a62b60",
+    "name": "Coca Cola (half)",
+    "display": "half",
+    "sku": "COCA_COLA_HALF",
+    "purchase_price": 0.5,
+    "selling_price": 1.75,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "dc032914-0778-4e3a-be06-371937930bfd",
+    "name": "Coca Cola (pint)",
+    "display": "pint",
+    "sku": "COCA_COLA_PINT",
+    "purchase_price": 0.5,
+    "selling_price": 3.5,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "d9f3b95e-a6e6-4bf6-8db6-dd90f3716e5f",
+    "name": "Coke",
+    "display": "Coke",
+    "sku": "WWSC-COKE",
+    "purchase_price": 0.82,
+    "selling_price": 1.75,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "c7eafe59-5228-4c07-9897-84b5c1a60317",
+    "name": "Coke (bottle)",
+    "display": "bottle",
+    "sku": "WWSC-COKE-BOTTLE",
+    "purchase_price": 0.5,
+    "selling_price": 2,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "409ab418-8150-4d9f-b8e6-a5e409cfc25a",
+    "name": "Coke (dash)",
+    "display": "dash",
+    "sku": "WWSC-COKE-DASH",
+    "purchase_price": 0.82,
+    "selling_price": 1,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "5c632ef8-8b4f-4fb1-8781-c9ccefbf2a8c",
+    "name": "Coke (half)",
+    "display": "half",
+    "sku": "WWSC-COKE-HALF",
+    "purchase_price": 0.42,
+    "selling_price": 1.75,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "fba118a8-9935-451e-bfd9-4f9d7fc4d1a2",
+    "name": "Coke (pint)",
+    "display": "pint",
+    "sku": "WWSC-COKE-PINT",
+    "purchase_price": 0.82,
+    "selling_price": 3.5,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "4ab13372-1161-459d-a907-0b8b8f9dab26",
+    "name": "Diet Coke",
+    "display": "Diet Coke",
+    "sku": "WWSC-DIET-COKE",
+    "purchase_price": 0.66,
+    "selling_price": 1.75,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "e6479d84-5a00-49c1-9c10-96de1fdd9725",
+    "name": "Diet Coke (bottle)",
+    "display": "bottle",
+    "sku": "WWSC-DIET-COKE-BOTTLE",
+    "purchase_price": 0.5,
+    "selling_price": 2,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "fa44a35d-1fc2-40fd-bcfd-ea01326c40ef",
+    "name": "Diet Coke (dash)",
+    "display": "dash",
+    "sku": "WWSC-DIET-COKE-DASH",
+    "purchase_price": 0.66,
+    "selling_price": 1,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "13eafa33-59f4-4402-b73b-dcbf3f50a078",
+    "name": "Diet Coke (half)",
+    "display": "half",
+    "sku": "WWSC-DIET-COKE-HALF",
+    "purchase_price": 0.33,
+    "selling_price": 1.75,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "9cf19a97-8664-47f1-a88a-87773d2fb022",
+    "name": "Diet Coke (pint)",
+    "display": "pint",
+    "sku": "WWSC-DIET-COKE-PINT",
+    "purchase_price": 0.66,
+    "selling_price": 3.5,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "cda74ec3-2711-4c80-bbe8-95958826b0fd",
+    "name": "Fever Tree Tonic",
+    "display": "Fever Tree Tonic",
+    "sku": "WWSC-FEVER-TREE-TONIC",
+    "purchase_price": 0.69,
+    "selling_price": 2.081,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "93d2b346-882c-458e-bf68-0ae1242262f6",
+    "name": "Fruit Shoot",
+    "display": "Fruit Shoot",
+    "sku": "WWSC-FRUIT-SHOOT",
+    "purchase_price": 0.67,
+    "selling_price": 2,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "7b02b2a5-f607-47ee-8828-d24ea385322a",
+    "name": "Ginger Ale",
+    "display": "Ginger Ale",
+    "sku": "WWSC-GINGER-ALE",
+    "purchase_price": 0.93,
+    "selling_price": 2.081,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "f527d19a-c88c-4555-8260-a8386c4731d6",
+    "name": "J20",
+    "display": "J20",
+    "sku": "WWSC-J20",
+    "purchase_price": 0.9,
+    "selling_price": 2.85,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "83b34594-e81b-4902-9d95-24e0a7fe94bf",
+    "name": "Lemonade",
+    "display": "Lemonade",
+    "sku": "WWSC-LEMONADE",
+    "purchase_price": 0.47,
+    "selling_price": 1.75,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "7c9db6c5-5c81-43ef-9c10-0503b4558b64",
+    "name": "Lemonade (dash)",
+    "display": "dash",
+    "sku": "WWSC-LEMONADE-DASH",
+    "purchase_price": 0.47,
+    "selling_price": 1,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "aa5285cc-c7f7-4ffe-8b32-448f739be106",
+    "name": "Lemonade (half)",
+    "display": "half",
+    "sku": "WWSC-LEMONADE-HALF",
+    "purchase_price": 0.24,
+    "selling_price": 1.75,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "83023d82-859e-498c-82dd-4a4cb062efd5",
+    "name": "Lemonade (pint)",
+    "display": "pint",
+    "sku": "WWSC-LEMONADE-PINT",
+    "purchase_price": 0.47,
+    "selling_price": 3.5,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "5af292c3-93c9-45b1-98af-b20de6a67dc7",
+    "name": "Lucozade",
+    "display": "Lucozade",
+    "sku": "WWSC-LUCOZADE",
+    "purchase_price": 0.61,
+    "selling_price": 1.5,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "56132229-a643-4d60-b517-c68d854ea3f4",
+    "name": "Milkshake",
+    "display": "Milkshake",
+    "sku": "WWSC-MILKSHAKE",
+    "purchase_price": 1.475,
+    "selling_price": 3.319,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "3de7dc6b-16fd-49c4-8130-8df99fbaeb7f",
+    "name": "Orange 250ml",
+    "display": "Orange 250ml",
+    "sku": "WWSC-ORANGE-250ML",
+    "purchase_price": 0.62,
+    "selling_price": 2.306,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "98049ff3-d81c-4b85-b488-2ff9cea65a6c",
+    "name": "Ribena 250ml",
+    "display": "Ribena 250ml",
+    "sku": "WWSC-RIBENA-250ML",
+    "purchase_price": 0.61,
+    "selling_price": 1.5,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "6117b330-d527-412a-ae62-b9e7ae16772b",
+    "name": "Rush",
+    "display": "Rush",
+    "sku": "WWSC-RUSH",
+    "purchase_price": 0.42,
+    "selling_price": 2.194,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "bd0a6aa3-c0da-4d83-9894-128cdf93b91a",
+    "name": "Squash",
+    "display": "Squash",
+    "sku": "WWSC-SQUASH",
+    "purchase_price": 0.35,
+    "selling_price": 1,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "f60c0fda-9fd4-4e16-a29d-f4cd98e0131a",
+    "name": "Squash (half)",
+    "display": "half",
+    "sku": "SQUASH_HALF",
+    "purchase_price": 0.35,
+    "selling_price": 0.5,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "19817b3d-c87d-4ae1-97af-ad55f3ebd26a",
+    "name": "Squash (pint)",
+    "display": "pint",
+    "sku": "SQUASH_PINT",
+    "purchase_price": 0.35,
+    "selling_price": 1,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "db3863af-4bcf-4ec0-af0f-8d57fe19123c",
+    "name": "Water",
+    "display": "Water",
+    "sku": "WWSC-WATER",
+    "purchase_price": 0.35,
+    "selling_price": 1,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "e626375b-914d-4ebe-93e0-74dedcab8dfc",
+    "name": "Wenlock Spring Water",
+    "display": "Wenlock Spring Water",
+    "sku": "WWSC-WENLOCK-SPRING-WATER",
+    "purchase_price": 0.65,
+    "selling_price": 2.531,
+    "category": "SOFT DRINKS",
+    "parent": "DRINK"
+  },
+  {
+    "id": "2b5fb54c-183d-4428-9fdb-13f86f47b6a4",
+    "name": "Aperol Spritz",
+    "display": "Aperol Spritz",
+    "sku": "APEROL_SPRITZ",
+    "purchase_price": 2,
+    "selling_price": 5.9,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "38cf289f-9951-49fc-b8a7-147d655b906d",
+    "name": "Archers",
+    "display": "Archers",
+    "sku": "WWSC-ARCHERS",
+    "purchase_price": 0.52,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "c83f1222-b471-4989-b0e6-4dbe47d5da0b",
+    "name": "Archers (double)",
+    "display": "double",
+    "sku": "WWSC-ARCHERS-DOUBLE",
+    "purchase_price": 1.03,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "05967c11-e59d-49d7-8f0c-d11d33b012ff",
+    "name": "Archers (single)",
+    "display": "single",
+    "sku": "WWSC-ARCHERS-SINGLE",
+    "purchase_price": 0.52,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b1bb49c9-45ef-4192-86b1-767871795bfa",
+    "name": "Baby Guinness",
+    "display": "single",
+    "sku": "WWSC-BABY-GUINESS-SINGLE",
+    "purchase_price": 1.36,
+    "selling_price": 4.39,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "baf1f703-024b-4539-b3bf-9ddd5988cc45",
+    "name": "Baby Guinness",
+    "display": "Baby Guinness",
+    "sku": "WWSC-BABY-GUINNESS",
+    "purchase_price": 1.36,
+    "selling_price": 4.388,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "bb854745-c0cc-4a58-bbd7-0aed81e47f02",
+    "name": "Baby Guinness (x10)",
+    "display": "10 for £38",
+    "sku": "WWSC-BABY-GUINESS-10-FOR-38",
+    "purchase_price": 1.36,
+    "selling_price": 38,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "58fe807e-2489-4744-9a84-2a885cff76f7",
+    "name": "Baby Guinness (x3)",
+    "display": "3 for £12",
+    "sku": "WWSC-BABY-GUINESS-3-FOR-12",
+    "purchase_price": 1.36,
+    "selling_price": 12,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "7a98e0fa-ebfa-49e7-8248-fcc5aea58f39",
+    "name": "Baby Guinness FUNERAL ONLY",
+    "display": "Baby Guinness",
+    "sku": "BABY_GUINNESS",
+    "purchase_price": 1.36,
+    "selling_price": 4,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "498cfe4c-b953-405c-bfe0-b10c4332bdd3",
+    "name": "Bacardi",
+    "display": "Bacardi",
+    "sku": "WWSC-BACARDI",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6051896d-4ba4-4b83-b75d-4051b935de1e",
+    "name": "Bacardi (double)",
+    "display": "double",
+    "sku": "WWSC-BACARDI-DOUBLE",
+    "purchase_price": 2,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e06457b9-690b-4059-8f7e-17006503c236",
+    "name": "Bacardi (single)",
+    "display": "single",
+    "sku": "WWSC-BACARDI-SINGLE",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "ac391c13-edb5-44cc-8fd3-e732aed336db",
+    "name": "Baileys",
+    "display": "Baileys",
+    "sku": "WWSC-BAILEYS",
+    "purchase_price": 0.55,
+    "selling_price": 4.5,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "07f1f16c-d7ff-4a97-a86f-389bbf604e78",
+    "name": "Bells",
+    "display": "Bells",
+    "sku": "WWSC-BELLS",
+    "purchase_price": 0.7,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "62e43d22-b03e-4c81-883c-b68b4f9707d3",
+    "name": "Bells (double)",
+    "display": "double",
+    "sku": "BELLS_DOUBLE",
+    "purchase_price": 1.4,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a72462c4-8b73-4625-9cc1-50b3264acef1",
+    "name": "Bells (single)",
+    "display": "single",
+    "sku": "BELLS_SINGLE",
+    "purchase_price": 0.7,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "0f9baea4-71db-4d30-a182-1e3d15b4065c",
+    "name": "Campari",
+    "display": "Campari",
+    "sku": "WWSC-CAMPARI",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "44a7cb6d-d61b-46ec-ab86-f547522de0b0",
+    "name": "Campari (double)",
+    "display": "double",
+    "sku": "",
+    "purchase_price": 2,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b5d6e5aa-d6be-4c8a-a504-13ec11ccf815",
+    "name": "Campari (single)",
+    "display": "single",
+    "sku": "",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "13783c15-0055-4336-a04c-5b25ecd697fb",
+    "name": "Captain Morgan",
+    "display": "Captain Morgan",
+    "sku": "WWSC-CAPTAIN-MORGAN",
+    "purchase_price": 0.6,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "3ee4191e-638d-4d5c-85fe-6d12e856f109",
+    "name": "Captain Morgan (double)",
+    "display": "double",
+    "sku": "WWSC-CAPTAIN-MORGAN-DOUBLE",
+    "purchase_price": 1.21,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "aed312dd-4b8e-4b43-84b5-723f633619bd",
+    "name": "Captain Morgan (single)",
+    "display": "single",
+    "sku": "WWSC-CAPTAIN-MORGAN-SINGLE",
+    "purchase_price": 0.6,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "184977f9-eb60-48cb-b07a-648ac6601918",
+    "name": "Captain Morgan Spiced",
+    "display": "Captain Morgan Spiced",
+    "sku": "WWSC-CAPTAIN-MORGAN-SPICED",
+    "purchase_price": 0.6,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8f5ed186-cd4f-4d92-95ca-6d706c4b23dc",
+    "name": "Captain Morgan Spiced (double)",
+    "display": "double",
+    "sku": "WWSC-CAPTAIN-MORGAN-SPICED-DOUBLE",
+    "purchase_price": 1.21,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e376b353-6427-4b5e-938f-b92ec555ae8c",
+    "name": "Captain Morgan Spiced (single)",
+    "display": "single",
+    "sku": "WWSC-CAPTAIN-MORGAN-SPICED-SINGLE",
+    "purchase_price": 0.6,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "78c6c5cf-7fba-4661-9c71-4ed1072e006d",
+    "name": "Chambord",
+    "display": "Chambord",
+    "sku": "WWSC-CHAMBORD",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e5de3fb5-8ad9-456d-8b50-3e1793e423e1",
+    "name": "Chambord (double)",
+    "display": "double",
+    "sku": "",
+    "purchase_price": 2,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "bde2ce28-1e89-4b12-a477-2d6f703a69af",
+    "name": "Chambord (single)",
+    "display": "single",
+    "sku": "",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "720995a2-7e05-4ef8-a870-82e5dfc07a57",
+    "name": "Cinzano",
+    "display": "Cinzano",
+    "sku": "WWSC-CINZANO",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "63e21c59-66d0-45c0-a388-d6371cb35367",
+    "name": "Cinzano (double)",
+    "display": "double",
+    "sku": "",
+    "purchase_price": 2,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "318bc109-d57c-4a0d-a0ba-1ad622b9b093",
+    "name": "Cinzano (single)",
+    "display": "single",
+    "sku": "",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f95e29a5-2cfc-4ac8-8e47-7607bd087a6f",
+    "name": "Ciroc",
+    "display": "Ciroc",
+    "sku": "WWSC-CIROC",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "431e0133-491e-4fca-90b2-0381739a01e6",
+    "name": "Ciroc (double)",
+    "display": "double",
+    "sku": "",
+    "purchase_price": 1,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "66e46036-d495-4ccd-a45b-e8e3997b3ae2",
+    "name": "Ciroc (single)",
+    "display": "single",
+    "sku": "",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "0d9f43bb-3044-4d09-89d7-9615f5aad6fb",
+    "name": "Cockburns Port",
+    "display": "Cockburns Port",
+    "sku": "WWSC-COCKBURNS-PORT",
+    "purchase_price": 0.44,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "fb9e5ced-3b88-4a30-862b-c5af22cb66ed",
+    "name": "Cockburns Port (double)",
+    "display": "double",
+    "sku": "",
+    "purchase_price": 0.88,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "24441072-8494-45a8-be3e-b04288b636d2",
+    "name": "Cockburns Port (single)",
+    "display": "single",
+    "sku": "",
+    "purchase_price": 0.44,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6429b403-a398-4e47-a032-db092245367d",
+    "name": "Cointreau",
+    "display": "Cointreau",
+    "sku": "WWSC-COINTREAU",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f7cc2249-29a4-4938-a1cf-60e47dad3a04",
+    "name": "Cointreau (double)",
+    "display": "double",
+    "sku": "",
+    "purchase_price": 2,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "50d18a84-ccdc-46e8-82de-aff4f7ef3a90",
+    "name": "Cointreau (single)",
+    "display": "single",
+    "sku": "",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "aafaf111-b298-4e7e-8741-d5e63c09eddf",
+    "name": "Courvoisier",
+    "display": "Courvoisier",
+    "sku": "WWSC-COURVOISIER",
+    "purchase_price": 1.06,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "db0b75f8-f446-422b-abf9-c92de0447f5a",
+    "name": "Courvoisier (double)",
+    "display": "double",
+    "sku": "WWSC-COURVOISIER-DOUBLE",
+    "purchase_price": 2.12,
+    "selling_price": 7.49,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "c234a129-f946-4f7b-96cd-a820e2610d81",
+    "name": "Courvoisier (single)",
+    "display": "single",
+    "sku": "WWSC-COURVOISIER-SINGLE",
+    "purchase_price": 1.06,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "eec4e44c-f17f-4f54-ac72-f3a26a986ca2",
+    "name": "Dissaronno",
+    "display": "Dissaronno",
+    "sku": "WWSC-DISSARONNO",
+    "purchase_price": 0.67,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f6ea8e94-d58d-41a2-aad4-4aaf1d187a7e",
+    "name": "Dissaronno (double)",
+    "display": "double",
+    "sku": "WWSC-DISSARONNO-DOUBLE",
+    "purchase_price": 1.34,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "be04d170-5eaa-47cc-9f3b-ce1559a085a0",
+    "name": "Dissaronno (single)",
+    "display": "single",
+    "sku": "WWSC-DISSARONNO-SINGLE",
+    "purchase_price": 0.67,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f3a3e296-428d-4ea1-af44-e478b6ca4cc4",
+    "name": "El Torito Silver",
+    "display": "El Torito Silver",
+    "sku": "WWSC-EL-TORITO-SILVER",
+    "purchase_price": 0.67,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8d64fe05-14c6-42a4-be5c-93fe3b573462",
+    "name": "El Torito Silver (double)",
+    "display": "double",
+    "sku": "WWSC-EL-TORITO-SILVER-DOUBLE",
+    "purchase_price": 1.34,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6c70b549-f0c1-465e-9e47-4cd63a8555f7",
+    "name": "El Torito Silver (single)",
+    "display": "single",
+    "sku": "WWSC-EL-TORITO-SILVER-SINGLE",
+    "purchase_price": 0.67,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "cb9e4bb4-c0ce-4f39-9ac0-e1ca9c85c8d9",
+    "name": "Glenmorangie",
+    "display": "Glenmorangie",
+    "sku": "WWSC-GLENMORANGIE",
+    "purchase_price": 1.19,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "854b5d2f-7e1f-446b-a209-39db3bfff539",
+    "name": "Glenmorangie (double)",
+    "display": "double",
+    "sku": "WWSC-GLENMORANGIE-DOUBLE",
+    "purchase_price": 2.38,
+    "selling_price": 7.49,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "9f2af0a3-3a49-49f0-83d3-3c39cfb78b1f",
+    "name": "Glenmorangie (single)",
+    "display": "single",
+    "sku": "WWSC-GLENMORANGIE-SINGLE",
+    "purchase_price": 1.19,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "5ed237f1-1844-4687-a55e-7d0d5bb0204e",
+    "name": "Gordons Gin",
+    "display": "Gordons Gin",
+    "sku": "WWSC-GORDONS-GIN",
+    "purchase_price": 0.59,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "1816a590-ce60-4e71-bc1e-8a8f40495f2e",
+    "name": "Gordons Gin (Lemon)",
+    "display": "Gordons Gin (Lemon)",
+    "sku": "WWSC-GORDONS-GIN-LEMON",
+    "purchase_price": 0.59,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "d8769c2b-2699-437c-887e-d0a83b1aba64",
+    "name": "Gordons Gin (Orange)",
+    "display": "Gordons Gin (Orange)",
+    "sku": "WWSC-GORDONS-GIN-ORANGE",
+    "purchase_price": 0.59,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e49d738f-dd23-4863-bdd5-b5bd50cb5074",
+    "name": "Gordons Gin (Pink)",
+    "display": "Gordons Gin (Pink)",
+    "sku": "WWSC-GORDONS-GIN-PINK",
+    "purchase_price": 0.59,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "c7e8dcc0-c262-4d9c-8747-795d27898321",
+    "name": "Gordons Gin (double)",
+    "display": "double",
+    "sku": "WWSC-GORDONS-GIN-DOUBLE",
+    "purchase_price": 1.19,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "56113a21-163f-4740-b9b5-acf9f88f66f9",
+    "name": "Gordons Gin (double) (Lemon)",
+    "display": "double",
+    "sku": "WWSC-GORDONS-GIN-LEMON-DOUBLE",
+    "purchase_price": 1.19,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "68bd28a4-e458-4073-8da7-0626caf3cee4",
+    "name": "Gordons Gin (double) (Orange)",
+    "display": "double",
+    "sku": "WWSC-GORDONS-GIN-ORANGE-DOUBLE",
+    "purchase_price": 1.19,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f5541884-3e04-4275-8cd1-675abcb083a2",
+    "name": "Gordons Gin (double) (Pink)",
+    "display": "double",
+    "sku": "WWSC-GORDONS-GIN-PINK-DOUBLE",
+    "purchase_price": 1.19,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "727baf23-2e74-4fea-a514-7489f91e69bb",
+    "name": "Gordons Gin (single)",
+    "display": "single",
+    "sku": "WWSC-GORDONS-GIN-SINGLE",
+    "purchase_price": 0.59,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "70f47274-395b-4a83-8942-88a7c91a666e",
+    "name": "Gordons Gin (single) (Lemon)",
+    "display": "single",
+    "sku": "WWSC-GORDONS-GIN-LEMON-SINGLE",
+    "purchase_price": 0.59,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "36f0dc03-6684-4b6a-bb3d-4e5e2aef01be",
+    "name": "Gordons Gin (single) (Orange)",
+    "display": "single",
+    "sku": "WWSC-GORDONS-GIN-ORANGE-SINGLE",
+    "purchase_price": 0.59,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "1999cd92-79b8-4e09-b4b1-dcd13c038b73",
+    "name": "Gordons Gin (single) (Pink)",
+    "display": "single",
+    "sku": "WWSC-GORDONS-GIN-PINK-SINGLE",
+    "purchase_price": 0.59,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "d5e25121-2ca8-403f-8d81-16f5cc32c1af",
+    "name": "Gordons Gin 0.0",
+    "display": "Gordons Gin 0.0",
+    "sku": "WWSC-GORDONS-GIN-0.0",
+    "purchase_price": 0.58,
+    "selling_price": 3.6,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a393a4f3-d1fb-4246-bf42-549c9d6f4794",
+    "name": "Gordons Gin 0.0 (double)",
+    "display": "double",
+    "sku": "WWSC-GORDONS-GIN-0.0-DOUBLE",
+    "purchase_price": 1.15,
+    "selling_price": 5.95,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "64ed2228-9063-4196-b242-5e359590813e",
+    "name": "Gordons Gin 0.0 (single)",
+    "display": "single",
+    "sku": "WWSC-GORDONS-GIN-0.0-SINGLE",
+    "purchase_price": 0.58,
+    "selling_price": 3.6,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "1181f9b4-969b-4fa7-8de3-270bd1d21a3e",
+    "name": "Harveys Bristol Cream",
+    "display": "Harveys Bristol Cream",
+    "sku": "WWSC-HARVEYS-BRISTOL-CREAM",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "55d9ccd7-e5c0-4092-be52-400392fbed6e",
+    "name": "Harveys Bristol Cream (double)",
+    "display": "double",
+    "sku": "WWSC-HARVEYS-BRISTOL-CREAM-DOUBLE",
+    "purchase_price": 2,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "516d5355-2fd8-45bf-b527-0b18b6c36266",
+    "name": "Harveys Bristol Cream (single)",
+    "display": "single",
+    "sku": "WWSC-HARVEYS-BRISTOL-CREAM-SINGLE",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "dbc63778-52f8-4c32-a501-50474b4e446f",
+    "name": "Hendricks Gin",
+    "display": "Hendricks Gin",
+    "sku": "WWSC-HENDRICKS-GIN",
+    "purchase_price": 1.08,
+    "selling_price": 4.725,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "bba8081a-3573-4040-b712-3d9ea8e75817",
+    "name": "Hendricks Gin (double)",
+    "display": "double",
+    "sku": "WWSC-HENDRICKS-GIN-DOUBLE",
+    "purchase_price": 2.15,
+    "selling_price": 8.21,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "7d0d95cd-5d8d-4d1a-9c26-127fa38aaa17",
+    "name": "Hendricks Gin (single)",
+    "display": "single",
+    "sku": "WWSC-HENDRICKS-GIN-SINGLE",
+    "purchase_price": 1.08,
+    "selling_price": 4.725,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "7bb90b53-fba3-4269-84e9-5fe9d7b01aa9",
+    "name": "Hennessy",
+    "display": "Hennessy",
+    "sku": "WWSC-HENNESSY",
+    "purchase_price": 1.28,
+    "selling_price": 4.725,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6c609c85-76d4-465f-8b57-59df9bfef92f",
+    "name": "Hennessy (double)",
+    "display": "double",
+    "sku": "WWSC-HENNESSY-DOUBLE",
+    "purchase_price": 2.57,
+    "selling_price": 8.21,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "90813242-8972-4b22-aa57-e2e6e23f1271",
+    "name": "Hennessy (single)",
+    "display": "single",
+    "sku": "WWSC-HENNESSY-SINGLE",
+    "purchase_price": 1.28,
+    "selling_price": 4.725,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "4928f998-201b-40e5-8fe4-e364b9daf517",
+    "name": "Jack Daniels",
+    "display": "Jack Daniels",
+    "sku": "WWSC-JACK-DANIELS",
+    "purchase_price": 1.05,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "db41ab2e-15f4-4213-a598-4ef1d0db893d",
+    "name": "Jack Daniels (double)",
+    "display": "double",
+    "sku": "WWSC-JACK-DANIELS-DOUBLE",
+    "purchase_price": 2.11,
+    "selling_price": 7.49,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "72bd13c4-72fc-4813-bb60-28a811e1caa9",
+    "name": "Jack Daniels (single)",
+    "display": "single",
+    "sku": "WWSC-JACK-DANIELS-SINGLE",
+    "purchase_price": 1.05,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "287e76c8-935e-4d1e-b35e-ffdfd6a42c6f",
+    "name": "Jack Daniels Apple",
+    "display": "Jack Daniels Apple",
+    "sku": "WWSC-JACK-DANIELS-APPLE",
+    "purchase_price": 1.05,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "53868f45-1759-4af0-9a1d-09278c4a4c4a",
+    "name": "Jack Daniels Apple (double)",
+    "display": "double",
+    "sku": "WWSC-JACK-DANIELS-APPLE-DOUBLE",
+    "purchase_price": 2.11,
+    "selling_price": 7.49,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f3f051f5-989b-44e3-bf84-0a4c8a51b02c",
+    "name": "Jack Daniels Apple (single)",
+    "display": "single",
+    "sku": "WWSC-JACK-DANIELS-APPLE-SINGLE",
+    "purchase_price": 1.05,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6f50825d-a0df-498a-aa17-18b0bebd6247",
+    "name": "Jagerbomb",
+    "display": "Jagerbomb",
+    "sku": "WWSC-JAGERBOMB",
+    "purchase_price": 1.47,
+    "selling_price": 6,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "487dc047-14c6-4c64-91cc-a94f7dd7b37a",
+    "name": "Jagermeister",
+    "display": "Jagermeister",
+    "sku": "WWSC-JAGERMEISTER",
+    "purchase_price": 0.71,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "62177582-626a-42c8-8170-b1daf173851f",
+    "name": "Jagermeister (double)",
+    "display": "double",
+    "sku": "WWSC-JAGERMEISTER-DOUBLE",
+    "purchase_price": 1.42,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "c1ce3612-7e11-4f9e-88f6-f6aa715aeeaf",
+    "name": "Jagermeister (single)",
+    "display": "single",
+    "sku": "WWSC-JAGERMEISTER-SINGLE",
+    "purchase_price": 0.71,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "ad2977a9-d663-4639-8446-3ab07234597d",
+    "name": "Jamesons",
+    "display": "Jamesons",
+    "sku": "WWSC-JAMESONS",
+    "purchase_price": 0.79,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "54a2b0de-14bd-48b2-b892-6ac202c6094a",
+    "name": "Jamesons (double)",
+    "display": "double",
+    "sku": "WWSC-JAMESONS-DOUBLE",
+    "purchase_price": 1.58,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f24891e7-6a95-4c06-96e6-7ac445905387",
+    "name": "Jamesons (single)",
+    "display": "single",
+    "sku": "WWSC-JAMESONS-SINGLE",
+    "purchase_price": 0.79,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "35576218-e030-4d5b-8f12-64a69161c573",
+    "name": "Malibu",
+    "display": "Malibu",
+    "sku": "WWSC-MALIBU",
+    "purchase_price": 0.53,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e912b012-a1c3-4276-a841-378c7d2d8785",
+    "name": "Malibu (double)",
+    "display": "double",
+    "sku": "WWSC-MALIBU-DOUBLE",
+    "purchase_price": 1.06,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "60c9d005-5b85-40e6-b15e-e22638cdf4b6",
+    "name": "Malibu (single)",
+    "display": "single",
+    "sku": "WWSC-MALIBU-SINGLE",
+    "purchase_price": 0.53,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "512b98ef-27c6-44f2-9fdb-c8806074e2a9",
+    "name": "Martini",
+    "display": "Martini",
+    "sku": "WWSC-MARTINI",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6be88023-3dab-416d-8e86-d4e59eaa15c4",
+    "name": "Martini (double)",
+    "display": "double",
+    "sku": "WWSC-MARTINI-DOUBLE",
+    "purchase_price": 2,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "04b8064d-23ff-4b4f-a8a1-2475769c67e6",
+    "name": "Martini (single)",
+    "display": "single",
+    "sku": "WWSC-MARTINI-SINGLE",
+    "purchase_price": 1,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "2a7d7106-47e9-49b0-9196-1c9fbb08b515",
+    "name": "Pimms",
+    "display": "Pimms",
+    "sku": "WWSC-PIMMS",
+    "purchase_price": 0.52,
+    "selling_price": 4.725,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "7c0fc458-3132-4f9e-b591-11ada3cc3108",
+    "name": "Sambuca",
+    "display": "Sambuca",
+    "sku": "WWSC-SAMBUCA",
+    "purchase_price": 0.58,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "2ef8b1e4-a7f0-4908-a87a-35fbf6707020",
+    "name": "Sambuca (double)",
+    "display": "double",
+    "sku": "WWSC-SAMBUCA-DOUBLE",
+    "purchase_price": 1.16,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "7d62ed8c-0908-42df-8bff-b521e7e859e8",
+    "name": "Sambuca (single)",
+    "display": "single",
+    "sku": "WWSC-SAMBUCA-SINGLE",
+    "purchase_price": 0.58,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b0a819a7-bfce-40bd-befe-21058268d3b2",
+    "name": "Smirnoff",
+    "display": "Smirnoff",
+    "sku": "WWSC-SMIRNOFF",
+    "purchase_price": 0.64,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "1f2aa216-318d-4cdb-bf59-92c07cf3eb59",
+    "name": "Smirnoff (double)",
+    "display": "double",
+    "sku": "WWSC-SMIRNOFF-DOUBLE",
+    "purchase_price": 1.29,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "835c86ce-4f3e-4466-b250-4248c59aae26",
+    "name": "Smirnoff (single)",
+    "display": "single",
+    "sku": "WWSC-SMIRNOFF-SINGLE",
+    "purchase_price": 0.64,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "815ba75a-b33b-4a57-9a80-dfa329b6a01c",
+    "name": "Sourz",
+    "display": "Sourz",
+    "sku": "WWSC-SOURZ",
+    "purchase_price": 0.36,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b2997e16-c80e-4dfc-8064-bfd4dfe28334",
+    "name": "Sourz (double)",
+    "display": "double",
+    "sku": "WWSC-SOURZ-DOUBLE",
+    "purchase_price": 0.72,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "3103eb21-ffee-49fb-998a-0c6cc1bda8c7",
+    "name": "Sourz (single)",
+    "display": "single",
+    "sku": "WWSC-SOURZ-HALF",
+    "purchase_price": 0.36,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "59d09cd4-9bbe-4f70-9a4d-3d19eb8df438",
+    "name": "Sourz (x10)",
+    "display": "10 for £30",
+    "sku": "WWSC-SOURZ-10-FOR-30",
+    "purchase_price": 0.36,
+    "selling_price": 30,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "c829951e-efb6-4d9f-a01a-1c07d024a5f1",
+    "name": "Sourz (x3)",
+    "display": "3 for £10",
+    "sku": "WWSC-SOURZ-3-FOR-10",
+    "purchase_price": 0.36,
+    "selling_price": 10,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "d7fb7996-9d04-4b6a-b9f8-a6328f5d6e9c",
+    "name": "Southern Comfort",
+    "display": "Southern Comfort",
+    "sku": "WWSC-SOUTHERN-COMFORT",
+    "purchase_price": 0.66,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "203fb5d3-d8d9-410f-b931-08019c5da43c",
+    "name": "Southern Comfort (double)",
+    "display": "double",
+    "sku": "WWSC-SOUTHERN-COMFORT-DOUBLE",
+    "purchase_price": 1.31,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "1c551583-9d4d-4af9-9721-3d909b65f549",
+    "name": "Southern Comfort (single)",
+    "display": "single",
+    "sku": "WWSC-SOUTHERN-COMFORT-HALF",
+    "purchase_price": 0.66,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a04581dc-1531-4616-873c-9336e8f5c0f0",
+    "name": "Tequila Rose",
+    "display": "Tequila Rose",
+    "sku": "TEQUILA_ROSE_1",
+    "purchase_price": 0.36,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "03acec6c-5973-470a-b2cf-a66c4e710cba",
+    "name": "Tequila Rose (double)",
+    "display": "double",
+    "sku": "TEQUILA_ROSE_DOUBLE",
+    "purchase_price": 0.72,
+    "selling_price": 6.43,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "09b5f98c-1c7a-4ae0-85f7-46df81f3cbe3",
+    "name": "Tequila Rose (single)",
+    "display": "single",
+    "sku": "TEQUILA_ROSE_SINGLE",
+    "purchase_price": 0.36,
+    "selling_price": 3.836,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "690b288b-682a-43e7-b6af-a49c9897b47d",
+    "name": "Tia Maria",
+    "display": "Tia Maria",
+    "sku": "WWSC-TIA-MARIA",
+    "purchase_price": 0.63,
+    "selling_price": 4.5,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b3a94e92-fc14-4d55-8758-02ddd6614d6b",
+    "name": "Whitley Neill",
+    "display": "Whitley Neill",
+    "sku": "WWSC-WHITLEY-NEILL",
+    "purchase_price": 0.85,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a7e3d7a0-60af-4bf0-83ac-bd71deb0f851",
+    "name": "Whitley Neill (Blood Orange)",
+    "display": "Whitley Neill (Blood Orange)",
+    "sku": "WWSC-WHITLEY-NEILL-ORANGE",
+    "purchase_price": 0.81,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "29a35675-2490-4ab9-a8df-fa257b9936c5",
+    "name": "Whitley Neill (Gooseberry)",
+    "display": "Whitley Neill (Gooseberry)",
+    "sku": "WWSC-WHITLEY-NEILL-GOOSEBERRY",
+    "purchase_price": 0.81,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "650f45e0-e086-4deb-b7e1-cab566c1a2eb",
+    "name": "Whitley Neill (Quince)",
+    "display": "Whitley Neill (Quince)",
+    "sku": "WWSC-WHITLEY-NEILL-QUINCE",
+    "purchase_price": 0.97,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6de7c196-b393-4899-9852-7f5b6de93601",
+    "name": "Whitley Neill (Raspberry)",
+    "display": "Whitley Neill (Raspberry)",
+    "sku": "WWSC-WHITLEY_NEILL_RASPBERRY",
+    "purchase_price": 0.85,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "107dd538-a021-40b6-ac68-bf067800d937",
+    "name": "Whitley Neill (Rhubarb)",
+    "display": "Whitley Neill (Rhubarb)",
+    "sku": "WWSC-WHITLEY-NEILL-RHUBARB",
+    "purchase_price": 0.85,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "1653e25a-1d93-49ee-9500-5f92600eccd4",
+    "name": "Whitley Neill (double)",
+    "display": "double",
+    "sku": "WWSC-WHITLEY-NEILL-DOUBLE",
+    "purchase_price": 1.7,
+    "selling_price": 6.863,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a8ac67f2-e142-4013-b4d8-ff3cba7a9047",
+    "name": "Whitley Neill (double) (Blood Orange)",
+    "display": "double",
+    "sku": "WWSC-WHITLEY-NEILL-ORANGE-DOUBLE",
+    "purchase_price": 1.62,
+    "selling_price": 6.863,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a8770ea4-9b13-48de-8b19-999a5d4e2109",
+    "name": "Whitley Neill (double) (Gooseberry)",
+    "display": "double",
+    "sku": "WWSC-WHITLEY-NEILL-GOOSEBERRY-DOUBLE",
+    "purchase_price": 1.62,
+    "selling_price": 6.863,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "0e320f27-1d50-4b48-97ad-6d5dba266c09",
+    "name": "Whitley Neill (double) (Quince)",
+    "display": "double",
+    "sku": "WWSC-WHITLEY-NEILL-QUINCE-DOUBLE",
+    "purchase_price": 1.94,
+    "selling_price": 6.863,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "d4794279-52fa-4ac2-b46b-3b758b8c2b42",
+    "name": "Whitley Neill (double) (Raspberry)",
+    "display": "double",
+    "sku": "WWSC-WHITLEY_NEILL_DOUBLE_RASPBERRY",
+    "purchase_price": 1.7,
+    "selling_price": 6.863,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "ae0ee973-056f-4114-bb87-382a3ade3d1b",
+    "name": "Whitley Neill (double) (Rhubarb)",
+    "display": "double",
+    "sku": "WWSC-WHITLEY-NEILL-RHUBARB-DOUBLE",
+    "purchase_price": 1.7,
+    "selling_price": 6.863,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "1a1798c6-44dc-4c18-9693-e466f113578f",
+    "name": "Whitley Neill (single)",
+    "display": "single",
+    "sku": "WWSC-WHITLEY-NEILL-SINGLE",
+    "purchase_price": 0.85,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "bc4ba5ad-0c89-41e2-8d27-6a83e4b5a46c",
+    "name": "Whitley Neill (single) (Blood Orange)",
+    "display": "single",
+    "sku": "WWSC-WHITLEY-NEILL-ORANGE-SINGLE",
+    "purchase_price": 0.81,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "83162fad-e993-415b-a7f3-a33759fc07fd",
+    "name": "Whitley Neill (single) (Gooseberry)",
+    "display": "single",
+    "sku": "WWSC-WHITLEY-NEILL-GOOSEBERRY-SINGLE",
+    "purchase_price": 0.81,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6545b742-1ad7-4e64-adb0-6fec9315c907",
+    "name": "Whitley Neill (single) (Quince)",
+    "display": "single",
+    "sku": "WWSC-WHITLEY-NEILL-QUINCE-SINGLE",
+    "purchase_price": 0.97,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6b14a6d8-b838-40be-bac6-1b9b7d1ccc57",
+    "name": "Whitley Neill (single) (Raspberry)",
+    "display": "single",
+    "sku": "WWSC-WHITLEY_NEILL_SINGLE_RASPBERRY",
+    "purchase_price": 0.85,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "ccad6745-6d7e-4e92-956a-19e169a0ad08",
+    "name": "Whitley Neill (single) (Rhubarb)",
+    "display": "single",
+    "sku": "WWSC-WHITLEY-NEILL-RHUBARB-SINGLE",
+    "purchase_price": 0.85,
+    "selling_price": 4.365,
+    "category": "SPIRITS",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "3e34c759-821d-4505-b6a7-df02edb46941",
+    "name": "Cheese & Tomato Pasta Bake",
+    "display": "Cheese & Tomato Pasta Bake",
+    "sku": "WWSC-CHEESE_TOMATO_PASTA-BAKE",
+    "purchase_price": 1.38,
+    "selling_price": 3.95,
+    "category": "SPORTS TEAS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c0ffbd51-4768-4235-9cac-2c65223d8f27",
+    "name": "Chef's Choice",
+    "display": "Chef's Choice",
+    "sku": "CHEFS_CHOICE",
+    "purchase_price": 1.75,
+    "selling_price": 4,
+    "category": "SPORTS TEAS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "3ae3547e-fb7d-4dfc-ac4d-0056aba4a7ed",
+    "name": "Jacket Potato",
+    "display": "Jacket Potato",
+    "sku": "WWSC-JACKET-POTATO",
+    "purchase_price": 1.52,
+    "selling_price": 4.5,
+    "category": "SPORTS TEAS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "caa75ec8-a616-443f-af86-96cb397e3eb6",
+    "name": "Lasagne",
+    "display": "Lasagne",
+    "sku": "WWSC-LASAGNE",
+    "purchase_price": 1.92,
+    "selling_price": 4.95,
+    "category": "SPORTS TEAS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "0bdb88cc-0936-40bc-98d2-fc13126db8ab",
+    "name": "Protein Pasta Bake",
+    "display": "Protein Pasta Bake",
+    "sku": "WWSC-PROTEIN-PASTA-BAKE",
+    "purchase_price": 1.57,
+    "selling_price": 4.95,
+    "category": "SPORTS TEAS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "23c6b24a-b37b-41b3-a4a3-241351564a35",
+    "name": "Sandwich & Chips",
+    "display": "Sandwich & Chips",
+    "sku": "WWSC-SANDWICH-AND-CHIPS",
+    "purchase_price": 1.75,
+    "selling_price": 4,
+    "category": "SPORTS TEAS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f57ed346-d027-49a1-945b-8c8016dd2af8",
+    "name": "Sausage, Chips & Beans",
+    "display": "Sausage, Chips & Beans",
+    "sku": "WWSC-SAUSAGE-CHIPS-AND-BEANS",
+    "purchase_price": 0.68,
+    "selling_price": 2,
+    "category": "SPORTS TEAS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "7168258e-a1d0-41ac-8fc1-af466a04de28",
+    "name": "Staff Bacon Sandwich",
+    "display": "Bacon Sandwich",
+    "sku": "STAFF_BACON_SANDWICH",
+    "purchase_price": 1.5,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "4d2a027d-2379-418e-be44-85ba571a72f1",
+    "name": "Staff Cheese & red onion Panini",
+    "display": "Cheese & red onion",
+    "sku": "WWSC-STAFF-CHEESE-RED-ONION-PANINI",
+    "purchase_price": 2,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "740632ce-3fd1-477e-9747-d03074e61adb",
+    "name": "Staff Cheese Sandwich",
+    "display": "Cheese Sandwich",
+    "sku": "STAFF_CHEESE_SANDWICH",
+    "purchase_price": 1.5,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "eb362557-b81b-4cb3-bd28-a02195ca1aed",
+    "name": "Staff Chicken & Chips",
+    "display": "Chicken & Chips",
+    "sku": "WWSC-STAFF-CHICKEN-AND-CHIPS",
+    "purchase_price": 3,
+    "selling_price": 3,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "62ff421a-90ff-4d9b-9948-61ea5db3f0f5",
+    "name": "Staff Chilli & Rice",
+    "display": "Chilli & Rice",
+    "sku": "WWSC-STAFF-CHILLI-AND-RICE",
+    "purchase_price": 3,
+    "selling_price": 3,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "3e9c256d-8ed3-4545-89ce-df584b452217",
+    "name": "Staff Chips",
+    "display": "Staff Chips",
+    "sku": "WWSC-STAFF-CHIPS",
+    "purchase_price": 0,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c40a7fbe-ec44-4e16-86fb-94f8086154f1",
+    "name": "Staff Egg Mayo Sandwich",
+    "display": "Egg Mayo Sandwich",
+    "sku": "STAFF_EGGMAYO_SANDWICH",
+    "purchase_price": 1.5,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "8b8972dc-b4cf-49be-a38b-898df4c80837",
+    "name": "Staff Ham & cheese Panini",
+    "display": "Ham & cheese",
+    "sku": "WWSC-STAFF-HAM-CHEESE-PANINI",
+    "purchase_price": 2,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a819b6d6-62aa-4687-8886-da522079433e",
+    "name": "Staff Ham Sandwich",
+    "display": "Ham Sandwich",
+    "sku": "STAFF_HAM_SANDWICH",
+    "purchase_price": 1.5,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "089b2e24-6c49-4451-b04d-236e18cf7abc",
+    "name": "Staff Jacket Potato",
+    "display": "Staff Jacket Potato",
+    "sku": "WWSC-STAFF-JACKET-POTATO",
+    "purchase_price": 0,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5c4b0e58-0587-430c-99fd-9b0bd78db93d",
+    "name": "Staff Panini",
+    "display": "Panini",
+    "sku": "PANINI",
+    "purchase_price": 0,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5d3cabd5-c7a7-4c28-ba46-b33b508407d4",
+    "name": "Staff Salad",
+    "display": "Staff Salad",
+    "sku": "WWSC-STAFF-SALAD",
+    "purchase_price": 0,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c1fe4626-ebf7-4678-8487-0d25ea6d96e8",
+    "name": "Staff Sandwich",
+    "display": "Staff Sandwich",
+    "sku": "WWSC-STAFF-SANDWICH",
+    "purchase_price": 0,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "ee6f8f39-168a-4a87-ace9-a1dc7b0a3b40",
+    "name": "Staff Sandwich - Bacon",
+    "display": "bacon",
+    "sku": "WWSC-STAFF-SANDWICH-BACON",
+    "purchase_price": 0,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f249c9f8-15b6-4a46-ba83-d4a05b33a723",
+    "name": "Staff Sandwich - Cheese",
+    "display": "cheese",
+    "sku": "WWSC-STAFF-SANDWICH-CHEESE",
+    "purchase_price": 0,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "56673099-d09a-4ce7-a73c-359c457d370d",
+    "name": "Staff Sandwich - Egg Mayo",
+    "display": "egg mayo",
+    "sku": "WWSC-STAFF-SANDWICH-EGG-MAYO",
+    "purchase_price": 0,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9fe7ac22-5d7c-45fb-910a-8c967441d475",
+    "name": "Staff Sandwich - HAM",
+    "display": "ham",
+    "sku": "WWSC-STAFF-SANDWICH-HAM",
+    "purchase_price": 0,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "05fb5417-846a-4062-a39d-5e3d239c9206",
+    "name": "Staff Sandwich - Tuna Mayo",
+    "display": "tuna mayo",
+    "sku": "WWSC-STAFF-SANDWICH-TUNA-MAYO",
+    "purchase_price": 0,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a573b0d0-ce36-4293-8ef5-88b32c6a0141",
+    "name": "Staff Sausage Sandwich",
+    "display": "Sausage Sandwich",
+    "sku": "STAFF_SAUSAGE_SANDWICH",
+    "purchase_price": 1.5,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "84c5c9ba-872a-4d74-9bb7-8a303925f86c",
+    "name": "Staff Tandoori Chicken Salad",
+    "display": "Tandoori Chicken Salad",
+    "sku": "STAFF_TANDOORI_CHICKEN_SALAD",
+    "purchase_price": 1.5,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c0fbf9cf-3243-4083-a7ec-083980745a6a",
+    "name": "Staff Tomato & Basil Pasta",
+    "display": "Tomato & Basil Pasta",
+    "sku": "WWSC-STAFF-TOMATO-BASIL-PASTA",
+    "purchase_price": 3,
+    "selling_price": 3,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "69b45970-65e9-463b-929a-942336593da0",
+    "name": "Staff Tuna Sandwich",
+    "display": "Tuna Sandwich",
+    "sku": "STAFF_TUNA_SANDWICH",
+    "purchase_price": 1.5,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9b9f102c-74f9-4c28-bc3a-93b9c2e47de0",
+    "name": "Staff Tuna melt Panini",
+    "display": "Tuna melt",
+    "sku": "WWSC-STAFF-TUNA-MELT-PANINI",
+    "purchase_price": 2,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "4b434f2a-db9b-4ba6-8a42-02579f93c02c",
+    "name": "Staff Vegan cheese Panini",
+    "display": "Vegan cheese",
+    "sku": "WWSC-STAFF-VEGAN-CHEESE-PANINI",
+    "purchase_price": 2,
+    "selling_price": 0,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "903e3a1e-c78d-4bbf-9ac8-b09864c500d3",
+    "name": "Staff Veggie Burger",
+    "display": "Veggie Burger",
+    "sku": "WWSC-STAFF-VEGGIE-BURGER",
+    "purchase_price": 3,
+    "selling_price": 3,
+    "category": "STAFF",
+    "parent": "FOOD"
+  },
+  {
+    "id": "fcdf8e34-e35c-423f-8234-e88d1d56ac66",
+    "name": "Bap - Hot Beef",
+    "display": "beef",
+    "sku": "WWSC-BAP-HOT-BEEF",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "2253c756-e077-4d86-98ea-45b1d4e4162a",
+    "name": "Bap - Hot Beef or Pork",
+    "display": "Bap - Hot Beef or Pork",
+    "sku": "WWSC-BAP-HOT-BEEF-OR-PORK",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9b8b2bfe-1eb9-4b74-b3a5-f55b33b2944d",
+    "name": "Bap - Hot Pork",
+    "display": "Pork",
+    "sku": "WWSC-BAP-HOT-PORK",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "31ebbcc0-988a-4ebf-bdf3-01b20fde39ab",
+    "name": "Kids Menu",
+    "display": "Kids",
+    "sku": "WWSC-SUNDAY-KIDS-MENU",
+    "purchase_price": 2,
+    "selling_price": 7.5,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "1de90f81-59eb-44e7-b2ae-8ad62af9fc0e",
+    "name": "Kids Menu - Chicken Nuggets",
+    "display": "chicken nuggets",
+    "sku": "WWSC-SUNDAY-CHICKEN-NUGGETS-KIDS",
+    "purchase_price": 2,
+    "selling_price": 7.5,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "8e043b8d-c36c-46e0-901c-781bc82a62ab",
+    "name": "Kids Menu - Fish Fingers",
+    "display": "fish fingers",
+    "sku": "WWSC-SUNDAY-FISH-FINGERS-KIDS",
+    "purchase_price": 2,
+    "selling_price": 7.5,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "68c345d6-14e4-41d2-bb2b-cda50cd90652",
+    "name": "Kids Menu - Roast Beef",
+    "display": "roast beef",
+    "sku": "WWSC-SUNDAY-ROAST-BEEF-KIDS",
+    "purchase_price": 2,
+    "selling_price": 9.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6e9be516-bcd4-45b8-81b4-d59a82e97228",
+    "name": "Kids Menu - Roast Pork",
+    "display": "roast pork",
+    "sku": "WWSC-SUNDAY-ROAST-PORK-KIDS",
+    "purchase_price": 2,
+    "selling_price": 9.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "15eecc76-5838-4f80-8cbd-fc9a3a023bce",
+    "name": "Kids Menu - Sausages & Mash",
+    "display": "sausages & mash",
+    "sku": "WWSC-SUNDAY-SAUSAGES-MASH-KIDS",
+    "purchase_price": 2,
+    "selling_price": 7.5,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "8df958b1-142a-4911-8a9d-fb6250723276",
+    "name": "Panini - Pork",
+    "display": "Panini - Pork",
+    "sku": "WWSC-SUNDAY-PORK-PANINI",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "81e241d7-454d-4ea0-b974-a34a2c98aa45",
+    "name": "Roast Beef or Pork",
+    "display": "Roast Beef or Pork",
+    "sku": "WWSC-ROAST-BEEF-OR-PORK",
+    "purchase_price": 5,
+    "selling_price": 16.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "1ba75d39-d7e9-4a0a-9e63-ef0abf1c21f3",
+    "name": "Sausages & Mash",
+    "display": "Sausages & Mash",
+    "sku": "WWSC-SAUSAGES-AND-MASH",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "1f35c122-70bf-46cd-a340-09fe2f7c7d10",
+    "name": "Side Dish",
+    "display": "Side Dishes",
+    "sku": "WWSC-SUNDAY-SIDE-DISHES",
+    "purchase_price": 0.5,
+    "selling_price": 4,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "934bf78a-7f14-4b23-b241-b579760048d9",
+    "name": "Side Dish - Cauliflower Chees",
+    "display": "cauliflower cheese",
+    "sku": "WWSC-SUNDAY-CAULIFLOWER-CHEESE",
+    "purchase_price": 0.5,
+    "selling_price": 4,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9a0c7f8e-bfbc-403e-b50b-7c484678715e",
+    "name": "Side Dish - Chips",
+    "display": "chips & gravy",
+    "sku": "WWSC-CHIPS-AND-GRAVY",
+    "purchase_price": 0.5,
+    "selling_price": 4,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "7cd9c37d-dc8e-48bf-bb2e-e0685e343e3f",
+    "name": "Side Dish - Roast Potatoes",
+    "display": "roast potatoes & gravy",
+    "sku": "WWSC-SUNDAY-ROAST-POTATOES",
+    "purchase_price": 0.5,
+    "selling_price": 4,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "4437714b-09a5-4e63-82e3-142d5f158ee3",
+    "name": "Something Sweet",
+    "display": "Something Sweet",
+    "sku": "WWSC-SOMETHING-SWEET",
+    "purchase_price": 0.5,
+    "selling_price": 4,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "540b94ea-7cf5-4306-82f2-f07324236e69",
+    "name": "Something Sweet - Apple Crumble",
+    "display": "apple crumble",
+    "sku": "WWSC-SUNDAY-APPLE-CRUMBLE",
+    "purchase_price": 0.5,
+    "selling_price": 4,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "fe519f8e-fd04-4af7-aeb7-e3ac3ace8472",
+    "name": "Something Sweet - Ice Cream",
+    "display": "ice cream",
+    "sku": "WWSC-SUNDAY-ICE-CREAM",
+    "purchase_price": 0.5,
+    "selling_price": 4,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "de448605-4f55-4697-b4f7-b43de481e922",
+    "name": "Something Sweet - Lemon Drizzle",
+    "display": "lemon drizzle sponge",
+    "sku": "WWSC-SUNDAY-LEMON-DRIZZLE-SPONGE",
+    "purchase_price": 0.5,
+    "selling_price": 4,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "128a1654-ce56-472d-8a41-d648e90a6efd",
+    "name": "Something Sweet - Sundae",
+    "display": "sundae",
+    "sku": "WWSC-SUNDAY-SUNDAE",
+    "purchase_price": 0.5,
+    "selling_price": 4,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "807e8df2-fbc3-45bf-9ce9-83c98f2964a9",
+    "name": "Soup of the Day",
+    "display": "Soup of the Day",
+    "sku": "WWSC-SUNDAY-SOUP-OF-THE-DAY",
+    "purchase_price": 0.5,
+    "selling_price": 4,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a5842d8a-425a-4052-bc2b-abd7d8c67cfc",
+    "name": "Sunday Roast Beef",
+    "display": "beef",
+    "sku": "WWSC-SUNDAY-ROAST-BEEF",
+    "purchase_price": 5,
+    "selling_price": 16.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "afab2c50-3a11-4736-b101-903352f909b3",
+    "name": "Sunday Roast Beef (kids)",
+    "display": "beef (kids)",
+    "sku": "WWSC-SUNDAY-ROAST-BEEF-KIDS",
+    "purchase_price": 5,
+    "selling_price": 9.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "e1e38a68-6330-4e89-8dab-cac529c8ad8c",
+    "name": "Sunday Roast Pork",
+    "display": "pork",
+    "sku": "WWSC-SUNDAY-ROAST-PORK",
+    "purchase_price": 5,
+    "selling_price": 16.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "e5f7990c-fa17-4842-8e6c-680f8d673ae8",
+    "name": "Sunday Roast Pork (kids)",
+    "display": "pork (kids)",
+    "sku": "WWSC-SUNDAY-ROAST-PORK-KIDS",
+    "purchase_price": 5,
+    "selling_price": 9.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "b0c8d3c1-1f17-4d5d-9b25-cd8531130bbd",
+    "name": "Yorkshire Pudding Dinner",
+    "display": "Yorkshire pudding dinner",
+    "sku": "WWSC-YORKSHIRE-PUDDING-DINNER",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6ee05067-cd97-4a37-b375-00594a8736b5",
+    "name": "Yorkshire Pudding Dinner Beef",
+    "display": "beef",
+    "sku": "WWSC-YORKSHIRE-PUDDING-DINNER-BEEF",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "fa640751-a783-437d-88a5-02ebd7f3f02c",
+    "name": "Yorkshire Pudding Dinner Pork",
+    "display": "pork",
+    "sku": "WWSC-YORKSHIRE-PUDDING-DINNER-PORK",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f9e98a1d-d4d7-44a3-9e66-061eefacbfdf",
+    "name": "Yorkshire Pudding Dinner Sausage",
+    "display": "sausage",
+    "sku": "WWSC-YORKSHIRE-PUDDING-DINNER-SAUSAGE",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "da57cabf-0bbd-4cf4-8e14-839b6c711017",
+    "name": "Yorkshire Pudding Dinner Veg",
+    "display": "veg",
+    "sku": "WWSC-YORKSHIRE-PUDDING-DINNER-VEG",
+    "purchase_price": 3,
+    "selling_price": 10.95,
+    "category": "SUNDAY BAR MENU",
+    "parent": "FOOD"
+  },
+  {
+    "id": "10f45196-6495-42c8-9f68-a6815bcdd68b",
+    "name": "1-COURSE",
+    "display": "1-COURSE",
+    "sku": "WWSC-SUNDAY-LUNCH-1-COURSE",
+    "purchase_price": 4.7,
+    "selling_price": 16.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "c0ab8c4d-b088-4596-af44-3b3719539f47",
+    "name": "1-COURSE (adult)",
+    "display": "adult",
+    "sku": "WWSC-SUNDAY-LUNCH-1-COURSE-ADULT",
+    "purchase_price": 4.7,
+    "selling_price": 16.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "41de2084-a62f-401f-854d-541477986160",
+    "name": "1-COURSE (kids)",
+    "display": "kids",
+    "sku": "WWSC-SUNDAY-LUNCH-1-COURSE-KIDS",
+    "purchase_price": 2.88,
+    "selling_price": 9.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "88e4b9eb-12ff-44bb-98c3-b30f40aeabc8",
+    "name": "2-COURSE",
+    "display": "2-COURSE",
+    "sku": "WWSC-SUNDAY-LUNCH-2-COURSE",
+    "purchase_price": 6.25,
+    "selling_price": 20.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "fe874b00-fc18-4c36-80c3-8b28f4201e9f",
+    "name": "2-COURSE (adult)",
+    "display": "adult",
+    "sku": "WWSC-SUNDAY-LUNCH-2-COURSE-ADULT",
+    "purchase_price": 6.25,
+    "selling_price": 20.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f5fc7904-bbdd-4a83-9bf5-b31627d0fec4",
+    "name": "2-COURSE (kids)",
+    "display": "kids",
+    "sku": "WWSC-SUNDAY-LUNCH-2-COURSE-KIDS",
+    "purchase_price": 3.65,
+    "selling_price": 12.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "bb3b8029-71a7-4c60-933f-8d194b5e4cd5",
+    "name": "3-COURSE",
+    "display": "3-COURSE",
+    "sku": "WWSC-SUNDAY-LUNCH-3-COURSE",
+    "purchase_price": 8,
+    "selling_price": 24.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "799b13da-8017-4374-86f3-cf4ed10c1cc7",
+    "name": "3-COURSE (adult)",
+    "display": "adult",
+    "sku": "WWSC-SUNDAY-LUNCH-3-COURSE-ADULT",
+    "purchase_price": 6.98,
+    "selling_price": 24.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "22ecdef2-20b2-4252-8808-d502d46e0722",
+    "name": "3-COURSE (kids)",
+    "display": "kids",
+    "sku": "WWSC-SUNDAY-LUNCH-3-COURSE-KIDS",
+    "purchase_price": 4,
+    "selling_price": 15.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "3bae4e2e-0d0c-4979-a947-04c009cda926",
+    "name": "CARVERY (2 Course)",
+    "display": "ADULT CARVERY",
+    "sku": "2COURSE_CARVERY",
+    "purchase_price": 6.25,
+    "selling_price": 15.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "14c16993-8783-488d-97a6-a96e32242a19",
+    "name": "CARVERY (2 Course)",
+    "display": "CHILDS CARVERY",
+    "sku": "CARVERY_2_COURSE",
+    "purchase_price": 6.25,
+    "selling_price": 12.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6912da6d-baf4-4430-ac10-c6398db1b71b",
+    "name": "Coffee",
+    "display": "Coffee",
+    "sku": "WWSC-SUNDAY-LUNCH-COFFEE",
+    "purchase_price": 0.52,
+    "selling_price": 1.5,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a40eab9e-b2d9-41d5-bda4-6fde85f6612b",
+    "name": "Coffee and Mince Pie",
+    "display": "Coffee & Mince Pie",
+    "sku": "WWSC-SUNDAY-LUNCH-COFFEE-MINCE-PIE",
+    "purchase_price": 1.82,
+    "selling_price": 3.5,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "f8fc4003-d8a2-48cb-8c6d-9767eb222bd5",
+    "name": "Easter Carvery",
+    "display": "Easter Carvery",
+    "sku": "WWSC-EASTER-CARVERY",
+    "purchase_price": 6.25,
+    "selling_price": 16.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "5d5f15b6-44ce-4f85-a908-392e79b4fafc",
+    "name": "Easter Carvery U12",
+    "display": "Easter Carvery U12",
+    "sku": "WWSC-EASTER-CARVERY-U12",
+    "purchase_price": 6.25,
+    "selling_price": 13.95,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "db4bc0da-19e2-4978-9b99-d7ca2aedd863",
+    "name": "Tea",
+    "display": "Tea",
+    "sku": "WWSC-SUNDAY-LUNCH-TEA",
+    "purchase_price": 0.52,
+    "selling_price": 1.5,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "dbdad0ad-7c00-4298-89c9-3c6cda15372d",
+    "name": "Tea and Mince Pie",
+    "display": "Tea & Mince Pie",
+    "sku": "WWSC-SUNDAY-LUNCH-TEA-MINCE-PIE",
+    "purchase_price": 1.82,
+    "selling_price": 3.5,
+    "category": "SUNDAY LUNCH",
+    "parent": "FOOD"
+  },
+  {
+    "id": "57abeaf5-1869-409a-97d8-21b87c47abea",
+    "name": "Cake",
+    "display": "Cake",
+    "sku": "WWSC-CAKE",
+    "purchase_price": 0.5,
+    "selling_price": 1.5,
+    "category": "TEA & COFFEE",
+    "parent": "FOOD"
+  },
+  {
+    "id": "99a22997-16f6-4811-8d52-cea5a7bc50de",
+    "name": "Coffee Large",
+    "display": "Coffee Large",
+    "sku": "WWSC-COFFEE-LARGE",
+    "purchase_price": 0.78,
+    "selling_price": 3,
+    "category": "TEA & COFFEE",
+    "parent": "FOOD"
+  },
+  {
+    "id": "d6586ab3-431c-40c6-a3c1-d8e70af3f3ce",
+    "name": "Coffee Regular",
+    "display": "Coffee Regular",
+    "sku": "WWSC-COFFEE-REG",
+    "purchase_price": 0.78,
+    "selling_price": 2.5,
+    "category": "TEA & COFFEE",
+    "parent": "FOOD"
+  },
+  {
+    "id": "42e90d36-8199-476f-8c4d-b3e75453bc50",
+    "name": "Cup of Tea",
+    "display": "Cup of Tea",
+    "sku": "WWSC-CUP-OF-TEA",
+    "purchase_price": 0.78,
+    "selling_price": 1.75,
+    "category": "TEA & COFFEE",
+    "parent": "FOOD"
+  },
+  {
+    "id": "e18fc7af-5ab8-4252-ac5f-647a07f28b51",
+    "name": "Hot Chocolate Large",
+    "display": "Hot Chocolate Large",
+    "sku": "WWSC-HOT-CHOCOLATE-LARGE",
+    "purchase_price": 0.52,
+    "selling_price": 3,
+    "category": "TEA & COFFEE",
+    "parent": "FOOD"
+  },
+  {
+    "id": "9dcf7b73-e1e5-47e4-abb3-66f6d1295841",
+    "name": "Hot Chocolate Regular",
+    "display": "Hot Chocolate Regular",
+    "sku": "WWSC-HOT-CHOCOLATE-REG",
+    "purchase_price": 0.78,
+    "selling_price": 2.5,
+    "category": "TEA & COFFEE",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6c4643cc-187c-48eb-ad17-8c86b4e7bb73",
+    "name": "Milk (Glass)",
+    "display": "Milk (Glass)",
+    "sku": "WWSC-MILK-GLASS",
+    "purchase_price": 0.3,
+    "selling_price": 1,
+    "category": "TEA & COFFEE",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a716ce4c-fa9f-4d9b-9a24-d3b2c9376533",
+    "name": "Pot of Tea",
+    "display": "Pot of Tea",
+    "sku": "WWSC-POT-OF-TEA",
+    "purchase_price": 0.78,
+    "selling_price": 2.25,
+    "category": "TEA & COFFEE",
+    "parent": "FOOD"
+  },
+  {
+    "id": "a14e3c79-5926-4a67-a226-c21783db68c5",
+    "name": "Halloween Ticket",
+    "display": "Halloween",
+    "sku": "WWSC-HALLOWEEN-TICKET",
+    "purchase_price": 1,
+    "selling_price": 6.5,
+    "category": "TICKETS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "6c29736e-4f0c-4ef1-8691-3876ace86288",
+    "name": "New Years Eve 2024",
+    "display": "New Years Eve",
+    "sku": "WWSC-NYE-2024",
+    "purchase_price": 0,
+    "selling_price": 25,
+    "category": "TICKETS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "29ead0ae-315a-4a09-b910-125176ab861b",
+    "name": "New Years Eve 2024 Adult",
+    "display": "adult",
+    "sku": "WWSC-NYE-2024-ADULT",
+    "purchase_price": 0,
+    "selling_price": 25,
+    "category": "TICKETS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "670ec4e2-5129-410a-89bc-2d23241daff0",
+    "name": "New Years Eve 2024 Kids",
+    "display": "kids",
+    "sku": "WWSC-NYE-2024-KIDS",
+    "purchase_price": 0,
+    "selling_price": 15,
+    "category": "TICKETS",
+    "parent": "FOOD"
+  },
+  {
+    "id": "17e4b15a-dd54-4051-adef-f2af9590b7fb",
+    "name": "Accomplice Chardonnay",
+    "display": "Accomplice Chardonnay",
+    "sku": "WWSC-ACCOMPLICE-CHARDONNAY/WHITE",
+    "purchase_price": 6.8,
+    "selling_price": 20.25,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "5aa0924d-884f-4bc4-ae77-6220e1177af4",
+    "name": "Accomplice Chardonnay (bottle)",
+    "display": "Bottle",
+    "sku": "WWSC-ACCOMPLICE-CHARDONNAY-BOTTLE/WHITE",
+    "purchase_price": 6.8,
+    "selling_price": 20.25,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "42bacf16-55bb-433f-93cf-ee71b3974243",
+    "name": "Accomplice Chardonnay (large)",
+    "display": "Large",
+    "sku": "WWSC-ACCOMPLICE-CHARDONNAY-LARGE/WHITE",
+    "purchase_price": 2.27,
+    "selling_price": 6.75,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "15913bba-468f-4ddd-8458-786de130b576",
+    "name": "Accomplice Chardonnay (medium)",
+    "display": "Medium",
+    "sku": "WWSC-ACCOMPLICE-CHARDONNAY-MEDIUM//WHITE",
+    "purchase_price": 1.7,
+    "selling_price": 5.35,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "62015d43-31e8-485b-9f4d-5dffbb587e77",
+    "name": "Accomplice Chardonnay (small)",
+    "display": "Small",
+    "sku": "WWSC-ACCOMPLICE-CHARDONNAY-SMALL/WHITE",
+    "purchase_price": 1.13,
+    "selling_price": 3.95,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "ce1895e7-5efa-4648-89f9-ef77343d01d7",
+    "name": "Accomplice Chardonnay (spritzer large)",
+    "display": "Spritzer large",
+    "sku": "WWSC-ACCOMPLICE-CHARDONNAY-SPRITZER/WHITE",
+    "purchase_price": 2.26,
+    "selling_price": 6.75,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "11b57e93-aed8-432f-bf97-b65b8bdc7eec",
+    "name": "Accomplice Chardonnay (spritzer medium)",
+    "display": "Spritzer medium",
+    "sku": "WWSC-ACCOMPLICE-CHARDONNAY-SPRITZER/WHITE",
+    "purchase_price": 1.7,
+    "selling_price": 6,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "babdbed5-8ed9-4bfa-9f70-e88eaee90200",
+    "name": "Accomplice Shiraz",
+    "display": "Accomplice Shiraz",
+    "sku": "WWSC-ACCOMPLICE-SHIRAZ/RED",
+    "purchase_price": 6.8,
+    "selling_price": 20.25,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "16679ed9-12d5-48c5-be8e-d307fe4e4798",
+    "name": "Accomplice Shiraz (bottle)",
+    "display": "Bottle",
+    "sku": "WWSC-ACCOMPLICE-SHIRAZ-BOTTLE/RED",
+    "purchase_price": 6.8,
+    "selling_price": 20.25,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "ffd9d4a7-e8e3-42f1-8a70-ddae086d611f",
+    "name": "Accomplice Shiraz (large)",
+    "display": "Large",
+    "sku": "WWSC-ACCOMPLICE-SHIRAZ-LARGE/RED",
+    "purchase_price": 2.27,
+    "selling_price": 6.75,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6665f841-0a97-4dab-892e-e3d85b021b1b",
+    "name": "Accomplice Shiraz (medium)",
+    "display": "Medium",
+    "sku": "WWSC-ACCOMPLICE-SHIRAZ-MEDIUM/RED",
+    "purchase_price": 1.7,
+    "selling_price": 5.35,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "0af75ebf-c301-4748-b82e-2a4a517ce9e1",
+    "name": "Accomplice Shiraz (small)",
+    "display": "Small",
+    "sku": "WWSC-ACCOMPLICE-SHIRAZ-SMALL/RED",
+    "purchase_price": 1.13,
+    "selling_price": 3.95,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f6a7b7cd-31e4-4d1a-8a26-b04188f3a446",
+    "name": "Alianca Bairrada",
+    "display": "Alianca Bairrada",
+    "sku": "WWSC-ALIANCA-BAIRRADA/RED",
+    "purchase_price": 8.07,
+    "selling_price": 19.95,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8ff2ee08-44b3-4507-aa39-dc7688a15221",
+    "name": "Amori",
+    "display": "Amori",
+    "sku": "WWSC-AMORI/PROSECCO",
+    "purchase_price": 7.48,
+    "selling_price": 22.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "53707cae-ee1f-4887-9a6e-92d89fbaead5",
+    "name": "Amori Mini",
+    "display": "Amori Mini",
+    "sku": "WWSC-AMORI-MINI/PROSECCO",
+    "purchase_price": 2.49,
+    "selling_price": 7.85,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8c58fabd-9c04-4be6-a0b6-1566739d79d0",
+    "name": "Amori Pinot Grigio",
+    "display": "Amori Pinot Grigio",
+    "sku": "AMORI_PINOT_GRIGIO",
+    "purchase_price": 5.35,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8d9ed470-5284-47e1-b5df-5341d86f3139",
+    "name": "Amori Pinot Grigio (Spritzer large)",
+    "display": "Spritzer large",
+    "sku": "AMORI_PINOT_GRIGIO_SPRITZER_LARGE",
+    "purchase_price": 2.05,
+    "selling_price": 7.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "43e93ce4-d39d-4090-b90d-3ee13c467cfe",
+    "name": "Amori Pinot Grigio (bottle)",
+    "display": "Bottle",
+    "sku": "AMORI_PINOT_GRIGIO_BOTTLE",
+    "purchase_price": 6.15,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "ed8a49d7-2005-437e-b636-f033b490fd2c",
+    "name": "Amori Pinot Grigio (large)",
+    "display": "Large",
+    "sku": "AMORI_PINOT_GRIGIO_LARGE",
+    "purchase_price": 2.05,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e1906551-52d9-4c5a-9a02-1c87d8a61e0e",
+    "name": "Amori Pinot Grigio (medium)",
+    "display": "Medium",
+    "sku": "AMORI_PINOT_GRIGIO_MEDIUM",
+    "purchase_price": 1.54,
+    "selling_price": 5.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "1da47164-137c-4b9e-80e9-e3519fc91273",
+    "name": "Amori Pinot Grigio (small)",
+    "display": "Small",
+    "sku": "AMORI_PINOT_GRIGIO_SMALL",
+    "purchase_price": 1.03,
+    "selling_price": 3.85,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "1f61c4d8-b5ba-4c40-ade2-001cd7b3177f",
+    "name": "Amori Pinot Grigio (spritzer medium)",
+    "display": "Spritzer medium",
+    "sku": "AMORI_PINOT_GRIGIO_SPRITZER_MEDIUM",
+    "purchase_price": 1.54,
+    "selling_price": 5.8,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "fe058385-59d5-4a5a-aef5-cca7e073487c",
+    "name": "Andersbrook Chenin",
+    "display": "Andersbrook Chenin",
+    "sku": "WWSC-ANDERSBROOK-CHENIN/WHITE",
+    "purchase_price": 5.09,
+    "selling_price": 20.25,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "eea5d88e-deb2-4116-9e86-8f7db939eafd",
+    "name": "Andersbrook Chenin (bottle)",
+    "display": "Bottle",
+    "sku": "WWSC-ANDERSBROOK-CHENIN-BOTTLE/WHITE",
+    "purchase_price": 5.09,
+    "selling_price": 20.25,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "26ce2d98-7a50-40fd-b5c7-336f013d29b0",
+    "name": "Andersbrook Chenin (large)",
+    "display": "Large",
+    "sku": "WWSC-ANDERSBROOK-CHENIN-LARGE/WHITE",
+    "purchase_price": 1.7,
+    "selling_price": 6.75,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f0dbeed8-9270-4a8f-8611-19e03a58510f",
+    "name": "Andersbrook Chenin (medium)",
+    "display": "Medium",
+    "sku": "WWSC-ANDERSBROOK-CHENIN-MEDIUM/WHITE",
+    "purchase_price": 1.27,
+    "selling_price": 5.35,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "2b16ae79-52de-4447-914f-f8c70ad6815b",
+    "name": "Andersbrook Chenin (small)",
+    "display": "Small",
+    "sku": "WWSC-ANDERSBROOK-CHENIN-SMALL/WHITE",
+    "purchase_price": 0.85,
+    "selling_price": 3.95,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "4bb2ef93-bdf1-4e16-833c-52b2ad50c6ff",
+    "name": "Andersbrook Chenin (spritzer)",
+    "display": "Spritzer",
+    "sku": "WWSC-ANDERSBROOK-CHENIN-SPRITZER/WHITE",
+    "purchase_price": 1.27,
+    "selling_price": 5.35,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "2502180e-226e-4d63-8f7c-eff4b010d1af",
+    "name": "Angels Flight White Zinfandel",
+    "display": "Angels Flight White Zinfandel",
+    "sku": "ANGELS_FLIGHT_WHITE_ZINFANDEL",
+    "purchase_price": 6.28,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "172f4c06-bd2c-4565-a91f-7c3f7e90e430",
+    "name": "Angels Flight White Zinfandel (bottle)",
+    "display": "Bottle",
+    "sku": "ANGELS_FLIGHT_WHITE_ZINFANDEL_BOTTLE",
+    "purchase_price": 6,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "4addbc3f-3019-4a5a-86f6-eea1dff0cade",
+    "name": "Angels Flight White Zinfandel (large)",
+    "display": "Large",
+    "sku": "ANGELS_FLIGHT_WHITE_ZINFANDEL_LARGE",
+    "purchase_price": 2,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "4dba509a-db54-4292-bb0a-525f88ccff69",
+    "name": "Angels Flight White Zinfandel (medium)",
+    "display": "Medium",
+    "sku": "ANGELS_FLIGHT_WHITE_ZINFANDEL_MEDIUM",
+    "purchase_price": 1.5,
+    "selling_price": 5.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "3718ef04-945d-4852-aa19-dbe290d09931",
+    "name": "Angels Flight White Zinfandel (small)",
+    "display": "Small",
+    "sku": "ANGELS_FLIGHT_WHITE_ZINFANDEL_SMALL",
+    "purchase_price": 1,
+    "selling_price": 3.85,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "fa921213-e268-499f-8f2b-e93a22a233ca",
+    "name": "Angels Flight White Zinfandel (spritzer large)",
+    "display": "Spritzer large",
+    "sku": "ANGELS_FLIGHT_WHITE_ZINFANDEL_SPRITZER_LARGE",
+    "purchase_price": 2,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "d45527e0-c28d-4a53-925c-4a73421e6691",
+    "name": "Angels Flight White Zinfandel (spritzer medium)",
+    "display": "Spritzer medium",
+    "sku": "ANGELS_FLIGHT_WHITE_ZINFANDEL_SPRITZER_MEDIUM",
+    "purchase_price": 1.53,
+    "selling_price": 5.8,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "78133a6b-e10a-4954-98e4-331ac44b2a10",
+    "name": "Bagordi Rioja",
+    "display": "Bagordi Rioja",
+    "sku": "WWSC-BAGORDI-RIOJA",
+    "purchase_price": 6.94,
+    "selling_price": 22.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "650f3897-b070-48d8-b149-9b2eaceee273",
+    "name": "Bagordi Rioja (bottle)",
+    "display": "Bottle",
+    "sku": "BAGORDI_RIOJA_BOTTLE",
+    "purchase_price": 6.94,
+    "selling_price": 22.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e7e80468-3552-421e-a8cc-cd4accf694f9",
+    "name": "Bagordi Rioja (large)",
+    "display": "Large",
+    "sku": "BAGORDI_RIOJA_LARGE",
+    "purchase_price": 2.31,
+    "selling_price": 7.75,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "5400eab2-0f80-4bfc-bf7b-636244a64f90",
+    "name": "Bagordi Rioja (medium)",
+    "display": "Medium",
+    "sku": "BAGORDI_RIOJA_MEDIUM",
+    "purchase_price": 1.74,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "7c1150a4-1a4a-457e-8002-342a579e12d4",
+    "name": "Bagordi Rioja (small)",
+    "display": "Small",
+    "sku": "BAGORDI_RIOJA_SMALL",
+    "purchase_price": 1.16,
+    "selling_price": 5.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "46adfa2d-14d7-424d-a0fc-f0c191a75b56",
+    "name": "Corkage - Fizz",
+    "display": "Corkage Fizz",
+    "sku": "CORKAGE_FIZZ_WINE",
+    "purchase_price": 20,
+    "selling_price": 22.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "ebf2fa6a-b00e-4288-9cbc-8efc06fe551e",
+    "name": "Corkage - Wine",
+    "display": "Corkage",
+    "sku": "CORKAGE",
+    "purchase_price": 15,
+    "selling_price": 16.75,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a1fffd72-d083-4072-9293-9ef2a27a131c",
+    "name": "Cuvee Du Roy Rose",
+    "display": "Cuvee Du Roy Rose",
+    "sku": "WWSC-CUVEE-DU-ROY-ROSE/ROSE",
+    "purchase_price": 6.84,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "2af7cf0c-31ee-4388-a922-7352e6802965",
+    "name": "Cuvee Du Roy Rose (bottle)",
+    "display": "Bottle",
+    "sku": "WWSC-CUVEE-DU-ROY-ROSE-BOTTLE/ROSE",
+    "purchase_price": 6.84,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "51bb3f90-a4b9-472d-b639-8e07b6101db9",
+    "name": "Cuvee Du Roy Rose (large)",
+    "display": "Large",
+    "sku": "WWSC-CUVEE-DU-ROY-ROSE-LARGE/ROSE",
+    "purchase_price": 2.28,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b3a72deb-d041-4d56-a432-bfd9f3d3a825",
+    "name": "Cuvee Du Roy Rose (medium)",
+    "display": "Medium",
+    "sku": "WWSC-CUVEE-DU-ROY-ROSE-MEDIUM/ROSE",
+    "purchase_price": 1.71,
+    "selling_price": 5.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "7489c009-2dbb-4364-bbfc-0e99ff6a391b",
+    "name": "Cuvee Du Roy Rose (small)",
+    "display": "Small",
+    "sku": "WWSC-CUVEE-DU-ROY-ROSE-SMALL/ROSE",
+    "purchase_price": 1.14,
+    "selling_price": 3.85,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6659e83f-c478-4c39-a574-3d064cd9d496",
+    "name": "Cuvee Du Roy Rose (spritzer large)",
+    "display": "Spritzer large",
+    "sku": "WWSC-CUVEE-DU-ROY-ROSE-SPRITZER/ROSE",
+    "purchase_price": 2.28,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "64967218-6dae-45d5-9b35-7445b7a9898b",
+    "name": "Cuvee Du Roy Rose (spritzer medium)",
+    "display": "Spritzer medium",
+    "sku": "WWSC-CUVEE-DU-ROY-ROSE-SPRITZER/ROSE",
+    "purchase_price": 1.53,
+    "selling_price": 5.8,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "9c7adef6-a90b-4bf0-9526-55b84ff507dc",
+    "name": "DeaDelMar Pinot Grigio",
+    "display": "DeaDelMar Pinot Grigio",
+    "sku": "WWSC-DEADELMAR-PINOT-GRIGIO/WHITE",
+    "purchase_price": 6.15,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b4221d65-eea5-4f31-8ce3-218eaea68309",
+    "name": "DeaDelMar Pinot Grigio (bottle)",
+    "display": "Bottle",
+    "sku": "WWSC-DEADELMAR-PINOT-GRIGIO-BOTTLE/WHITE",
+    "purchase_price": 6.15,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "3fbda9ea-0f99-4d7a-bfea-c0b17956432c",
+    "name": "DeaDelMar Pinot Grigio (large)",
+    "display": "Large",
+    "sku": "WWSC-DEADELMAR-PINOT-GRIGIO-LARGE/WHITE",
+    "purchase_price": 2.05,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "de7585a0-74a5-4f1c-bf88-4449104ec066",
+    "name": "DeaDelMar Pinot Grigio (medium)",
+    "display": "Medium",
+    "sku": "WWSC-DEADELMAR-PINOT-GRIGIO-MEDIUM/WHITE",
+    "purchase_price": 1.54,
+    "selling_price": 5.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "9b078ee3-5df7-400f-b84e-abb18dc84cb3",
+    "name": "DeaDelMar Pinot Grigio (small)",
+    "display": "Small",
+    "sku": "WWSC-DEADELMAR-PINOT-GRIGIO-SMALL/WHITE",
+    "purchase_price": 1.03,
+    "selling_price": 3.85,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "be5c98ad-0997-439f-a216-35d1fb66bb0a",
+    "name": "DeaDelMar Pinot Grigio (spritzer large)",
+    "display": "Spritzer large",
+    "sku": "WWSC-DEADELMAR-PINOT-GRIGIO-SPRITZER/WHITE",
+    "purchase_price": 2.05,
+    "selling_price": 7.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "99061f22-9680-4d7f-a0f4-8dba960821cb",
+    "name": "DeaDelMar Pinot Grigio (spritzer medium)",
+    "display": "Spritzer medium",
+    "sku": "WWSC-DEADELMAR-PINOT-GRIGIO-SPRITZER/WHITE",
+    "purchase_price": 1.54,
+    "selling_price": 5.8,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8bb4b391-459d-4f6c-9bd1-9a70fbf0bdda",
+    "name": "Il Caggio",
+    "display": "Il Caggio",
+    "sku": "WWSC-IL-CAGGIO/PROSECCO",
+    "purchase_price": 7.48,
+    "selling_price": 22.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a4bdc2de-e72c-489d-a8f1-dfab5dae3cda",
+    "name": "Il Caggio Mini",
+    "display": "Il Caggio Mini",
+    "sku": "WWSC-IL-CAGGIO-MINI/PROSECCO",
+    "purchase_price": 2.49,
+    "selling_price": 7.85,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b8b24374-665d-4e33-b589-bbf3350397d8",
+    "name": "Kalua Malbec",
+    "display": "Kalua Malbec",
+    "sku": "WWSC-KALUA-MALBEC/RED",
+    "purchase_price": 6.35,
+    "selling_price": 22.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "92b6020d-5362-4bb7-90f9-191053c663c1",
+    "name": "Ladera Tempranillo",
+    "display": "Ladera Tempranillo",
+    "sku": "WWSC-LADERA-TEMPRANILLO/RED",
+    "purchase_price": 6.5,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "09dc990b-33fb-4792-9db8-3b7ff4842b9b",
+    "name": "Ladera Tempranillo (bottle)",
+    "display": "Bottle",
+    "sku": "WWSC-LADERA-TEMPRANILLO-BOTTLE/RED",
+    "purchase_price": 6.5,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "4078fde7-5e41-4ab3-b697-64149bb48581",
+    "name": "Ladera Tempranillo (large)",
+    "display": "Large",
+    "sku": "WWSC-LADERA-TEMPRANILLO-LARGE/RED",
+    "purchase_price": 2.17,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "5fbd38f7-dfb8-47ec-8391-d612533a7961",
+    "name": "Ladera Tempranillo (medium)",
+    "display": "Medium",
+    "sku": "WWSC-LADERA-TEMPRANILLO-MEDIUM/RED",
+    "purchase_price": 1.63,
+    "selling_price": 5.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "47ede8fd-d8cb-4d4f-9116-e98553b52578",
+    "name": "Ladera Tempranillo (small)",
+    "display": "Small",
+    "sku": "WWSC-LADERA-TEMPRANILLO-SMALL/RED",
+    "purchase_price": 1.09,
+    "selling_price": 3.85,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "511d4fec-4462-4486-a610-bf0014235429",
+    "name": "Mendoza Malbec",
+    "display": "Mendoza Malbec",
+    "sku": "WWSC-MENDOZA-MALBEC/RED",
+    "purchase_price": 6.57,
+    "selling_price": 22.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "3b4b7e61-7b4c-4985-b7b4-0c23ecef53b1",
+    "name": "Mendoza Malbec (bottle)",
+    "display": "Bottle",
+    "sku": "WWSC-MENDOZA-MALBEC-BOTTLE/RED",
+    "purchase_price": 6.57,
+    "selling_price": 22.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8803c0f9-e900-4f73-a682-68891dd9deaf",
+    "name": "Mendoza Malbec (large)",
+    "display": "Large",
+    "sku": "WWSC-MENDOZA-MALBEC-LARGE/RED",
+    "purchase_price": 2.19,
+    "selling_price": 7.75,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a061fd19-9895-4b27-b69a-743d4edebada",
+    "name": "Mendoza Malbec (medium)",
+    "display": "Medium",
+    "sku": "WWSC-MENDOZA-MALBEC-MEDIUM/RED",
+    "purchase_price": 1.64,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "88d3497c-60de-42c2-aec6-410e3896fb28",
+    "name": "Mendoza Malbec (small)",
+    "display": "Small",
+    "sku": "WWSC-MENDOZA-MALBEC-SMALL/RED",
+    "purchase_price": 1.1,
+    "selling_price": 5.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "73657aa3-58d0-42da-afaa-e54158109b9a",
+    "name": "NorteChico Chardonnay",
+    "display": "NorteChico Chardonnay",
+    "sku": "WWSC-NORTE-CHICO-CHARDONNAY/WHITE",
+    "purchase_price": 5.75,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "0979784f-87dd-4ccd-9e82-425b1ca915b5",
+    "name": "NorteChico Chardonnay (bottle)",
+    "display": "Bottle",
+    "sku": "WWSC-NORTE-CHICO-CHARDONNAY-BOTTLE/WHITE",
+    "purchase_price": 5.75,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "47e59f2c-dcce-4159-997a-da23bacaea23",
+    "name": "NorteChico Chardonnay (large)",
+    "display": "Large",
+    "sku": "WWSC-NORTE-CHICO-CHARDONNAY-LARGE/WHITE",
+    "purchase_price": 1.92,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "458f4828-9aca-4fed-8e55-7884d6c602ef",
+    "name": "NorteChico Chardonnay (medium)",
+    "display": "Medium",
+    "sku": "WWSC-NORTE-CHICO-CHARDONNAY-MEDIUM/WHITE",
+    "purchase_price": 1.44,
+    "selling_price": 5.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a5ce039b-5569-4415-b151-391542c51385",
+    "name": "NorteChico Chardonnay (small)",
+    "display": "Small",
+    "sku": "WWSC-NORTE-CHICO-CHARDONNAY-SMALL/WHITE",
+    "purchase_price": 0.96,
+    "selling_price": 3.85,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "5d0220a7-ec40-4379-8156-2769cd619f89",
+    "name": "NorteChico Chardonnay (spritzer large)",
+    "display": "Spritzer large",
+    "sku": "WWSC-NORTE-CHICO-CHARDONNAY-SPRITZER/WHITE",
+    "purchase_price": 5.75,
+    "selling_price": 7.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "2c0cb93a-d54f-4597-94d9-8e682d8001e2",
+    "name": "NorteChico Chardonnay (spritzer medium)",
+    "display": "Spritzer medium",
+    "sku": "WWSC-NORTE-CHICO-CHARDONNAY-SPRITZER/WHITE",
+    "purchase_price": 1.44,
+    "selling_price": 5.8,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "f1010838-1bfc-4432-9fbc-2952c9a17d2d",
+    "name": "PacoMulro Monastrell",
+    "display": "PacoMulro Monastrell",
+    "sku": "WWSC-PACOMULRO-MONASTRELL/RED",
+    "purchase_price": 15.62,
+    "selling_price": 45,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "0d9d0abf-288d-4652-b064-26d213d0ebf2",
+    "name": "ParlezVous Sauvignon",
+    "display": "ParlezVous Sauvignon",
+    "sku": "WWSC-PARLEZVOUS-SAUVIGNON/WHITE",
+    "purchase_price": 6.24,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "bfee3b18-03be-4fe2-8d36-205f3f84f2de",
+    "name": "ParlezVous Sauvignon (bottle)",
+    "display": "Bottle",
+    "sku": "WWSC-PARLEZVOUS-SAUVIGNON-BOTTLE/WHITE",
+    "purchase_price": 6.24,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "6e5ca517-794b-4dbc-8af9-3da78483d506",
+    "name": "ParlezVous Sauvignon (large)",
+    "display": "Large",
+    "sku": "WWSC-PARLEZVOUS-SAUVIGNON-LARGE/WHITE",
+    "purchase_price": 2.08,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "c818e80a-2103-4b52-9f23-9a1745ac201b",
+    "name": "ParlezVous Sauvignon (medium)",
+    "display": "Medium",
+    "sku": "WWSC-PARLEZVOUS-SAUVIGNON-MEDIUM/WHITE",
+    "purchase_price": 1.56,
+    "selling_price": 5.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "e2bb6599-48d6-441c-9be3-db686d44a56b",
+    "name": "ParlezVous Sauvignon (small)",
+    "display": "Small",
+    "sku": "WWSC-PARLEZVOUS-SAUVIGNON-SMALL/WHITE",
+    "purchase_price": 1.04,
+    "selling_price": 3.85,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "09c28cab-297e-49b2-a3dc-890f21556122",
+    "name": "ParlezVous Sauvignon (spritzer large)",
+    "display": "Spritzer large",
+    "sku": "WWSC-PARLEZVOUS-SAUVIGNON-SPRITZER/WHITE",
+    "purchase_price": 2.08,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "06f9c6a0-947f-4bd0-912b-ce8179cd7235",
+    "name": "ParlezVous Sauvignon (spritzer medium)",
+    "display": "Spritzer medium",
+    "sku": "WWSC-PARLEZVOUS-SAUVIGNON-SPRITZER/WHITE",
+    "purchase_price": 1.56,
+    "selling_price": 5.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "0402ad02-dac6-4a4f-bc51-7ed0f4436c35",
+    "name": "Santa Lucia Merlot",
+    "display": "Santa Lucia Merlot",
+    "sku": "WWSC-SANTA-LUCIA-MERLOT/RED",
+    "purchase_price": 6.01,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "839095a6-be72-4dfa-b72f-bcceb4bb38d0",
+    "name": "Santa Lucia Merlot (bottle)",
+    "display": "Bottle",
+    "sku": "WWSC-SANTA-LUCIA-MERLOT-BOTTLE/RED",
+    "purchase_price": 6.01,
+    "selling_price": 19.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "81d3eed8-a063-4cb3-b65d-a78ef52886d7",
+    "name": "Santa Lucia Merlot (large)",
+    "display": "Large",
+    "sku": "WWSC-SANTA-LUCIA-MERLOT-LARGE/RED",
+    "purchase_price": 2.01,
+    "selling_price": 6.5,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8f9a1d0e-19d6-4b4a-8560-991247de2cdd",
+    "name": "Santa Lucia Merlot (medium)",
+    "display": "Medium",
+    "sku": "WWSC-SANTA-LUCIA-MERLOT-MEDIUM/RED",
+    "purchase_price": 1.51,
+    "selling_price": 5.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "3c3ef694-69fd-4dbd-9c31-4e6875e10cc0",
+    "name": "Santa Lucia Merlot (small)",
+    "display": "Small",
+    "sku": "WWSC-SANTA-LUCIA-MERLOT-SMALL/RED",
+    "purchase_price": 1.01,
+    "selling_price": 3.85,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "74bef319-58b4-497d-8dcd-267b21e517e7",
+    "name": "Soleil des Alpes Rose",
+    "display": "Soleil des Alpes Rose",
+    "sku": "WWSC-SOLEIL-DES-ALPES/ROSE",
+    "purchase_price": 8.89,
+    "selling_price": 27,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "c2321cbe-54a9-468c-ac22-d45f9d0d1723",
+    "name": "Veuve Clicquot",
+    "display": "Veuve Clicquot",
+    "sku": "WWSC-VEUVE-CLICQUOT",
+    "purchase_price": 38.06,
+    "selling_price": 89,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "589b22b0-2c9a-498e-a6ad-063672c3f2f8",
+    "name": "Veuve Clicquot (bottle)",
+    "display": "bottle",
+    "sku": "WWSC-VEUVE-CLIQUOT-BOTTLE",
+    "purchase_price": 38.06,
+    "selling_price": 89,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "36057d53-1252-4aaf-86f0-7b5102645fbe",
+    "name": "Veuve Clicquot (promo)",
+    "display": "promo",
+    "sku": "WWSC-VEUVE-CLIQUOT-PROMO",
+    "purchase_price": 38.06,
+    "selling_price": 60,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8308a909-8711-43cd-b2c4-cd22661c950d",
+    "name": "Villa Wolf",
+    "display": "Villa Wolf",
+    "sku": "WWSC-VILLA-WOLF/ROSE",
+    "purchase_price": 9.95,
+    "selling_price": 28.15,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "2f5a8a9f-7bea-43de-a389-ca2638156037",
+    "name": "Whispering Angel",
+    "display": "Whispering Angel (Rose)",
+    "sku": "WWSC-WHISPERING-ANGEL-ROSE",
+    "purchase_price": 16.95,
+    "selling_price": 35,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "b0811f8f-2ae2-4729-a233-91e8e3ae3f73",
+    "name": "Whispering Angel (bottle)",
+    "display": "bottle",
+    "sku": "WWSC-WHISPERING-ANGEL-BOTTLE",
+    "purchase_price": 16.95,
+    "selling_price": 35,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "ceb6c96c-27f2-405c-92cd-5dfc8edfa510",
+    "name": "Whispering Angel (promo)",
+    "display": "promo",
+    "sku": "WWSC-WHISPERING-ANGEL-PROMO",
+    "purchase_price": 16.95,
+    "selling_price": 28,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "2b55e287-0d63-45ef-8390-9214e26c3947",
+    "name": "Wide River Chenin",
+    "display": "Wide River Chenin",
+    "sku": "WWSC-WIDER-RIVER-CHENIN/WHITE",
+    "purchase_price": 6.24,
+    "selling_price": 20.25,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "8dd61213-fcca-43ad-ab82-e950bd8742f8",
+    "name": "Wide River Chenin (bottle)",
+    "display": "Bottle",
+    "sku": "WWSC-WIDER-RIVER-CHENIN-BOTTLE/WHITE",
+    "purchase_price": 6.24,
+    "selling_price": 20.25,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "770cb9d5-7d20-410b-a2da-1e8e9fc5c26a",
+    "name": "Wide River Chenin (large)",
+    "display": "Large",
+    "sku": "WWSC-WIDER-RIVER-CHENIN-LARGE/WHITE",
+    "purchase_price": 2.08,
+    "selling_price": 6.75,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "191a3300-3296-4ff1-a795-c3a9e97f3e89",
+    "name": "Wide River Chenin (medium)",
+    "display": "Medium",
+    "sku": "WWSC-WIDER-RIVER-CHENIN-MEDIUM/WHITE",
+    "purchase_price": 1.56,
+    "selling_price": 5.35,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "798511b2-900e-46b4-97d7-3af109807dfe",
+    "name": "Wide River Chenin (small)",
+    "display": "Small",
+    "sku": "WWSC-WIDER-RIVER-CHENIN-SMALL/WHITE",
+    "purchase_price": 1.04,
+    "selling_price": 3.95,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "a285aed4-2785-49d9-b777-974af3f9334d",
+    "name": "Wide River Chenin (spritzer large)",
+    "display": "Spritzer large",
+    "sku": "WWSC-WIDER-RIVER-CHENIN-SPRITZER/WHITE",
+    "purchase_price": 2.08,
+    "selling_price": 6.75,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  },
+  {
+    "id": "1bcced5b-ad60-4b64-a2a1-743143fc5ebb",
+    "name": "Wide River Chenin (spritzer medium)",
+    "display": "Spritzer medium",
+    "sku": "WWSC-WIDER-RIVER-CHENIN-SPRITZER/WHITE",
+    "purchase_price": 1.56,
+    "selling_price": 5.35,
+    "category": "WINE",
+    "parent": "ALCOHOL"
+  }
+]

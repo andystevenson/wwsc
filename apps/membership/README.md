@@ -1,0 +1,1 @@
+# WWSC membership server

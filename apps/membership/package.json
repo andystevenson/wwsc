@@ -1,0 +1,15 @@
+{
+  "name": "@wwsc/membership",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "@wwsc/lib-dates": "workspace:*",
+    "@wwsc/lib-hono": "workspace:*"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "preserve",
+    "moduleResolution": "Bundler"
+  },
+  "extends": ["@tsconfig/node-lts/tsconfig.json"],
+  "include": ["scripts/**/*.ts", "src/**/*.ts"]
+}

@@ -1,6 +1,6 @@
-import { Page } from './Page'
+import { Page } from '@wwsc/lib-hono'
+import tags from './pageTags'
 import { type WithSession, Hono } from '../Hono'
-import tags from './Tags'
 
 const home = new Hono<WithSession>()
 

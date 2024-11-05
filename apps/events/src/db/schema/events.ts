@@ -1,33 +1,35 @@
-import { sqliteTable, text } from 'drizzle-orm/sqlite-core'
-import { nanoid } from 'nanoid'
+import { sqliteTable, text } from "drizzle-orm/sqlite-core";
+import { nanoid } from "nanoid";
+import { organizers } from "./organizers";
 
-export const events = sqliteTable('events', {
-  id: text('id')
+export const events = sqliteTable("events", {
+  id: text("id")
     .primaryKey()
     .$default(() => `event_${nanoid()}`),
-  name: text('name').unique().notNull(),
-  type: text('type', {
+  name: text("name").unique().notNull(),
+  type: text("type", {
     enum: [
-      'function',
-      'event',
-      'baby-shower',
-      'christening',
-      'wedding',
-      'party',
-      'meeting',
-      'fitness-class',
-      'funeral',
+      "function",
+      "event",
+      "baby-shower",
+      "christening",
+      "wedding",
+      "party",
+      "meeting",
+      "fitness-class",
+      "funeral",
     ],
   }).notNull(),
-  status: text('status', { enum: ['enquiry', 'booking', 'cancelled'] }).default(
-    'enquiry',
+  status: text("status", { enum: ["enquiry", "booking", "cancelled"] }).default(
+    "enquiry",
   ),
-  date: text('date').notNull(),
-  start: text('start'),
-  end: text('end'),
-  notes: text('notes').default(''),
-})
+  date: text("date").notNull(),
+  start: text("start"),
+  end: text("end"),
+  notes: text("notes").default(""),
+  organizer: text("organizer").references(() => organizers.id),
+});
 
-export type Event = typeof events.$inferInsert
-export type SelectEvent = typeof events.$inferSelect
-export type UpdateEvent = Omit<Event, 'id'>
+export type Event = typeof events.$inferInsert;
+export type SelectEvent = typeof events.$inferSelect;
+export type UpdateEvent = Omit<Event, "id">;
