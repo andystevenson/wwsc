@@ -119,3 +119,7 @@ dist
 
 .11ty*
 _site
+
+# ashbourne 
+ashbourne-final
+ashbourne-final/*

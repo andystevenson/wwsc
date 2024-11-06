@@ -57,7 +57,8 @@ try {
   await $`bun ./scripts/db-seed-users.ts`.quiet();
   console.log("loading ashbourne legacy members ...");
   let legacy =
-    await $`bun scripts/ashbourne-load.ts ashbourne-final/ashbourne.csv`.text();
+    await $`bun scripts/ashbourne-load.ts ~/ashbourne-final/ashbourne.csv`
+      .text();
   console.log(legacy);
   console.log("seeding default membership types");
   let types = await $`bun scripts/db-seed-default-membership-types.ts`.text();
