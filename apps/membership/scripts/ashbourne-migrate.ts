@@ -41,7 +41,7 @@
 // DONE: 11.10 Katie Maliff remove
 // TODO: 12. migrate cricket category from ashbourne system to new system
 // TODO: 13. migrate 16-18 category from ashbourne system to new system
-// TODO: 13.1 james averill correct email, add to notes, link stripe
+// DONE: 13.1 james averill correct email, add to notes, link stripe
 // TODO: 14. migrate 12-15 category from ashbourne system to new system
 
 import { $ } from "bun";
