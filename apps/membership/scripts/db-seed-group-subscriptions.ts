@@ -23,6 +23,7 @@ if (!cricket || !hockey) {
 }
 
 const october2024 = dayjs("2024-10-01");
+const april2024 = dayjs("2024-04-01");
 
 const groupSubscriptions: InsertSubscription[] = [
   {
@@ -30,8 +31,8 @@ const groupSubscriptions: InsertSubscription[] = [
     payment: "bacs",
     scope: "group",
     status: "active",
-    started: october2024.format("YYYY-MM-DD"),
-    renews: october2024.add(1, "year").format("YYYY-MM-DD"),
+    started: april2024.format("YYYY-MM-DD"),
+    renews: april2024.add(1, "year").format("YYYY-MM-DD"),
   },
   {
     membership: hockey.id,
