@@ -33,16 +33,18 @@ export function formatSubscription(subscription: Stripe.Subscription) {
     current_period_start,
     current_period_end,
     items,
+    metadata: config,
+    schedule,
   } = subscription;
   let address = null;
   let name = null;
   let email = null;
-  let config = null;
+  let customerConfig = null;
   if (typeof customer === "object" && "address" in customer) {
     address = customer.address;
     name = customer.name;
     email = customer.email;
-    config = customer.metadata;
+    customerConfig = customer.metadata;
   }
 
   let amount = 0;
@@ -87,7 +89,7 @@ export function formatSubscription(subscription: Stripe.Subscription) {
     name,
     email,
     address,
-    config,
+    customerConfig,
     status,
     cancel_at,
     cancellation_details,
@@ -102,6 +104,8 @@ export function formatSubscription(subscription: Stripe.Subscription) {
     count,
     product,
     priceConfig,
+    schedule,
+    config,
   };
 }
 
@@ -121,4 +125,11 @@ export async function getActiveSubscriptions() {
     JSON.stringify(result, null, 2),
   );
   return result;
+}
+
+export async function updateSubscriptionMetadata(
+  id: string,
+  metadata: Record<string, string>,
+) {
+  return await stripe.subscriptions.update(id, { metadata });
 }

@@ -3,18 +3,18 @@ import {
   db,
   eq,
   InsertSubscription,
-  membershipTypes,
+  memberships,
   subscriptions,
 } from "../src/db/db";
 
 import { exit } from "node:process";
 
-let cricket = await db.query.membershipTypes.findFirst({
-  where: eq(membershipTypes.type, "cricket"),
+let cricket = await db.query.memberships.findFirst({
+  where: eq(memberships.id, "cricket-club-monthly"),
 });
 
-let hockey = await db.query.membershipTypes.findFirst({
-  where: eq(membershipTypes.type, "hockey"),
+let hockey = await db.query.memberships.findFirst({
+  where: eq(memberships.id, "hockey-club-monthly"),
 });
 
 if (!cricket || !hockey) {
@@ -26,7 +26,7 @@ const october2024 = dayjs("2024-10-01");
 
 const groupSubscriptions: InsertSubscription[] = [
   {
-    type: cricket.id,
+    membership: cricket.id,
     payment: "bacs",
     scope: "group",
     status: "active",
@@ -34,7 +34,7 @@ const groupSubscriptions: InsertSubscription[] = [
     renews: october2024.add(1, "year").format("YYYY-MM-DD"),
   },
   {
-    type: hockey.id,
+    membership: hockey.id,
     payment: "bacs",
     scope: "group",
     status: "active",
@@ -45,4 +45,4 @@ const groupSubscriptions: InsertSubscription[] = [
 
 let result = await db.insert(subscriptions).values(groupSubscriptions)
   .returning();
-console.log("inserted group subscription records %o", result);
+console.log("inserted group subscription records %o", result.length);

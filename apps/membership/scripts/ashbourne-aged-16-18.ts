@@ -1,7 +1,6 @@
 import { migrateSimpleCategory } from "./ashbourne-migrate-category";
-import { Membership } from "../src/db/db";
 
-const memType = "%Changing Rooms%";
-const membership = "astro-yearly";
+const memType = "%16 - 18%";
+const membership = "aged-16-18-yearly";
 
 await migrateSimpleCategory(memType, membership);

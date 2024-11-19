@@ -1,16 +1,14 @@
 import { sqliteTable, text } from "drizzle-orm/sqlite-core";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
-import { nanoid } from "nanoid";
 import { now } from "@wwsc/lib-dates";
 import { users } from "./users";
 
 export const campaigns = sqliteTable("campaigns", {
-  id: text().primaryKey().notNull().$default(() => `campaign-${nanoid()}`),
-  name: text().notNull().unique(),
+  id: text().notNull().primaryKey(),
   created: text().notNull().default(now()),
   createdBy: text().references(() => users.id),
   start: text().notNull().default(now()),
-  end: text().notNull().default(now()),
+  end: text(), // date | null
   description: text(),
 });
 

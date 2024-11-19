@@ -1,6 +1,5 @@
-import { sqliteTable, text } from "drizzle-orm/sqlite-core";
+import { primaryKey, sqliteTable, text } from "drizzle-orm/sqlite-core";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
-import { nanoid } from "nanoid";
 import { members } from "./members";
 
 export const PreferenceTypes = [
@@ -15,10 +14,14 @@ export const PreferenceTypes = [
   "sms-marketing",
 ] as const;
 
+export type Preference = typeof PreferenceTypes[number];
+
 export const preferences = sqliteTable("preferences", {
-  id: text().primaryKey().notNull().$default(() => `preference-${nanoid()}`),
   type: text({ enum: PreferenceTypes }).notNull().default("gym"),
   member: text().references(() => members.id),
+}, (table) => {
+  let key = primaryKey({ columns: [table.type, table.member] });
+  return { key };
 });
 
 export type InsertPreference = typeof preferences.$inferInsert;

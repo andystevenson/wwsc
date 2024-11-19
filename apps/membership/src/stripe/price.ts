@@ -6,7 +6,7 @@ import { env, Stripe, stripe, writeFileSync } from "./client";
  */
 export async function listActivePrices() {
   const prices = await stripe.prices
-    .list({ limit: 100, active: true })
+    .list({ limit: 100, active: true, expand: ["data.product"] })
     .autoPagingToArray({ limit: 10000 });
   return prices;
 }
@@ -17,7 +17,7 @@ export async function listActivePrices() {
  */
 export async function listAllPrices() {
   const prices = await stripe.prices
-    .list({ limit: 100 })
+    .list({ limit: 100, expand: ["data.product"] })
     .autoPagingToArray({ limit: 10000 });
   return prices;
 }
@@ -27,6 +27,7 @@ export async function listAllPrices() {
  * @param price
  * @returns FormattedPrice
  */
+
 export type FormattedPrice = ReturnType<typeof formatPrice>;
 export function formatPrice(price: Stripe.Price) {
   let {
@@ -38,19 +39,23 @@ export function formatPrice(price: Stripe.Price) {
     currency,
     recurring,
     metadata,
+    product,
   } = price;
   let amount = unit_amount ? unit_amount / 100 : 0;
   let interval = recurring?.interval || "";
-  let iterations = recurring?.interval_count || 0;
+  let intervals = recurring?.interval_count || 0;
+  let p: Stripe.Product = product as Stripe.Product;
   return {
     id,
     active,
     nickname,
     lookup_key,
+    product: p.id,
+    name: p.name,
     amount,
     currency,
     interval,
-    iterations,
+    intervals,
     metadata,
   };
 }

@@ -1,10 +1,14 @@
-import { ashbourneMembers } from "../src/db/functions";
+import {
+  ashbourneMembers,
+  coachTypeFromNotes,
+  companyFromNotes,
+} from "../src/db/functions";
 import {
   db,
   type DBTransaction,
   events,
   genders,
-  getTypeByName,
+  getMembership,
   identities,
   insert,
   InsertEvent,
@@ -17,21 +21,27 @@ import {
   members,
   Membership,
   notes,
+  Preference,
   preferences,
-  SelectMembershipType,
+  SelectMembership,
   subscriptions,
 } from "../src/db/db";
 import { andy } from "./andy";
-import { age, Dayjs, dayjs, lastOctoberUK, now } from "@wwsc/lib-dates";
+import { age, Dayjs, dayjs, lastOctoberUK, never, now } from "@wwsc/lib-dates";
 
 let creator = await andy();
 
+/**
+ * migrate all members of a specific category from Ashbourne
+ * @param memType eiher a membership category or an array of member numbers
+ * @param membership
+ */
 export async function migrateSimpleCategory(
-  memType: string,
-  membership: Membership,
+  memType: string | string[],
+  membership: string,
 ) {
   let members = await ashbourneMembers(memType);
-  let type = await getTypeByName(membership);
+  let type = await getMembership(membership);
   let result = await db.transaction(async (tx) => {
     for (let member of members) {
       await migrateMember(member, type, tx);
@@ -43,8 +53,8 @@ export async function migrateSimpleCategory(
   console.log(members.length, `${membership} migrated`);
 }
 
-function nextRenews(joined: Dayjs) {
-  let next = joined.add(1, "year");
+function nextRenews(joined: Dayjs, frequency: dayjs.ManipulateType = "year") {
+  let next = joined.add(1, frequency);
   while (next.isBefore(now())) {
     next = next.add(1, "year");
   }
@@ -53,13 +63,13 @@ function nextRenews(joined: Dayjs) {
 
 async function newSubscription(
   start: Dayjs,
-  type: SelectMembershipType,
+  membership: SelectMembership,
   tx: DBTransaction | null = null,
 ) {
   let startDate = start.format("YYYY-MM-DD");
-  let renewsDate = nextRenews(start).format("YYYY-MM-DD");
+  let renewsDate = nextRenews(start, membership.interval).format("YYYY-MM-DD");
   let subscription: InsertSubscription = {
-    type: type.id,
+    membership: membership.id,
     payment: "free",
     scope: "individual",
     started: startDate,
@@ -71,7 +81,7 @@ async function newSubscription(
 
 async function migrateMember(
   ashbourne: any,
-  type: SelectMembershipType,
+  type: SelectMembership,
   tx: DBTransaction | null = null,
 ) {
   // find the creator of all good things
@@ -127,6 +137,25 @@ async function migrateMember(
       member: member.id,
       content: ashNotes,
     }, tx);
+
+    let company = companyFromNotes(ashNotes);
+    let coachType = coachTypeFromNotes(ashNotes);
+
+    if (company) {
+      await insert<InsertNote>(notes, {
+        date: now(),
+        createdBy: creator.id,
+        member: member.id,
+        content: `[company] ${company}`,
+      }, tx);
+    }
+
+    if (coachType) {
+      await insert<InsertPreference>(preferences, {
+        type: coachType as Preference,
+        member: member.id,
+      }, tx);
+    }
   }
 
   await insert<InsertIdentity>(identities, {
@@ -141,7 +170,7 @@ async function migrateMember(
     date: actualJoinedDate.format("YYYY-MM-DD"),
     type: "joined",
     member: member.id,
-    note: `migrated ${firstName} ${surname} from ashbourne under 5s`,
+    note: `migrated ${firstName} ${surname} from ashbourne`,
   }, tx);
 
   await insert<InsertEvent>(events, {
@@ -157,6 +186,13 @@ async function migrateMember(
     type: "email-marketing",
     member: member.id,
   }, tx);
+
+  if (type.type === "visiting-professional") {
+    await insert<InsertPreference>(preferences, {
+      type: "squash",
+      member: member.id,
+    }, tx);
+  }
 
   if (ashMember.mobile) {
     await insert<InsertPreference>(preferences, {

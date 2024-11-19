@@ -28,8 +28,8 @@ export function ashbourneDateToISO(date: string) {
  * @param address A string from Ashbourne
  * @returns A comma separated string
  */
-export function ashbourneToCommas(address: string) {
-  let result = address.replace(/#+/g, ",");
+export function ashbourneToCommas(s: string) {
+  let result = s.trim().replace(/#+/g, ",");
   result = result.replace(/,{2,}/g, ",");
   result = result.replace(/,+$/, "");
   result = result.replace(/\s+,+$/, ",");
@@ -45,6 +45,9 @@ export function ashbourneToCommas(address: string) {
  */
 
 export function capitalizeFirstLetter(s: string) {
+  if (s.includes("-")) {
+    return s.split("-").map((w) => capitalize(w)).join("-");
+  }
   return s.split(" ").map((w) => capitalize(w)).join(" ");
 }
 
@@ -102,13 +105,14 @@ export function formatAshbourneMember(record: SelectAshbourneMember) {
     lastVisit,
   } = record;
   // remove whitespace from these
-  let { mobile, postcode, phoneNo } = record;
+  let { mobile, postcode, phoneNo, email } = record;
   let { address, notes } = record;
   return {
     ...record,
+    memTitle: ashbourneTitleToGender(record.memTitle),
     firstName: capitalizeFirstLetter(firstName.trim()),
     surname: capitalizeFirstLetter(surname.trim()),
-    memTitle: ashbourneTitleToGender(record.memTitle),
+    email: email.trim().toLowerCase(),
     address: ashbourneAddress(address),
     notes: ashbourneToCommas(notes),
     mobile: stripWhitespace(mobile),
@@ -129,10 +133,23 @@ export function formatAshbourneMember(record: SelectAshbourneMember) {
  * @param memType A string to search for in the memType field
  * @returns An array of transformed records
  */
-export async function ashbourneMembers(memType: string) {
-  let result = await db.select().from(ashbourne).where(
-    and(like(ashbourne.memType, memType), eq(ashbourne.status, "Live")),
-  );
+export async function ashbourneMembers(memType: string | string[]) {
+  if (typeof memType === "string") {
+    const op = memType.includes("%") ? like : eq;
+    let result = await db.select().from(ashbourne).where(
+      and(op(ashbourne.memType, memType), eq(ashbourne.status, "Live")),
+    );
+    return result;
+  }
+
+  // if memType is an array
+  let result: SelectAshbourneMember[] = [];
+  for (let memberNo of memType) {
+    let records = await db.select()
+      .from(ashbourne)
+      .where(eq(ashbourne.memberNo, memberNo));
+    result.push(...records);
+  }
   return result;
 }
 
@@ -168,4 +185,19 @@ export async function loadAshbourne(filenameOrCSV: string, fromString = false) {
     }),
   );
   return inserted.flat();
+}
+
+export function coachTypeFromNotes(notes: string) {
+  if (notes.includes("[[coach tennis]]")) return "tennis";
+  if (notes.includes("[[coach squash]]")) return "squash";
+  if (notes.includes("[[coach cricket]]")) return "cricket";
+  if (notes.includes("[[coach hockey]]")) return "hockey";
+  if (notes.includes("[[coach gym]]")) return "gym";
+  return "member";
+}
+
+export function companyFromNotes(notes: string) {
+  let match = notes.match(/\[\[company ([^\]]+)\]\]/);
+  if (match && match.length > 1) return match[1];
+  return null;
 }
