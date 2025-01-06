@@ -1,7 +1,13 @@
-import { migrateSimpleCategory } from "./ashbourne-migrate-category";
-import { Membership } from "../src/db/db";
+import { migrateSimpleCategory } from './ashbourne-migrate-category'
+import { syncToStripe } from './wwarms-links-stripe'
 
-const memType = "%Rob Owen Academy%";
-const membership = "visiting-professional-monthly";
+export const memType = '%Rob Owen Academy%'
+export const membership = 'professional-monthly'
 
-await migrateSimpleCategory(memType, membership);
+export async function migrateROA() {
+  await migrateSimpleCategory(memType, membership)
+
+  await syncToStripe('professional', membership)
+}
+
+await migrateROA()

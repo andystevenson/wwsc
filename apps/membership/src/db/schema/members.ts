@@ -1,40 +1,41 @@
-import { AnySQLiteColumn, sqliteTable, text } from "drizzle-orm/sqlite-core";
-import { createInsertSchema, createSelectSchema } from "drizzle-zod";
-import { nanoid } from "nanoid";
-import { subscriptions } from "./subscriptions";
-import { users } from "./users";
-import { genders } from "./genders";
-
-export const MemberStatus = ["live", "expired", "suspended"] as const;
+import {
+  type AnySQLiteColumn,
+  sqliteTable,
+  text
+} from 'drizzle-orm/sqlite-core'
+import { SQL, sql } from 'drizzle-orm'
+import { createInsertSchema, createSelectSchema } from 'drizzle-zod'
+import { users } from './users'
 
 // relative is
 // for under 18s this is the parent or guardian
 // for over 18s this is a family member (hence discounted subscription)
-export const members = sqliteTable("members", {
-  id: text().primaryKey().notNull().$default(() => `member-${nanoid()}`),
-  firstName: text().notNull().default(""),
-  surname: text().notNull().default(""),
-  gender: text().references(() => genders.id).notNull(),
+export const members = sqliteTable('members', {
+  id: text().primaryKey().notNull(),
+  firstName: text().notNull().default(''),
+  surname: text().notNull().default(''),
+  name: text().generatedAlwaysAs(
+    (): SQL => sql`concat(${members.firstName},' ',${members.surname})`,
+    { mode: 'virtual' }
+  ),
   postcode: text(),
-  dob: text(), // date of birth (optional)
-  status: text({ enum: MemberStatus }).notNull().default("live"),
+  dob: text(),
   mobile: text(),
   email: text(),
   address: text(),
-  subscription: text().references(() => subscriptions.id, {
-    onDelete: "cascade",
-  }).notNull(),
-  createdBy: text().references(() => users.id).notNull(),
-  relative: text().references((): AnySQLiteColumn => members.id),
-});
+  createdBy: text()
+    .references(() => users.email)
+    .notNull(),
+  linkedWith: text().references((): AnySQLiteColumn => members.id)
+})
 
-export type InsertMember = typeof members.$inferInsert;
-export type SelectMember = typeof members.$inferSelect;
-export type UpdateMember = Omit<InsertMember, "id">;
+export type InsertMember = typeof members.$inferInsert
+export type Member = typeof members.$inferSelect
+export type UpdateMember = Omit<InsertMember, 'id'>
 
-export const insertMemberSchema = createInsertSchema(members);
-export const selectMemberSchema = createSelectSchema(members);
-export const updateMemberSchema = createInsertSchema(members);
+export const insertMemberSchema = createInsertSchema(members)
+export const selectMemberSchema = createSelectSchema(members)
+export const updateMemberSchema = createInsertSchema(members)
 
 // TODO: create a member
 // TODO: read a member

@@ -1,6 +1,13 @@
-import { migrateSimpleCategory } from "./ashbourne-migrate-category";
+import { migrateSimpleCategory } from './ashbourne-migrate-category'
+import { syncToStripe } from './wwarms-links-stripe'
 
-const memType = "%16 - 18%";
-const membership = "aged-16-18-yearly";
+const memType = '%16 - 18%'
+const membership = 'aged-16-18-yearly'
 
-await migrateSimpleCategory(memType, membership);
+export async function migrateAged16to18() {
+  await migrateSimpleCategory(memType, membership)
+
+  await syncToStripe('aged-16-18', membership)
+}
+
+await migrateAged16to18()

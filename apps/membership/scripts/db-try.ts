@@ -1,24 +1,27 @@
-import {
-  db,
-  eq,
-  members,
-  memberships,
-  Preference,
-  preferences,
-  subscriptions,
-} from "../src/db/db";
+import { stripe, Stripe } from '../src/stripe'
+import { db, eq, subscriptions, payments, formatInvoice } from '../src/db'
 
-let people = await db.select({
-  id: members.id,
-  firstName: members.firstName,
-  surname: members.surname,
-  type: memberships.type,
-  preference: preferences.type,
-}).from(memberships)
-  .where(eq(memberships.type, "coach"))
-  .leftJoin(subscriptions, eq(subscriptions.membership, memberships.id))
-  .leftJoin(members, eq(members.subscription, subscriptions.id))
-  .leftJoin(preferences, eq(preferences.member, members.id));
+let cus = process.argv[2]
 
-people = people.filter((p) => p.id ? p : false);
-console.log(people.flat());
+if (!cus) {
+  console.error('Usage: db-try <customer_id>')
+  process.exit(1)
+}
+
+async function main() {
+  let customer = (await stripe.customers.retrieve(cus)) as Stripe.Customer
+  if (!customer) {
+    console.error('Customer not found', cus)
+    process.exit(1)
+  }
+
+  let invoices = await stripe.invoices.list({
+    expand: ['data.charge'],
+    customer: cus
+  })
+  let invoice = invoices.data[0]
+  let finvoice = formatInvoice(customer, invoice)
+  console.log({ invoice, finvoice })
+}
+
+await main()

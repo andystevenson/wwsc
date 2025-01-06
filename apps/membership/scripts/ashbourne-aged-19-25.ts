@@ -1,11 +1,18 @@
-import { migrateSimpleCategory } from "./ashbourne-migrate-category";
+import { migrateSimpleCategory } from './ashbourne-migrate-category'
+import { syncToStripe } from './wwarms-links-stripe'
 
-let memType = "%25 yrs Annual%";
-let membership = "young-adult-yearly";
+async function migrateAged19to25() {
+  let memType = '%25 yrs Annual%'
+  let membership = 'young-adult-yearly'
 
-await migrateSimpleCategory(memType, membership);
+  await migrateSimpleCategory(memType, membership)
+  await syncToStripe('young-adult', membership)
 
-memType = "%25 yrs DD%";
-membership = "young-adult-monthly";
+  memType = '%25 yrs DD%'
+  membership = 'young-adult-monthly'
 
-await migrateSimpleCategory(memType, membership);
+  await migrateSimpleCategory(memType, membership)
+  await syncToStripe('young-adult', membership)
+}
+
+await migrateAged19to25()

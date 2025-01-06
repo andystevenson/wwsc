@@ -1,0 +1,43 @@
+<script lang="ts">
+	import Screen from '$lib/components/Screen.svelte';
+	import MainMenu from '$lib/components/MainMenu.svelte';
+
+	let { children } = $props();
+</script>
+
+<Screen />
+
+<main>
+	<aside>
+		<MainMenu />
+	</aside>
+	<section class="content">
+		{#if children}
+			{@render children()}
+		{/if}
+	</section>
+</main>
+
+<style>
+	:global {
+		@import '../lib/css/styles.css';
+	}
+
+	main {
+		margin: 0 auto;
+		max-width: min(2560px, 98vw);
+		display: grid;
+		grid-template-columns: min-content 1fr;
+		grid-template-rows: 1fr;
+		max-block-size: 100vh;
+		overflow: hidden;
+		> * {
+			overflow-y: scroll;
+			block-size: 100vh;
+		}
+	}
+
+	aside {
+		display: grid;
+	}
+</style>

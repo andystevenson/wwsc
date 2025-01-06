@@ -1,0 +1,87 @@
+<script lang="ts">
+	import type { WWMember } from './types';
+	import { GenderEmojis, SubscriptionStatusEmojis } from './emojis';
+	import { gbp } from '$lib/utilities';
+	let { members }: { members: WWMember[] } = $props();
+</script>
+
+{#snippet member(m: WWMember)}
+	<li>
+		<span class="id" hidden>{m.id}</span>
+		<span class="status">{SubscriptionStatusEmojis[m.status]}</span>
+		<span class="gender">{GenderEmojis[m.gender]}</span>
+		<span class="name">{m.name}</span>
+		<span class="email">
+			<a href="mailto:{m.email}">{m.email}</a>
+		</span>
+		<span class="mobile">
+			<a href="tel:{m.mobile}">{m.mobile}</a>
+		</span>
+		<span class="category">{m.category}</span>
+		<span class="interval">{m.interval}ly</span>
+		<span class="price">{gbp(m.price)}</span>
+	</li>
+{/snippet}
+
+<section>
+	<ul>
+		{#each members as m}
+			{@render member(m)}
+		{/each}
+	</ul>
+</section>
+
+<style>
+	section {
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		overflow-x: scroll;
+	}
+
+	li {
+		--_status: 20px;
+		--_gender: 30px;
+		--_name: 300px;
+		--_email: 300px;
+		--_mobile: 140px;
+		--_category: 120px;
+		--_interval: 70px;
+		--_price: 90px;
+
+		--_layout: var(--_status) var(--_gender) var(--_name) var(--_email) var(--_mobile)
+			var(--_category) var(--_interval) var(--_price);
+		padding: 0;
+		margin: 0;
+		max-inline-size: unset;
+		background-color: var(--surface-1);
+		display: grid;
+		grid-template-columns: var(--_layout);
+
+		gap: var(--size-1);
+		opacity: 0.8;
+		overflow: hidden;
+	}
+
+	span {
+		white-space: nowrap;
+		overflow-y: scroll;
+	}
+
+	a {
+		color: var(--text-1);
+		text-decoration: none;
+	}
+
+	.name {
+		font-weight: bold;
+	}
+
+	.price {
+		text-align: right;
+	}
+</style>

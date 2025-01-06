@@ -2,11 +2,10 @@
   "name": "@wwsc/lib-dates",
   "version": "0.0.0",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "tsup src/index.ts --minify --dts --format esm,cjs --out-dir dist",
+    "build": "tsup src/index.ts --minify --dts --format esm --out-dir dist",
     "lint": "tsc"
   },
   "devDependencies": {

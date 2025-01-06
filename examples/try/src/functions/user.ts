@@ -5,7 +5,7 @@ import {
   SelectPost,
   SelectUser,
   users,
-  posts,
+  posts
 } from '../db/schema.js'
 
 export async function insertUser(data: InsertUser): Promise<void> {
@@ -13,13 +13,13 @@ export async function insertUser(data: InsertUser): Promise<void> {
 }
 
 export async function getUserWithPosts(
-  id: SelectUser['id'],
+  id: SelectUser['id']
 ): Promise<Array<{ users: SelectUser; posts: SelectPost | null }>> {
   const user = await db
     .select()
     .from(users)
     .where(eq(users.id, id))
-    .leftJoin(posts, eq(posts.userId, users.id))
+    .leftJoin(posts, eq(posts.userId, users.email))
   return user
 }
 

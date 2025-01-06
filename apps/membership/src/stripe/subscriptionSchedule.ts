@@ -1,15 +1,15 @@
-import { env, Stripe, stripe, writeFileSync } from "./client";
+import { env, Stripe, stripe, writeFileSync } from './client'
 
 /**
  * List all active subscriptionSchedules
  * @returns Stripe.SubscriptionSchedule[]
  */
 
-export async function listActiveSubscriptionSchedules() {
+export async function listSubscriptionSchedules() {
   const subscriptionSchedules = await stripe.subscriptionSchedules
     .list({ limit: 100 })
-    .autoPagingToArray({ limit: 10000 });
-  return subscriptionSchedules;
+    .autoPagingToArray({ limit: 10000 })
+  return subscriptionSchedules
 }
 
 /**
@@ -20,42 +20,35 @@ export async function listActiveSubscriptionSchedules() {
 
 export type FormattedSubscriptionSchedule = ReturnType<
   typeof formatSubscriptionSchedule
->;
+>
 export function formatSubscriptionSchedule(
-  subscription: Stripe.SubscriptionSchedule,
+  subscription: Stripe.SubscriptionSchedule
 ) {
-  let {
-    id,
-    customer,
-    created,
-    status,
-    phases,
-    current_phase,
-  } = subscription;
+  let { id, customer, created, status, phases, current_phase } = subscription
   return {
     id,
     created,
     status,
     customer,
     current_phase,
-    phases,
-  };
+    phases
+  }
 }
 
 /**
  * Get all active subscriptionSchedules
  * @returns FormattedSubscriptionSchedule[]
  */
-export async function getActiveSubscriptionSchedules() {
-  let subscriptionSchedules = await listActiveSubscriptionSchedules();
-  let result = subscriptionSchedules.map((s) => formatSubscriptionSchedule(s));
+export async function getSubscriptionSchedules() {
+  let subscriptionSchedules = await listSubscriptionSchedules()
+  let result = subscriptionSchedules.map((s) => formatSubscriptionSchedule(s))
   writeFileSync(
-    `${env.LOGPATH}/active-subscription-schedules.json`,
-    JSON.stringify(subscriptionSchedules, null, 2),
-  );
+    `${env.LOGPATH}/all-subscription-schedules.json`,
+    JSON.stringify(subscriptionSchedules, null, 2)
+  )
   writeFileSync(
-    `${env.LOGPATH}/active-subscription-schedules-formatted.json`,
-    JSON.stringify(result, null, 2),
-  );
-  return result;
+    `${env.LOGPATH}/all-subscription-schedules-formatted.json`,
+    JSON.stringify(result, null, 2)
+  )
+  return result
 }

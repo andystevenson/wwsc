@@ -69,109 +69,70 @@
 // TODO: 12. migrate cricket category from ashbourne system to new system
 // TODO: 13. migrate 16-18 category from ashbourne system to new system
 // TODO: 14. migrate 12-15 category from ashbourne system to new system
+// DONE: 15. Abbie Gill, Abbie Forletta-Gill +kids duplicates in ashbourne, emails mismatch
+// DONE: Barbara Howe go live on stripe
+// TODO: Lindsey Evans ... hockey upgrade £50 on 4/11/2024
+// TODO: Tom Langford ... over 65 manual payment 12/11/2024 over-65
 
-import { $ } from "bun";
-import { exit } from "node:process";
+import { $ } from 'bun'
+import { exit } from 'node:process'
 
 try {
-  console.log("ashbourne migration started ...");
-  console.log("clean database");
-  await $`rm /var/lib/wwsc/membership.db`.quiet();
-  console.log("creating database schema");
-  await $`drizzle-kit push`.quiet();
-  console.log("seeding system users");
-  await $`bun ./scripts/db-seed-users.ts`.quiet();
-  console.log("loading ashbourne legacy members ...");
+  console.log('ashbourne migration started ...')
+
+  console.log('clean database')
+  await $`rm /var/lib/wwsc/membership.db`.quiet()
+
+  console.log('creating database schema')
+  await $`drizzle-kit push --force`.quiet()
+
+  console.log('seeding system users')
+  await $`bun ./scripts/db-seed-users.ts`.quiet()
+
+  console.log('loading ashbourne legacy members ...')
   let legacy =
-    await $`bun scripts/ashbourne-load.ts ~/ashbourne-final/ashbourne.csv`
-      .text();
-  console.log(legacy);
-  console.log("seeding default membership types");
-  let types = await $`bun scripts/db-seed-membership-types.ts`.text();
-  console.log(types);
-  console.log("seeding group subscriptions");
-  let groups = await $`bun scripts/db-seed-group-subscriptions.ts`.text();
-  console.log(groups);
-  console.log("migrating honorary members");
-  let honorary = await $`bun scripts/ashbourne-honorary.ts`.text();
-  console.log(honorary);
-  console.log("migrating changing rooms (astro members)");
-  let astro = await $`bun scripts/ashbourne-changing-rooms.ts`.text();
-  console.log(astro);
-  console.log("migrating staff");
-  let staff = await $`bun scripts/ashbourne-staff.ts`.text();
-  console.log(staff);
-  console.log("migrating Rob Owen Academy");
-  let roa = await $`bun scripts/ashbourne-ROA.ts`.text();
-  console.log(roa);
-  console.log("migrating Coaches");
-  let coaches = await $`bun scripts/ashbourne-coach.ts`.text();
-  console.log(coaches);
-  console.log("migrating under5s");
-  let under5s = await $`bun scripts/ashbourne-under5s.ts`.text();
-  console.log(under5s);
-  console.log("migrate 5-11");
-  let aged5_11 = await $`bun scripts/ashbourne-aged-5-11.ts`.text();
-  console.log(aged5_11);
-  console.log("migrate 12-15");
-  let aged12_15 = await $`bun scripts/ashbourne-aged-12-15.ts`.text();
-  console.log(aged12_15);
-  console.log("migrate 16-18");
-  let aged16_18 = await $`bun scripts/ashbourne-aged-16-18.ts`.text();
-  console.log(aged16_18);
-  console.log("migrate 19-25");
-  let aged19_25 = await $`bun scripts/ashbourne-aged-19-25.ts`.text();
-  console.log(aged19_25);
-  console.log("migrate adult social");
-  let adultSocial = await $`bun scripts/ashbourne-adult-social.ts`.text();
-  console.log(adultSocial);
-  console.log("migrate concession");
-  let concession = await $`bun scripts/ashbourne-concession.ts`.text();
-  console.log(concession);
-  console.log("migrate family");
-  console.log("migrate cricket");
-  console.log("migrate off peak");
-  let offPeak = await $`bun scripts/ashbourne-off-peak.ts`.text();
-  console.log(offPeak);
-  console.log("migrate standard");
-  let standard = await $`bun scripts/ashbourne-standard.ts`.text();
-  console.log(standard);
-  console.log("migrate standard plus classes");
-  let plusClasses = await $`bun scripts/ashbourne-plus-classes.ts`.text();
-  console.log(plusClasses);
-  console.log("migrate hockey");
-  console.log("migrate standard DD");
-  console.log("ashbourne migration ended");
+    await $`bun scripts/ashbourne-load.ts ~/ashbourne-final/ashbourne.final.csv`.text()
+  console.log(legacy)
+
+  console.log('seeding default membership types')
+  let types = await $`bun scripts/db-seed-membership-types.ts`.text()
+  console.log(types)
+
+  console.log('seeding campaigns')
+  let campaigns = await $`bun scripts/db-seed-campaigns.ts`.text()
+  console.log(campaigns)
 } catch (error) {
-  console.error("ashbourne migration failed!!!", error);
-  exit(1);
+  console.error('ashbourne migration failed!!!', error)
+  exit(1)
 }
 
-// DONE: 12 - 15 yrs Annual
-// DONE: 16 - 18 yrs Annual
-// DONE: 19-25 yrs Annual
-// DONE: 19-25 yrs DD
-// DONE: 3rd Parties
-// DONE: 5 - 11 yrs Annual
-// DONE: Adult Social Membership
-// DONE: Changing Rooms
-// DONE: Coach
-// DONE: Concession Membership
-// DONE: Concession Membership - Annual
-// TODO: Family Membership
-// TODO: Family Membership - Annual
-// TODO: Junior Cricket
-// TODO: Junior Hockey
-// DONE: Off Peak Annual
-// DONE: Off Peak DD
-// DONE: Rob Owen Academy
-// DONE: Staff Member
-// DONE: Standard Annual
-// DONE: Standard DD
-// DONE: Standard Plus Classes Annual
-// DONE: Standard Plus Classes DD
-// TODO: Standard Cricket
-// TODO: Standard Cricket & Classes
-// TODO: Standard Hockey
-// TODO: Standard Hockey & Classes
-// DONE: Under 5s
+;[
+  { type: '5 - 11 yrs Annual', status: 'done' },
+  { type: '12 - 15 yrs Annual', status: 'done' },
+  { type: '16 - 18 yrs Annual', status: 'done' },
+  { type: '19-25 yrs Annual', status: 'done' },
+  { type: '19-25 yrs DD', status: 'done' },
+  { type: '3rd Parties', status: 'done' },
+  { type: 'Adult Social Membership', status: 'done' },
+  { type: 'Changing Rooms', status: 'done' },
+  { type: 'Coach', status: 'done' },
+  { type: 'Concession Membership', status: 'done' },
+  { type: 'Concession Membership - Annual', status: 'done' },
+  { type: 'Family Membership', status: 'done' },
+  { type: 'Family Membership - Annual', status: 'done' },
+  { type: 'Junior Cricket', status: 'done' },
+  { type: 'Junior Hockey', status: 'done' },
+  { type: 'Off Peak Annual', status: 'done' },
+  { type: 'Off Peak DD', status: 'done' },
+  { type: 'Rob Owen Academy', status: 'done' },
+  { type: 'Staff Member', status: 'done' },
+  { type: 'Standard Annual', status: 'done' },
+  { type: 'Standard Cricket', status: 'done' },
+  { type: 'Standard Cricket & Classes', status: 'done' },
+  { type: 'Standard DD', status: 'done' },
+  { type: 'Standard Hockey', status: 'done' },
+  { type: 'Standard Hockey & Classes', status: 'done' },
+  { type: 'Standard Plus Classes Annual', status: 'done' },
+  { type: 'Standard Plus Classes DD', status: 'done' },
+  { type: 'Under 5s', status: 'done' }
+]

@@ -1,39 +1,52 @@
 import {
-  AnySQLiteColumn,
-  integer,
+  type AnySQLiteColumn,
   sqliteTable,
-  text,
-} from "drizzle-orm/sqlite-core";
-import { createInsertSchema, createSelectSchema } from "drizzle-zod";
-import { nanoid } from "nanoid";
-import { now } from "@wwsc/lib-dates";
-import { PaymentTypes } from "./payments";
-import { memberships } from "./memberships";
+  text
+} from 'drizzle-orm/sqlite-core'
+import { createInsertSchema, createSelectSchema } from 'drizzle-zod'
+import { memberships } from './memberships'
+import { members } from './members'
+import { CollectionMethods } from './payments'
 
-export const SubscriptionScope = [
-  "individual",
-  "family",
-  "group",
-] as const;
-export const SubscriptionStatus = ["active", "cancelled", "suspended"] as const;
+export const SubscriptionScope = ['individual', 'family', 'club'] as const
 
-export const subscriptions = sqliteTable("subscriptions", {
-  id: text().primaryKey().notNull().$default(() => `subscription-${nanoid()}`),
-  membership: text().references(() => memberships.id).notNull(),
-  payment: text({ enum: PaymentTypes }).default("stripe").notNull(),
-  scope: text({ enum: SubscriptionScope }).default("individual").notNull(),
-  status: text({ enum: SubscriptionStatus }).default("active").notNull(),
-  started: text().notNull().default(now()), // date
-  renews: text(), // date | null
-  ends: integer({ mode: "boolean" }).notNull().default(false),
-  ref: text(), // stripe ref, bacs ref, cash ref, sage ref....
-  with: text().references((): AnySQLiteColumn => subscriptions.id), // for individual+group
-});
+export type Scope = (typeof SubscriptionScope)[number]
+export const SubscriptionStatus = [
+  'incomplete',
+  'incomplete_expired',
+  'trialing',
+  'active',
+  'past_due',
+  'canceled',
+  'unpaid',
+  'paused'
+] as const
+export type Status = (typeof SubscriptionStatus)[number]
 
-export type InsertSubscription = typeof subscriptions.$inferInsert;
-export type SelectSubscription = typeof subscriptions.$inferSelect;
-export type UpdateSubscription = Omit<InsertSubscription, "id">;
+export const subscriptions = sqliteTable('subscriptions', {
+  id: text().primaryKey().notNull(),
+  member: text()
+    .references(() => members.id)
+    .notNull(),
+  membership: text()
+    .references(() => memberships.id)
+    .notNull(),
+  payment: text({ enum: CollectionMethods })
+    .default('charge_automatically')
+    .notNull(),
+  scope: text({ enum: SubscriptionScope }).default('individual').notNull(),
+  status: text({ enum: SubscriptionStatus }).default('active').notNull(),
+  started: text(), // date
+  phaseStart: text(), // date | null
+  phaseEnd: text(), // date | null
+  canceled: text(), // date | null (might be a future cancellation date)
+  includedIn: text().references((): AnySQLiteColumn => subscriptions.id)
+})
 
-export const insertSubscriptionSchema = createInsertSchema(subscriptions);
-export const selectSubscriptionSchema = createSelectSchema(subscriptions);
-export const updateSubscriptionSchema = createInsertSchema(subscriptions);
+export type InsertSubscription = typeof subscriptions.$inferInsert
+export type Subscription = typeof subscriptions.$inferSelect
+export type UpdateSubscription = Omit<InsertSubscription, 'id'>
+
+export const insertSubscriptionSchema = createInsertSchema(subscriptions)
+export const selectSubscriptionSchema = createSelectSchema(subscriptions)
+export const updateSubscriptionSchema = createInsertSchema(subscriptions)

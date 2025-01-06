@@ -1,12 +1,18 @@
-import { useLayoutEffect } from "hono/jsx";
-import { migrateSimpleCategory } from "./ashbourne-migrate-category";
+import { migrateSimpleCategory } from './ashbourne-migrate-category'
+import { syncToStripe } from './wwarms-links-stripe'
 
-let memType = "Standard Annual";
-let membership = "adult-yearly";
+async function migrateStandard() {
+  let memType = 'Standard Annual'
+  let membership = 'adult-yearly'
 
-await migrateSimpleCategory(memType, membership);
+  await migrateSimpleCategory(memType, membership)
+  syncToStripe('adult', membership)
 
-memType = "Standard DD";
-membership = "adult-monthly";
+  memType = 'Standard DD'
+  membership = 'adult-monthly'
 
-await migrateSimpleCategory(memType, membership);
+  await migrateSimpleCategory(memType, membership)
+  syncToStripe('adult', membership)
+}
+
+await migrateStandard()

@@ -4,7 +4,7 @@ import { integer, sqliteTable, text } from 'drizzle-orm/sqlite-core'
 export const users = sqliteTable('users', {
   id: integer('id').primaryKey(),
   name: text('name').notNull(),
-  email: text('email').unique().notNull(),
+  email: text('email').unique().notNull()
 })
 
 export const posts = sqliteTable('posts', {
@@ -13,10 +13,10 @@ export const posts = sqliteTable('posts', {
   content: text('content').notNull(),
   userId: integer('user_id')
     .notNull()
-    .references(() => users.id, { onDelete: 'cascade' }),
+    .references(() => users.email, { onDelete: 'cascade' }),
   createdAt: text('created_at')
     .default(sql`CURRENT_TIMESTAMP`)
-    .notNull(),
+    .notNull()
 })
 
 export type InsertUser = typeof users.$inferInsert

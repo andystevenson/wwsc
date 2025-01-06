@@ -1,20 +1,20 @@
-import { sqliteTable, text } from "drizzle-orm/sqlite-core";
-import { createInsertSchema, createSelectSchema } from "drizzle-zod";
-import { nanoid } from "nanoid";
+import { sqliteTable, text } from 'drizzle-orm/sqlite-core'
+import { createInsertSchema, createSelectSchema } from 'drizzle-zod'
 
-export const UserAccess = ["owner", "admin", "user"] as const;
+export const UserAccess = ['owner', 'admin', 'user'] as const
 
-export const users = sqliteTable("users", {
-  id: text().primaryKey().notNull().$default(() => `user-${nanoid()}`),
+export const users = sqliteTable('users', {
+  email: text().notNull().primaryKey(),
   name: text().notNull(),
-  email: text().notNull().unique(),
-  access: text({ enum: UserAccess }).notNull().default("user"),
-});
+  access: text({ enum: UserAccess }).notNull().default('user'),
+  googleId: text(),
+  image: text() // URL
+})
 
-export type InsertUser = typeof users.$inferInsert;
-export type SelectUser = typeof users.$inferSelect;
-export type UpdateUser = Omit<InsertUser, "id">;
+export type InsertUser = typeof users.$inferInsert
+export type User = typeof users.$inferSelect
+export type UpdateUser = Omit<InsertUser, 'id'>
 
-export const insertUserSchema = createInsertSchema(users);
-export const selectUserSchema = createSelectSchema(users);
-export const updateUserSchema = createInsertSchema(users);
+export const insertUserSchema = createInsertSchema(users)
+export const selectUserSchema = createSelectSchema(users)
+export const updateUserSchema = createInsertSchema(users)
