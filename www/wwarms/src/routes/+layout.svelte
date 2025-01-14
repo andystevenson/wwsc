@@ -2,14 +2,16 @@
 	import Screen from '$lib/components/Screen.svelte';
 	import MainMenu from '$lib/components/MainMenu.svelte';
 
-	let { children } = $props();
+	import type { Snippet } from 'svelte';
+	import type { LayoutServerData } from './$types';
+	let { data, children }: { data: LayoutServerData; children: Snippet<[]> } = $props();
 </script>
 
 <Screen />
 
 <main>
 	<aside>
-		<MainMenu />
+		<MainMenu user={data.user} />
 	</aside>
 	<section class="content">
 		{#if children}
@@ -39,5 +41,10 @@
 
 	aside {
 		display: grid;
+	}
+
+	.content {
+		block-size: 100%;
+		overflow: hidden;
 	}
 </style>

@@ -1,4 +1,17 @@
-import { and, asc, eq, gte, ilike, isNull, like, lt, ne } from 'drizzle-orm'
+import {
+  and,
+  asc,
+  desc,
+  eq,
+  gte,
+  ilike,
+  isNull,
+  like,
+  lt,
+  ne,
+  sql,
+  SQL
+} from 'drizzle-orm'
 import { createClient } from '@libsql/client'
 import env from '../utilities/env'
 export const client = createClient({
@@ -6,4 +19,4 @@ export const client = createClient({
   authToken: '...'
 })
 
-export { and, asc, eq, gte, ilike, isNull, like, lt, ne }
+export { and, asc, desc, eq, gte, ilike, isNull, like, lt, ne, sql, SQL }

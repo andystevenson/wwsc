@@ -12,7 +12,7 @@
 		<span class="gender">{GenderEmojis[m.gender]}</span>
 		<span class="name">{m.name}</span>
 		<span class="email">
-			<a href="mailto:{m.email}">{m.email}</a>
+			<a href="mailto:{m.email?.toLocaleLowerCase()}">{m.email?.toLocaleLowerCase()}</a>
 		</span>
 		<span class="mobile">
 			<a href="tel:{m.mobile}">{m.mobile}</a>
@@ -44,15 +44,15 @@
 	}
 
 	li {
-		--_status: 20px;
-		--_gender: 30px;
-		--_name: 300px;
-		--_email: 300px;
-		--_mobile: 140px;
-		--_category: 120px;
-		--_interval: 70px;
-		--_price: 90px;
-
+		--_status: 2fr;
+		--_gender: 3fr;
+		--_name: 27fr;
+		--_email: 35fr;
+		--_mobile: 18fr;
+		--_category: 12fr;
+		--_interval: 7fr;
+		--_price: 9fr;
+		
 		--_layout: var(--_status) var(--_gender) var(--_name) var(--_email) var(--_mobile)
 			var(--_category) var(--_interval) var(--_price);
 		padding: 0;
@@ -65,6 +65,11 @@
 		gap: var(--size-1);
 		opacity: 0.8;
 		overflow: hidden;
+
+		&:hover {
+			opacity: 1;
+			background-color: var(--surface-3);
+		}
 	}
 
 	span {

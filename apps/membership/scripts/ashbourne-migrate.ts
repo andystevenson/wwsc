@@ -101,6 +101,10 @@ try {
   console.log('seeding campaigns')
   let campaigns = await $`bun scripts/db-seed-campaigns.ts`.text()
   console.log(campaigns)
+
+  console.log('activating campaigns')
+  let activation = await $`bun scripts/db-campaign-activation.ts`.text()
+  console.log(activation)
 } catch (error) {
   console.error('ashbourne migration failed!!!', error)
   exit(1)

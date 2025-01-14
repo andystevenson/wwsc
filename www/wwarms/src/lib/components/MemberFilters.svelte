@@ -1,16 +1,17 @@
 <script lang="ts">
 	import {
-		type Category,
-		type Interval,
-		type Status,
-		Intervals,
-		Categories,
-		SubscriptionStatus
+		type Category as CategoryType,
+		type Interval as IntervalType,
+		type Status as StatusType
 	} from './types';
-	import { SubscriptionStatusEmojis } from './emojis';
-	type SUpdate = (interval: Status, checked: boolean) => void;
-	type IUpdate = (interval: Interval, checked: boolean) => void;
-	type CUpdate = (category: Category, checked: boolean) => void;
+
+	import Category from './Category.svelte';
+	import Interval from './Interval.svelte';
+	import Status from './Status.svelte';
+
+	type SUpdate = (interval: StatusType, checked: boolean) => void;
+	type IUpdate = (interval: IntervalType, checked: boolean) => void;
+	type CUpdate = (category: CategoryType, checked: boolean) => void;
 	type PUpdate = (start: number, end: number) => [number, number];
 
 	type Props = {
@@ -34,55 +35,47 @@
 		fromElement.value = from.toString();
 		toElement.value = to.toString();
 	}
+
+	function handleKeydown(e: KeyboardEvent) {
+		if (e.altKey && e.code === 'KeyN') document.getElementById('add')?.click();
+	}
 </script>
 
-{#snippet status(s: Status, update: SUpdate)}
-	<label>
-		<input type="checkbox" onchange={(e) => update(s, e.currentTarget.checked)} value={s} />
-		<span>{SubscriptionStatusEmojis[s]} {s}</span>
-	</label>
-{/snippet}
-
-{#snippet interval(i: Interval, update: IUpdate)}
-	<label>
-		<input type="checkbox" onchange={(e) => update(i, e.currentTarget.checked)} value={i} />
-		<span>{i}ly</span>
-	</label>
-{/snippet}
-
-{#snippet category(c: Category, update: CUpdate)}
-	<label>
-		<input type="checkbox" onchange={(e) => update(c, e.currentTarget.checked)} value={c} />
-		<span>{c}</span>
-	</label>
-{/snippet}
-
+<svelte:window onkeydowncapture={handleKeydown} />
 <section>
-	<input
-		type="search"
-		oninput={(e) => updateSearch(e.currentTarget.value)}
-		placeholder="Search..."
-	/>
-	<section class="filters">
-		<fieldset class="status">
-			<legend>status</legend>
-			{#each SubscriptionStatus as i}
-				{@render status(i, updateStatus)}
-			{/each}
-		</fieldset>
-		<fieldset class="interval">
-			<legend>interval</legend>
-			{#each Intervals as i}
-				{@render interval(i, updateIntervals)}
-			{/each}
-		</fieldset>
+	<header>
+		<input
+			class="search"
+			type="search"
+			oninput={(e) => updateSearch(e.currentTarget.value)}
+			placeholder="Search..."
+		/>
+		<form action="/add">
+			<button id="add" class="add">
+				<i class="bi bi-plus-circle"></i>
+				<span>add member</span>
+				<i class="bi bi-option">&nbsp;N</i>
+			</button>
+		</form>
+	</header>
 
-		<fieldset class="category">
-			<legend>category</legend>
-			{#each Categories as c}
-				{@render category(c, updateCategories)}
-			{/each}
-		</fieldset>
+	<section class="filters">
+		<Status
+			update={updateStatus}
+			--inline-size="auto"
+			--block-size="auto"
+			--font-size="var(--font-size-0)"
+		/>
+
+		<Category update={updateCategories} --inline-size="auto" --font-size="var(--font-size-0)" />
+
+		<Interval
+			update={updateIntervals}
+			--inline-size="auto"
+			--block-size="auto"
+			--font-size="var(--font-size-0)"
+		/>
+
 		<fieldset class="price">
 			<legend>price</legend>
 			<label>
@@ -114,8 +107,35 @@
 </section>
 
 <style>
-	section {
+	input {
+		outline-color: var(--accent);
+		&:focus-visible {
+			scale: 0.99 1;
+		}
+	}
+
+	button {
+		color: var(--text-1);
+		inline-size: 100%;
+		outline-color: var(--accent);
+		font-size: var(--font-size-2);
+		&:focus-visible {
+			scale: 0.96 1;
+		}
+
+		span {
+			white-space: nowrap;
+		}
+	}
+
+	header {
+		inline-size: 100%;
 		margin-block-start: var(--size-2);
+		display: grid;
+		grid-template-columns: 4fr 1fr;
+		gap: var(--size-2);
+	}
+	section {
 		display: grid;
 		gap: var(--size-1);
 	}
@@ -124,14 +144,14 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: var(--size-1);
+		padding-inline: var(--size-1);
 
 		legend {
 			font-weight: bolder;
 		}
 
-		&.interval {
-			display: grid;
-			place-items: center;
+		label {
+			font-size: var(--font-size-0);
 		}
 	}
 
@@ -141,9 +161,7 @@
 	}
 
 	label {
-		[type='checkbox'] {
-			display: none;
-		}
+		display: inline-flex;
 		block-size: fit-content;
 		background-color: var(--surface-2);
 		padding-inline: var(--size-2);
@@ -167,6 +185,28 @@
 			border: 2px solid var(--gray-6);
 			border-radius: var(--radius-2);
 			padding-inline: var(--size-1);
+			margin-inline-end: var(--size-1);
 		}
+	}
+	.search {
+		font-size: var(--font-size-2);
+		padding-inline: var(--size-2);
+		padding-block: var(--size-1);
+		border-radius: var(--radius-2);
+		border: 2px solid var(--gray-6);
+	}
+
+	.bi-plus-circle {
+		font-size: var(--font-size-4);
+	}
+
+	.bi-option {
+		font-style: normal;
+		font-size: var(--font-size-0);
+		border: 1px solid var(--gray-6);
+		border-radius: var(--radius-2);
+		padding-inline: var(--size-1);
+		white-space: nowrap;
+		opacity: 0.5;
 	}
 </style>

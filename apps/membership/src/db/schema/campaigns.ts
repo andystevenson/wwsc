@@ -1,6 +1,7 @@
 import { sqliteTable, text } from 'drizzle-orm/sqlite-core'
+import { sql, SQL } from 'drizzle-orm'
 import { createInsertSchema, createSelectSchema } from 'drizzle-zod'
-import { now } from '@wwsc/lib-dates'
+import { dayjs, now } from '@wwsc/lib-dates'
 import { users } from './users'
 
 export const campaigns = sqliteTable('campaigns', {
@@ -9,8 +10,8 @@ export const campaigns = sqliteTable('campaigns', {
   createdBy: text()
     .references(() => users.email)
     .notNull(),
-  start: text().notNull().default(now()),
-  end: text(), // date | null
+  start: text().notNull().default(dayjs().format('YYYY-MM-DD')), // date
+  end: text().notNull().default('9999-01-01'), // date
   description: text()
 })
 

@@ -79,24 +79,16 @@ export function formatMembershipPrice(
   price: Stripe.Price,
   p: FormattedProduct
 ) {
-  let {
-    id,
-    active,
-    nickname,
-    lookup_key,
-    unit_amount,
-    currency,
-    recurring,
-    metadata,
-    product
-  } = price
+  let { id, active, nickname, lookup_key, unit_amount, recurring, metadata } =
+    price
   let amount = unit_amount ? unit_amount / 100 : 0
   let interval = recurring?.interval || ''
   let intervals = recurring?.interval_count || 0
+  let pAmount = amount ? `£${amount.toFixed(2)}` : 'free'
   return {
     id,
     name: p.name.toLowerCase().replace(' ', '-'),
-    description: p.description,
+    description: `${p.description || ''}`,
     active,
     nickname,
     lookup_key,
@@ -214,7 +206,7 @@ export async function checkMembershipPrice(price: MembershipPrice) {
     return checkMembershipInactivePrice(price)
   }
 
-  if (!nickname || !lookup_key || nickname !== lookup_key) {
+  if (!nickname || !lookup_key) {
     console.error(`price ${nickname} is not named correctly ${lookup_key}`)
     return
   }

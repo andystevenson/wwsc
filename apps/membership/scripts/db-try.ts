@@ -1,27 +1,29 @@
-import { stripe, Stripe } from '../src/stripe'
-import { db, eq, subscriptions, payments, formatInvoice } from '../src/db'
-
-let cus = process.argv[2]
-
-if (!cus) {
-  console.error('Usage: db-try <customer_id>')
-  process.exit(1)
-}
-
-async function main() {
-  let customer = (await stripe.customers.retrieve(cus)) as Stripe.Customer
-  if (!customer) {
-    console.error('Customer not found', cus)
-    process.exit(1)
-  }
-
-  let invoices = await stripe.invoices.list({
-    expand: ['data.charge'],
-    customer: cus
+import { db, eq, members, subscriptions, genders, memberships } from '../src/db'
+const all = await db
+  .select({
+    id: members.id,
+    name: members.name,
+    gender: genders.gender,
+    other: genders.other,
+    email: members.email,
+    mobile: members.mobile,
+    category: memberships.category,
+    interval: memberships.interval,
+    price: memberships.price,
+    status: subscriptions.status,
+    ends: subscriptions.ends
   })
-  let invoice = invoices.data[0]
-  let finvoice = formatInvoice(customer, invoice)
-  console.log({ invoice, finvoice })
-}
+  .from(subscriptions)
+  .innerJoin(members, eq(members.id, subscriptions.member))
+  .innerJoin(memberships, eq(memberships.id, subscriptions.membership))
+  .innerJoin(genders, eq(genders.id, members.id))
 
-await main()
+let grouped = Object.groupBy(all, ({ id }) => id)
+
+let final = Object.values(grouped).map((group) => {
+  if (!group) throw new TypeError('group is undefined')
+  if (group.length === 1) return group[0]
+  let sorted = group.sort((a, b) => b.ends.localeCompare(a.ends))
+  if (sorted[0].status === 'canceled') console.log('sorted %o', sorted)
+  return sorted[0]
+})

@@ -1,8 +1,7 @@
 <script lang="ts">
-	import { dayjs } from '@wwsc/lib-dates';
+	import type { PageData } from './$types';
+	let { data }: { data: PageData } = $props();
 </script>
-
-<h1>{dayjs().format()}</h1>
 
 <style>
 </style>

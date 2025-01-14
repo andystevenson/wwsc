@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 
+	let { user } = $props();
 	// the nav starts our wanting to be collapsed
 	let collapse = $state(true);
 	let icon = $derived(collapse ? 'bi-arrows-collapse-vertical' : 'bi-arrows-expand-vertical');
@@ -44,8 +45,14 @@
 			<a href="/settings"><i class="bi bi-gear"></i><span>settings</span></a>
 		</li>
 		<li class:active={active('logout')}>
-			<a href="/logout"><i class="bi bi-box-arrow-in-right"></i><span>logout</span></a>
+			<a href="/logout"><i class="bi bi-box-arrow-left"></i><span>logout</span></a>
 		</li>
+		{#if user}
+			<li class="user">
+				<img src={user.image} alt={user.name + ' image'} />
+				<p class="email">{user.email}</p>
+			</li>
+		{/if}
 	</ul>
 	<button
 		popovertarget="expand"
@@ -66,7 +73,7 @@
 	nav {
 		--_feint: hsl(var(--gray-3-hsl) / 0.3);
 		position: relative;
-		padding-inline: var(--size-4);
+		padding-inline: var(--size-6);
 		padding-block: var(--size-4);
 		grid-template-rows: min-content 1fr;
 		display: grid;
@@ -83,7 +90,17 @@
 			margin-inline-end: calc(var(--size-3) - var(--size-1));
 		}
 		&:has(.expand) {
+			li {
+				padding-inline: unset;
+				a {
+					justify-content: center;
+				}
+			}
 			li span {
+				display: none;
+			}
+
+			.email {
 				display: none;
 			}
 		}
@@ -98,11 +115,11 @@
 	li {
 		display: grid;
 		gap: var(--size-1);
-		inline-size: 100%;
+		/* inline-size: max-content; */
 		padding-inline: var(--size-3);
 
 		&.active {
-			font-weight: bolder;
+			/* font-weight: bolder; */
 			color: var(--accent);
 			text-decoration: underline;
 			text-underline-offset: 0.2em;
@@ -112,8 +129,13 @@
 		}
 
 		&:hover {
-			background-color: var(--gray-8);
+			background-color: var(--gray-6);
 			border-radius: var(--radius-2);
+		}
+
+		&.user:hover {
+			background-color: unset;
+			border-radius: unset;
 		}
 	}
 
@@ -187,6 +209,27 @@
 			@starting-style {
 				opacity: 0;
 			}
+		}
+	}
+
+	.user {
+		margin-block-start: var(--size-4);
+		display: grid;
+		gap: var(--size-1);
+		align-items: center;
+		font-size: var(--font-size-2);
+		text-align: center;
+
+		img {
+			border-radius: var(--radius-round);
+			border: 2px solid var(--gray-6);
+			place-self: center;
+			block-size: var(--size-8);
+		}
+
+		.email {
+			font-size: xx-small;
+			opacity: 0.5;
 		}
 	}
 </style>

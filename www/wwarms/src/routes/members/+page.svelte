@@ -7,13 +7,12 @@
 	let { data }: { data: PageData } = $props();
 
 	let search = $state('');
+	let statusFilters = new SvelteSet<Status>(['active']);
 	let intervalFilters = new SvelteSet<Interval>();
 	let categoryFilters = new SvelteSet<Category>();
-	let statusFilters = new SvelteSet<Status>();
 	let priceFilters = $state<[number, number]>([-1, -1]);
 
-	$inspect(statusFilters);
-	$inspect(intervalFilters);
+
 	let filteredMembers = $derived.by(() => {
 		// no filters then everything
 		if (
@@ -55,7 +54,12 @@
 	function inSearch(member: WWMember) {
 		const lsearch = search.toLowerCase();
 		const lname = member.name?.toLowerCase();
-		return !search || lname?.includes(lsearch);
+		const lemail = member.email?.toLowerCase();
+		const lmobile = member.mobile?.toLowerCase();
+		const lcategory = member.category.toLowerCase();
+		const linterval = member.interval.toLowerCase();
+		let result =  !search || lname?.includes(lsearch) || lemail?.includes(lsearch) || lmobile?.includes(lsearch) || lcategory.includes(lsearch) || linterval.includes(lsearch);
+			return result;
 	}
 
 	function updateStatus(s: Status, checked: boolean) {
@@ -84,11 +88,11 @@
 
 <section>
 	<MemberFilters
+		{updateStatus}
 		{updateSearch}
 		{updateIntervals}
 		{updateCategories}
 		{updatePrices}
-		{updateStatus}
 	/>
 	<div class="counts">{filteredMembers.length} of {data.members.length}</div>
 	<MemberList members={filteredMembers} />

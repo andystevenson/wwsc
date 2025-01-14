@@ -70,14 +70,14 @@ export async function syncStripeCustomerMetadata(customer: Stripe.Customer) {
   if (memberNo || cardNo) {
     let identity: InsertIdentity = {
       id: customer.id,
-      memberNo,
-      card: cardNo
+      memberNo: memberNo.trim(),
+      card: cardNo.trim()
     }
     console.log('identity', identity)
-    // await db
-    //   .insert(identities)
-    //   .values(identity)
-    //   .onConflictDoUpdate({ target: [identities.id], set: identity })
+    await db
+      .insert(identities)
+      .values(identity)
+      .onConflictDoUpdate({ target: [identities.id], set: identity })
   }
 
   if (preferences) {
@@ -95,7 +95,7 @@ export async function syncStripeGender(
 ) {
   let g: GenderType = gender
     ? GenderTypes.includes(gender as GenderType)
-      ? (gender as GenderType)
+      ? (gender.toLowerCase() as GenderType)
       : 'unknown'
     : 'unknown'
 
@@ -134,11 +134,12 @@ export async function syncStripeJoined(
   customer: Stripe.Customer,
   joined: string
 ) {
-  if (!joined || !dayjs(joined).isValid()) return
+  let date = joined.trim()
+  if (!date || !dayjs(date).isValid()) return
 
   let event: InsertEvent = {
     type: 'joined',
-    date: joined,
+    date,
     member: customer.id,
     note: 'customer joined west warwicks on this date'
   }
@@ -203,15 +204,24 @@ export async function syncStripeSubscription(
 
   let { price } = items.data[0]
   let { id: priceId, lookup_key, recurring } = price
-  let canceled =
-    cancel_at_period_end || canceled_at || cancel_at
-      ? JSON.stringify({
-          cancel_at,
-          cancel_at_period_end,
-          canceled_at,
-          cancellation_details
-        })
-      : null
+
+  let started = dayjs.unix(start_date).format('YYYY-MM-DD')
+  let phaseStart = dayjs.unix(current_period_start).format('YYYY-MM-DD')
+  let phaseEnd = dayjs.unix(current_period_end).format('YYYY-MM-DD')
+  let cancelAt = cancel_at ? dayjs.unix(cancel_at).format('YYYY-MM-DD') : null
+  let canceledAt = canceled_at
+    ? dayjs.unix(canceled_at).format('YYYY-MM-DD')
+    : null
+  let cancelAtPeriodEnd = cancel_at_period_end ? true : false
+  let reason = cancellation_details
+    ? Object.values(cancellation_details)
+        .filter((v) => v)
+        .join(',')
+    : null
+
+  let ends = phaseEnd
+  if (cancelAt) ends = cancelAt
+  if (canceledAt && !cancelAtPeriodEnd) ends = canceledAt
 
   let includedIn = metadata['included-in'] || null
 
@@ -236,10 +246,14 @@ export async function syncStripeSubscription(
     payment: collection_method,
     scope: scopeFromLookupKey(lookup_key),
     status,
-    started: dayjs.unix(start_date).format('YYYY-MM-DD'),
-    phaseStart: dayjs.unix(current_period_start).format('YYYY-MM-DD'),
-    phaseEnd: dayjs.unix(current_period_end).format('YYYY-MM-DD'),
-    canceled
+    started,
+    phaseStart,
+    phaseEnd,
+    cancelAt,
+    canceledAt,
+    cancelAtPeriodEnd,
+    ends,
+    reason
     // includedIn
   }
 
@@ -269,8 +283,8 @@ export function formatStripeAddress(
   address: Stripe.Address | null | undefined
 ) {
   if (!address) return ''
-  let { line1, line2, city, state, postal_code, country } = address
-  let parts = [line1, line2, city, state, postal_code, country].filter((p) => p)
+  let { line1, line2, city, postal_code, country } = address
+  let parts = [line1, line2, city, postal_code, country].filter((p) => p)
   return parts.join(', ')
 }
 

@@ -2,7 +2,7 @@ import { sqliteTable, text } from 'drizzle-orm/sqlite-core'
 import { createInsertSchema, createSelectSchema } from 'drizzle-zod'
 import { members } from './members'
 
-export const GenderTypes = ['male', 'female', 'other', 'unknown'] as const
+export const GenderTypes = ['unknown', 'male', 'female', 'other'] as const
 export type GenderType = (typeof GenderTypes)[number]
 
 export const genders = sqliteTable('genders', {

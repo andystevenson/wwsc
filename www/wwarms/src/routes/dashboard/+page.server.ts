@@ -1,5 +1,7 @@
-import { error } from '@sveltejs/kit';
+import type { PageServerLoad } from './$types';
 
-export function load() {
-	error(400);
-}
+export const load: PageServerLoad = async ({ locals }) => {
+	console.log('locals', locals);
+
+	return locals;
+};

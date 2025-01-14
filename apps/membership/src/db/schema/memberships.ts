@@ -7,7 +7,7 @@ import {
 } from 'drizzle-orm/sqlite-core'
 import { SQL, sql } from 'drizzle-orm'
 import { createInsertSchema, createSelectSchema } from 'drizzle-zod'
-import { now } from '@wwsc/lib-dates'
+import { dayjs, now } from '@wwsc/lib-dates'
 
 export const Categories = [
   'hockey',
@@ -51,7 +51,7 @@ export const memberships = sqliteTable('memberships', {
   category: text({ enum: Categories }).notNull(),
   status: text({ enum: MembershipStatuses }).notNull().default('active'),
   description: text().default(''),
-  effectiveDate: text().notNull().default(now()),
+  effectiveDate: text().notNull().default(dayjs().format('YYYY-MM-DD')), // date
   interval: text({ enum: Intervals }).notNull().default('month'),
   intervals: integer({ mode: 'number' }).notNull().default(1),
   iterations: integer({ mode: 'number' }).notNull().default(1),
@@ -59,6 +59,11 @@ export const memberships = sqliteTable('memberships', {
   paying: integer({ mode: 'boolean' }).generatedAlwaysAs(
     (): SQL =>
       sql`${memberships.category} NOT IN ('under-5', 'honorary', 'coach', 'staff', 'professional', 'astro', 'subcontractor', 'guest-of', 'test')`,
+    { mode: 'virtual' }
+  ),
+  sports: integer({ mode: 'boolean' }).generatedAlwaysAs(
+    (): SQL =>
+      sql`${memberships.category} NOT IN ('social', 'staff', 'subcontractor', 'guest-of', 'astro')`,
     { mode: 'virtual' }
   ),
   then: text().references((): AnySQLiteColumn => memberships.id)

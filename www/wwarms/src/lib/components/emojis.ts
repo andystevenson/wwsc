@@ -118,13 +118,12 @@ export const GenderEmojis = {
 
 export const SubscriptionStatusEmojis = {
 	active: '🟢',
-	suspended: '🟠',
-	incomplete: '🟠',
-	incomplete_expired: '🟠',
-	trialing: '🟠',
-	unpaid: '🟠',
-	paused: '🟠',
-	past_due: '🟠',
+	incomplete: '🤷‍♂️',
+	incomplete_expired: '💀',
+	trialing: '🤔',
+	unpaid: '😡',
+	paused: '⏸️',
+	past_due: '⏳',
 	canceled: '🔴'
 };
 

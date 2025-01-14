@@ -1,14 +1,14 @@
-import { env, Stripe, stripe, writeFileSync } from "./client";
-
+import { env, Stripe, stripe, writeFileSync } from './client'
+import kebabCase from 'lodash.kebabcase'
 /**
  * List all active prices
  * @returns Stripe.Price[]
  */
 export async function listActivePrices() {
   const prices = await stripe.prices
-    .list({ limit: 100, active: true, expand: ["data.product"] })
-    .autoPagingToArray({ limit: 10000 });
-  return prices;
+    .list({ limit: 100, active: true, expand: ['data.product'] })
+    .autoPagingToArray({ limit: 10000 })
+  return prices
 }
 
 /**
@@ -17,9 +17,9 @@ export async function listActivePrices() {
  */
 export async function listAllPrices() {
   const prices = await stripe.prices
-    .list({ limit: 100, expand: ["data.product"] })
-    .autoPagingToArray({ limit: 10000 });
-  return prices;
+    .list({ limit: 100, expand: ['data.product'] })
+    .autoPagingToArray({ limit: 10000 })
+  return prices
 }
 
 /**
@@ -28,7 +28,7 @@ export async function listAllPrices() {
  * @returns FormattedPrice
  */
 
-export type FormattedPrice = ReturnType<typeof formatPrice>;
+export type FormattedPrice = ReturnType<typeof formatPrice>
 export function formatPrice(price: Stripe.Price) {
   let {
     id,
@@ -39,25 +39,27 @@ export function formatPrice(price: Stripe.Price) {
     currency,
     recurring,
     metadata,
-    product,
-  } = price;
-  let amount = unit_amount ? unit_amount / 100 : 0;
-  let interval = recurring?.interval || "";
-  let intervals = recurring?.interval_count || 0;
-  let p: Stripe.Product = product as Stripe.Product;
+    product
+  } = price
+  let amount = unit_amount ? unit_amount / 100 : 0
+  let interval = recurring?.interval || ''
+  let intervals = recurring?.interval_count || 0
+  let p: Stripe.Product = product as Stripe.Product
   return {
     id,
     active,
     nickname,
     lookup_key,
     product: p.id,
-    name: p.name,
+    name: p.name.startsWith('+')
+      ? p.name.toLowerCase()
+      : kebabCase(p.name.toLowerCase()),
     amount,
     currency,
     interval,
     intervals,
-    metadata,
-  };
+    metadata
+  }
 }
 
 /**
@@ -65,17 +67,17 @@ export function formatPrice(price: Stripe.Price) {
  * @returns FormattedPrice[]
  */
 export async function getActivePrices() {
-  let prices = await listActivePrices();
-  let result = prices.map((s) => formatPrice(s));
+  let prices = await listActivePrices()
+  let result = prices.map((s) => formatPrice(s))
   writeFileSync(
     `${env.LOGPATH}/active-prices.json`,
-    JSON.stringify(prices, null, 2),
-  );
+    JSON.stringify(prices, null, 2)
+  )
   writeFileSync(
     `${env.LOGPATH}/active-prices-formatted.json`,
-    JSON.stringify(result, null, 2),
-  );
-  return result;
+    JSON.stringify(result, null, 2)
+  )
+  return result
 }
 
 /**
@@ -83,15 +85,15 @@ export async function getActivePrices() {
  * @returns FormattedPrice[]
  */
 export async function getAllPrices() {
-  let prices = await listAllPrices();
-  let result = prices.map((s) => formatPrice(s));
+  let prices = await listAllPrices()
+  let result = prices.map((s) => formatPrice(s))
   writeFileSync(
     `${env.LOGPATH}/all-prices.json`,
-    JSON.stringify(prices, null, 2),
-  );
+    JSON.stringify(prices, null, 2)
+  )
   writeFileSync(
     `${env.LOGPATH}/all-prices-formatted.json`,
-    JSON.stringify(result, null, 2),
-  );
-  return result;
+    JSON.stringify(result, null, 2)
+  )
+  return result
 }

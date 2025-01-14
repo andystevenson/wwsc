@@ -1,7 +1,8 @@
 import {
   type AnySQLiteColumn,
   sqliteTable,
-  text
+  text,
+  integer
 } from 'drizzle-orm/sqlite-core'
 import { createInsertSchema, createSelectSchema } from 'drizzle-zod'
 import { memberships } from './memberships'
@@ -12,14 +13,14 @@ export const SubscriptionScope = ['individual', 'family', 'club'] as const
 
 export type Scope = (typeof SubscriptionScope)[number]
 export const SubscriptionStatus = [
+  'active',
   'incomplete',
   'incomplete_expired',
   'trialing',
-  'active',
   'past_due',
-  'canceled',
   'unpaid',
-  'paused'
+  'paused',
+  'canceled'
 ] as const
 export type Status = (typeof SubscriptionStatus)[number]
 
@@ -39,7 +40,11 @@ export const subscriptions = sqliteTable('subscriptions', {
   started: text(), // date
   phaseStart: text(), // date | null
   phaseEnd: text(), // date | null
-  canceled: text(), // date | null (might be a future cancellation date)
+  cancelAt: text(), // date | null
+  canceledAt: text(), // date | null
+  cancelAtPeriodEnd: integer({ mode: 'boolean' }).default(false).notNull(), // boolean
+  reason: text(), // reason for cancellation | null
+  ends: text().notNull(), // date | null ... when the subscription ends | ended
   includedIn: text().references((): AnySQLiteColumn => subscriptions.id)
 })
 

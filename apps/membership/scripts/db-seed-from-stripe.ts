@@ -146,7 +146,7 @@ function rationaliseCustomers(data: SubscriptionData) {
   }
 
   if (identities.size === 1) {
-    console.log('rationalised compatible', member?.memberNo, customers[0].name)
+    // console.log('rationalised compatible', member?.memberNo, customers[0].name)
     let customer = selectBestCustomer(data)
     data.customers = [customer]
     return [data]
@@ -158,6 +158,7 @@ function rationaliseCustomers(data: SubscriptionData) {
     customers[0].name,
     customers.length
   )
+  console.log(Array.from(identities).join('    \n'))
 
   let multiple: SubscriptionData[] = []
   for (let customer of customers) {

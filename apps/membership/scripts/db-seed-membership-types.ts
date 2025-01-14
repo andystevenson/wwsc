@@ -14,36 +14,47 @@ console.log('all membership types:', membershipTypes.length)
 
 let all = await Promise.all(
   membershipTypes.map((m) => {
-    let { id: stripeProduct, description } = m
+    let { id: stripeProduct, description: productDescription } = m
 
     return Promise.all(
       // @ts-ignore
       m.prices.map((p) => {
-        const {
-          id: stripePrice,
-          name,
-          lookup_key,
-          interval,
-          intervals,
-          amount,
-          metadata
-        } = p
+        const { name, lookup_key, interval, intervals, amount, metadata } = p
+
         let iterations = 1
+        let changeTo = null
         let { phases } = metadata
         if (phases) {
           let ps = JSON.parse(phases)
           for (let phase of ps) {
-            let { iterations: iters } = phase
+            let { iterations: iters, change } = phase
             if (iters) {
               iterations = iters
+            }
+            if (change) {
+              changeTo = change
             }
           }
         }
 
         let { ignore } = metadata
+        let pAmount = amount
+          ? `£${amount.toFixed(2)}`
+          : lookup_key.includes('inclusive')
+            ? 'inclusive in club membership'
+            : 'free'
+        let pInterval =
+          intervals !== 1 ? `per ${intervals} ${interval}s` : `per ${interval}`
+        let pIterations =
+          iterations > 1 ? ` for ${iterations + 1} ${interval}s` : ''
+        let pChange = changeTo ? ` then ${changeTo}` : ''
+        let description =
+          `${productDescription || ''} / ${pAmount} ${pInterval} ${pIterations} ${pChange}`
+            .replace(/  +/g, ' ')
+            .trim()
         let membership: InsertMembership = {
           id: lookup_key || '',
-          description: description || '',
+          description,
           category: name as Category,
           effectiveDate: '2024-01-01',
           interval: interval as Interval,

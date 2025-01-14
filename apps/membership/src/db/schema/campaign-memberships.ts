@@ -1,7 +1,7 @@
 import { primaryKey, sqliteTable, text } from 'drizzle-orm/sqlite-core'
 import { createInsertSchema, createSelectSchema } from 'drizzle-zod'
 import { campaigns } from './campaigns'
-import { memberships } from './memberships'
+import { memberships, Categories } from './memberships'
 
 export const campaignMemberships = sqliteTable(
   'campaignMemberships',
@@ -9,12 +9,17 @@ export const campaignMemberships = sqliteTable(
     campaign: text()
       .references(() => campaigns.id)
       .notNull(),
+    category: text({ enum: Categories }).notNull(),
     membership: text()
       .references(() => memberships.id)
       .notNull()
   },
   (table) => {
-    return { key: primaryKey({ columns: [table.campaign, table.membership] }) }
+    return {
+      key: primaryKey({
+        columns: [table.campaign, table.category, table.membership]
+      })
+    }
   }
 )
 

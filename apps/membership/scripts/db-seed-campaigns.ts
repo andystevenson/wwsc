@@ -1,15 +1,22 @@
-import { db, campaigns, campaignMemberships, Campaign } from '../src/db/db'
+import {
+  db,
+  campaigns,
+  campaignMemberships,
+  memberships,
+  Campaign,
+  Category
+} from '../src/db/db'
 import { getAllPrices } from '../src/stripe'
 import { andy } from './andy'
-import { never } from '@wwsc/lib-dates'
 
 let prices = await getAllPrices()
 
 let campaignNames = new Set<string>()
 let campaignLookups: Record<string, string[]> = {}
+let lookupCategories: Record<string, string> = {} // lookup_key -> category
 
 for (let price of prices) {
-  let { id, active, nickname, lookup_key, metadata } = price
+  let { id, active, nickname, name, lookup_key, metadata } = price
   if (!active) continue
 
   let { campaign } = metadata
@@ -17,9 +24,9 @@ for (let price of prices) {
 
   let list = campaign.split(',')
   for (let c of list) {
-    let name = c.trim()
-    campaignNames.add(name)
-    campaignLookups[name] = campaignLookups[c] || []
+    let cname = c.trim()
+    campaignNames.add(cname)
+    campaignLookups[cname] = campaignLookups[c] || []
     if (!lookup_key) {
       console.error('No lookup key', id)
       continue
@@ -31,6 +38,7 @@ for (let price of prices) {
     if (campaignLookups[c].includes(lookup_key)) {
       console.error('Duplicate lookup', lookup_key)
     }
+    lookupCategories[lookup_key] = name
     campaignLookups[c].push(lookup_key)
   }
 }
@@ -40,71 +48,71 @@ let createdBy = await andy()
 let campaignConfigs: Campaign[] = [
   {
     id: 'yearly',
-    description: 'Yearly membership category',
+    description: 'Yearly',
     createdBy: createdBy.email,
     created: '2024-01-01',
     start: '2024-01-01',
-    end: never()
+    end: '9999-01-01'
   },
   {
     id: 'monthly',
-    description: 'Monthly membership category',
+    description: 'Monthly',
     createdBy: createdBy.email,
     created: '2024-01-01',
     start: '2024-01-01',
-    end: never()
+    end: '9999-01-01'
   },
   {
     id: 'club',
-    description: 'club membership category',
+    description: 'Club',
     createdBy: createdBy.email,
     created: '2024-01-01',
     start: '2024-01-01',
-    end: never()
+    end: '2024-12-31'
   },
   {
     id: 'top-up',
-    description: 'Top-up membership category',
+    description: 'Top-up to classes',
     createdBy: createdBy.email,
     created: '2024-01-01',
     start: '2024-01-01',
-    end: never()
+    end: '9999-01-01'
   },
   {
     id: '3-months-half-price',
-    description: '3 months half price membership campaign',
+    description: '3 months half price',
     createdBy: createdBy.email,
     created: '2024-01-01',
     start: '2024-01-01',
-    end: never()
+    end: '2024-12-31'
   },
   {
     id: 'ACT',
-    description: 'ACT membership campaign',
+    description: 'All Court Tennis',
     createdBy: createdBy.email,
     created: '2024-01-01',
     start: '2024-01-01',
-    end: never()
+    end: '9999-01-01'
   },
   {
     id: 'blue-light',
-    description: 'Blue light membership category',
+    description: 'Blue Light promotion',
     createdBy: createdBy.email,
     created: '2024-01-01',
     start: '2024-01-01',
-    end: never()
+    end: '9999-01-01'
   },
   {
     id: 'family-member',
-    description: 'Family member membership category',
+    description: 'Family member discount',
     createdBy: createdBy.email,
     created: '2024-01-01',
     start: '2024-01-01',
-    end: never()
+    end: '9999-01-01'
   },
   {
     id: 'set-for-summer',
-    description: 'Set for summer membership campaign',
+    description: 'Set For Summer 2024',
     createdBy: createdBy.email,
     created: '2024-07-01',
     start: '2024-07-01',
@@ -112,7 +120,7 @@ let campaignConfigs: Campaign[] = [
   },
   {
     id: 'new-year-new-me',
-    description: 'New year new me membership campaign',
+    description: 'New Year New Me 2024',
     createdBy: createdBy.email,
     created: '2024-01-01',
     start: '2024-01-01',
@@ -120,11 +128,19 @@ let campaignConfigs: Campaign[] = [
   },
   {
     id: 'new-year-2025',
-    description: 'New year 2025 membership campaign',
+    description: 'New Year 2025',
     createdBy: createdBy.email,
     created: '2025-01-01',
     start: '2025-01-01',
     end: '2025-03-31'
+  },
+  {
+    id: 'legacy',
+    description: 'Legacy Defunct Categories',
+    createdBy: createdBy.email,
+    created: '2023-01-01',
+    start: '2023-01-01',
+    end: '2024-12-31'
   }
 ]
 
@@ -138,11 +154,31 @@ console.log('campaigns', campaignNames.size, newCampaigns.length)
 let count = 0
 for (let [campaign, lookups] of Object.entries(campaignLookups)) {
   for (let lookup of lookups) {
+    let category = lookupCategories[lookup] as Category
+    if (!category) {
+      console.error('No category', lookup)
+      throw new Error(`'No category' ${lookup}`)
+    }
     await db
       .insert(campaignMemberships)
-      .values({ campaign, membership: lookup })
+      .values({ campaign, category, membership: lookup })
     count++
   }
+}
+
+let allMemberships = await db
+  .select({
+    id: memberships.id,
+    interval: memberships.interval,
+    category: memberships.category
+  })
+  .from(memberships)
+
+for (let { id, interval, category } of allMemberships) {
+  await db
+    .insert(campaignMemberships)
+    .values({ campaign: `${interval}ly`, category, membership: id })
+  count++
 }
 
 console.log('campaignMemberships', count)
