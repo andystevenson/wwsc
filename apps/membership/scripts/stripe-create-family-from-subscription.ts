@@ -1,4 +1,5 @@
-import { stripe, Stripe } from '../src/stripe'
+import { Stripe } from 'stripe'
+import { stripe } from '@lib/stripe/wwsc'
 import { db, ashbourne, eq, type AshbourneMember } from '../src/db/db'
 import { dayjs } from '@wwsc/lib-dates'
 

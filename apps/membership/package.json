@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@wwsc/lib-dates": "workspace:*",
-    "@wwsc/lib-hono": "workspace:*"
+    "@wwsc/lib-hono": "workspace:*",
+    "@lib/stripe": "workspace:*"
   }
 }

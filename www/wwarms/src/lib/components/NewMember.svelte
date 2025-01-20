@@ -85,8 +85,10 @@
 
 {#if !membership}
 	<section class="choose">
-		<h2>first select a membership to add a new member</h2>
+		<h2>💁‍♂️ first select a membership</h2>
+		<h3>to add a new member</h3>
 	</section>
+	>
 {/if}
 
 <style>
@@ -142,7 +144,9 @@
 		place-content: center;
 		height: 90%;
 		background-color: var(--surface-2);
-		h2 {
+		h2,
+		h3 {
+			text-align: center;
 			max-inline-size: unset;
 		}
 	}

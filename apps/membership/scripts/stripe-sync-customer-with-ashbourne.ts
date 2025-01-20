@@ -1,6 +1,7 @@
 import { db, ashbourne, eq, notes } from '../src/db/db'
 import { dayjs } from '@wwsc/lib-dates'
-import { stripe, Stripe } from '../src/stripe'
+import { Stripe } from 'stripe'
+import { stripe } from '@lib/stripe/wwsc'
 
 const all = await db
   .select({

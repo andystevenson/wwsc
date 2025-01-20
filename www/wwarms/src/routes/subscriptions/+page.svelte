@@ -1,10 +1,23 @@
 <script lang="ts">
-  	import type { PageData } from './$types';
+	import { enhance } from '$app/forms';
+	import type { PageData } from './$types';
+	import type { WWCampaignMembership } from '$lib/components/types';
+	import Subscriptions from '$lib/components/Subscriptions.svelte';
 
-  import { page } from '$app/stores';
-  let status = $page.status;
-  let message = $page.error?.message;
-  let { data }: { data: PageData } = $props();
+	let membership: WWCampaignMembership | null = $state(null);
+	function select(m: WWCampaignMembership | null) {
+		membership = m;
+	}
 </script>
-<h2>{$page.url.pathname.slice(1)}</h2>
-<pre>{JSON.stringify(data, null, 2)}</pre>
+
+<section class="subscriptions">
+	<Subscriptions {select} />
+	<pre>{JSON.stringify(membership, null, 2)}</pre>
+</section>
+
+<style>
+	.subscriptions {
+		block-size: 100%;
+		overflow: hidden;
+	}
+</style>

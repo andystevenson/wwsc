@@ -14,7 +14,7 @@
 		background-image: var(--screen, url('/favicon.svg'));
 		background-position: center;
 		background-size: auto;
-		opacity: var(--opacity, 0.5);
+		opacity: var(--opacity, 0.25);
 		z-index: var(--z-index, -999999);
 	}
 </style>

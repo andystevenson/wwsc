@@ -10,8 +10,15 @@ import { members } from './members'
 import { CollectionMethods } from './payments'
 
 export const SubscriptionScope = ['individual', 'family', 'club'] as const
-
 export type Scope = (typeof SubscriptionScope)[number]
+
+export const CollectionBehaviours = [
+  'keep_as_draft',
+  'mark_uncollectable',
+  'void'
+] as const
+export type CollectionBehaviour = (typeof CollectionBehaviours)[number]
+
 export const SubscriptionStatus = [
   'active',
   'incomplete',
@@ -44,6 +51,9 @@ export const subscriptions = sqliteTable('subscriptions', {
   canceledAt: text(), // date | null
   cancelAtPeriodEnd: integer({ mode: 'boolean' }).default(false).notNull(), // boolean
   reason: text(), // reason for cancellation | null
+  collectionPaused: integer({ mode: 'boolean' }).default(false).notNull(), // boolean
+  collectionBehavior: text({ enum: CollectionBehaviours }), // behavior when collection paused
+  collectionResumes: text(), // date | null
   ends: text().notNull(), // date | null ... when the subscription ends | ended
   includedIn: text().references((): AnySQLiteColumn => subscriptions.id)
 })

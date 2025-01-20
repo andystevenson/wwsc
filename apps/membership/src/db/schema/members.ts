@@ -19,7 +19,7 @@ export const members = sqliteTable('members', {
     { mode: 'virtual' }
   ),
   postcode: text(),
-  dob: text(),
+  dob: text().notNull().default(''),
   mobile: text(),
   email: text(),
   address: text(),

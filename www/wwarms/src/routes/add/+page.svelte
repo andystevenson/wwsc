@@ -5,12 +5,19 @@
 	import AddMember from '$lib/components/AddMember.svelte';
 
 	let membership: WWCampaignMembership | null = $state(null);
-	$inspect(membership);
 	function select(m: WWCampaignMembership | null) {
 		membership = m;
 	}
 </script>
 
-<AddMember {select} />
+<section class="add-member">
+	<AddMember {select} />
+	<pre>{JSON.stringify(membership, null, 2)}</pre>
+</section>
 
-<pre>{JSON.stringify(membership, null, 2)}</pre>
+<style>
+	.add-member {
+		block-size: 100%;
+		overflow: hidden;
+	}
+</style>

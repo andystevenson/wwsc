@@ -7,13 +7,14 @@ import { members } from './members'
 export const EventTypes = [
   'joined',
   'cancelled',
-  'rejoined',
   'suspended',
   'upgraded',
   'visited',
-  'review',
+  'reviewed',
   'paid',
   'payment-failed',
+  'updated',
+  'deleted',
   'notes'
 ] as const
 
@@ -24,9 +25,7 @@ export const events = sqliteTable('events', {
     .$default(() => `event-${nanoid()}`),
   date: text().notNull().default(now()),
   type: text({ enum: EventTypes }).notNull().default('joined'),
-  member: text().references(() => members.id),
-  note: text(),
-  ref: text() // external event reference
+  member: text().references(() => members.id)
 })
 
 export type InsertEvent = typeof events.$inferInsert

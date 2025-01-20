@@ -3,6 +3,14 @@
 	import { GenderEmojis, SubscriptionStatusEmojis } from './emojis';
 	import { gbp } from '$lib/utilities';
 	let { members }: { members: WWMember[] } = $props();
+
+	function formatPrice(member: WWMember) {
+		if (member.category === 'family' && member.price === 0) return 'inclusive';
+		if (member.category === 'hockey' && !member.name?.includes('HockeyClub')) return 'inclusive';
+		if (member.category === 'cricket' && !member.name?.includes('CricketClub')) return 'inclusive';
+		if (member.price === 0) return 'free';
+		return gbp(member.price);
+	}
 </script>
 
 {#snippet member(m: WWMember)}
@@ -19,7 +27,7 @@
 		</span>
 		<span class="category">{m.category}</span>
 		<span class="interval">{m.interval}ly</span>
-		<span class="price">{gbp(m.price)}</span>
+		<span class="price">{formatPrice(m)}</span>
 	</li>
 {/snippet}
 
@@ -52,7 +60,7 @@
 		--_category: 12fr;
 		--_interval: 7fr;
 		--_price: 9fr;
-		
+
 		--_layout: var(--_status) var(--_gender) var(--_name) var(--_email) var(--_mobile)
 			var(--_category) var(--_interval) var(--_price);
 		padding: 0;

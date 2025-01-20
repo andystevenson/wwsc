@@ -17,7 +17,7 @@ export const load: PageServerLoad = async () => {
 			price: memberships.price,
 			start: campaigns.start,
 			end: campaigns.end,
-			active: sql`${campaigns.start} <= (current_timestamp) and ${campaigns.end} >= (current_timestamp)`
+			active: sql<boolean>`${campaigns.start} <= (current_timestamp) and ${campaigns.end} >= (current_timestamp)`
 		})
 		.from(campaignMemberships)
 		.innerJoin(campaigns, eq(campaigns.id, campaignMemberships.campaign))

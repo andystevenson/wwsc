@@ -7,5 +7,5 @@
     "jsxImportSource": "hono/jsx"
   },
   "extends": ["@tsconfig/node-lts/tsconfig.json"],
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/resync/resync.js"]
 }

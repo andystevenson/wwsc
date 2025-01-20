@@ -1,5 +1,6 @@
 import { parse } from 'csv-parse/sync'
-import { stripe, Stripe } from '../src/stripe'
+import { Stripe } from 'stripe'
+import { stripe } from '@lib/stripe/wwsc'
 import { readFileSync } from 'node:fs'
 import { dayjs } from '@wwsc/lib-dates'
 

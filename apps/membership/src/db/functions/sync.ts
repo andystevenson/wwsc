@@ -1,8 +1,11 @@
-import { stripe, Stripe } from '../../stripe'
+import { Stripe } from 'stripe'
+import { stripe } from '@lib/stripe/wwsc'
 import {
   db,
   eq,
+  and,
   members,
+  guardians,
   identities,
   PreferenceTypes,
   GenderTypes,
@@ -25,9 +28,18 @@ import type {
   InsertEvent,
   InsertNote,
   InsertSubscription,
-  InsertPayment
+  InsertPayment,
+  InsertGuardian,
+  CollectionBehaviour
 } from '../db'
-import { dayjs } from '@wwsc/lib-dates'
+import {
+  formatStripeAddress,
+  formatNameToFirstNameSurname
+} from '../../utilities'
+
+import { membershipFromLookupKey, scopeFromLookupKey } from './membership'
+
+import { dayjs, age as getAge } from '@wwsc/lib-dates'
 
 export async function syncStripeCustomer(customer: Stripe.Customer) {
   let { id, metadata, name, address, email, phone } = customer
@@ -37,9 +49,8 @@ export async function syncStripeCustomer(customer: Stripe.Customer) {
 
   if (!name) throw new TypeError(`no name, ${customer.id}`)
   let { firstName, surname } = formatNameToFirstNameSurname(name)
-  let dateOfBirth = dayjs(dob).isValid()
-    ? dayjs(dob).format('YYYY-MM-DD')
-    : null
+  let dateOfBirth =
+    dob && dayjs(dob).isValid() ? dayjs(dob).format('YYYY-MM-DD') : null
 
   let member: InsertMember = {
     id,
@@ -48,7 +59,7 @@ export async function syncStripeCustomer(customer: Stripe.Customer) {
     surname,
     address: formatStripeAddress(address),
     postcode: postal_code,
-    dob: dateOfBirth,
+    dob: dateOfBirth || '',
     email,
     mobile: phone
     // relative: linkedWith
@@ -65,13 +76,14 @@ export async function syncStripeCustomer(customer: Stripe.Customer) {
 
 export async function syncStripeCustomerMetadata(customer: Stripe.Customer) {
   let { metadata } = customer
-  let { memberNo, cardNo, preferences, gender, joined } = metadata
+  let { memberNo, cardNo, student, preferences, gender, joined } = metadata
 
   if (memberNo || cardNo) {
     let identity: InsertIdentity = {
       id: customer.id,
-      memberNo: memberNo.trim(),
-      card: cardNo.trim()
+      memberNo: memberNo?.trim(),
+      card: cardNo?.trim(),
+      student: student?.trim()
     }
     console.log('identity', identity)
     await db
@@ -87,6 +99,7 @@ export async function syncStripeCustomerMetadata(customer: Stripe.Customer) {
   await syncStripeGender(customer, gender)
   await syncStripeJoined(customer, joined)
   await syncAshbourneNotes(customer, memberNo)
+  await syncStripeGuardians(customer)
 }
 
 export async function syncStripeGender(
@@ -134,17 +147,23 @@ export async function syncStripeJoined(
   customer: Stripe.Customer,
   joined: string
 ) {
-  let date = joined.trim()
+  let date = joined?.trim()
   if (!date || !dayjs(date).isValid()) return
 
   let event: InsertEvent = {
     type: 'joined',
     date,
-    member: customer.id,
-    note: 'customer joined west warwicks on this date'
+    member: customer.id
   }
 
   console.log('joined', event)
+
+  let [existing] = await db
+    .select()
+    .from(events)
+    .where(and(eq(events.member, customer.id), eq(events.type, 'joined')))
+
+  if (existing && existing.date === date) return
 
   await db
     .insert(events)
@@ -196,6 +215,7 @@ export async function syncStripeSubscription(
     canceled_at,
     cancel_at_period_end,
     cancellation_details,
+    pause_collection,
     items,
     start_date,
     collection_method,
@@ -237,7 +257,7 @@ export async function syncStripeSubscription(
       `all subscriptions should be recurring ${customer.name} ${id}`
     )
 
-  let membership = await membershipFromLookupKey(lookup_key, subscription)
+  let membership = await membershipFromLookupKey(lookup_key)
 
   let insertSubscription: InsertSubscription = {
     id,
@@ -252,8 +272,16 @@ export async function syncStripeSubscription(
     cancelAt,
     canceledAt,
     cancelAtPeriodEnd,
-    ends,
-    reason
+    reason,
+    collectionPaused: pause_collection ? true : false,
+    collectionBehavior: pause_collection
+      ? (pause_collection.behavior as CollectionBehaviour)
+      : null,
+    collectionResumes:
+      pause_collection && pause_collection.resumes_at
+        ? dayjs.unix(pause_collection.resumes_at).format('YYYY-MM-DD')
+        : null,
+    ends
     // includedIn
   }
 
@@ -279,47 +307,6 @@ export async function findStripeCustomerByMemberNo(memberNo: string) {
   return search.data[0]
 }
 
-export function formatStripeAddress(
-  address: Stripe.Address | null | undefined
-) {
-  if (!address) return ''
-  let { line1, line2, city, postal_code, country } = address
-  let parts = [line1, line2, city, postal_code, country].filter((p) => p)
-  return parts.join(', ')
-}
-
-export function formatNameToFirstNameSurname(name: string) {
-  let parts = name.split(' ').map((part) => part.trim())
-  if (parts.length === 1) return { firstName: parts[0], surname: '' }
-  return {
-    firstName: parts.slice(0, -1).join(' '),
-    surname: parts.slice(-1).join(' ')
-  }
-}
-
-export function scopeFromLookupKey(lookup_key: string) {
-  if (lookup_key.includes('family')) return 'family'
-  if (lookup_key.includes('club')) return 'club'
-  return 'individual'
-}
-
-export async function membershipFromLookupKey(
-  lookup_key: string,
-  subscription: Stripe.Subscription
-) {
-  let [membership] = await db
-    .select()
-    .from(memberships)
-    .where(eq(memberships.id, lookup_key))
-
-  if (!membership)
-    throw new TypeError(
-      `no membership found for lookup_key ${lookup_key}, ${subscription.id}`
-    )
-
-  return membership.id
-}
-
 export async function lookupKeyFromPrice(priceId: string) {
   let price = await stripe.prices.retrieve(priceId)
   let { product, nickname, unit_amount, recurring } = price
@@ -336,17 +323,6 @@ export async function lookupKeyFromPrice(priceId: string) {
       recurring &&
       p.recurring.interval === recurring.interval &&
       p.recurring.interval_count === recurring.interval_count
-
-    // if (!ok) {
-    //   console.log(
-    //     'price mismatch',
-    //     p.id,
-    //     p.lookup_key,
-    //     p.unit_amount,
-    //     p.recurring
-    //   )
-    //   console.log('price mismatch', priceId, nickname, unit_amount, recurring)
-    // }
 
     return ok
   })
@@ -457,7 +433,7 @@ export function formatInvoice(
     date,
     amount,
     status,
-    type,
+    type: paid_out_of_band ? 'cash' : type,
     collection,
     name,
     email,
@@ -471,4 +447,69 @@ export function formatInvoice(
   }
 
   return payment
+}
+
+export async function syncStripeGuardians(customer: Stripe.Customer) {
+  let list = await guardiansFromStripe(customer)
+  console.log('guardians of', customer.name, list.length)
+  for (let guardian of list) {
+    await db
+      .insert(guardians)
+      .values(guardian)
+      .onConflictDoUpdate({
+        target: [guardians.member, guardians.name],
+        set: guardian
+      })
+  }
+}
+
+async function guardiansFromStripe(customer: Stripe.Customer) {
+  let list: InsertGuardian[] = []
+
+  let { metadata, phone, email, name } = customer
+  let { dob, guardian, guardian2, guardian2mobile, guardian2email } = metadata
+  if (guardian) {
+    list.push({
+      member: customer.id,
+      name: guardian,
+      mobile: phone || '',
+      email: email || ''
+    })
+  }
+
+  if (guardian2) {
+    list.push({
+      member: customer.id,
+      name: metadata.guardian2,
+      mobile: guardian2mobile || '',
+      email: guardian2email || ''
+    })
+  }
+
+  if (dob) {
+    let linkedWith = metadata['linked-with']
+    let age = getAge(dob)
+    if (age < 18 && linkedWith) {
+      let guardianCustomer = await stripe.customers.retrieve(linkedWith)
+      if (guardianCustomer && !guardianCustomer.deleted) {
+        let { id, name: gName, phone: gPhone, email: gEmail } = guardianCustomer
+        if (
+          ['WestWarwicksHockeyClub', 'WestWarwicksCricketClub'].includes(
+            gName || ''
+          )
+        ) {
+          return list
+        }
+        console.log('updating', name, 'aged', age, 'from', gName)
+        list.push({
+          member: id,
+          name: gName || email || 'unknown',
+          mobile: gPhone || phone || '',
+          email: gEmail || email || ''
+        })
+      }
+    }
+  }
+
+  return list
 }

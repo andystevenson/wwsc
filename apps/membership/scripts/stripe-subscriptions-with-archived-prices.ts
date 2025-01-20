@@ -1,4 +1,4 @@
-import { getActiveSubscriptions, getAllPrices } from '../src/stripe'
+import { getActiveSubscriptions, getAllPrices } from '@lib/stripe/wwsc'
 
 console.log('Looking for archived prices in subscriptions...')
 let prices = await getAllPrices()
@@ -10,6 +10,7 @@ for (let subscription of subscriptions) {
   let { name, email } = customer
   let found = prices.find(
     // (p) => p.id === price && p.active === false && !p.metadata?.campaign
+    // @ts-ignore
     (p) => p.id === price && p.active === false
   )
   if (found) {

@@ -34,6 +34,7 @@ export const payments = sqliteTable('payments', {
   receipt: text(), // stripe receipt url
   refunded: real().default(0),
   attempts: integer().default(0),
+  failure: text(), // stripe failure message
   member: text().references(() => members.id)
 })
 

@@ -1,63 +1,92 @@
 <script lang="ts">
 	import Chart from 'chart.js/auto';
 	import ChartDataLabels from 'chartjs-plugin-datalabels';
-	Chart.register(ChartDataLabels);
+	import type { Context } from 'chartjs-plugin-datalabels';
+
+	import { nanoid } from 'nanoid';
 
 	import { onMount } from 'svelte';
 
 	let canvas: HTMLCanvasElement;
 	let chart: Chart | null = $state(null);
+	let id = $state(nanoid());
 
 	type Props = {
+		title?: string;
 		dataset: Record<string, number>;
 	};
 
-	let { dataset }: Props = $props();
+	function sortDataset(dataset: Record<string, number>) {
+		return Object.fromEntries(Object.entries(dataset).sort((a, b) => b[1] - a[1]));
+	}
+	let { title = 'dataset', dataset }: Props = $props();
 
 	onMount(async () => {
-		canvas = document.getElementById('chart') as HTMLCanvasElement;
+		canvas = document.getElementById(id) as HTMLCanvasElement;
 		if (!canvas) throw new TypeError('Canvas not found');
 		chart = new Chart(canvas, {
 			type: 'doughnut',
+			plugins: [ChartDataLabels],
 			options: {
 				plugins: {
+					datalabels: {
+						//@ts-ignore
+						backgroundColor: function (context: Context) {
+							return context.dataset.backgroundColor;
+						},
+						borderColor: 'white',
+						borderRadius: 25,
+						borderWidth: 2,
+						color: 'black',
+						display: function (context: Context) {
+							let dataset = context.dataset;
+							let value = dataset.data[context.dataIndex];
+							if (typeof value !== 'number') return false;
+							return value > 9;
+						},
+						font: {
+							weight: 'bold'
+						},
+						padding: 6,
+						formatter: Math.round
+					},
 					legend: {
-						display: false
+						position: 'bottom',
+						labels: {
+							boxWidth: 20,
+							color: 'white'
+						}
 					},
 					title: {
 						display: true,
+						color: 'white',
 						font: {
 							size: 20
 						},
-						text: 'memberships'
+						text: title
 					},
 					tooltip: {
-						enabled: true
-					},
-					datalabels: {
-						formatter: function (value, context) {
-							let chart = context.chart;
-							let data = chart.data;
-							let labels = data.labels;
-							if (!labels) return value;
-							if (+value < 10) return value;
-							return `${labels[context.dataIndex]}\n${value}`;
-						},
-						anchor: 'center',
-						backgroundColor: null,
-						borderWidth: 0,
-						color: 'var(--accent)',
-						font: {
+						backgroundColor: 'rgba(0, 0, 0, 0.1)',
+						borderColor: 'white',
+						borderWidth: 2,
+						displayColors: false,
+						bodyColor: 'white',
+						bodyAlign: 'center',
+						padding: 6,
+						titleFont: {
 							weight: 'bold'
 						}
 					}
 				}
 			},
 			data: {
-				labels: Object.keys(dataset),
+				labels: Object.keys(sortDataset(dataset)),
 				datasets: [
 					{
-						data: Object.values(dataset)
+						data: Object.values(sortDataset(dataset)),
+						datalabels: {
+							anchor: 'end'
+						}
 					}
 				]
 			}
@@ -66,7 +95,15 @@
 </script>
 
 <section class="chart">
-	<canvas bind:this={canvas} id="chart"></canvas>
+	<canvas
+		bind:this={canvas}
+		onclick={() => {
+			// chart?.data.datasets[0].data = Object.values(sortDataset(dataset));
+			chart?.reset();
+			chart?.update();
+		}}
+		{id}
+	></canvas>
 </section>
 
 <style>

@@ -45,6 +45,5 @@
 
 	.content {
 		block-size: 100%;
-		overflow: hidden;
 	}
 </style>

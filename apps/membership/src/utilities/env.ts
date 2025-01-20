@@ -8,7 +8,6 @@ declare global {
       LOGPATH: string
       GOOGLE_ID: string
       GOOGLE_SECRET: string
-      STRIPE_SECRET_KEY: string
     }
   }
 }
@@ -37,15 +36,11 @@ if (!process.env.GOOGLE_SECRET) {
   throw new Error('GOOGLE_SECRET environment variable is required')
 }
 
-if (!process.env.STRIPE_SECRET_KEY) {
-  throw new Error('STRIPE_SECRET_KEY environment variable is required')
-}
 export default {
   LOGPATH: process.env.LOGPATH,
   MEMBERSHIP_PORT: process.env.MEMBERSHIP_PORT,
   MEMBERSHIP_DATABASE_URL: process.env.MEMBERSHIP_DATABASE_URL,
   MEMBERSHIP_SESSION_KEY: process.env.MEMBERSHIP_SESSION_KEY,
   GOOGLE_ID: process.env.GOOGLE_ID,
-  GOOGLE_SECRET: process.env.GOOGLE_SECRET,
-  STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY
+  GOOGLE_SECRET: process.env.GOOGLE_SECRET
 }

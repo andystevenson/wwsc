@@ -9,6 +9,8 @@ import type {
 	Status,
 	PreferenceType,
 	GenderType,
+	CollectionMethod,
+	PaymentStatus,
 	ID
 } from '../db/schema';
 import {
@@ -16,7 +18,9 @@ import {
 	Intervals,
 	SubscriptionStatus,
 	PreferenceTypes,
-	GenderTypes
+	GenderTypes,
+	PaymentStatuses,
+	CollectionMethods
 } from '../db/schema';
 
 export type WWMemberPart = Pick<Member, 'id' | 'name' | 'email' | 'mobile'>;
@@ -73,3 +77,35 @@ export function clearerStatus(status: Status) {
 	}
 	return s;
 }
+
+export function clearerCollectionMethod(method: CollectionMethod) {
+	let m = method as string;
+	switch (method) {
+		case 'charge_automatically':
+			m = 'automatic';
+			break;
+		case 'send_invoice':
+			m = 'invoice';
+			break;
+	}
+	return m;
+}
+
+type Base = { count: number };
+export function normalize<T extends Base>(dataset: T[]) {
+	return dataset
+		.toSorted((a, b) => b.count - a.count)
+		.reduce(
+			(dataset, next) => {
+				const key = Object.keys(next).find((key) => key !== 'count')!;
+				const { count } = next;
+				const index = next[key as keyof T] as string;
+				dataset[index] = count;
+				return dataset;
+			},
+			{} as Record<string, number>
+		);
+}
+
+export type { CollectionMethod, PaymentStatus };
+export { CollectionMethods, PaymentStatuses };

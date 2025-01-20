@@ -1,10 +1,31 @@
 <script lang="ts">
-  	import type { PageData } from './$types';
+	import { type Category as CategoryType } from '$lib/components/types';
 
-  import { page } from '$app/stores';
-  let status = $page.status;
-  let message = $page.error?.message;
-  let { data }: { data: PageData } = $props();
+	import Category from '$lib/components/Category.svelte';
+
+	type CUpdate = (category: CategoryType, checked: boolean) => void;
+
+	type Props = {
+		updateCategories: CUpdate;
+	};
+
+	let { updateCategories }: Props = $props();
 </script>
-<h2>{$page.url.pathname.slice(1)}</h2>
-<pre>{JSON.stringify(data, null, 2)}</pre>
+
+<section>
+	<section class="filters">
+		<Category update={updateCategories} --inline-size="auto" --font-size="var(--font-size-0)" />
+	</section>
+</section>
+
+<style>
+	section {
+		display: grid;
+		gap: var(--size-1);
+	}
+
+	.filters {
+		display: flex;
+		gap: var(--size-1);
+	}
+</style>

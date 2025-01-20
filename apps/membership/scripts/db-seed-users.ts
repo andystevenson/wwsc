@@ -1,4 +1,4 @@
-import { db, type InsertUser, users } from '../src/db/db'
+import { db, type InsertUser, users } from '../src/db'
 
 let admins: InsertUser[] = [
   {

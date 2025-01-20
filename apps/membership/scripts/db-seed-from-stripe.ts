@@ -1,15 +1,17 @@
-import { stripe, Stripe } from '../src/stripe'
+import { Stripe } from 'stripe'
+import { stripe } from '@lib/stripe/wwsc'
+
 import {
   db,
   ashbourne,
   members,
   subscriptions,
   eq,
-  formatStripeAddress,
   syncStripeCustomer,
   syncStripeSubscription,
   syncStripeInvoices
 } from '../src/db'
+import { formatStripeAddress } from '../src/utilities'
 import type { AshbourneMember } from '../src/db'
 import { dayjs } from '@wwsc/lib-dates'
 

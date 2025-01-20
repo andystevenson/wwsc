@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "hono": "^4.3.7",
-    "@wwsc/lib-db": "workspace:*"
+    "@wwsc/lib-db": "workspace:*",
+    "@lib/stripe": "workspace:*"
   }
 }

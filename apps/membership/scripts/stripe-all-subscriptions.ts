@@ -1,5 +1,5 @@
-import { getAllSubscriptions } from "../src/stripe";
+import { getAllSubscriptions } from '@lib/stripe/wwsc'
 
-console.log("Getting all subscriptions...");
-let subscriptions = await getAllSubscriptions();
-console.log("all subscriptions:", subscriptions.length);
+console.log('Getting all subscriptions...')
+let subscriptions = await getAllSubscriptions()
+console.log('all subscriptions:', subscriptions.length)

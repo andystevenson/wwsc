@@ -1,7 +1,6 @@
 import { sqliteTable, text } from 'drizzle-orm/sqlite-core'
 import { createInsertSchema, createSelectSchema } from 'drizzle-zod'
 import { members } from './members'
-import { stripe } from '../../stripe'
 
 export const identities = sqliteTable('identities', {
   id: text()
@@ -9,7 +8,8 @@ export const identities = sqliteTable('identities', {
     .references(() => members.id),
   card: text(), // card number
   memberNo: text(), // legacy ashbourne member number
-  sumup: text() // customer record on sumup
+  sumup: text(), // customer record on sumup
+  student: text() // student id
 })
 
 export type InsertIdentity = typeof identities.$inferInsert

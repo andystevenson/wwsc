@@ -7,7 +7,7 @@ import {
   Category
 } from '../src/db/db'
 
-import { getAllMembershipTypes } from '../src/stripe'
+import { getAllMembershipTypes } from '@lib/stripe/wwsc'
 
 let membershipTypes = await getAllMembershipTypes()
 console.log('all membership types:', membershipTypes.length)

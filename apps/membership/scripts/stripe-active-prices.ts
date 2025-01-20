@@ -1,5 +1,5 @@
-import { getActivePrices } from "../src/stripe";
+import { getActivePrices } from '@lib/stripe/wwsc'
 
-console.log("Getting active prices...");
-let prices = await getActivePrices();
-console.log("Active prices:", prices.length);
+console.log('Getting active prices...')
+let prices = await getActivePrices()
+console.log('Active prices:', prices.length)

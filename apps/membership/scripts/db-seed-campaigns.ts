@@ -6,7 +6,7 @@ import {
   Campaign,
   Category
 } from '../src/db/db'
-import { getAllPrices } from '../src/stripe'
+import { getAllPrices } from '@lib/stripe/wwsc'
 import { andy } from './andy'
 
 let prices = await getAllPrices()

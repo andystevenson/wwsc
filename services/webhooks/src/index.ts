@@ -1,22 +1,40 @@
-console.log('hello from the webhooks service!')
+import { stripe, webhook } from '@lib/stripe/wwsc'
+import { queue } from './sync'
 
+type WebhookEvent = { type: string; object: any }
 async function handleRequest(request: Request): Promise<Response> {
-  if (request.headers.get('Content-Type') === 'application/json') {
-    let json = await request.json()
-    let response = JSON.stringify(json, null, 2)
-    console.log('Received webhook:', response)
-    return new Response(response, {
-      headers: { 'Content-Type': 'application/json' },
-    })
-  }
-  console.log('Received webhook: bad request', { status: 400 })
+  try {
+    const body = await request.text()
+    const signature = request.headers.get('stripe-signature')
+    if (!signature) throw new TypeError('webhook stripe signature missing')
 
-  return new Response('Bad request', { status: 400 })
+    const stripeEvent = await stripe.webhooks.constructEventAsync(
+      body,
+      signature,
+      webhook
+    )
+
+    const { type } = stripeEvent
+    const { object } = stripeEvent.data
+
+    // queue the event for processing
+    queue({ type, object })
+
+    return new Response(`${type} processed`, { status: 200 })
+  } catch (error) {
+    if (error instanceof TypeError) {
+      console.error('webhook error', error.message)
+      return new Response('Bad request', { status: 400 })
+    }
+
+    console.error('webhook error', error)
+    return new Response('Bad request', { status: 400 })
+  }
 }
 
-let port = process.env.WEBHOOKS_PORT
+let port = process.env.WWSC_WEBHOOKS_PORT
 if (!port) {
-  console.error('WEBHOOKS_PORT not set')
+  console.error('WWSC_WEBHOOKS_PORT not set')
   process.exit(1)
 }
 
@@ -24,5 +42,5 @@ console.log(`webhooks on port ${port}`)
 
 Bun.serve({
   port,
-  fetch: handleRequest,
+  fetch: handleRequest
 })

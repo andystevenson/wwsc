@@ -1,4 +1,4 @@
-import { stripe } from '../src/stripe'
+import { stripe } from '@lib/stripe/wwsc'
 
 async function main() {
   let prices = await stripe.prices.list().autoPagingToArray({ limit: 10000 })
