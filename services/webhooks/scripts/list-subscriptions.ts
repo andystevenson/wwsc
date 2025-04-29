@@ -17,7 +17,7 @@ async function listCustomers() {
 }
 async function firstSubscriptions() {
   let { data } = await stripe.subscriptions.list({ status: 'all' })
-  console.log('first subscription:', { data })
+  console.log('first subscriptions:', data.length)
 }
 
 async function main() {
