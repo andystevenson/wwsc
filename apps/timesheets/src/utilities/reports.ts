@@ -41,7 +41,7 @@ function allFortnights(earliest: string) {
   return fortnights.toReversed() // most recent first
 }
 
-function allNewFortnights(earliest: string = '2025-02-13') {
+function allNewFortnights(earliest: string = '2025-02-06') {
   let start = dayjs(earliest)
   let tomorrow = dayjs().startOf('day').add(1, 'day')
   let fortnights: Fortnight[] = []

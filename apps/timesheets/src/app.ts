@@ -1,3 +1,4 @@
+import os from 'node:os'
 import { factory, protectedPage, sessionMiddleware } from './hono-factory'
 import { HTTPException } from 'hono/http-exception'
 import { serveStatic } from 'hono/bun'
@@ -24,15 +25,21 @@ app.use(csrf())
 app.use(trimTrailingSlash())
 app.use('/*', serveStatic({ root: './src/public' }))
 
-let whitelist = JSON.parse(process.env.WHITELISTED_IPS || '[]')
+let hostname = os.hostname()
 
-app.use(
-  '*',
-  ipRestriction(conninfo('timesheets'), {
-    denyList: [],
-    allowList: whitelist
-  })
-)
+if (hostname !== 'ajs.local') {
+  // ignore localhost
+  let whitelist = JSON.parse(process.env.WHITELISTED_IPS || '[]')
+
+  app.use(
+    '*',
+    ipRestriction(conninfo('timesheets'), {
+      denyList: [],
+      allowList: whitelist
+    })
+  )
+}
+
 app.use('*', sessionMiddleware)
 
 app.use('/user', protectedPage)
