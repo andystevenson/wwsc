@@ -17,5 +17,8 @@
 		"db:studio": "drizzle-kit studio"
 	},
 	"devDependencies": {},
-	"dependencies": {}
+	"dependencies": {
+		"maplibre-gl": "^5.0.1",
+		"svelte-maplibre": "^1.0.0-next.10"
+	}
 }

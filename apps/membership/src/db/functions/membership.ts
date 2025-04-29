@@ -1,3 +1,4 @@
+import type { MembershipScope } from '../db'
 import { db, eq, memberships } from '../db'
 
 /**
@@ -27,7 +28,7 @@ export async function membershipFromLookupKey(lookup_key: string) {
   return membership.id
 }
 
-export function scopeFromLookupKey(lookup_key: string) {
+export function scopeFromLookupKey(lookup_key: string): MembershipScope {
   if (lookup_key.includes('club')) return 'club'
   if (lookup_key.includes('family') && !lookup_key.includes('family-member'))
     return 'family'

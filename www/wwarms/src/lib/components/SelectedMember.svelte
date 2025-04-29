@@ -27,6 +27,7 @@
 		display: grid;
 		gap: var(--size-0);
 		justify-items: center;
+		font-weight: bold;
 	}
 	.description {
 		font-size: var(--font-size-3);

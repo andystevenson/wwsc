@@ -1,40 +1,44 @@
 <script lang="ts">
-	import {
-		type Category as CategoryType,
-		type Interval as IntervalType,
-		type Status as StatusType
+	import { SvelteSet } from 'svelte/reactivity';
+	import type {
+		Category as CategoryType,
+		Interval as IntervalType,
+		Status as StatusType,
+		WWActiveCampaign,
+		ID
 	} from './types';
 
+	import Campaign from './Campaign.svelte';
 	import Category from './Category.svelte';
 	import Interval from './Interval.svelte';
 	import Status from './Status.svelte';
+	import { page } from '$app/state';
+	let { data } = page;
 
 	type SUpdate = (interval: StatusType, checked: boolean) => void;
+	type CUpdate = (campaign: ID, checked: boolean) => void;
 	type IUpdate = (interval: IntervalType, checked: boolean) => void;
-	type CUpdate = (category: CategoryType, checked: boolean) => void;
-	type PUpdate = (start: number, end: number) => [number, number];
+	type CatUpdate = (category: CategoryType, checked: boolean) => void;
 
 	type Props = {
+		activeCampaigns: WWActiveCampaign[];
 		updateSearch: (search: string) => void;
+		updateCampaigns: CUpdate;
 		updateStatus: SUpdate;
 		updateIntervals: IUpdate;
-		updateCategories: CUpdate;
-		updatePrices: PUpdate;
+		updateCategories: CatUpdate;
 	};
 
-	let { updateStatus, updateSearch, updateIntervals, updateCategories, updatePrices }: Props =
-		$props();
+	let {
+		activeCampaigns,
+		updateSearch,
+		updateCampaigns,
+		updateStatus,
+		updateIntervals,
+		updateCategories
+	}: Props = $props();
 
-	function processPrices(e: Event) {
-		e.preventDefault();
-		e.stopPropagation();
-		let fromElement = document.getElementById('from') as HTMLInputElement;
-		let toElement = document.getElementById('to') as HTMLInputElement;
-		let [from, to] = [parseFloat(fromElement.value), parseFloat(toElement.value)];
-		[from, to] = updatePrices(from, to);
-		fromElement.value = from.toString();
-		toElement.value = to.toString();
-	}
+	let initialCampaigns = new SvelteSet<string>([...activeCampaigns.map((c) => c.id)]);
 
 	function handleKeydown(e: KeyboardEvent) {
 		if (e.altKey && e.code === 'KeyN') document.getElementById('add')?.click();
@@ -67,42 +71,22 @@
 			--font-size="var(--font-size-0)"
 		/>
 
-		<Category update={updateCategories} --inline-size="auto" --font-size="var(--font-size-0)" />
-
+		<Campaign
+			initial={initialCampaigns}
+			update={updateCampaigns}
+			--block-size="auto"
+			--inline-size="auto"
+			--font-size="var(--font-size-0)"
+		/>
 		<Interval
 			update={updateIntervals}
 			--inline-size="auto"
 			--block-size="auto"
 			--font-size="var(--font-size-0)"
 		/>
-
-		<fieldset class="price">
-			<legend>price</legend>
-			<label>
-				<span>from&nbsp;</span>
-				<input
-					type="number"
-					id="from"
-					onchange={(e) => processPrices(e)}
-					value="-1"
-					min="-1.00"
-					max="1000"
-					step="0.5"
-				/>
-			</label>
-			<label>
-				<span>to&nbsp;&nbsp;</span>
-				<input
-					type="number"
-					id="to"
-					onchange={(e) => processPrices(e)}
-					value="-1"
-					min="-1.00"
-					max="1000"
-					step="0.5"
-				/>
-			</label>
-		</fieldset>
+	</section>
+	<section class="filters">
+		<Category update={updateCategories} --inline-size="auto" --font-size="var(--font-size-0)" />
 	</section>
 </section>
 
@@ -137,22 +121,6 @@
 	}
 	section {
 		display: grid;
-		gap: var(--size-1);
-	}
-
-	fieldset {
-		display: flex;
-		flex-wrap: wrap;
-		gap: var(--size-1);
-		padding-inline: var(--size-1);
-
-		legend {
-			font-weight: bolder;
-		}
-
-		label {
-			font-size: var(--font-size-0);
-		}
 	}
 
 	.filters {
@@ -160,34 +128,6 @@
 		gap: var(--size-1);
 	}
 
-	label {
-		display: inline-flex;
-		block-size: fit-content;
-		background-color: var(--surface-2);
-		padding-inline: var(--size-2);
-		padding-block: var(--size-1);
-		opacity: 0.8;
-		border-radius: var(--radius-2);
-		white-space: nowrap;
-		&:has(:checked) {
-			background-color: var(--accent);
-		}
-	}
-
-	.price {
-		input {
-			inline-size: 10ch;
-			text-align: right;
-		}
-		span {
-			display: inline-block;
-			inline-size: 5ch;
-			border: 2px solid var(--gray-6);
-			border-radius: var(--radius-2);
-			padding-inline: var(--size-1);
-			margin-inline-end: var(--size-1);
-		}
-	}
 	.search {
 		font-size: var(--font-size-2);
 		padding-inline: var(--size-2);

@@ -1,12 +1,10 @@
 import { writeFileSync } from 'node:fs'
 import { Stripe } from 'stripe'
 import { stripe } from './client'
+import env from './env'
 import kebabCase from 'lodash.kebabcase'
 
-const LOGPATH = process.env.LOGPATH
-if (!LOGPATH) {
-  throw new TypeError('LOGPATH env var missing')
-}
+const LOGPATH = env.LOGPATH
 
 /**
  * List all active prices

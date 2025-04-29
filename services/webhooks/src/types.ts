@@ -5,5 +5,10 @@ export type WebhookQueue = WebhookEvent[]
 export type Webhook = (event: WebhookEvent) => Promise<void>
 export type WebhookHandlers = Map<Stripe.Event.Type, Webhook>
 
-export type ResyncRequest = { action: string; type?: string; id?: string }
+export type ResyncRequest = {
+  action: string
+  object?: any
+  type?: string
+  id?: string
+}
 export type ResyncResponse = { action: string; result: any }

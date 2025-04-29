@@ -12,6 +12,7 @@ import * as payments from './payments'
 import * as payouts from './payouts'
 import * as preferences from './preferences'
 import * as subscriptions from './subscriptions'
+import * as geo from './geo'
 import * as users from './users'
 import * as sessions from './sessions'
 export * from './ashbourne'
@@ -26,6 +27,7 @@ export * from './payments'
 export * from './payouts'
 export * from './preferences'
 export * from './subscriptions'
+export * from './geo'
 export * from './users'
 export * from './campaigns'
 export * from './campaign-memberships'
@@ -49,7 +51,8 @@ const schema = {
     ...users,
     ...campaigns,
     ...campaignMemberships,
-    ...sessions
+    ...sessions,
+    ...geo
   }
 }
 

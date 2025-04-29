@@ -5,13 +5,38 @@ import { db, shifts } from '../db/db'
 import { fortnightHTML } from '../utilities/fortnightHTML'
 import { permanentHTML } from '../utilities/permanentHTML'
 import { combinedHTML } from '../utilities/combinedHTML'
-import { allFortnights, allMonths } from '../utilities/reports'
+import {
+  allFortnights,
+  allNewFortnights,
+  allMonths
+} from '../utilities/reports'
 import { zeroHourStaff, permanentStaff, ids } from '../pos/pos'
 import { shiftSummaryHTML } from '../utilities/shiftSummaryHTML'
 
 const reports = factory.createApp()
 
 reports.use(protectedPage)
+
+reports.post('/new-zerohours', async (c) => {
+  console.log('new-zerohours')
+  let fortnights = allNewFortnights()
+  let html = fortnights
+    .map((fortnight) => fortnightHTML(fortnight.start, fortnight.end))
+    .join('')
+  return c.html(html)
+})
+
+reports.get('/new-zerohours', async (c) => {
+  let start = c.req.query('start')
+  let end = c.req.query('end')
+  if (!start || !end) {
+    return c.json({ error: 'missing start or end date' })
+  }
+  let staff = ids(zeroHourStaff())
+  let shifts = await shiftsInDateRange(start, end, staff)
+  let result = shiftSummaryHTML(shifts)
+  return c.html(result)
+})
 
 reports.post('/zerohours', async (c) => {
   console.log('zerohours')
@@ -82,7 +107,7 @@ async function earliestShift() {
 async function shiftsInDateRange(
   start: string,
   end: string,
-  ids: string[] = [],
+  ids: string[] = []
 ) {
   return await db
     .select()
@@ -92,8 +117,8 @@ async function shiftsInDateRange(
         isNotNull(shifts.end),
         gte(shifts.start, start),
         lte(shifts.start, end + 'T23:59'),
-        inArray(shifts.uid, ids),
-      ),
+        inArray(shifts.uid, ids)
+      )
     )
     .orderBy(asc(shifts.start))
 }

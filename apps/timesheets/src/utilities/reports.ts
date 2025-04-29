@@ -41,6 +41,21 @@ function allFortnights(earliest: string) {
   return fortnights.toReversed() // most recent first
 }
 
+function allNewFortnights(earliest: string = '2025-02-13') {
+  let start = dayjs(earliest)
+  let tomorrow = dayjs().startOf('day').add(1, 'day')
+  let fortnights: Fortnight[] = []
+  while (start.isBefore(tomorrow)) {
+    let fortnight: Fortnight = {
+      start: start.format('YYYY-MM-DD'),
+      end: start.add(13, 'day').format('YYYY-MM-DD')
+    }
+    fortnights.push(fortnight)
+    start = start.add(14, 'day')
+  }
+  return fortnights.toReversed()
+}
+
 function allMonths(earliest: string) {
   let start = dayjs(earliest)
   let nextMonth = dayjs().startOf('month').add(1, 'month')
@@ -57,4 +72,10 @@ function allMonths(earliest: string) {
   return months.toReversed() // most recent first
 }
 
-export { allFortnights, allMonths }
+export { allFortnights, allNewFortnights, allMonths }
+
+// function main() {
+//   console.log('all new fortnights', allNewFortnights())
+// }
+
+// main()

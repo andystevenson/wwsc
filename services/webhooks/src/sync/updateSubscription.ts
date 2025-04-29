@@ -4,18 +4,18 @@ import {
   eq,
   subscriptions,
   membershipFromLookupKey,
-  scopeFromLookupKey,
-  memberExists
+  subscriptionExists
 } from '../db'
 import type { UpdateSubscription, CollectionBehaviour } from '../db'
 import { dayjs } from '@wwsc/lib-dates'
 import { lookupKeyFromPrice } from '@lib/stripe/wwsc'
 
 export async function updateSubscription(subscription: Stripe.Subscription) {
+  let exists = await subscriptionExists(subscription.id)
+  if (!exists) return
+
   let { customer } = subscription
   let customerId = typeof customer === 'string' ? customer : customer.id
-  let exists = await memberExists(customerId)
-  if (!exists) return
 
   let {
     id,
@@ -74,7 +74,6 @@ export async function updateSubscription(subscription: Stripe.Subscription) {
     member: customerId,
     membership,
     payment: collection_method,
-    scope: scopeFromLookupKey(lookup_key),
     status,
     started,
     phaseStart,

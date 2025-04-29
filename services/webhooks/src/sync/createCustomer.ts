@@ -1,6 +1,7 @@
 import { Stripe } from 'stripe'
+import { stripe } from '@lib/stripe/wwsc'
 import { dayjs } from '@wwsc/lib-dates'
-import { db, members, type InsertMember } from '../db'
+import { db, members, type InsertMember, type ID } from '../db'
 import { formatNameToFirstNameSurname, formatStripeAddress } from '../utilities'
 import { customerMetadata } from './customerMetadata'
 
@@ -8,6 +9,8 @@ export async function createCustomer(
   customer: Stripe.Customer,
   checkWWSC = true
 ) {
+  console.log('  creating customer:', customer.id)
+
   try {
     let { metadata } = customer
     let { wwsc } = metadata
@@ -16,8 +19,14 @@ export async function createCustomer(
     if (checkWWSC && wwsc !== 'true') return
     return fromStripeCustomer(customer)
   } catch (error) {
-    console.error('Error creating customer:', error)
+    console.error('error creating customer:', error)
   }
+}
+
+export async function createCustomerFromId(id: ID) {
+  let customer = await stripe.customers.retrieve(id)
+  if (!customer || customer.deleted) return
+  return fromStripeCustomer(customer)
 }
 
 export async function fromStripeCustomer(customer: Stripe.Customer) {

@@ -9,9 +9,6 @@ import { memberships } from './memberships'
 import { members } from './members'
 import { CollectionMethods } from './payments'
 
-export const SubscriptionScope = ['individual', 'family', 'club'] as const
-export type Scope = (typeof SubscriptionScope)[number]
-
 export const CollectionBehaviours = [
   'keep_as_draft',
   'mark_uncollectable',
@@ -42,7 +39,6 @@ export const subscriptions = sqliteTable('subscriptions', {
   payment: text({ enum: CollectionMethods })
     .default('charge_automatically')
     .notNull(),
-  scope: text({ enum: SubscriptionScope }).default('individual').notNull(),
   status: text({ enum: SubscriptionStatus }).default('active').notNull(),
   started: text(), // date
   phaseStart: text(), // date | null

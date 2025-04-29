@@ -1,6 +1,17 @@
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
-import { db, eq, members, subscriptions, genders, memberships } from '$lib/db';
+import {
+	db,
+	eq,
+	sql,
+	getTableColumns,
+	members,
+	subscriptions,
+	genders,
+	memberships,
+	campaigns,
+	campaignMemberships
+} from '$lib/db';
 
 export const load: PageServerLoad = async () => {
 	try {
@@ -13,6 +24,8 @@ export const load: PageServerLoad = async () => {
 				email: members.email,
 				mobile: members.mobile,
 				category: memberships.category,
+				scope: memberships.scope,
+				membership: memberships.id,
 				interval: memberships.interval,
 				price: memberships.price,
 				status: subscriptions.status,
@@ -36,7 +49,21 @@ export const load: PageServerLoad = async () => {
 			return sorted[0];
 		});
 
-		return { members: final };
+		const activeCampaigns = await db
+			.select({
+				...getTableColumns(campaigns),
+				membership: campaignMemberships.membership,
+				active: sql<boolean>`${campaigns.start} <= (current_timestamp) and ${campaigns.end} >= (current_timestamp)`
+			})
+			.from(campaignMemberships)
+			.innerJoin(campaigns, eq(campaigns.id, campaignMemberships.campaign));
+
+		return {
+			members: final,
+			activeCampaigns: activeCampaigns.filter(
+				(c) => c.active && c.id !== 'monthly' && c.id !== 'yearly'
+			)
+		};
 	} catch (e) {
 		console.error(e);
 		return error(500, 'database error');

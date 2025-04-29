@@ -1,21 +1,35 @@
 import { Stripe } from 'stripe'
+import { stripe } from '@lib/stripe/wwsc'
 import {
   db,
   subscriptions,
   membershipFromLookupKey,
-  scopeFromLookupKey
+  subscriptionExists,
+  memberExists,
+  ID
 } from '../db'
+import { createCustomerFromId } from './createCustomer'
+
 import type { InsertSubscription, CollectionBehaviour } from '../db'
 import { dayjs } from '@wwsc/lib-dates'
 import { lookupKeyFromPrice } from '@lib/stripe/wwsc'
 
 export async function createSubscription(subscription: Stripe.Subscription) {
+  let { id } = subscription
+  let exists = await subscriptionExists(id)
+  if (exists) return
+
+  let { customer } = subscription
+  let customerId = typeof customer === 'string' ? customer : customer.id
+  let cExists = await memberExists(customerId)
+  if (!cExists) {
+    await createCustomerFromId(customerId)
+  }
+
   let {
-    id,
     status,
     current_period_start,
     current_period_end,
-    customer,
     cancel_at,
     canceled_at,
     cancel_at_period_end,
@@ -29,7 +43,6 @@ export async function createSubscription(subscription: Stripe.Subscription) {
 
   let { price } = items.data[0]
   let { id: priceId, lookup_key, recurring } = price
-  let customerId = typeof customer === 'string' ? customer : customer.id
 
   let started = dayjs.unix(start_date).format('YYYY-MM-DD')
   let phaseStart = dayjs.unix(current_period_start).format('YYYY-MM-DD')
@@ -70,7 +83,6 @@ export async function createSubscription(subscription: Stripe.Subscription) {
     member: customerId,
     membership,
     payment: collection_method,
-    scope: scopeFromLookupKey(lookup_key),
     status,
     started,
     phaseStart,
@@ -91,8 +103,18 @@ export async function createSubscription(subscription: Stripe.Subscription) {
     includedIn
   }
 
-  await db
+  let [result] = await db
     .insert(subscriptions)
     .values(insertSubscription)
     .onConflictDoUpdate({ target: [subscriptions.id], set: insertSubscription })
+    .returning()
+
+  return result
+}
+
+export async function createSubscriptionFromId(id: ID) {
+  console.log('creating subscription from id:', id)
+  let subscription = await stripe.subscriptions.retrieve(id)
+  if (!subscription) return
+  return await createSubscription(subscription)
 }

@@ -1,4 +1,5 @@
-import { stripe, Stripe } from '../src/stripe'
+import { Stripe } from 'stripe'
+import { stripe } from '@lib/stripe/wwsc'
 import { dayjs } from '@wwsc/lib-dates'
 import { db, payouts, desc, sql } from '../src/db'
 import { InsertPayout, PayoutStatus } from '../src/db'

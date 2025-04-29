@@ -1,0 +1,11 @@
+{
+  "name": "@lib/pino",
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "types": "./index.ts",
+  "type": "module",
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {}
+}

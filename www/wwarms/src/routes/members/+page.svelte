@@ -7,31 +7,44 @@
 	let { data }: { data: PageData } = $props();
 
 	let search = $state('');
+	let campaignFilters = new SvelteSet<string>();
 	let statusFilters = new SvelteSet<Status>(['active']);
 	let intervalFilters = new SvelteSet<Interval>();
 	let categoryFilters = new SvelteSet<Category>();
-	let priceFilters = $state<[number, number]>([-1, -1]);
-
 
 	let filteredMembers = $derived.by(() => {
 		// no filters then everything
 		if (
 			!search &&
+			!campaignFilters.size &&
 			!statusFilters.size &&
 			!intervalFilters.size &&
-			!categoryFilters.size &&
-			priceFilters[0] === -1
+			!categoryFilters.size
 		)
 			return data.members;
 		return data.members.filter(
 			(member: WWMember) =>
+				inCampaign(member) &&
 				inStatus(member) &&
 				inInterval(member) &&
 				inCategory(member) &&
-				inPrice(member) &&
 				inSearch(member)
 		);
 	});
+
+	export function findMembershipInCampaigns(membership: string) {
+		let found = data.activeCampaigns.find((c) => c.membership === membership);
+		if (!found) return null;
+		return found;
+	}
+
+	function inCampaign(member: WWMember) {
+		let noCampaignsSelected = campaignFilters.size === 0;
+		if (noCampaignsSelected) return true;
+		let found = findMembershipInCampaigns(member.membership);
+		if (!found) return false;
+		return campaignFilters.has(found?.id);
+	}
 
 	function inStatus(member: WWMember) {
 		return statusFilters.size === 0 || statusFilters.has(member.status);
@@ -45,12 +58,6 @@
 		return categoryFilters.size === 0 || categoryFilters.has(member.category);
 	}
 
-	function inPrice(member: WWMember) {
-		return (
-			priceFilters[0] === -1 || (member.price >= priceFilters[0] && member.price <= priceFilters[1])
-		);
-	}
-
 	function inSearch(member: WWMember) {
 		const lsearch = search.toLowerCase();
 		const lname = member.name?.toLowerCase();
@@ -58,8 +65,18 @@
 		const lmobile = member.mobile?.toLowerCase();
 		const lcategory = member.category.toLowerCase();
 		const linterval = member.interval.toLowerCase();
-		let result =  !search || lname?.includes(lsearch) || lemail?.includes(lsearch) || lmobile?.includes(lsearch) || lcategory.includes(lsearch) || linterval.includes(lsearch);
-			return result;
+		let result =
+			!search ||
+			lname?.includes(lsearch) ||
+			lemail?.includes(lsearch) ||
+			lmobile?.includes(lsearch) ||
+			lcategory.includes(lsearch) ||
+			linterval.includes(lsearch);
+		return result;
+	}
+
+	function updateCampaigns(c: string, checked: boolean) {
+		checked ? campaignFilters.add(c) : campaignFilters.delete(c);
 	}
 
 	function updateStatus(s: Status, checked: boolean) {
@@ -77,22 +94,16 @@
 	function updateCategories(category: Category, checked: boolean) {
 		checked ? categoryFilters.add(category) : categoryFilters.delete(category);
 	}
-
-	function updatePrices(start: number, end: number): [number, number] {
-		let [from, to] = [start, end];
-		if (end < start) [from, to] = [start, start];
-		priceFilters = [from, to];
-		return [from, to];
-	}
 </script>
 
 <section>
 	<MemberFilters
+		activeCampaigns={data.activeCampaigns}
+		{updateCampaigns}
 		{updateStatus}
 		{updateSearch}
 		{updateIntervals}
 		{updateCategories}
-		{updatePrices}
 	/>
 	<div class="counts">{filteredMembers.length} of {data.members.length}</div>
 	<MemberList members={filteredMembers} />

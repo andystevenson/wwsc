@@ -6,18 +6,18 @@ import {
   db,
   salesItems,
   insertSalesItem,
-  type InsertSalesItem,
+  type InsertSalesItem
 } from '@wwsc/lib-db'
 import { eq } from 'drizzle-orm'
 
 export const writeDailySalesItems = async (
   sales: Sale[],
-  directory: string,
+  directory: string
 ) => {
   const items = await spinner(dailySalesItems(sales), {
     text: 'Generating sales items...',
     successText: 'Sales items generated',
-    color: 'green',
+    color: 'green'
   })
 
   let file = `${directory}/sales-items.json`

@@ -1,11 +1,5 @@
-import {
-  db,
-  eq,
-  InsertMembership,
-  Interval,
-  memberships,
-  Category
-} from '../src/db/db'
+import type { InsertMembership, Interval, Category } from '../src/db'
+import { db, eq, memberships, scopeFromLookupKey } from '../src/db'
 
 import { getAllMembershipTypes } from '@lib/stripe/wwsc'
 
@@ -52,10 +46,14 @@ let all = await Promise.all(
           `${productDescription || ''} / ${pAmount} ${pInterval} ${pIterations} ${pChange}`
             .replace(/  +/g, ' ')
             .trim()
+
+        let scope = scopeFromLookupKey(lookup_key)
+        console.log(`inserting ${lookup_key} ${scope} ${name}`)
         let membership: InsertMembership = {
           id: lookup_key || '',
           description,
           category: name as Category,
+          scope,
           effectiveDate: '2024-01-01',
           interval: interval as Interval,
           intervals,

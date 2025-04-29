@@ -23,4 +23,13 @@
 	}
 </script>
 
-<MembershipFilter select={doSelect} />
+<section class="membership">
+	<MembershipFilter select={doSelect} />
+</section>
+
+<style>
+	.membership {
+		display: grid;
+		gap: 1rem;
+	}
+</style>

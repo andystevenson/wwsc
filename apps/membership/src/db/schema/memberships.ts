@@ -46,9 +46,13 @@ export type Interval = (typeof Intervals)[number]
 export const MembershipStatuses = ['active', 'suspended', 'withdrawn'] as const
 export type MembershipStatus = (typeof MembershipStatuses)[number]
 
+export const MembershipScopes = ['individual', 'family', 'club'] as const
+export type MembershipScope = (typeof MembershipScopes)[number]
+
 export const memberships = sqliteTable('memberships', {
   id: text().primaryKey().notNull(),
   category: text({ enum: Categories }).notNull(),
+  scope: text({ enum: MembershipScopes }).default('individual').notNull(),
   status: text({ enum: MembershipStatuses }).notNull().default('active'),
   description: text().default(''),
   effectiveDate: text().notNull().default(dayjs().format('YYYY-MM-DD')), // date

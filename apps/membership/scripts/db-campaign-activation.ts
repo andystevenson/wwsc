@@ -26,7 +26,7 @@ async function main() {
 
   let today = dayjs().format('YYYY-MM-DD')
   for (let { id, campaign, start, end } of scope) {
-    console.log({ id, campaign, start, end })
+    // console.log({ id, campaign, start, end })
     if (today.localeCompare(start) >= 0 && today.localeCompare(end) <= 0) {
       await db
         .update(memberships)

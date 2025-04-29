@@ -1,4 +1,5 @@
-import type { PageServerLoad } from './$types';
+import { fail } from '@sveltejs/kit';
+import type { PageServerLoad, Action, Actions } from './$types';
 import { db, sql, eq } from '$lib/db';
 import { campaigns, campaignMemberships, memberships } from '$lib/db';
 
@@ -9,6 +10,7 @@ export const load: PageServerLoad = async () => {
 			description: campaigns.description,
 			category: memberships.category,
 			interval: memberships.interval,
+			scope: memberships.scope,
 			membership: campaignMemberships.membership,
 			membershipDescription: memberships.description,
 			paying: memberships.paying,
@@ -28,20 +30,17 @@ export const load: PageServerLoad = async () => {
 	};
 };
 
-import type { Action, Actions } from './$types';
-
+type Failure = {
+	missing: Record<string, string>;
+};
 const addMember: Action = async (event) => {
 	const data = await event.request.formData();
 	const body = Object.fromEntries(data.entries());
-	console.log('addMember', body);
+	const failure = fail<Failure>(400, { missing: { firstName: 'First name is required' } });
+	console.log('addMember', body, failure);
+	return failure;
 };
 
-const checkCustomerExists: Action = async (event) => {
-	const data = await event.request.formData();
-	const body = Object.fromEntries(data.entries());
-	console.log('customer exists ?', body);
-};
 export const actions: Actions = {
-	addMember,
-	checkCustomerExists
+	addMember
 };

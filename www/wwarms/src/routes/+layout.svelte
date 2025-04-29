@@ -5,6 +5,18 @@
 	import type { Snippet } from 'svelte';
 	import type { LayoutServerData } from './$types';
 	let { data, children }: { data: LayoutServerData; children: Snippet<[]> } = $props();
+	import { onNavigate } from '$app/navigation';
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 <Screen />
@@ -24,7 +36,6 @@
 	:global {
 		@import '../lib/css/styles.css';
 	}
-
 	main {
 		margin: 0 auto;
 		max-width: min(2560px, 98vw);

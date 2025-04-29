@@ -4,10 +4,10 @@
 	import type { WWCampaignMembership, PreferenceType } from './types';
 	import Preferences from './Preferences.svelte';
 	import Gender from './Gender.svelte';
-	import type { ActionData } from '../../routes/$types';
+	import { dayjs } from '@wwsc/lib-dates';
 	type Props = {
 		membership: WWCampaignMembership | null;
-		form?: ActionData;
+		form?: any;
 	};
 
 	let { membership, form }: Props = $props();
@@ -17,19 +17,22 @@
 		checked ? preferences.add(p) : preferences.delete(p);
 	}
 
-	let newOrExisting = $state('new member');
+	let today = $derived.by(() => dayjs().format('YYYY-MM-DD'));
 </script>
 
 {#if membership}
-	<form action="?/checkCustomerExists" method="post" autocomplete="off" use:enhance>
+	<form action="?/addMember" method="POST" autocomplete="off" use:enhance>
 		<fieldset class="member">
-			<legend>{newOrExisting}</legend>
+			<legend>existing</legend>
 			<input type="hidden" name="campaign" value={membership?.campaign} />
 			<input type="hidden" name="category" value={membership?.category} />
 			<input type="hidden" name="membership" value={membership?.membership} />
 			<label>
 				<span>first name</span>
 				<input type="text" name="firstName" />
+				{#if form?.missing.firstName}
+					<p>{form?.missing.firstName}</p>
+				{/if}
 			</label>
 			<label>
 				<span>surname</span>
@@ -43,43 +46,41 @@
 		<section class="birthday">
 			<fieldset>
 				<legend>date of birth</legend>
-				<input type="date" name="dob" />
+				<input type="date" name="dob" min="1925-01-01" max={today} />
 			</fieldset>
 			<Gender --inline-size="auto" />
 		</section>
 		<!-- only show if non-paying -->
-		{#if !membership?.paying}
-			<fieldset class="contact">
-				<legend>contact</legend>
+		<fieldset class="contact">
+			<legend>contact</legend>
 
-				<section class="address">
-					<span>address</span>
-					<input type="text" name="line1" />
-					<input type="text" name="line2" />
-					<input type="text" name="city" />
-					<section class="phone">
-						<label>
-							<span>postcode</span>
-							<input type="text" name="postcode" />
-						</label>
-						<label>
-							<span>mobile</span>
-							<input type="tel" name="mobile" />
-						</label>
-					</section>
+			<section class="address">
+				<span>address</span>
+				<input type="text" name="line1" />
+				<input type="text" name="line2" />
+				<input type="text" name="city" />
+				<section class="phone">
+					<label>
+						<span>postcode</span>
+						<input type="text" name="postcode" />
+					</label>
+					<label>
+						<span>mobile</span>
+						<input type="tel" name="mobile" />
+					</label>
 				</section>
-			</fieldset>
-		{/if}
+			</section>
+		</fieldset>
 
 		<!-- only show if member is playing sports -->
 		{#if membership?.sports}
 			<Preferences selected={preferences} update={updatePreference} --inline-size="auto" />
 		{/if}
-
-		<!-- only show if member is family -->
-		{#if membership?.category === 'family'}
-			Family
-		{/if}
+		<section class="submit">
+			<button type="submit">add member</button>
+			<button type="reset">clear</button>
+		</section>
+		<pre>form ...{JSON.stringify(form, null, 2)}...</pre>
 	</form>
 {/if}
 
@@ -88,13 +89,14 @@
 		<h2>💁‍♂️ first select a membership</h2>
 		<h3>to add a new member</h3>
 	</section>
-	>
 {/if}
 
 <style>
-	form,
 	input {
 		outline-color: var(--accent);
+		&:user-invalid {
+			background-color: red;
+		}
 	}
 
 	label:has([type='text'], [type='email'], [type='tel'], [type='date']) {
@@ -149,5 +151,10 @@
 			text-align: center;
 			max-inline-size: unset;
 		}
+	}
+
+	.submit {
+		display: flex;
+		justify-content: space-evenly;
 	}
 </style>

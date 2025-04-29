@@ -710,7 +710,9 @@ dialog {
   &::backdrop {
     opacity: 0.5;
   }
-  transition: translate 0.7s ease-out, overlay 0.7s ease-out allow-discrete,
+  transition:
+    translate 0.7s ease-out,
+    overlay 0.7s ease-out allow-discrete,
     display 0.7s ease-out allow-discrete;
   translate: 0 100vh;
 }
@@ -779,6 +781,7 @@ body.user {
   }
 }
 
+.new-zerohours,
 .zerohours,
 .permanent,
 .combined {
@@ -856,6 +859,7 @@ body.user {
   }
 
   .permanent.summary,
+  .new-zerohours.summary,
   .zerohours.summary {
     div {
       padding-inline: var(--size-3);
@@ -876,6 +880,7 @@ body.user {
     }
   }
 
+  .new-zerohours.summary,
   .zerohours.summary {
     div.accrued {
       border: 1px solid var(--gray-4);
@@ -903,6 +908,7 @@ body.user {
     }
   }
 
+  .new-zerohours.taken,
   .zerohours.taken {
     div {
       display: flex;

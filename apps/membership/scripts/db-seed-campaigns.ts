@@ -1,11 +1,5 @@
-import {
-  db,
-  campaigns,
-  campaignMemberships,
-  memberships,
-  Campaign,
-  Category
-} from '../src/db/db'
+import type { Campaign, Category } from '../src/db'
+import { db, campaigns, campaignMemberships, memberships } from '../src/db'
 import { getAllPrices } from '@lib/stripe/wwsc'
 import { andy } from './andy'
 

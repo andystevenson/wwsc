@@ -14,10 +14,14 @@ export async function createInvoice(invoice: Stripe.Invoice) {
   if (!exists) return
 
   let payment = await formatInvoice(exists.id, invoice)
-  await db
+
+  let [result] = await db
     .insert(payments)
     .values(payment)
     .onConflictDoUpdate({ target: [payments.id], set: payment })
+    .returning()
+
+  return result
 }
 
 export async function formatInvoice(customer: ID, invoice: Stripe.Invoice) {

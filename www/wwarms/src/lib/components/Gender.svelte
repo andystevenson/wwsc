@@ -11,10 +11,11 @@
 
 	type Props = {
 		config?: GenderConfig;
+		selected?: GenderType;
 		update?: (g: GenderType, checked: boolean, otherValue: string) => void;
 	};
 
-	let { config, update }: Props = $props();
+	let { config, selected, update }: Props = $props();
 	let { withIndex, index, prefix } = config || {};
 
 	let otherSelected = $state(false);
@@ -67,7 +68,7 @@
 			type="radio"
 			name={!withIndex ? 'gender' : `${prefix}.${index}.gender`}
 			value={g}
-			checked={g === 'unknown'}
+			checked={selected ? selected === g : g === 'unknown'}
 			onchange={(e) => doUpdate(e)}
 		/>
 		<span>{g}</span>
@@ -131,7 +132,7 @@
 	}
 
 	[readonly] {
-		cursor: not-allowed;
+		cursor: url('$lib/images/angry.png'), not-allowed;
 		background-color: var(--gray-8);
 	}
 </style>

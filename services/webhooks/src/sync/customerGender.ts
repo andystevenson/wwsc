@@ -6,7 +6,7 @@ export async function customerGender(customer: Stripe.Customer) {
   let { metadata } = customer
   let { gender } = metadata
 
-  let lGender: GenderType = gender.toLowerCase() as GenderType
+  let lGender: GenderType = gender?.toLowerCase() as GenderType
   let g: GenderType = GenderTypes.includes(lGender) ? lGender : 'unknown'
 
   let insertGender: InsertGender = {

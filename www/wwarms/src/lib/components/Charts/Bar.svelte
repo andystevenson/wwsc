@@ -22,16 +22,16 @@
 	function draw() {
 		canvas = document.getElementById(id) as HTMLCanvasElement;
 		if (!canvas) throw new TypeError('Canvas not found');
+		// if (!dataset.length) return;
+		// if (chart) chart.destroy();
 		chart = new Chart(canvas, {
 			type: 'bar',
 			plugins: [ChartDataLabels],
 			options: {
 				onResize: function (chart) {
 					tick().then(() => {
-						draw();
-					});
-					tick().then(() => {
-						draw();
+						chart.resize();
+						chart.update();
 					});
 				},
 				responsive: true,

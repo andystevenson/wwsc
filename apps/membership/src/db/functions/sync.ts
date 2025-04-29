@@ -37,7 +37,7 @@ import {
   formatNameToFirstNameSurname
 } from '../../utilities'
 
-import { membershipFromLookupKey, scopeFromLookupKey } from './membership'
+import { membershipFromLookupKey } from './membership'
 
 import { dayjs, age as getAge } from '@wwsc/lib-dates'
 
@@ -264,7 +264,6 @@ export async function syncStripeSubscription(
     member: customer.id,
     membership,
     payment: collection_method,
-    scope: scopeFromLookupKey(lookup_key),
     status,
     started,
     phaseStart,
